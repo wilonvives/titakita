@@ -54,3 +54,21 @@ export const sitemapOrganizersHandler = async (req, res) => {
     if (!validatePageParam(page, res)) return;
     await fetchSitemap(`/sitemap-organizers-${page}.xml`, res, 'sitemap organizers');
 };
+
+// TitaKita directory contract: serve the node descriptor at
+// /.well-known/titakita.json by proxying the backend node endpoint.
+export const nodeDescriptorHandler = async (_req, res) => {
+    try {
+        const backendUrl = getBackendUrl();
+        const response = await axios.get(`${backendUrl}/public/node`, {
+            headers: { 'Accept': 'application/json' },
+        });
+
+        res.setHeader('Content-Type', 'application/json');
+        res.setHeader('Cache-Control', 'public, max-age=300');
+        res.status(200).json(response.data);
+    } catch (error) {
+        console.error('Error fetching node descriptor:', error);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+};

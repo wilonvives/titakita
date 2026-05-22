@@ -11,7 +11,7 @@ import {fileURLToPath} from "node:url";
 import * as nodePath from "node:path";
 import * as nodeUrl from "node:url";
 import "dotenv/config";
-import {sitemapIndexHandler, sitemapEventsHandler, sitemapOrganizersHandler} from "./src/sitemap/proxy.js";
+import {sitemapIndexHandler, sitemapEventsHandler, sitemapOrganizersHandler, nodeDescriptorHandler} from "./src/sitemap/proxy.js";
 
 installGlobals();
 
@@ -35,6 +35,8 @@ async function main() {
     const app = express();
     app.use(cookieParser());
 
+    // TitaKita node descriptor (dynamic) takes precedence over static .well-known files.
+    app.get('/.well-known/titakita.json', nodeDescriptorHandler);
     app.use('/.well-known', express.static(path.join(__dirname, 'public/.well-known')));
 
     let vite;

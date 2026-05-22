@@ -154,6 +154,7 @@ use HiEvents\Http\Actions\Questions\SortQuestionsAction;
 use HiEvents\Http\Actions\Reports\ExportOrganizerReportAction;
 use HiEvents\Http\Actions\Reports\GetOrganizerReportAction;
 use HiEvents\Http\Actions\Reports\GetReportAction;
+use HiEvents\Http\Actions\TitaKita\GetNodeDescriptorAction;
 use HiEvents\Http\Actions\Sitemap\GetSitemapEventsAction;
 use HiEvents\Http\Actions\Sitemap\GetSitemapIndexAction;
 use HiEvents\Http\Actions\Sitemap\GetSitemapOrganizersAction;
@@ -560,6 +561,9 @@ $router->prefix('/public')->group(
         $router->get('/sitemap.xml', GetSitemapIndexAction::class);
         $router->get('/sitemap-events-{page}.xml', GetSitemapEventsAction::class)->where('page', '[0-9]+');
         $router->get('/sitemap-organizers-{page}.xml', GetSitemapOrganizersAction::class)->where('page', '[0-9]+');
+
+        // TitaKita directory contract: node descriptor (proxied to /.well-known/titakita.json)
+        $router->get('/node', GetNodeDescriptorAction::class);
     }
 );
 
