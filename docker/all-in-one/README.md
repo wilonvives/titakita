@@ -65,8 +65,9 @@ Put a reverse proxy with HTTPS (Caddy, Traefik, or nginx + certbot) in front of
 port `8123`, and keep your `APP_KEY` / `JWT_SECRET` stable across restarts (the
 generated `.env` already does this — just don't delete it).
 
-See `TitaKita规划` and the upcoming *Deployment Pre-flight Checklist* for the
-full account-by-account walkthrough.
+See [`部署装前需知.md`](../../部署装前需知.md) (Deployment Pre-flight Checklist) at
+the repo root for the full, account-by-account walkthrough — which services to
+sign up for, in what order, and a "try it out with zero accounts" path.
 
 ---
 
