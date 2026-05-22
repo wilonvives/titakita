@@ -54,6 +54,8 @@ class OrganizerDomainObject extends Generated\OrganizerDomainObjectAbstract
 
     public function getSlug(): string
     {
-        return Str::slug($this->name);
+        // Fall back to a non-empty slug for purely non-Latin names so organizer
+        // URLs never collapse to /events/{id}/.
+        return Str::slug($this->name) ?: ('organizer-' . $this->getId());
     }
 }

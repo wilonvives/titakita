@@ -112,7 +112,11 @@ class EventDomainObject extends Generated\EventDomainObjectAbstract implements I
 
     public function getSlug(): string
     {
-        return Str::slug($this->getTitle());
+        // Str::slug() returns an empty string for purely non-Latin titles
+        // (e.g. Chinese/Japanese/Korean), which produces broken event URLs like
+        // /event/1/. The slug is decorative (routing is by id), so fall back to a
+        // stable, non-empty value.
+        return Str::slug($this->getTitle()) ?: ('event-' . $this->getId());
     }
 
     public function setImages(?Collection $images): EventDomainObject
