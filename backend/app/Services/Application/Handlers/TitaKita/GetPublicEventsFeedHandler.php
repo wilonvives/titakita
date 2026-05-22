@@ -23,7 +23,9 @@ class GetPublicEventsFeedHandler
     public function handle(QueryParamsDTO $params): LengthAwarePaginator
     {
         return $this->eventRepository
-            ->loadRelation(new Relationship(OrganizerDomainObject::class))
+            // Event belongsTo a single organizer — the relation is "organizer"
+            // (singular), not the domain object's default PLURAL_NAME.
+            ->loadRelation(new Relationship(OrganizerDomainObject::class, name: 'organizer'))
             ->loadRelation(new Relationship(ImageDomainObject::class))
             ->findEvents(
                 where: ['status' => EventStatus::LIVE->name],
