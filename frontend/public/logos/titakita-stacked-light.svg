@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="140" viewBox="0 0 180 140">
+  <title>TitaKita Logo Stacked - Light</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800&amp;display=swap');
+    .logo-text { font-family: 'Outfit', sans-serif; font-weight: 800; letter-spacing: -0.02em; }
+    .logo-mono { font-family: 'Outfit', sans-serif; font-weight: 800; }
+  </style>
+
+  <!-- Placeholder TK monogram above wordmark (dark, for light backgrounds) -->
+  <rect x="62" y="14" width="56" height="56" rx="14" fill="#18181b"/>
+  <text x="90" y="44" class="logo-mono" font-size="30" text-anchor="middle" dominant-baseline="central">
+    <tspan fill="#ffffff">T</tspan><tspan fill="#cd58dd">K</tspan>
+  </text>
+
+  <text x="90" y="110" class="logo-text" font-size="28" fill="#18181b" text-anchor="middle">Tita<tspan fill="#cd58dd">Kita</tspan></text>
+</svg>
