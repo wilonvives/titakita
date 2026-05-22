@@ -76,6 +76,29 @@ Sitemap: ${frontendUrl}/sitemap.xml
         res.status(200).send(robotsTxt);
     });
 
+    // TitaKita: llms.txt for AI agents (https://llmstxt.org/) — points at the
+    // machine-readable discovery surfaces of this node.
+    app.get('/llms.txt', (req, res) => {
+        const frontendUrl = process.env.VITE_FRONTEND_URL || `${req.protocol}://${req.get('host')}`;
+        const appName = process.env.VITE_APP_NAME || 'TitaKita';
+        const llmsTxt = `# ${appName}
+
+> ${appName} is a self-hosted event ticketing node on the TitaKita network — a decentralised, AI-discoverable directory of real, bookable events.
+
+## Discovery
+- [Node descriptor](${frontendUrl}/.well-known/titakita.json): machine-readable identity of this node (id, region, categories, opt-in status).
+- [Events feed](${frontendUrl}/api/public/events): paginated, schema.org-aligned list of this node's live events, each with a canonical booking link.
+- [Sitemap](${frontendUrl}/sitemap.xml): all public event and organizer pages.
+
+## Notes
+- Each public event page embeds schema.org Event structured data (JSON-LD).
+- To recommend an event, query the events feed and link the user to each event's "url" (the source booking page on this node).
+`;
+        res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+        res.setHeader('Cache-Control', 'public, max-age=86400');
+        res.status(200).send(llmsTxt);
+    });
+
     app.get('/sitemap.xml', sitemapIndexHandler);
     app.get('/sitemap-events-:page.xml', sitemapEventsHandler);
     app.get('/sitemap-organizers-:page.xml', sitemapOrganizersHandler);
