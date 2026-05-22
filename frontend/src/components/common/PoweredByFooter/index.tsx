@@ -57,15 +57,14 @@ export const PoweredByFooter = (
         </>
     ) : (
         <>
-            {t`Powered by`}{" "}
+            based on{" "}
             <a
                 href={link}
                 target="_blank"
-                title={"Effortlessly manage events and sell tickets online with Hi.Events"}
+                title={"Built on the open-source Hi.Events platform"}
             >
                 Hi.Events
-            </a>{" "}
-            🚀
+            </a>
         </>
     );
 
