@@ -14,3 +14,15 @@ fly.toml
 
 frontend/.env*
 backend/.env*
+
+# Dependencies are reinstalled inside the image (composer/yarn) — keep them out
+# of the build context for a leaner, faster, deterministic build.
+**/node_modules
+backend/vendor
+
+# Runtime artifacts created by local dev (e.g. `php artisan storage:link`).
+# The container recreates these on startup; the host symlink uses an absolute
+# in-container path that breaks the Docker build context if copied.
+backend/public/storage
+backend/storage/logs/*
+backend/bootstrap/cache/*.php
