@@ -13,6 +13,7 @@ use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
 use HiEvents\Services\Application\Handlers\Event\DTO\UpdateEventDTO;
 use HiEvents\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
 use HiEvents\Jobs\Event\Webhook\DispatchEventWebhookJob;
+use HiEvents\Jobs\Event\Webhook\ReportEventToDirectoryJob;
 use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
 use Illuminate\Database\DatabaseManager;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
@@ -100,6 +101,11 @@ readonly class UpdateEventHandler
         $this->dispatcher->dispatchEvent(new EventUpdateEvent($event));
 
         DispatchEventWebhookJob::dispatch(
+            $event->getId(),
+            DomainEventType::EVENT_UPDATED,
+        );
+
+        ReportEventToDirectoryJob::dispatch(
             $event->getId(),
             DomainEventType::EVENT_UPDATED,
         );

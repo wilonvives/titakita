@@ -9,6 +9,7 @@ use HiEvents\Repository\Interfaces\EventRepositoryInterface;
 use HiEvents\Services\Application\Handlers\Event\DTO\UpdateEventStatusDTO;
 use HiEvents\DomainObjects\Status\EventStatus;
 use HiEvents\Jobs\Event\Webhook\DispatchEventWebhookJob;
+use HiEvents\Jobs\Event\Webhook\ReportEventToDirectoryJob;
 use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
 use Illuminate\Database\DatabaseManager;
 use Psr\Log\LoggerInterface;
@@ -73,6 +74,11 @@ readonly class UpdateEventStatusHandler
             : DomainEventType::EVENT_UPDATED;
 
         DispatchEventWebhookJob::dispatch(
+            $event->getId(),
+            $eventType,
+        );
+
+        ReportEventToDirectoryJob::dispatch(
             $event->getId(),
             $eventType,
         );

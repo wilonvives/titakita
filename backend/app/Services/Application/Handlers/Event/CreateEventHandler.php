@@ -12,6 +12,7 @@ use HiEvents\Services\Domain\Event\CreateEventService;
 use HiEvents\Services\Domain\ProductCategory\CreateProductCategoryService;
 use HiEvents\Services\Domain\Organizer\OrganizerFetchService;
 use HiEvents\Jobs\Event\Webhook\DispatchEventWebhookJob;
+use HiEvents\Jobs\Event\Webhook\ReportEventToDirectoryJob;
 use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
 use Illuminate\Database\DatabaseManager;
 use Throwable;
@@ -68,6 +69,11 @@ class CreateEventHandler
         $this->createProductCategoryService->createDefaultProductCategory($newEvent);
 
         DispatchEventWebhookJob::dispatch(
+            $newEvent->getId(),
+            DomainEventType::EVENT_CREATED,
+        );
+
+        ReportEventToDirectoryJob::dispatch(
             $newEvent->getId(),
             DomainEventType::EVENT_CREATED,
         );
