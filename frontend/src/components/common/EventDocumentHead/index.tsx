@@ -20,7 +20,7 @@ export const EventDocumentHead = ({event}: EventDocumentHeadProps) => {
     const endDate = event.end_date ? utcToTz(new Date(event.end_date), event.timezone) : undefined;
 
     const address = {
-        "@type": "http://schema.org/PostalAddress",
+        "@type": "PostalAddress",
         streetAddress: eventSettings?.location_details?.address_line_1,
         addressLocality: eventSettings?.location_details?.city,
         addressRegion: eventSettings?.location_details?.state_or_region,
@@ -34,14 +34,14 @@ export const EventDocumentHead = ({event}: EventDocumentHeadProps) => {
     Object.keys(address).forEach(key => address[key] === undefined && delete address[key]);
 
     const location = eventSettings?.location_details && Object.keys(address).length > 1 ? {
-        "@type": "http://schema.org/Place",
+        "@type": "Place",
         name: event.location_details?.venue_name,
         address
     } : {};
 
     const schemaOrgJSONLD = {
-        "@context": "http://schema.org",
-        "@type": "http://schema.org/Event",
+        "@context": "https://schema.org",
+        "@type": "Event",
         name: title,
         startDate,
         endDate,
@@ -50,7 +50,7 @@ export const EventDocumentHead = ({event}: EventDocumentHeadProps) => {
         description: description,
         keywords,
         organizer: {
-            "@type": "http://schema.org/Organization",
+            "@type": "Organization",
             name: event.organizer?.name,
             url: event.organizer?.website
         },
@@ -59,12 +59,12 @@ export const EventDocumentHead = ({event}: EventDocumentHeadProps) => {
         eventAttendanceMode: event.settings?.is_online_event ? "https://schema.org/OnlineEventAttendanceMode" : "https://schema.org/OfflineEventAttendanceMode",
         currency: event.currency,
         offers: products.map(product => ({
-            "@type": "http://schema.org/Offer",
+            "@type": "Offer",
             url,
             price: product?.prices?.[0]?.price,
             priceCurrency: event.currency,
             validFrom: startDate,
-            availability: product?.is_available ? "http://schema.org/InStock" : "http://schema.org/SoldOut",
+            availability: product?.is_available ? "https://schema.org/InStock" : "https://schema.org/SoldOut",
         })),
     };
 
