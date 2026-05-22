@@ -155,6 +155,7 @@ use HiEvents\Http\Actions\Reports\ExportOrganizerReportAction;
 use HiEvents\Http\Actions\Reports\GetOrganizerReportAction;
 use HiEvents\Http\Actions\Reports\GetReportAction;
 use HiEvents\Http\Actions\TitaKita\GetNodeDescriptorAction;
+use HiEvents\Http\Actions\TitaKita\GetPublicEventsFeedAction;
 use HiEvents\Http\Actions\Sitemap\GetSitemapEventsAction;
 use HiEvents\Http\Actions\Sitemap\GetSitemapIndexAction;
 use HiEvents\Http\Actions\Sitemap\GetSitemapOrganizersAction;
@@ -564,6 +565,9 @@ $router->prefix('/public')->group(
 
         // TitaKita directory contract: node descriptor (proxied to /.well-known/titakita.json)
         $router->get('/node', GetNodeDescriptorAction::class);
+
+        // TitaKita directory contract: public, schema.org-aligned events feed
+        $router->get('/events', GetPublicEventsFeedAction::class);
     }
 );
 
