@@ -152,7 +152,7 @@ const Payment = () => {
                             <Trans>
                                 By continuing, you agree to the{' '}
                                 <a
-                                    href={getConfig('VITE_TOS_URL', 'https://hi.events/terms-of-service') as string}
+                                    href={getConfig('VITE_TOS_URL') as string}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >

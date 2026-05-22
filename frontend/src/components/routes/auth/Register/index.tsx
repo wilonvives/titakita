@@ -137,15 +137,17 @@ export const Register = () => {
                         {mutate.isPending ? t`Working...` : t`Register`}
                     </Button>
                 </form>
-                <footer>
-                    <Trans>
-                        By registering you agree to our <NavLink target={'_blank'}
-                                                                 to={getConfig("VITE_TOS_URL", "https://hi.events/terms-of-service?utm_source=app-register-footer") as string}>Terms
-                        of Service</NavLink> and <NavLink
-                        target={'_blank'}
-                        to={getConfig("VITE_PRIVACY_URL", 'https://hi.events/privacy-policy?utm_source=app-register-footer') as string}>Privacy Policy</NavLink>.
-                    </Trans>
-                </footer>
+                {getConfig("VITE_TOS_URL") && getConfig("VITE_PRIVACY_URL") && (
+                    <footer>
+                        <Trans>
+                            By registering you agree to our <NavLink target={'_blank'}
+                                                                     to={getConfig("VITE_TOS_URL") as string}>Terms
+                            of Service</NavLink> and <NavLink
+                            target={'_blank'}
+                            to={getConfig("VITE_PRIVACY_URL") as string}>Privacy Policy</NavLink>.
+                        </Trans>
+                    </footer>
+                )}
             </div>
         </>
     )

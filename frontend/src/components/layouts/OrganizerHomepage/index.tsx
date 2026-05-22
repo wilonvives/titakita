@@ -334,19 +334,25 @@ export const OrganizerHomepage = ({
                         {/* Footer */}
                         <div className={classes.footerSection}>
                             <div className={classes.footerLinks}>
-                                <Anchor
-                                    href={getConfig('VITE_PRIVACY_URL', 'https://hi.events/privacy-policy?utm_source=app-organizer-footer')}
-                                    className={classes.footerLink}
-                                >
-                                    {t`Privacy Policy`}
-                                </Anchor>
-                                <span className={classes.footerSeparator}>•</span>
-                                <Anchor
-                                    href={getConfig('VITE_TOS_URL', 'https://hi.events/terms-of-service?utm_source=app-organizer-footer')}
-                                    className={classes.footerLink}
-                                >
-                                    {t`Terms of Service`}
-                                </Anchor>
+                                {getConfig('VITE_PRIVACY_URL') && (
+                                    <Anchor
+                                        href={getConfig('VITE_PRIVACY_URL') as string}
+                                        className={classes.footerLink}
+                                    >
+                                        {t`Privacy Policy`}
+                                    </Anchor>
+                                )}
+                                {getConfig('VITE_PRIVACY_URL') && getConfig('VITE_TOS_URL') && (
+                                    <span className={classes.footerSeparator}>•</span>
+                                )}
+                                {getConfig('VITE_TOS_URL') && (
+                                    <Anchor
+                                        href={getConfig('VITE_TOS_URL') as string}
+                                        className={classes.footerLink}
+                                    >
+                                        {t`Terms of Service`}
+                                    </Anchor>
+                                )}
                             </div>
                             <PoweredByFooter className={classes.poweredByFooter}/>
                         </div>
