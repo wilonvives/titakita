@@ -44,12 +44,19 @@ class CheckoutSessionManagementService
 
     public function getSessionCookie(): SymfonyCookie
     {
+        // Secure + SameSite=None requires HTTPS; over plain HTTP (e.g. IP/port
+        // self-host) the browser drops the cookie, breaking checkout. A leading-dot
+        // domain is also invalid for IP hosts. Adapt to the request so checkout works
+        // on HTTP/IP while keeping the strict cookie on a real HTTPS domain.
+        $secure = $this->request->isSecure();
+        $configuredDomain = $this->config->get('session.domain');
+
         return Cookie::make(
             name: self::SESSION_IDENTIFIER,
             value: $this->getSessionId(),
-            domain: $this->config->get('session.domain') ?? '.' . $this->request->getHost(),
-            secure: true,
-            sameSite: 'None',
+            domain: $configuredDomain ?: null,
+            secure: $secure,
+            sameSite: $secure ? 'None' : 'Lax',
         );
     }
 

@@ -42,14 +42,16 @@ class CheckoutSessionManagementServiceTest extends TestCase
         $this->assertTrue($service->verifySession('existingSessionId'));
     }
 
-    public function testGetSessionCookie(): void
+    public function testGetSessionCookieOverHttpIsRelaxed(): void
     {
         $request = $this->createMock(Request::class);
 
-        $request->expects($this->once())
+        $request->expects($this->any())
             ->method('cookie')
             ->with('session_identifier')
             ->willReturn('existingSessionId');
+
+        $request->expects($this->any())->method('isSecure')->willReturn(false);
 
         $configMock = $this->mock(Repository::class)
             ->shouldReceive('get')
@@ -63,6 +65,32 @@ class CheckoutSessionManagementServiceTest extends TestCase
 
         $this->assertEquals('session_identifier', $cookie->getName());
         $this->assertEquals('existingSessionId', $cookie->getValue());
+        $this->assertFalse($cookie->isSecure());
+        $this->assertEquals('lax', $cookie->getSameSite());
+        $this->assertEmpty($cookie->getDomain());
+    }
+
+    public function testGetSessionCookieOverHttpsIsStrict(): void
+    {
+        $request = $this->createMock(Request::class);
+
+        $request->expects($this->any())
+            ->method('cookie')
+            ->with('session_identifier')
+            ->willReturn('existingSessionId');
+
+        $request->expects($this->any())->method('isSecure')->willReturn(true);
+
+        $configMock = $this->mock(Repository::class)
+            ->shouldReceive('get')
+            ->with('session.domain')
+            ->andReturnNull()
+            ->getMock();
+
+        $service = new CheckoutSessionManagementService($request, $configMock);
+
+        $cookie = $service->getSessionCookie();
+
         $this->assertTrue($cookie->isSecure());
         $this->assertEquals('none', $cookie->getSameSite());
     }
