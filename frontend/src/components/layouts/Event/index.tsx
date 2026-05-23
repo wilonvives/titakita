@@ -24,6 +24,7 @@ import {
     IconUsersGroup,
     IconWebhook,
     IconListCheck,
+    IconCalendarTime,
 } from "@tabler/icons-react";
 import {t} from "@lingui/macro";
 import {useGetEvent} from "../../../queries/useGetEvent";
@@ -108,6 +109,12 @@ const EventLayout = () => {
 
         // 3. Ticketing & Sales
         {label: t`Ticketing & Sales`},
+        {
+            link: 'schedule',
+            label: t`Booking Schedule`,
+            icon: IconCalendarTime,
+            showWhen: () => event?.event_type === 'booking'
+        },
         {link: 'products', label: t`Tickets & Products`, icon: IconTicket},
         {link: 'orders', label: t`Orders`, icon: IconReceipt, badge: eventStats?.total_orders},
         {link: 'promo-codes', label: t`Promo Codes`, icon: IconDiscount2},

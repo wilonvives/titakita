@@ -32,7 +32,12 @@ export const Products = () => {
     const [selectedCategoryId, setSelectedCategoryId] = useState<IdParam>(null);
 
     const productCategoriesQuery = useGetEventProductCategories(eventId);
-    const productCategories = productCategoriesQuery?.data?.data;
+    // Hide auto-generated booking session-products (schedule_id != null) — these are
+    // managed from the Booking Schedule panel, not the regular product list.
+    const productCategories = productCategoriesQuery?.data?.data?.map((category) => ({
+        ...category,
+        products: category.products?.filter((product) => !product.schedule_id),
+    }));
 
     useUrlHash('create-product', () => openCreateProductModal());
 

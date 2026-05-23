@@ -13,12 +13,12 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/layouts/Event/index.tsx:192
+#: src/components/layouts/Event/index.tsx:199
 #: src/components/layouts/OrganizerLayout/index.tsx:213
 msgid "- Click to Publish"
 msgstr "- 點擊發布"
 
-#: src/components/layouts/Event/index.tsx:194
+#: src/components/layouts/Event/index.tsx:201
 #: src/components/layouts/OrganizerLayout/index.tsx:215
 msgid "- Click to Unpublish"
 msgstr "- 點擊取消發布"
@@ -460,6 +460,10 @@ msgstr "添加關於訂單的備註。這些信息不會對客户可見。"
 msgid "Add any notes about the order..."
 msgstr "添加關於訂單的備註..."
 
+#: src/components/routes/event/schedule.tsx:95
+msgid "Add at least one start time"
+msgstr ""
+
 #: src/components/common/QuestionsTable/index.tsx:433
 msgid "Add custom questions to collect additional information during checkout"
 msgstr "新增自訂問題以在結帳時收集額外資訊"
@@ -484,6 +488,10 @@ msgstr "添加更多門票"
 msgid "Add New"
 msgstr "添加新內容"
 
+#: src/components/routes/event/schedule.tsx:258
+msgid "Add one or more start times for each day (e.g. 10:00, 13:00, 15:30)."
+msgstr ""
+
 #: src/components/forms/QuestionForm/index.tsx:68
 msgid "Add Option"
 msgstr "添加選項"
@@ -500,6 +508,10 @@ msgstr "將產品添加到類別"
 #: src/components/common/QuestionsTable/index.tsx:478
 msgid "Add Question"
 msgstr "新增問題"
+
+#: src/components/routes/event/schedule.tsx:291
+msgid "Add start time"
+msgstr ""
 
 #: src/components/routes/account/ManageAccount/sections/TaxSettings/index.tsx:18
 msgid "Add Tax or Fee"
@@ -625,7 +637,7 @@ msgstr "唔會追蹤推廣夥伴銷售。呢個會停用該推廣夥伴。"
 msgid "Affiliate updated successfully"
 msgstr "推廣夥伴更新成功"
 
-#: src/components/layouts/Event/index.tsx:114
+#: src/components/layouts/Event/index.tsx:121
 #: src/components/modals/DuplicateEventModal/index.tsx:33
 #: src/components/routes/event/Affiliates/index.tsx:63
 msgid "Affiliates"
@@ -919,12 +931,12 @@ msgstr "您確定要刪除此 Webhook 嗎？"
 msgid "Are you sure you want to leave?"
 msgstr "您確定要離開嗎？"
 
-#: src/components/layouts/Event/index.tsx:154
+#: src/components/layouts/Event/index.tsx:161
 #: src/components/routes/event/EventDashboard/index.tsx:81
 msgid "Are you sure you want to make this event draft? This will make the event invisible to the public"
 msgstr "您確定要將此活動設為草稿嗎？這將使公眾無法看到該活動"
 
-#: src/components/layouts/Event/index.tsx:155
+#: src/components/layouts/Event/index.tsx:162
 #: src/components/routes/event/EventDashboard/index.tsx:82
 msgid "Are you sure you want to make this event public? This will make the event visible to the public"
 msgstr "您確定要將此事件公開嗎？這將使事件對公眾可見"
@@ -1117,7 +1129,7 @@ msgstr "參與者的票不包含在此列表中"
 #: src/components/common/EventCard/index.tsx:227
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:382
 #: src/components/common/StatBoxes/index.tsx:45
-#: src/components/layouts/Event/index.tsx:118
+#: src/components/layouts/Event/index.tsx:125
 #: src/components/modals/ManageOrderModal/index.tsx:126
 #: src/components/routes/admin/Messages/index.tsx:90
 #: src/components/routes/admin/Messages/index.tsx:139
@@ -1293,6 +1305,15 @@ msgstr "賬單設置"
 msgid "Body is required"
 msgstr "正文是必需的"
 
+#: src/components/routes/event/schedule.tsx:384
+msgid "bookable sessions will be generated."
+msgstr ""
+
+#: src/components/layouts/Event/index.tsx:114
+#: src/components/routes/event/schedule.tsx:221
+msgid "Booking Schedule"
+msgstr ""
+
 #: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:202
 msgid "Bookmark this page to manage your order anytime."
 msgstr "收藏此頁面，隨時管理您的訂單。"
@@ -1347,7 +1368,7 @@ msgstr ""
 msgid "By continuing, you agree to the <0>{0} Terms of Service</0>"
 msgstr "繼續即表示您同意 <0>{0} 服務條款</0>"
 
-#: src/components/routes/auth/Register/index.tsx:141
+#: src/components/routes/auth/Register/index.tsx:142
 msgid "By registering you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>."
 msgstr "註冊即表示您同意我們的<0>服務條款</0>和<1>隱私政策</1>。"
 
@@ -1464,9 +1485,13 @@ msgstr "容量分配刪除成功"
 msgid "Capacity Assignments"
 msgstr "容量分配"
 
-#: src/components/layouts/Event/index.tsx:122
+#: src/components/layouts/Event/index.tsx:129
 msgid "Capacity Management"
 msgstr "容量管理"
+
+#: src/components/routes/event/schedule.tsx:250
+msgid "Capacity per session"
+msgstr ""
 
 #: src/components/modals/CreateProductCategoryModal/index.tsx:56
 msgid "Categories allow you to group products together. For example, you might have a category for \"Tickets\" and another for \"Merchandise\"."
@@ -1480,7 +1505,7 @@ msgstr "類別幫助您組織產品。此標題將在公共活動頁面上顯示
 msgid "Categories reordered successfully."
 msgstr "類別重新排序成功。"
 
-#: src/components/routes/event/products.tsx:98
+#: src/components/routes/event/products.tsx:103
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:82
 msgid "Category"
 msgstr "類別"
@@ -1567,7 +1592,7 @@ msgstr "未找到簽到列表"
 msgid "Check-in Lists"
 msgstr "簽到列表"
 
-#: src/components/layouts/Event/index.tsx:119
+#: src/components/layouts/Event/index.tsx:126
 #: src/components/modals/DuplicateEventModal/index.tsx:29
 #: src/components/routes/event/CheckInLists/index.tsx:34
 msgid "Check-In Lists"
@@ -1630,6 +1655,10 @@ msgstr "簡體中文"
 msgid "Chinese (Traditional)"
 msgstr "中文（繁體）"
 
+#: src/components/modals/CreateEventModal/index.tsx:192
+msgid "Choose \"Event\" for a one-off event with tickets, or \"Workshop / Booking\" to let customers book a time slot."
+msgstr ""
+
 #: src/components/routes/event/HomepageDesigner/index.tsx:219
 #: src/components/routes/organizer/OrganizerHomepageDesigner/index.tsx:251
 msgid "Choose a color for your background"
@@ -1650,6 +1679,10 @@ msgstr "選擇一個主辦單位"
 #: src/components/common/CalendarOptionsPopover/index.tsx:21
 msgid "Choose calendar"
 msgstr "選擇日曆"
+
+#: src/components/routes/event/schedule.tsx:297
+msgid "Choose how the sessions repeat."
+msgstr ""
 
 #: src/components/routes/organizer/Settings/Sections/PlatformFeesSettings/index.tsx:45
 msgid "Choose the default setting for new events. This can be overridden for individual events."
@@ -1692,7 +1725,7 @@ msgstr "關閉"
 msgid "Close"
 msgstr "關閉"
 
-#: src/components/modals/CreateEventModal/index.tsx:119
+#: src/components/modals/CreateEventModal/index.tsx:124
 msgid "Close modal"
 msgstr "關閉視窗"
 
@@ -1928,7 +1961,7 @@ msgstr "確認密碼"
 msgid "Confirm Password"
 msgstr "確認密碼"
 
-#: src/components/layouts/Event/index.tsx:257
+#: src/components/layouts/Event/index.tsx:264
 msgid "Confirm your email to access all features."
 msgstr "請確認您的電郵地址以使用所有功能。"
 
@@ -2053,7 +2086,7 @@ msgid "Continue set up"
 msgstr "繼續設置"
 
 #: src/components/forms/OrganizerForm/index.tsx:125
-#: src/components/modals/CreateEventModal/index.tsx:264
+#: src/components/modals/CreateEventModal/index.tsx:283
 #: src/components/routes/welcome/index.tsx:410
 msgid "Continue Setup"
 msgstr "繼續設置"
@@ -2186,7 +2219,7 @@ msgid "Cover image will be displayed at the top of your organizer page"
 msgstr "封面圖片將顯示在您的主辦單位頁面頂部"
 
 #: src/components/routes/event/attendees.tsx:196
-#: src/components/routes/event/products.tsx:76
+#: src/components/routes/event/products.tsx:81
 msgid "Create"
 msgstr "創建"
 
@@ -2229,11 +2262,11 @@ msgstr "建立額外的主辦方以在一個帳戶下管理獨立的品牌、部
 msgid "Create Affiliate"
 msgstr "建立推廣夥伴"
 
-#: src/components/modals/CreateEventModal/index.tsx:167
+#: src/components/modals/CreateEventModal/index.tsx:172
 msgid "create an organizer"
 msgstr "創建一個組織者"
 
-#: src/components/routes/event/products.tsx:47
+#: src/components/routes/event/products.tsx:52
 msgid "Create and configure tickets and merchandise for sale."
 msgstr "建立並設定待售門票和商品。"
 
@@ -2299,7 +2332,7 @@ msgid "Create new password"
 msgstr "建立新密碼"
 
 #: src/components/common/GlobalMenu/index.tsx:76
-#: src/components/modals/CreateEventModal/index.tsx:138
+#: src/components/modals/CreateEventModal/index.tsx:143
 #: src/components/modals/CreateOrganizerModal/index.tsx:18
 #: src/components/modals/SwitchOrganizerModal/index.tsx:96
 msgid "Create Organizer"
@@ -2343,7 +2376,7 @@ msgstr "建立可追蹤連結以獎勵推廣您活動的合作夥伴。"
 msgid "Create Webhook"
 msgstr "創建 Webhook"
 
-#: src/components/modals/CreateEventModal/index.tsx:127
+#: src/components/modals/CreateEventModal/index.tsx:132
 msgid "Create Your Event"
 msgstr "建立您的活動"
 
@@ -2560,7 +2593,7 @@ msgid "Dark"
 msgstr "深色"
 
 #: src/components/layouts/Admin/index.tsx:13
-#: src/components/layouts/Event/index.tsx:94
+#: src/components/layouts/Event/index.tsx:95
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:160
 msgid "Dashboard"
 msgstr "Dashboard"
@@ -2572,6 +2605,7 @@ msgstr "資料所有權"
 #: src/components/common/AdminOrdersTable/index.tsx:94
 #: src/components/common/OrderDetails/index.tsx:39
 #: src/components/forms/QuestionForm/index.tsx:136
+#: src/components/routes/event/schedule.tsx:315
 #: src/components/routes/organizer/Reports/EventsPerformanceReport/index.tsx:56
 #: src/components/routes/organizer/Reports/RevenueSummaryReport/index.tsx:24
 msgid "Date"
@@ -2590,9 +2624,17 @@ msgstr "活動日期"
 msgid "Date order was placed"
 msgstr "下單日期"
 
+#: src/components/routes/event/schedule.tsx:368
+msgid "Dates"
+msgstr ""
+
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:38
 msgid "Day one capacity"
 msgstr "第一天容量"
+
+#: src/components/routes/event/schedule.tsx:326
+msgid "Days of the week"
+msgstr ""
 
 #: src/components/common/CookieConsentBanner/index.tsx:62
 msgid "Decline"
@@ -2613,6 +2655,10 @@ msgstr "預設費用處理"
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:213
 msgid "Default template will be used"
 msgstr "將使用預設範本"
+
+#: src/components/routes/event/schedule.tsx:219
+msgid "Define your session length and times once — we'll generate bookable time slots customers can reserve."
+msgstr ""
 
 #: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:101
 #: src/components/routes/organizer/Settings/Sections/DangerZoneSettings/index.tsx:107
@@ -2805,7 +2851,7 @@ msgid "Downloading Invoice"
 msgstr "正在下載發票"
 
 #: src/components/common/EventCard/index.tsx:84
-#: src/components/layouts/Event/index.tsx:191
+#: src/components/layouts/Event/index.tsx:198
 #: src/components/layouts/OrganizerLayout/index.tsx:212
 msgid "Draft"
 msgstr "草稿"
@@ -3087,7 +3133,7 @@ msgstr "電子郵件更改待定"
 msgid "Email confirmation resent"
 msgstr "重新發送電子郵件確認"
 
-#: src/components/layouts/Event/index.tsx:74
+#: src/components/layouts/Event/index.tsx:75
 #: src/components/layouts/OrganizerLayout/index.tsx:102
 #: src/components/routes/profile/ManageProfile/index.tsx:100
 msgid "Email confirmation resent successfully"
@@ -3165,13 +3211,17 @@ msgstr "啟用候補名單"
 msgid "Enabled"
 msgstr "已啟用"
 
+#: src/components/routes/event/schedule.tsx:346
+msgid "End date"
+msgstr ""
+
 #: src/components/common/AdminEventsTable/index.tsx:107
 #: src/components/modals/DuplicateEventModal/index.tsx:129
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:107
 msgid "End Date"
 msgstr "結束日期"
 
-#: src/components/modals/CreateEventModal/index.tsx:232
+#: src/components/modals/CreateEventModal/index.tsx:251
 msgid "End Date & Time (optional)"
 msgstr "結束日期與時間（可選）"
 
@@ -3333,6 +3383,10 @@ msgstr "歐元"
 msgid "Event"
 msgstr "活動"
 
+#: src/components/modals/CreateEventModal/index.tsx:195
+msgid "Event (sell tickets)"
+msgstr ""
+
 #: src/components/forms/WebhookForm/index.tsx:55
 msgid "Event Archived"
 msgstr ""
@@ -3341,7 +3395,7 @@ msgstr ""
 msgid "Event archived successfully"
 msgstr "活動已成功封存"
 
-#: src/components/modals/CreateEventModal/index.tsx:185
+#: src/components/modals/CreateEventModal/index.tsx:204
 msgid "Event Category"
 msgstr "活動類別"
 
@@ -3377,7 +3431,7 @@ msgstr "活動已成功刪除"
 
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:38
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:72
-#: src/components/modals/CreateEventModal/index.tsx:197
+#: src/components/modals/CreateEventModal/index.tsx:216
 msgid "Event Description"
 msgstr "活動描述"
 
@@ -3420,7 +3474,7 @@ msgstr "活動管理平台"
 msgid "Event name"
 msgstr "活動名稱"
 
-#: src/components/modals/CreateEventModal/index.tsx:176
+#: src/components/modals/CreateEventModal/index.tsx:181
 msgid "Event Name"
 msgstr "活動名稱"
 
@@ -3442,7 +3496,7 @@ msgstr "活動不可用"
 msgid "Event organizer name"
 msgstr "活動組織者姓名"
 
-#: src/components/layouts/Event/index.tsx:246
+#: src/components/layouts/Event/index.tsx:253
 msgid "Event Page"
 msgstr "活動頁面"
 
@@ -3450,14 +3504,14 @@ msgstr "活動頁面"
 msgid "Event restored successfully"
 msgstr "活動已成功還原"
 
-#: src/components/layouts/Event/index.tsx:104
+#: src/components/layouts/Event/index.tsx:105
 #: src/components/routes/event/Settings/index.tsx:159
 msgid "Event Settings"
 msgstr "活動設定"
 
 #: src/components/common/EventCard/index.tsx:70
 #: src/components/common/StatusToggle/index.tsx:63
-#: src/components/layouts/Event/index.tsx:170
+#: src/components/layouts/Event/index.tsx:177
 #: src/components/routes/event/EventDashboard/index.tsx:96
 #: src/components/routes/event/GettingStarted/index.tsx:68
 msgid "Event status update failed. Please try again later"
@@ -3465,7 +3519,7 @@ msgstr "活動狀態更新失敗。請稍後再試"
 
 #: src/components/common/EventCard/index.tsx:67
 #: src/components/common/StatusToggle/index.tsx:55
-#: src/components/layouts/Event/index.tsx:166
+#: src/components/layouts/Event/index.tsx:173
 #: src/components/routes/event/EventDashboard/index.tsx:93
 #: src/components/routes/event/GettingStarted/index.tsx:65
 msgid "Event status updated"
@@ -4061,6 +4115,10 @@ msgstr "免費產品，無需付款信息"
 msgid "French"
 msgstr "法語"
 
+#: src/components/routes/event/schedule.tsx:49
+msgid "Friday"
+msgstr ""
+
 #: src/components/routes/event/EventDashboard/index.tsx:298
 msgid "Full event duration"
 msgstr "活動全程"
@@ -4110,7 +4168,7 @@ msgstr "透過 Stripe Connect 立即獲得付款"
 msgid "Get started"
 msgstr "開始使用"
 
-#: src/components/layouts/EventHomepage/index.tsx:643
+#: src/components/layouts/EventHomepage/index.tsx:647
 msgid "Get Tickets"
 msgstr "購票"
 
@@ -4118,7 +4176,7 @@ msgstr "購票"
 msgid "Get your event ready"
 msgstr "準備好您的活動"
 
-#: src/components/layouts/Event/index.tsx:90
+#: src/components/layouts/Event/index.tsx:91
 msgid "Getting Started"
 msgstr "入門"
 
@@ -4166,7 +4224,7 @@ msgstr "銷售總額"
 msgid "Gross Sales"
 msgstr "總銷售額"
 
-#: src/components/layouts/Event/index.tsx:117
+#: src/components/layouts/Event/index.tsx:124
 msgid "Guest Management"
 msgstr "賓客管理"
 
@@ -4316,7 +4374,7 @@ msgstr "突出顯示的產品將具有不同的背景色，使其在活動頁面
 msgid "Homepage Design"
 msgstr "主頁設計"
 
-#: src/components/layouts/Event/index.tsx:105
+#: src/components/layouts/Event/index.tsx:106
 #: src/components/layouts/OrganizerLayout/index.tsx:91
 msgid "Homepage Designer"
 msgstr "首頁設計器"
@@ -4334,6 +4392,10 @@ msgstr "荷馬"
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:67
 msgid "How long a customer has to complete their purchase after receiving an offer. Leave empty for no timeout."
 msgstr "客戶收到報價後完成購買的時限。留空表示無時間限制。"
+
+#: src/components/routes/event/schedule.tsx:232
+msgid "How long each session lasts and how many people can book it."
+msgstr ""
 
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:120
 msgid "How many minutes the customer has to complete their order. We recommend at least 15 minutes"
@@ -4530,7 +4592,7 @@ msgstr "Instagram"
 msgid "Instant Payouts"
 msgstr "即時付款"
 
-#: src/components/layouts/Event/index.tsx:125
+#: src/components/layouts/Event/index.tsx:132
 #: src/components/layouts/OrganizerLayout/index.tsx:93
 msgid "Integrations"
 msgstr "整合"
@@ -4836,7 +4898,7 @@ msgid "Links Allowed"
 msgstr "允許連結"
 
 #: src/components/common/EventCard/index.tsx:87
-#: src/components/layouts/Event/index.tsx:193
+#: src/components/layouts/Event/index.tsx:200
 #: src/components/layouts/OrganizerLayout/index.tsx:214
 msgid "Live"
 msgstr "已上線"
@@ -5022,6 +5084,10 @@ msgstr "最大訊息數 / 24小時"
 msgid "Max Recipients / Message"
 msgstr "最大收件人數 / 訊息"
 
+#: src/components/routes/event/schedule.tsx:251
+msgid "Maximum number of people per session. Leave blank for unlimited."
+msgstr ""
+
 #: src/components/forms/ProductForm/index.tsx:442
 msgid "Maximum Per Order"
 msgstr "每份訂單的最高限額"
@@ -5094,7 +5160,7 @@ msgid "Message Sent"
 msgstr "發送的信息"
 
 #: src/components/layouts/Admin/index.tsx:18
-#: src/components/layouts/Event/index.tsx:120
+#: src/components/layouts/Event/index.tsx:127
 #: src/components/routes/event/messages.tsx:225
 msgid "Messages"
 msgstr "信息"
@@ -5116,6 +5182,7 @@ msgstr "每次訂購的最低數量"
 msgid "Minimum Price"
 msgstr "最低價格"
 
+#: src/components/routes/event/schedule.tsx:243
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:71
 msgid "minutes"
 msgstr "分鐘"
@@ -5135,6 +5202,10 @@ msgstr "行動裝置最佳化"
 #: src/components/layouts/AuthLayout/index.tsx:32
 msgid "Mobile scanner with offline support and real-time tracking"
 msgstr "具有離線支援和即時追蹤的行動掃描器"
+
+#: src/components/routes/event/schedule.tsx:45
+msgid "Monday"
+msgstr ""
 
 #: src/components/routes/admin/Dashboard/index.tsx:163
 msgid "Monetary values are approximate totals across all currencies"
@@ -5770,7 +5841,7 @@ msgstr "選項"
 msgid "Options"
 msgstr "選項"
 
-#: src/components/modals/CreateEventModal/index.tsx:164
+#: src/components/modals/CreateEventModal/index.tsx:169
 msgid "or"
 msgstr "或"
 
@@ -5979,7 +6050,7 @@ msgid "Order was cancelled"
 msgstr "訂單已被取消"
 
 #: src/components/layouts/Admin/index.tsx:17
-#: src/components/layouts/Event/index.tsx:112
+#: src/components/layouts/Event/index.tsx:119
 #: src/components/routes/admin/Attribution/index.tsx:138
 #: src/components/routes/admin/Orders/index.tsx:44
 #: src/components/routes/event/orders.tsx:115
@@ -6046,7 +6117,7 @@ msgstr "主辦方"
 msgid "Organizer archived successfully"
 msgstr "主辦方已成功封存"
 
-#: src/components/layouts/Event/index.tsx:84
+#: src/components/layouts/Event/index.tsx:85
 #: src/components/layouts/OrganizerLayout/index.tsx:78
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:160
 msgid "Organizer Dashboard"
@@ -6126,7 +6197,7 @@ msgstr "其他列表（不包含此票）"
 msgid "Outgoing Messages"
 msgstr "發出的訊息"
 
-#: src/components/layouts/Event/index.tsx:87
+#: src/components/layouts/Event/index.tsx:88
 msgid "Overview"
 msgstr "總覽"
 
@@ -6417,6 +6488,16 @@ msgstr "個人資料"
 msgid "Phone"
 msgstr "電話"
 
+#: src/components/routes/event/schedule.tsx:316
+#: src/components/routes/event/schedule.tsx:340
+#: src/components/routes/event/schedule.tsx:347
+msgid "Pick a date"
+msgstr ""
+
+#: src/components/routes/event/schedule.tsx:369
+msgid "Pick dates"
+msgstr ""
+
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:82
 msgid "Pinterest"
 msgstr "Pinterest"
@@ -6590,8 +6671,8 @@ msgid "Post Checkout Message"
 msgstr "結帳後訊息"
 
 #: src/components/common/PoweredByFooter/index.tsx:60
-msgid "Powered by"
-msgstr "技術支持"
+#~ msgid "Powered by"
+#~ msgstr "技術支持"
 
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:88
 msgid "Pre Checkout message"
@@ -6610,8 +6691,8 @@ msgstr "預覽"
 msgid "Preview checkout form"
 msgstr "預覽結帳表單"
 
-#: src/components/layouts/Event/index.tsx:239
-#: src/components/layouts/Event/index.tsx:243
+#: src/components/layouts/Event/index.tsx:246
+#: src/components/layouts/Event/index.tsx:250
 msgid "Preview Event page"
 msgstr "預覽活動頁面"
 
@@ -6671,8 +6752,8 @@ msgid "Print to PDF"
 msgstr "列印為PDF"
 
 #: src/components/common/CookieConsentBanner/index.tsx:51
-#: src/components/layouts/EventHomepage/index.tsx:623
-#: src/components/layouts/OrganizerHomepage/index.tsx:341
+#: src/components/layouts/EventHomepage/index.tsx:624
+#: src/components/layouts/OrganizerHomepage/index.tsx:342
 msgid "Privacy Policy"
 msgstr "私隱政策"
 
@@ -6792,7 +6873,7 @@ msgstr "促銷代碼頁面"
 msgid "Promo code usage and discount breakdown"
 msgstr "促銷碼使用情況及折扣明細"
 
-#: src/components/layouts/Event/index.tsx:113
+#: src/components/layouts/Event/index.tsx:120
 #: src/components/modals/DuplicateEventModal/index.tsx:27
 #: src/components/routes/event/promo-codes.tsx:33
 msgid "Promo Codes"
@@ -6959,6 +7040,10 @@ msgstr "收件人在訊息發送後可用"
 msgid "Reconnect Stripe →"
 msgstr "重新連接 Stripe →"
 
+#: src/components/routes/event/schedule.tsx:307
+msgid "Recurring weekly"
+msgstr ""
+
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:80
 msgid "Reddit"
 msgstr "Reddit"
@@ -7038,7 +7123,7 @@ msgid "Register"
 msgstr "註冊"
 
 #: src/components/common/QuestionsTable/index.tsx:412
-#: src/components/layouts/Event/index.tsx:107
+#: src/components/layouts/Event/index.tsx:108
 msgid "Registration Questions"
 msgstr "註冊問題"
 
@@ -7057,11 +7142,15 @@ msgstr "去除"
 msgid "Remove"
 msgstr "移除"
 
+#: src/components/routes/event/schedule.tsx:272
+msgid "Remove start time"
+msgstr ""
+
 #: src/components/routes/organizer/Reports/ReportLayout/index.tsx:26
 msgid "Report not found"
 msgstr "未找到報告"
 
-#: src/components/layouts/Event/index.tsx:97
+#: src/components/layouts/Event/index.tsx:98
 #: src/components/layouts/OrganizerLayout/index.tsx:81
 #: src/components/routes/event/Reports/index.tsx:39
 #: src/components/routes/organizer/Reports/index.tsx:51
@@ -7092,7 +7181,7 @@ msgstr "重新發送確認"
 msgid "Resend Confirmation Email"
 msgstr "重新發送確認電郵"
 
-#: src/components/layouts/Event/index.tsx:259
+#: src/components/layouts/Event/index.tsx:266
 msgid "Resend email"
 msgstr "重新發送電郵"
 
@@ -7302,6 +7391,10 @@ msgstr "示例場地"
 msgid "San Francisco"
 msgstr "舊金山"
 
+#: src/components/routes/event/schedule.tsx:50
+msgid "Saturday"
+msgstr ""
+
 #: src/components/common/PlatformFeesSettings/index.tsx:249
 #: src/components/common/QuestionAndAnswerList/index.tsx:142
 #: src/components/routes/event/Settings/Sections/EmailSettings/GeneralEmailSettings.tsx:81
@@ -7338,6 +7431,10 @@ msgstr "儲存配置"
 msgid "Save Organizer"
 msgstr "保存組織器"
 
+#: src/components/routes/event/schedule.tsx:397
+msgid "Save schedule"
+msgstr ""
+
 #: src/components/routes/account/ManageAccount/sections/AccountSettings/index.tsx:90
 msgid "Save Settings"
 msgstr "保存設置"
@@ -7359,6 +7456,10 @@ msgstr "儲存門票設計"
 msgid "Save VAT Settings"
 msgstr "儲存增值稅設定"
 
+#: src/components/routes/event/schedule.tsx:388
+msgid "Saving this schedule turns the event into a booking event and generates the sessions automatically. Existing booked sessions are never removed."
+msgstr ""
+
 #: src/components/layouts/CheckIn/index.tsx:443
 #: src/components/layouts/CheckIn/index.tsx:453
 msgid "Scan"
@@ -7371,6 +7472,10 @@ msgstr "稍後發送"
 #: src/components/modals/SendMessageModal/index.tsx:450
 msgid "Schedule Message"
 msgstr "排程訊息"
+
+#: src/components/routes/event/schedule.tsx:207
+msgid "Schedule saved. {0} bookable sessions were generated."
+msgstr ""
 
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:84
 #: src/components/routes/admin/Messages/index.tsx:125
@@ -7447,7 +7552,7 @@ msgstr "搜索簽到列表..."
 msgid "Search messages..."
 msgstr "搜尋訊息..."
 
-#: src/components/routes/event/products.tsx:54
+#: src/components/routes/event/products.tsx:59
 msgid "Search products"
 msgstr "搜索產品"
 
@@ -7472,7 +7577,7 @@ msgstr "安全結帳"
 msgid "Select {0}"
 msgstr "選擇 {0}"
 
-#: src/components/modals/CreateEventModal/index.tsx:186
+#: src/components/modals/CreateEventModal/index.tsx:205
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:83
 msgid "Select a category"
 msgstr "選擇類別"
@@ -7521,7 +7626,7 @@ msgstr "選擇國家"
 msgid "Select currency"
 msgstr "選擇貨幣"
 
-#: src/components/modals/CreateEventModal/index.tsx:235
+#: src/components/modals/CreateEventModal/index.tsx:254
 msgid "Select end date and time"
 msgstr "選擇結束日期與時間"
 
@@ -7537,7 +7642,7 @@ msgstr "選擇活動類別"
 msgid "Select event types"
 msgstr "選擇事件類型"
 
-#: src/components/modals/CreateEventModal/index.tsx:156
+#: src/components/modals/CreateEventModal/index.tsx:161
 msgid "Select organizer"
 msgstr "選擇組織者"
 
@@ -7558,7 +7663,7 @@ msgstr "選擇產品"
 msgid "Select Scanner Type"
 msgstr "選擇掃描器類型"
 
-#: src/components/modals/CreateEventModal/index.tsx:214
+#: src/components/modals/CreateEventModal/index.tsx:233
 msgid "Select start date and time"
 msgstr "選擇開始日期與時間"
 
@@ -7726,6 +7831,22 @@ msgstr "搜索引擎優化標題"
 msgid "Service Fee"
 msgstr "服務費"
 
+#: src/components/routes/event/schedule.tsx:238
+msgid "Session duration"
+msgstr ""
+
+#: src/components/routes/event/schedule.tsx:92
+msgid "Session duration must be at least 1 minute"
+msgstr ""
+
+#: src/components/routes/event/schedule.tsx:231
+msgid "Session settings"
+msgstr ""
+
+#: src/components/routes/event/schedule.tsx:381
+msgid "Sessions preview"
+msgstr ""
+
 #: src/components/forms/ProductForm/index.tsx:168
 msgid "Set a minimum price and let users pay more if they choose"
 msgstr "設定最低價格，用户可選擇支付更高的價格"
@@ -7773,7 +7894,7 @@ msgstr "設定已更新"
 msgid "Settings"
 msgstr "設置"
 
-#: src/components/layouts/Event/index.tsx:103
+#: src/components/layouts/Event/index.tsx:104
 msgid "Setup & Design"
 msgstr "設定與設計"
 
@@ -7791,8 +7912,8 @@ msgstr "分享"
 msgid "Share Affiliate Link"
 msgstr "分享推廣連結"
 
-#: src/components/layouts/Event/index.tsx:209
-#: src/components/layouts/Event/index.tsx:215
+#: src/components/layouts/Event/index.tsx:216
+#: src/components/layouts/Event/index.tsx:222
 #: src/components/modals/EventLiveCelebrationModal/index.tsx:102
 #: src/components/modals/EventLiveCelebrationModal/index.tsx:131
 msgid "Share Event"
@@ -7864,6 +7985,10 @@ msgstr "註冊時間"
 #: src/components/modals/ManageOrderModal/index.tsx:151
 msgid "Simpson"
 msgstr "辛普森"
+
+#: src/components/routes/event/schedule.tsx:306
+msgid "Single day"
+msgstr ""
 
 #: src/components/forms/QuestionForm/index.tsx:100
 msgid "Single line text box"
@@ -7937,7 +8062,7 @@ msgstr "出問題了"
 msgid "Something went wrong. Please try again later."
 msgstr "出了點問題。請稍後再試。"
 
-#: src/components/layouts/Event/index.tsx:78
+#: src/components/layouts/Event/index.tsx:79
 #: src/components/layouts/OrganizerLayout/index.tsx:106
 #: src/components/routes/auth/Login/index.tsx:72
 #: src/components/routes/my-tickets/index.tsx:145
@@ -7962,6 +8087,10 @@ msgstr "來源"
 msgid "Spanish"
 msgstr "西班牙語"
 
+#: src/components/routes/event/schedule.tsx:308
+msgid "Specific dates"
+msgstr ""
+
 #: src/constants/eventCategories.ts:8
 msgid "Sports"
 msgstr "體育"
@@ -7969,6 +8098,10 @@ msgstr "體育"
 #: src/components/forms/ProductForm/index.tsx:156
 msgid "Standard product with a fixed price"
 msgstr "固定價格的標準產品"
+
+#: src/components/routes/event/schedule.tsx:339
+msgid "Start date"
+msgstr ""
 
 #: src/components/common/AdminEventsTable/index.tsx:96
 #: src/components/modals/DuplicateEventModal/index.tsx:124
@@ -7980,7 +8113,7 @@ msgstr "開始日期"
 msgid "Start date & time"
 msgstr "開始日期同時間"
 
-#: src/components/modals/CreateEventModal/index.tsx:210
+#: src/components/modals/CreateEventModal/index.tsx:229
 msgid "Start Date & Time"
 msgstr "開始日期與時間"
 
@@ -7988,10 +8121,18 @@ msgstr "開始日期與時間"
 msgid "Start date is required"
 msgstr "必須填寫開始日期"
 
+#: src/components/routes/event/schedule.tsx:266
+msgid "Start time"
+msgstr ""
+
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:36
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:70
 msgid "Start time of the event"
 msgstr "活動開始時間"
+
+#: src/components/routes/event/schedule.tsx:256
+msgid "Start times"
+msgstr ""
 
 #: src/components/common/CheckoutQuestion/index.tsx:165
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:139
@@ -8262,7 +8403,7 @@ msgstr "100 號套房"
 msgid "Summary"
 msgstr "摘要"
 
-#: src/components/modals/CreateEventModal/index.tsx:177
+#: src/components/modals/CreateEventModal/index.tsx:182
 #: src/components/modals/DuplicateEventModal/index.tsx:110
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:76
 msgid "Summer Music Festival {0}"
@@ -8271,6 +8412,10 @@ msgstr "夏日音樂節 {0}"
 #: src/components/routes/welcome/index.tsx:353
 msgid "Summer Music Festival 2025"
 msgstr "2025夏季音樂節"
+
+#: src/components/routes/event/schedule.tsx:51
+msgid "Sunday"
+msgstr ""
 
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:48
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:81
@@ -8376,11 +8521,11 @@ msgstr "科技"
 msgid "Telegram"
 msgstr "Telegram"
 
-#: src/components/modals/CreateEventModal/index.tsx:198
+#: src/components/modals/CreateEventModal/index.tsx:217
 msgid "Tell people what to expect at your event"
 msgstr "讓人們知道您的活動有什麼內容"
 
-#: src/components/modals/CreateEventModal/index.tsx:128
+#: src/components/modals/CreateEventModal/index.tsx:133
 msgid "Tell us about your event"
 msgstr "請告訴我們您的活動"
 
@@ -8404,8 +8549,8 @@ msgstr "範本刪除成功"
 msgid "Template saved successfully"
 msgstr "範本儲存成功"
 
-#: src/components/layouts/EventHomepage/index.tsx:629
-#: src/components/layouts/OrganizerHomepage/index.tsx:348
+#: src/components/layouts/EventHomepage/index.tsx:632
+#: src/components/layouts/OrganizerHomepage/index.tsx:353
 msgid "Terms of Service"
 msgstr "服務條款"
 
@@ -8446,6 +8591,14 @@ msgstr "定義固定費用的貨幣。結帳時將轉換為訂單貨幣。"
 msgid "The currency of the order"
 msgstr "訂單的貨幣"
 
+#: src/components/routes/event/schedule.tsx:358
+msgid "The date range cannot be longer than 3 months."
+msgstr ""
+
+#: src/components/routes/event/schedule.tsx:354
+msgid "The date range must be 3 months or less."
+msgstr ""
+
 #: src/components/routes/account/ManageAccount/sections/AccountSettings/index.tsx:75
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:118
 msgid "The default currency for your events."
@@ -8482,6 +8635,10 @@ msgstr "訂單全額將退款至客戶的原始付款方式。"
 #: src/components/modals/CreateAttendeeModal/index.tsx:157
 msgid "The language the attendee will receive emails in."
 msgstr "與會者接收電子郵件的語言。"
+
+#: src/components/routes/event/schedule.tsx:239
+msgid "The length of a single session."
+msgstr ""
 
 #: src/components/routes/product-widget/OrderSummaryAndProducts/LinkExpiredMessage/index.tsx:30
 msgid "The link you are trying to access has expired or is no longer valid. Please check your email for an updated link to manage your order."
@@ -8776,6 +8933,10 @@ msgstr "這將用於通知和與使用者的溝通。"
 msgid "This will not be visible to customers, but helps you identify the affiliate."
 msgstr "呢個唔會俾客戶睇到，但可以幫你識別推廣夥伴。"
 
+#: src/components/routes/event/schedule.tsx:48
+msgid "Thursday"
+msgstr ""
+
 #: src/components/common/AttendeeTable/index.tsx:370
 #: src/components/routes/my-tickets/index.tsx:85
 msgid "ticket"
@@ -8803,7 +8964,7 @@ msgstr "門票設計"
 msgid "Ticket design saved successfully"
 msgstr "門票設計儲存成功"
 
-#: src/components/layouts/Event/index.tsx:106
+#: src/components/layouts/Event/index.tsx:107
 msgid "Ticket Designer"
 msgstr "門票設計器"
 
@@ -8848,7 +9009,7 @@ msgstr "門票名稱"
 msgid "Ticket Not Found"
 msgstr "找不到門票"
 
-#: src/components/routes/event/products.tsx:88
+#: src/components/routes/event/products.tsx:93
 msgid "Ticket or Product"
 msgstr "票券或產品"
 
@@ -8877,7 +9038,7 @@ msgstr "門票類型"
 msgid "Ticket URL"
 msgstr "門票連結"
 
-#: src/components/layouts/Event/index.tsx:110
+#: src/components/layouts/Event/index.tsx:111
 msgid "Ticketing & Sales"
 msgstr "票務與銷售"
 
@@ -8889,8 +9050,8 @@ msgstr "門票"
 msgid "Tickets"
 msgstr "門票"
 
-#: src/components/layouts/Event/index.tsx:111
-#: src/components/routes/event/products.tsx:48
+#: src/components/layouts/Event/index.tsx:118
+#: src/components/routes/event/products.tsx:53
 msgid "Tickets & Products"
 msgstr "票券與產品"
 
@@ -9095,6 +9256,10 @@ msgstr "嘗試其他郵箱"
 msgid "Try Hi.Events Free"
 msgstr "免費試用Hi.Events"
 
+#: src/components/routes/event/schedule.tsx:46
+msgid "Tuesday"
+msgstr ""
+
 #: src/components/common/LanguageSwitcher/index.tsx:38
 msgid "Turkish"
 msgstr "土耳其語"
@@ -9207,6 +9372,7 @@ msgstr "未知參會者"
 #: src/components/modals/OfferWaitlistModal/index.tsx:189
 #: src/components/routes/event/Reports/PromoCodesReport/index.tsx:78
 #: src/components/routes/event/Reports/PromoCodesReport/index.tsx:84
+#: src/components/routes/event/schedule.tsx:252
 msgid "Unlimited"
 msgstr "無限制"
 
@@ -9503,7 +9669,7 @@ msgstr "已驗證"
 msgid "Verify Email"
 msgstr "驗證電郵"
 
-#: src/components/layouts/Event/index.tsx:256
+#: src/components/layouts/Event/index.tsx:263
 msgid "Verify your email"
 msgstr "驗證您的電郵"
 
@@ -9638,7 +9804,7 @@ msgstr "等待中"
 msgid "Waiting for payment"
 msgstr "等待付款"
 
-#: src/components/layouts/Event/index.tsx:121
+#: src/components/layouts/Event/index.tsx:128
 #: src/components/routes/event/Settings/index.tsx:76
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:51
 #: src/components/routes/event/SoldOutWaitlist/index.tsx:49
@@ -9782,7 +9948,7 @@ msgstr "Webhook 不會發送通知"
 msgid "Webhook will send notifications"
 msgstr "Webhook 將發送通知"
 
-#: src/components/layouts/Event/index.tsx:127
+#: src/components/layouts/Event/index.tsx:134
 #: src/components/layouts/OrganizerLayout/index.tsx:94
 #: src/components/modals/DuplicateEventModal/index.tsx:32
 #: src/components/routes/event/Webhooks/index.tsx:32
@@ -9793,6 +9959,10 @@ msgstr "Webhooks"
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:102
 msgid "Website"
 msgstr "網站"
+
+#: src/components/routes/event/schedule.tsx:47
+msgid "Wednesday"
+msgstr ""
 
 #: src/components/routes/event/EventDashboard/index.tsx:275
 msgid "Week"
@@ -9825,6 +9995,10 @@ msgstr "歡迎嚟到 {0}，呢度係你所有活動嘅列表"
 #: src/components/forms/ProductForm/index.tsx:263
 msgid "What are Tiered Products?"
 msgstr "什麼是分層產品？"
+
+#: src/components/modals/CreateEventModal/index.tsx:191
+msgid "What are you offering?"
+msgstr ""
 
 #: src/components/modals/CreateProductCategoryModal/index.tsx:53
 msgid "What is a Category?"
@@ -9942,6 +10116,10 @@ msgstr "簽到何時開放"
 msgid "When customers purchase tickets, their orders will appear here."
 msgstr "當顧客購買門票時，他們的訂單將會顯示在這裡。"
 
+#: src/components/routes/event/schedule.tsx:296
+msgid "When does it run?"
+msgstr ""
+
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:182
 msgid "When enabled, invoices will be generated for ticket orders. Invoices will sent along with the order confirmation email. Attendees can also download their invoices from the order confirmation page."
 msgstr "啟用後，將為票務訂單生成發票。發票將隨訂單確認郵件一起發送。參與"
@@ -9966,7 +10144,7 @@ msgstr "啟用線下支付後，用户可以完成訂單並收到門票。他們
 msgid "Which tickets should be associated with this check-in list?"
 msgstr "哪些票應與此簽到列表關聯？"
 
-#: src/components/modals/CreateEventModal/index.tsx:153
+#: src/components/modals/CreateEventModal/index.tsx:158
 msgid "Who is organizing this event?"
 msgstr "這項活動由誰組織？"
 
@@ -9974,7 +10152,7 @@ msgstr "這項活動由誰組織？"
 msgid "Who should be asked this question?"
 msgstr "這個問題應該問誰？"
 
-#: src/components/layouts/Event/index.tsx:126
+#: src/components/layouts/Event/index.tsx:133
 msgid "Widget Embed"
 msgstr "嵌入小部件"
 
@@ -10010,6 +10188,10 @@ msgstr "工作..."
 #: src/constants/eventCategories.ts:20
 msgid "Workshop"
 msgstr "工作坊"
+
+#: src/components/modals/CreateEventModal/index.tsx:196
+msgid "Workshop / Booking (book a time slot)"
+msgstr ""
 
 #: src/components/common/ContactOrganizerModal/index.tsx:89
 msgid "Write your message here..."

@@ -310,9 +310,28 @@ export enum EventLifecycleStatus {
     ENDED = 'ENDED'
 }
 
+export type EventType = 'event' | 'booking';
+
+export type ScheduleScopeType = 'single_day' | 'recurring_weekly' | 'specific_dates';
+
+export interface Schedule {
+    id?: IdParam;
+    event_id?: IdParam;
+    session_duration_minutes: number;
+    start_times: string[];
+    capacity_per_session?: number | null;
+    scope_type: ScheduleScopeType;
+    weekdays?: number[] | null;
+    range_start_date?: string | null;
+    range_end_date?: string | null;
+    specific_dates?: string[] | null;
+    generated_session_count?: number;
+}
+
 export interface Event extends EventBase {
     id?: IdParam;
     slug: string;
+    event_type?: EventType;
     status?: EventStatus;
     description_preview?: string;
     lifecycle_status?: EventLifecycleStatus;
@@ -552,6 +571,7 @@ export interface Product {
     taxes_and_fees?: TaxAndFee[];
     is_hidden?: boolean;
     product_category_id?: IdParam;
+    schedule_id?: IdParam | null;
     is_highlighted?: boolean;
     highlight_message?: string;
     waitlist_enabled?: boolean | null;

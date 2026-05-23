@@ -9,7 +9,7 @@ import {hasLength, useForm} from "@mantine/form";
 import {useCreateEvent} from "../../../mutations/useCreateEvent.ts";
 import {Editor} from "../../common/Editor";
 import {useGetOrganizers} from "../../../queries/useGetOrganizers.ts";
-import {IconCalendarEvent, IconSparkles, IconUsers, IconX} from "@tabler/icons-react";
+import {IconCalendarEvent, IconCalendarTime, IconSparkles, IconUsers, IconX} from "@tabler/icons-react";
 import classes from "./CreateEventModal.module.scss";
 import {OrganizerCreateForm} from "../../forms/OrganizerForm";
 import dayjs from "dayjs";
@@ -53,6 +53,7 @@ export const CreateEventModal = ({onClose, organizerId}: CreateEventModalProps) 
     });
     const eventMutation = useCreateEvent();
     const [showCreateOrganizer, setShowCreateOrganizer] = useState(false);
+    const [offeringType, setOfferingType] = useState<'event' | 'booking'>('event');
 
     // If organizerId is provided, set it and fetch the organizer data
     useEffect(() => {
@@ -87,7 +88,11 @@ export const CreateEventModal = ({onClose, organizerId}: CreateEventModalProps) 
         eventMutation.mutateAsync({
             eventData: values,
         }).then((data) => {
-            navigate(`/manage/event/${data.data.id}/getting-started?new_event=true`)
+            if (offeringType === 'booking') {
+                navigate(`/manage/event/${data.data.id}/schedule?new_event=true`)
+            } else {
+                navigate(`/manage/event/${data.data.id}/getting-started?new_event=true`)
+            }
         }).catch((error) => {
             errorHandler(form, error);
         });
@@ -178,6 +183,20 @@ export const CreateEventModal = ({onClose, organizerId}: CreateEventModalProps) 
                                 required
                                 size="lg"
                                 leftSection={<IconSparkles size={18}/>}
+                            />
+
+                            <Select
+                                value={offeringType}
+                                onChange={(value) => setOfferingType((value as 'event' | 'booking') ?? 'event')}
+                                label={t`What are you offering?`}
+                                description={t`Choose "Event" for a one-off event with tickets, or "Workshop / Booking" to let customers book a time slot.`}
+                                leftSection={<IconCalendarTime size={18}/>}
+                                data={[
+                                    {value: 'event', label: t`Event (sell tickets)`},
+                                    {value: 'booking', label: t`Workshop / Booking (book a time slot)`},
+                                ]}
+                                allowDeselect={false}
+                                size="lg"
                             />
 
                             <Select

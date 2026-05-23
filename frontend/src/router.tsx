@@ -373,6 +373,13 @@ export const router: RouteObject[] = [
                 }
             },
             {
+                path: "schedule",
+                async lazy() {
+                    const Schedule = await import("./components/routes/event/schedule");
+                    return { Component: Schedule.default };
+                }
+            },
+            {
                 path: "attendees",
                 async lazy() {
                     const Attendees = await import("./components/routes/event/attendees");
