@@ -56,7 +56,7 @@ msgstr "{0} <0>签退</0>成功"
 msgid "{0} Active Webhooks"
 msgstr "{0} 个活动的 Webhook"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:476
+#: src/components/routes/product-widget/SelectProducts/index.tsx:477
 msgid "{0} available"
 msgstr "{0}可用"
 
@@ -65,6 +65,7 @@ msgid "{0} created successfully"
 msgstr "成功创建 {0}"
 
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:399
+#: src/components/routes/product-widget/SessionPicker/index.tsx:135
 msgid "{0} left"
 msgstr "剩余 {0}"
 
@@ -810,7 +811,7 @@ msgstr "外观"
 msgid "Application Fees Configuration"
 msgstr "应用费用配置"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:564
+#: src/components/routes/product-widget/SelectProducts/index.tsx:565
 msgid "applied"
 msgstr "应用"
 
@@ -826,7 +827,7 @@ msgstr "适用于1个产品"
 msgid "Apply"
 msgstr "应用"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:592
+#: src/components/routes/product-widget/SelectProducts/index.tsx:593
 msgid "Apply Promo Code"
 msgstr "应用促销代码"
 
@@ -1195,6 +1196,7 @@ msgid "Automatically resize the widget height based on the content. When disable
 msgstr "根据内容自动调整小部件高度。禁用时，小部件将填充容器的高度。"
 
 #: src/components/modals/OfferWaitlistModal/index.tsx:163
+#: src/components/routes/product-widget/SessionPicker/index.tsx:133
 msgid "Available"
 msgstr "可用"
 
@@ -1712,7 +1714,7 @@ msgstr "点击复制"
 msgid "Click to view notes"
 msgstr "点击查看备注"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:597
+#: src/components/routes/product-widget/SelectProducts/index.tsx:598
 msgid "close"
 msgstr "关闭"
 
@@ -1721,7 +1723,7 @@ msgstr "关闭"
 #: src/components/modals/JoinWaitlistModal/index.tsx:103
 #: src/components/modals/JoinWaitlistModal/index.tsx:130
 #: src/components/modals/RefundOrderModal/index.tsx:169
-#: src/components/routes/product-widget/SelectProducts/index.tsx:598
+#: src/components/routes/product-widget/SelectProducts/index.tsx:599
 msgid "Close"
 msgstr "关闭"
 
@@ -2072,7 +2074,8 @@ msgstr "支持联系邮箱"
 
 #: src/components/common/WidgetEditor/index.tsx:29
 #: src/components/common/WidgetEditor/index.tsx:222
-#: src/components/routes/product-widget/SelectProducts/index.tsx:550
+#: src/components/routes/product-widget/SelectProducts/index.tsx:551
+#: src/components/routes/product-widget/SessionPicker/index.tsx:284
 msgid "Continue"
 msgstr "继续"
 
@@ -2091,7 +2094,8 @@ msgstr "继续设置"
 msgid "Continue Setup"
 msgstr "继续设置"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:386
+#: src/components/routes/product-widget/SelectProducts/index.tsx:387
+#: src/components/routes/product-widget/SessionPicker/index.tsx:174
 msgid "Continue to Checkout"
 msgstr "继续结账"
 
@@ -2782,7 +2786,7 @@ msgstr "{0}中的折扣"
 msgid "Discount Type"
 msgstr "折扣类型"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:403
+#: src/components/routes/product-widget/SelectProducts/index.tsx:404
 msgid "Dismiss this message"
 msgstr "关闭此消息"
 
@@ -4232,7 +4236,7 @@ msgstr "来宾管理"
 msgid "Guests"
 msgstr "宾客"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:559
+#: src/components/routes/product-widget/SelectProducts/index.tsx:560
 msgid "Have a promo code?"
 msgstr "有促销代码吗？"
 
@@ -4295,8 +4299,8 @@ msgstr "隐藏于公众视线之外"
 msgid "Hidden questions are only visible to the event organizer and not to the customer."
 msgstr "隐藏问题只有活动组织者可以看到，客户看不到。"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:424
-#: src/components/routes/product-widget/SelectProducts/index.tsx:524
+#: src/components/routes/product-widget/SelectProducts/index.tsx:425
+#: src/components/routes/product-widget/SelectProducts/index.tsx:525
 msgid "Hide"
 msgstr "隐藏"
 
@@ -4446,7 +4450,8 @@ msgstr "我同意<0>条款和条件</0>。"
 msgid "I confirm this is a transactional message related to this event"
 msgstr "我确认这是与此活动相关的交易消息"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:363
+#: src/components/routes/product-widget/SelectProducts/index.tsx:364
+#: src/components/routes/product-widget/SessionPicker/index.tsx:164
 msgid "If a new tab did not open automatically, please click the button below to continue to checkout."
 msgstr "如果没有自动打开新标签页，请点击下方按钮继续结账。"
 
@@ -6258,6 +6263,11 @@ msgstr "部分退款"
 msgid "Partially refunded: {0}"
 msgstr "部分退款:{0}"
 
+#: src/components/routes/product-widget/SessionPicker/index.tsx:256
+#: src/components/routes/product-widget/SessionPicker/index.tsx:265
+msgid "Party size"
+msgstr "预约人数"
+
 #: src/components/common/PlatformFeesSettings/index.tsx:191
 msgid "Pass fee to buyer"
 msgstr "将费用转嫁给买家"
@@ -6557,7 +6567,8 @@ msgstr "请检查您的电子邮件是否有效"
 msgid "Please check your email to confirm your email address"
 msgstr "请检查您的电子邮件以确认您的电子邮件地址"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:354
+#: src/components/routes/product-widget/SelectProducts/index.tsx:355
+#: src/components/routes/product-widget/SessionPicker/index.tsx:162
 msgid "Please continue in the new tab"
 msgstr "请在新标签页中继续"
 
@@ -6610,11 +6621,15 @@ msgstr "请返回活动页面重新开始。"
 msgid "Please select a date range"
 msgstr "请选择日期范围"
 
+#: src/components/routes/product-widget/SessionPicker/index.tsx:101
+msgid "Please select a session"
+msgstr "请选择一个场次"
+
 #: src/components/common/Editor/Controls/InsertImageControl/index.tsx:54
 msgid "Please select an image."
 msgstr "请选择一张图片。"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:285
+#: src/components/routes/product-widget/SelectProducts/index.tsx:286
 msgid "Please select at least one product"
 msgstr "请选择至少一个产品"
 
@@ -6853,7 +6868,7 @@ msgstr "简介"
 msgid "Profile updated successfully"
 msgstr "成功更新个人资料"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:226
+#: src/components/routes/product-widget/SelectProducts/index.tsx:227
 msgid "Promo {promo_code} code applied"
 msgstr "已使用促销 {promo_code} 代码"
 
@@ -7131,14 +7146,14 @@ msgstr "注册问题"
 msgid "Remaining Uses"
 msgstr "剩余使用次数"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:568
+#: src/components/routes/product-widget/SelectProducts/index.tsx:569
 msgid "remove"
 msgstr "去除"
 
 #: src/components/common/Editor/Controls/InsertImageControl/index.tsx:146
 #: src/components/common/WaitlistTable/index.tsx:78
 #: src/components/common/WaitlistTable/index.tsx:111
-#: src/components/routes/product-widget/SelectProducts/index.tsx:569
+#: src/components/routes/product-widget/SelectProducts/index.tsx:570
 msgid "Remove"
 msgstr "移除"
 
@@ -7586,9 +7601,17 @@ msgstr "选择类别"
 msgid "Select a configuration"
 msgstr "选择配置"
 
+#: src/components/routes/product-widget/SessionPicker/index.tsx:197
+msgid "Select a date"
+msgstr "选择日期"
+
 #: src/components/routes/event/messages.tsx:340
 msgid "Select a message to view its contents"
 msgstr "选择一条消息查看其内容"
+
+#: src/components/routes/product-widget/SessionPicker/index.tsx:226
+msgid "Select a session"
+msgstr "选择场次"
 
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:229
 msgid "Select a tier"
@@ -7948,8 +7971,8 @@ msgstr "显示营销订阅复选框"
 msgid "Show marketing opt-in checkbox by default"
 msgstr "默认显示营销订阅复选框"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:424
-#: src/components/routes/product-widget/SelectProducts/index.tsx:523
+#: src/components/routes/product-widget/SelectProducts/index.tsx:425
+#: src/components/routes/product-widget/SelectProducts/index.tsx:524
 msgid "Show more"
 msgstr "显示更多"
 
@@ -8026,6 +8049,7 @@ msgstr "已售出"
 #: src/components/common/EventCard/index.tsx:115
 #: src/components/common/ProductPriceAvailability/index.tsx:19
 #: src/components/common/ProductPriceAvailability/index.tsx:50
+#: src/components/routes/product-widget/SessionPicker/index.tsx:130
 msgid "Sold out"
 msgstr "售罄"
 
@@ -8075,7 +8099,7 @@ msgstr "出错了。请重试。"
 msgid "Sorry for the inconvenience."
 msgstr "对于给您带来的不便，我们深表歉意。"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:294
+#: src/components/routes/product-widget/SelectProducts/index.tsx:295
 msgid "Sorry, this promo code is not recognized"
 msgstr "对不起，此优惠代码不可用"
 
@@ -8566,8 +8590,8 @@ msgstr "感谢您的参与！"
 msgid "Thanks for your support as we continue to grow and improve Hi.Events!"
 msgstr "感谢您的支持，我们将继续发展和改进 Hi.Events！"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:186
-#: src/components/routes/product-widget/SelectProducts/index.tsx:234
+#: src/components/routes/product-widget/SelectProducts/index.tsx:187
+#: src/components/routes/product-widget/SelectProducts/index.tsx:235
 msgid "That promo code is invalid"
 msgstr "促销代码无效"
 
@@ -8652,7 +8676,7 @@ msgstr "您点击的链接无效。"
 msgid "The locale of the customer"
 msgstr "客户的语言"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:508
+#: src/components/routes/product-widget/SelectProducts/index.tsx:509
 msgid "The maximum number of products for {0}is {1}"
 msgstr "{0}的最大产品数量是{1}"
 
@@ -8716,13 +8740,17 @@ msgstr "戏剧"
 msgid "Theme & Colors"
 msgstr "主题与颜色"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:320
+#: src/components/routes/product-widget/SelectProducts/index.tsx:321
 msgid "There are no products available for this event"
 msgstr "此活动没有可用产品"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:433
+#: src/components/routes/product-widget/SelectProducts/index.tsx:434
 msgid "There are no products available in this category"
 msgstr "此类别中没有可用产品"
+
+#: src/components/routes/product-widget/SessionPicker/index.tsx:189
+msgid "There are no sessions available for booking"
+msgstr "目前没有可预约的场次"
 
 #: src/components/modals/RefundOrderModal/index.tsx:181
 msgid "There is a refund pending. Please wait for it to complete before requesting another refund."
@@ -9307,11 +9335,15 @@ msgstr "无法签到参与者"
 msgid "Unable to check out attendee"
 msgstr "无法签退参与者"
 
+#: src/components/routes/product-widget/SessionPicker/index.tsx:79
+msgid "Unable to create booking. Please try again."
+msgstr "无法创建预约，请重试。"
+
 #: src/components/modals/CreateProductModal/index.tsx:64
 msgid "Unable to create product. Please check the your details"
 msgstr "无法创建产品。请检查您的详细信息"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:171
+#: src/components/routes/product-widget/SelectProducts/index.tsx:172
 msgid "Unable to create product. Please check your details"
 msgstr "无法创建产品。请检查您的详细信息"
 
@@ -9376,7 +9408,7 @@ msgstr "未知参会者"
 msgid "Unlimited"
 msgstr "无限制"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:471
+#: src/components/routes/product-widget/SelectProducts/index.tsx:472
 msgid "Unlimited available"
 msgstr "无限供应"
 

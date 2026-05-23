@@ -56,7 +56,7 @@ msgstr "{0} <0>uscita registrata</0> con successo"
 msgid "{0} Active Webhooks"
 msgstr "{0} Webhook Attivi"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:476
+#: src/components/routes/product-widget/SelectProducts/index.tsx:477
 msgid "{0} available"
 msgstr "{0} disponibili"
 
@@ -65,6 +65,7 @@ msgid "{0} created successfully"
 msgstr "{0} creato con successo"
 
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:399
+#: src/components/routes/product-widget/SessionPicker/index.tsx:135
 msgid "{0} left"
 msgstr "{0} rimasti"
 
@@ -810,7 +811,7 @@ msgstr "Aspetto"
 msgid "Application Fees Configuration"
 msgstr "Configurazione delle commissioni di iscrizione"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:564
+#: src/components/routes/product-widget/SelectProducts/index.tsx:565
 msgid "applied"
 msgstr "applicato"
 
@@ -826,7 +827,7 @@ msgstr "Si applica a 1 prodotto"
 msgid "Apply"
 msgstr "Applica"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:592
+#: src/components/routes/product-widget/SelectProducts/index.tsx:593
 msgid "Apply Promo Code"
 msgstr "Applica Codice Promozionale"
 
@@ -1195,6 +1196,7 @@ msgid "Automatically resize the widget height based on the content. When disable
 msgstr "Ridimensiona automaticamente l'altezza del widget in base al contenuto. Quando disabilitato, il widget riempirà l'altezza del contenitore."
 
 #: src/components/modals/OfferWaitlistModal/index.tsx:163
+#: src/components/routes/product-widget/SessionPicker/index.tsx:133
 msgid "Available"
 msgstr "Disponibile"
 
@@ -1712,7 +1714,7 @@ msgstr "Clicca per copiare"
 msgid "Click to view notes"
 msgstr "Clicca per visualizzare le note"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:597
+#: src/components/routes/product-widget/SelectProducts/index.tsx:598
 msgid "close"
 msgstr "chiudi"
 
@@ -1721,7 +1723,7 @@ msgstr "chiudi"
 #: src/components/modals/JoinWaitlistModal/index.tsx:103
 #: src/components/modals/JoinWaitlistModal/index.tsx:130
 #: src/components/modals/RefundOrderModal/index.tsx:169
-#: src/components/routes/product-widget/SelectProducts/index.tsx:598
+#: src/components/routes/product-widget/SelectProducts/index.tsx:599
 msgid "Close"
 msgstr "Chiudi"
 
@@ -2072,7 +2074,8 @@ msgstr "Email di contatto per supporto"
 
 #: src/components/common/WidgetEditor/index.tsx:29
 #: src/components/common/WidgetEditor/index.tsx:222
-#: src/components/routes/product-widget/SelectProducts/index.tsx:550
+#: src/components/routes/product-widget/SelectProducts/index.tsx:551
+#: src/components/routes/product-widget/SessionPicker/index.tsx:284
 msgid "Continue"
 msgstr "Continua"
 
@@ -2091,7 +2094,8 @@ msgstr "Continua configurazione"
 msgid "Continue Setup"
 msgstr "Continua configurazione"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:386
+#: src/components/routes/product-widget/SelectProducts/index.tsx:387
+#: src/components/routes/product-widget/SessionPicker/index.tsx:174
 msgid "Continue to Checkout"
 msgstr "Procedi al pagamento"
 
@@ -2782,7 +2786,7 @@ msgstr "Sconto in {0}"
 msgid "Discount Type"
 msgstr "Tipo di Sconto"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:403
+#: src/components/routes/product-widget/SelectProducts/index.tsx:404
 msgid "Dismiss this message"
 msgstr "Ignora questo messaggio"
 
@@ -4234,7 +4238,7 @@ msgstr "Gestione ospiti"
 msgid "Guests"
 msgstr "Ospiti"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:559
+#: src/components/routes/product-widget/SelectProducts/index.tsx:560
 msgid "Have a promo code?"
 msgstr "Hai un codice promozionale?"
 
@@ -4297,8 +4301,8 @@ msgstr "Nascosto dalla vista pubblica"
 msgid "Hidden questions are only visible to the event organizer and not to the customer."
 msgstr "Le domande nascoste sono visibili solo all'organizzatore dell'evento e non al cliente."
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:424
-#: src/components/routes/product-widget/SelectProducts/index.tsx:524
+#: src/components/routes/product-widget/SelectProducts/index.tsx:425
+#: src/components/routes/product-widget/SelectProducts/index.tsx:525
 msgid "Hide"
 msgstr "Nascondi"
 
@@ -4448,7 +4452,8 @@ msgstr "Accetto i <0>termini e condizioni</0>"
 msgid "I confirm this is a transactional message related to this event"
 msgstr "Confermo che questo è un messaggio transazionale relativo a questo evento"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:363
+#: src/components/routes/product-widget/SelectProducts/index.tsx:364
+#: src/components/routes/product-widget/SessionPicker/index.tsx:164
 msgid "If a new tab did not open automatically, please click the button below to continue to checkout."
 msgstr "Se una nuova scheda non si è aperta automaticamente, clicca sul pulsante qui sotto per procedere al pagamento."
 
@@ -6260,6 +6265,11 @@ msgstr "Parzialmente Rimborsato"
 msgid "Partially refunded: {0}"
 msgstr "Parzialmente rimborsato: {0}"
 
+#: src/components/routes/product-widget/SessionPicker/index.tsx:256
+#: src/components/routes/product-widget/SessionPicker/index.tsx:265
+msgid "Party size"
+msgstr ""
+
 #: src/components/common/PlatformFeesSettings/index.tsx:191
 msgid "Pass fee to buyer"
 msgstr "Trasferisci la commissione all'acquirente"
@@ -6559,7 +6569,8 @@ msgstr "Verifica che la tua email sia valida"
 msgid "Please check your email to confirm your email address"
 msgstr "Controlla la tua email per confermare il tuo indirizzo email"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:354
+#: src/components/routes/product-widget/SelectProducts/index.tsx:355
+#: src/components/routes/product-widget/SessionPicker/index.tsx:162
 msgid "Please continue in the new tab"
 msgstr "Continua nella nuova scheda"
 
@@ -6612,11 +6623,15 @@ msgstr "Torna alla pagina dell'evento per ricominciare."
 msgid "Please select a date range"
 msgstr "Seleziona un intervallo di date"
 
+#: src/components/routes/product-widget/SessionPicker/index.tsx:101
+msgid "Please select a session"
+msgstr ""
+
 #: src/components/common/Editor/Controls/InsertImageControl/index.tsx:54
 msgid "Please select an image."
 msgstr "Per favore, seleziona un'immagine."
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:285
+#: src/components/routes/product-widget/SelectProducts/index.tsx:286
 msgid "Please select at least one product"
 msgstr "Seleziona almeno un prodotto"
 
@@ -6855,7 +6870,7 @@ msgstr "Profilo"
 msgid "Profile updated successfully"
 msgstr "Profilo aggiornato con successo"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:226
+#: src/components/routes/product-widget/SelectProducts/index.tsx:227
 msgid "Promo {promo_code} code applied"
 msgstr "Codice promo {promo_code} applicato"
 
@@ -7135,14 +7150,14 @@ msgstr "Domande di registrazione"
 msgid "Remaining Uses"
 msgstr "Utilizzi Rimanenti"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:568
+#: src/components/routes/product-widget/SelectProducts/index.tsx:569
 msgid "remove"
 msgstr "rimuovi"
 
 #: src/components/common/Editor/Controls/InsertImageControl/index.tsx:146
 #: src/components/common/WaitlistTable/index.tsx:78
 #: src/components/common/WaitlistTable/index.tsx:111
-#: src/components/routes/product-widget/SelectProducts/index.tsx:569
+#: src/components/routes/product-widget/SelectProducts/index.tsx:570
 msgid "Remove"
 msgstr "Rimuovi"
 
@@ -7590,9 +7605,17 @@ msgstr "Seleziona una categoria"
 msgid "Select a configuration"
 msgstr "Seleziona una configurazione"
 
+#: src/components/routes/product-widget/SessionPicker/index.tsx:197
+msgid "Select a date"
+msgstr ""
+
 #: src/components/routes/event/messages.tsx:340
 msgid "Select a message to view its contents"
 msgstr "Seleziona un messaggio per visualizzarne il contenuto"
+
+#: src/components/routes/product-widget/SessionPicker/index.tsx:226
+msgid "Select a session"
+msgstr ""
 
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:229
 msgid "Select a tier"
@@ -7952,8 +7975,8 @@ msgstr "Mostra casella di opt-in marketing"
 msgid "Show marketing opt-in checkbox by default"
 msgstr "Mostra casella di opt-in marketing per impostazione predefinita"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:424
-#: src/components/routes/product-widget/SelectProducts/index.tsx:523
+#: src/components/routes/product-widget/SelectProducts/index.tsx:425
+#: src/components/routes/product-widget/SelectProducts/index.tsx:524
 msgid "Show more"
 msgstr "Mostra altro"
 
@@ -8030,6 +8053,7 @@ msgstr "Venduto"
 #: src/components/common/EventCard/index.tsx:115
 #: src/components/common/ProductPriceAvailability/index.tsx:19
 #: src/components/common/ProductPriceAvailability/index.tsx:50
+#: src/components/routes/product-widget/SessionPicker/index.tsx:130
 msgid "Sold out"
 msgstr "Esaurito"
 
@@ -8079,7 +8103,7 @@ msgstr "Qualcosa è andato storto. Riprova."
 msgid "Sorry for the inconvenience."
 msgstr "Scusa per l'inconveniente."
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:294
+#: src/components/routes/product-widget/SelectProducts/index.tsx:295
 msgid "Sorry, this promo code is not recognized"
 msgstr "Spiacenti, questo codice promo non è riconosciuto"
 
@@ -8570,8 +8594,8 @@ msgstr "Grazie per aver partecipato!"
 msgid "Thanks for your support as we continue to grow and improve Hi.Events!"
 msgstr "Grazie per il tuo supporto mentre continuiamo a crescere e migliorare Hi.Events!"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:186
-#: src/components/routes/product-widget/SelectProducts/index.tsx:234
+#: src/components/routes/product-widget/SelectProducts/index.tsx:187
+#: src/components/routes/product-widget/SelectProducts/index.tsx:235
 msgid "That promo code is invalid"
 msgstr "Quel codice promo non è valido"
 
@@ -8656,7 +8680,7 @@ msgstr "Il link che hai cliccato non è valido."
 msgid "The locale of the customer"
 msgstr "La lingua del cliente"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:508
+#: src/components/routes/product-widget/SelectProducts/index.tsx:509
 msgid "The maximum number of products for {0}is {1}"
 msgstr "Il numero massimo di prodotti per {0}è {1}"
 
@@ -8720,13 +8744,17 @@ msgstr "Teatro"
 msgid "Theme & Colors"
 msgstr "Tema e colori"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:320
+#: src/components/routes/product-widget/SelectProducts/index.tsx:321
 msgid "There are no products available for this event"
 msgstr "Non ci sono prodotti disponibili per questo evento"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:433
+#: src/components/routes/product-widget/SelectProducts/index.tsx:434
 msgid "There are no products available in this category"
 msgstr "Non ci sono prodotti disponibili in questa categoria"
+
+#: src/components/routes/product-widget/SessionPicker/index.tsx:189
+msgid "There are no sessions available for booking"
+msgstr ""
 
 #: src/components/modals/RefundOrderModal/index.tsx:181
 msgid "There is a refund pending. Please wait for it to complete before requesting another refund."
@@ -9311,11 +9339,15 @@ msgstr "Impossibile registrare il partecipante"
 msgid "Unable to check out attendee"
 msgstr "Impossibile registrare l'uscita del partecipante"
 
+#: src/components/routes/product-widget/SessionPicker/index.tsx:79
+msgid "Unable to create booking. Please try again."
+msgstr ""
+
 #: src/components/modals/CreateProductModal/index.tsx:64
 msgid "Unable to create product. Please check the your details"
 msgstr "Impossibile creare il prodotto. Controlla i tuoi dati"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:171
+#: src/components/routes/product-widget/SelectProducts/index.tsx:172
 msgid "Unable to create product. Please check your details"
 msgstr "Impossibile creare il prodotto. Controlla i tuoi dati"
 
@@ -9380,7 +9412,7 @@ msgstr "Partecipante Sconosciuto"
 msgid "Unlimited"
 msgstr "Illimitato"
 
-#: src/components/routes/product-widget/SelectProducts/index.tsx:471
+#: src/components/routes/product-widget/SelectProducts/index.tsx:472
 msgid "Unlimited available"
 msgstr "Disponibilità illimitata"
 
