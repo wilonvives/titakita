@@ -130,6 +130,9 @@ use TitaKita\Http\Actions\ProductCategories\DeleteProductCategoryAction;
 use TitaKita\Http\Actions\ProductCategories\EditProductCategoryAction;
 use TitaKita\Http\Actions\ProductCategories\GetProductCategoriesAction;
 use TitaKita\Http\Actions\ProductCategories\GetProductCategoryAction;
+use TitaKita\Http\Actions\Booking\GetPublicBookingSessionsAction;
+use TitaKita\Http\Actions\Booking\GetScheduleAction;
+use TitaKita\Http\Actions\Booking\UpsertScheduleAction;
 use TitaKita\Http\Actions\Products\CreateProductAction;
 use TitaKita\Http\Actions\Products\DeleteProductAction;
 use TitaKita\Http\Actions\Products\EditProductAction;
@@ -337,6 +340,10 @@ $router->middleware(['auth:api'])->group(
         $router->delete('/events/{event_id}/products/{ticket_id}', DeleteProductAction::class);
         $router->get('/events/{event_id}/products', GetProductsAction::class);
 
+        // Booking schedule
+        $router->post('/events/{event_id}/schedule', UpsertScheduleAction::class);
+        $router->get('/events/{event_id}/schedule', GetScheduleAction::class);
+
         // Stats
         $router->get('/events/{event_id}/stats', GetEventStatsAction::class);
 
@@ -504,6 +511,9 @@ $router->prefix('/public')->group(
 
         // Products
         $router->get('/events/{event_id}/products', GetEventPublicAction::class);
+
+        // Booking sessions
+        $router->get('/events/{event_id}/sessions', GetPublicBookingSessionsAction::class);
 
         // Orders
         $router->post('/events/{event_id}/order', CreateOrderActionPublic::class);
