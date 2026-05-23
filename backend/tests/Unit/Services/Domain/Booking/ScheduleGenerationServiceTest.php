@@ -13,6 +13,7 @@ use TitaKita\DomainObjects\ProductPriceDomainObject;
 use TitaKita\DomainObjects\ScheduleDomainObject;
 use TitaKita\Repository\Eloquent\Value\OrderAndDirection;
 use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\ProductPriceRepositoryInterface;
 use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
 use TitaKita\Repository\Interfaces\ScheduleRepositoryInterface;
 use TitaKita\Services\Domain\Booking\Exception\ScheduleRangeTooLongException;
@@ -202,5 +203,58 @@ class ScheduleGenerationServiceTest extends TestCase
 
         $this->expectException(ScheduleRangeTooLongException::class);
         $this->service()->generate($schedule);
+    }
+
+    public function test_regeneration_preserves_booked_sessions(): void
+    {
+        $eventId = $this->eventId();
+        $tz = $this->eventTimezone($eventId);
+
+        $schedule = $this->createSchedule($eventId, [
+            'start_times' => ['10:00', '13:00'],
+            'capacity_per_session' => 8,
+            'scope_type' => ScheduleScopeType::SINGLE_DAY->value,
+            'range_start_date' => '2026-06-06',
+        ]);
+
+        $this->service()->generate($schedule);
+
+        $products = $this->sessionProducts($schedule->getId());
+        $this->assertCount(2, $products);
+
+        // Simulate a booking on the 13:00 slot by marking its price as sold.
+        $thirteen = $products->first(
+            fn (ProductDomainObject $p) => Carbon::parse($p->getSessionStartAt(), 'UTC')->setTimezone($tz)->format('H:i') === '13:00'
+        );
+        $this->assertNotNull($thirteen);
+
+        app(ProductPriceRepositoryInterface::class)->updateWhere(
+            ['quantity_sold' => 1],
+            ['product_id' => $thirteen->getId()],
+        );
+
+        // Change start_times: drop 13:00 (booked), keep 10:00, add 16:00 (new).
+        app(ScheduleRepositoryInterface::class)->updateFromArray($schedule->getId(), [
+            'start_times' => ['10:00', '16:00'],
+        ]);
+        $updatedSchedule = app(ScheduleRepositoryInterface::class)->findById($schedule->getId());
+
+        $this->service()->generate($updatedSchedule);
+
+        $after = $this->sessionProducts($schedule->getId());
+        $times = $after
+            ->map(fn (ProductDomainObject $p) => Carbon::parse($p->getSessionStartAt(), 'UTC')->setTimezone($tz)->format('H:i'))
+            ->sort()
+            ->values()
+            ->all();
+
+        // 13:00 survives because it has a booking; 10:00 retained; 16:00 added.
+        $this->assertSame(['10:00', '13:00', '16:00'], $times);
+
+        // The booked 13:00 product is the same row (not recreated/deleted).
+        $survivingThirteen = $after->first(
+            fn (ProductDomainObject $p) => Carbon::parse($p->getSessionStartAt(), 'UTC')->setTimezone($tz)->format('H:i') === '13:00'
+        );
+        $this->assertSame($thirteen->getId(), $survivingThirteen->getId());
     }
 }
