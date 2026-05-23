@@ -28,4 +28,7 @@ enum DomainEventType: string
 
     case CHECKIN_CREATED = 'checkin.created';
     case CHECKIN_DELETED = 'checkin.deleted';
+
+    case BOOKING_CREATED = 'booking.created';
+    case BOOKING_CANCELLED = 'booking.cancelled';
 }
