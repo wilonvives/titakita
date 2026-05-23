@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Waitlist;
+namespace TitaKita\Services\Application\Handlers\Waitlist;
 
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Repository\Interfaces\WaitlistEntryRepositoryInterface;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Repository\Interfaces\WaitlistEntryRepositoryInterface;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 class GetWaitlistEntriesHandler

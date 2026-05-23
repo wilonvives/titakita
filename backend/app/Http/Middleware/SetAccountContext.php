@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Http\Middleware;
+namespace TitaKita\Http\Middleware;
 
 use Closure;
-use HiEvents\Models\User;
+use TitaKita\Models\User;
 use Illuminate\Support\Facades\Auth;
 
 class SetAccountContext

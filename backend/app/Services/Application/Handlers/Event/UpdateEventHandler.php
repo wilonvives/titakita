@@ -1,20 +1,20 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Event;
+namespace TitaKita\Services\Application\Handlers\Event;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\Events\Dispatcher;
-use HiEvents\Events\EventUpdateEvent;
-use HiEvents\Exceptions\CannotChangeCurrencyException;
-use HiEvents\Helper\DateHelper;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Event\DTO\UpdateEventDTO;
-use HiEvents\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
-use HiEvents\Jobs\Event\Webhook\DispatchEventWebhookJob;
-use HiEvents\Jobs\Event\Webhook\ReportEventToDirectoryJob;
-use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\Events\Dispatcher;
+use TitaKita\Events\EventUpdateEvent;
+use TitaKita\Exceptions\CannotChangeCurrencyException;
+use TitaKita\Helper\DateHelper;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Event\DTO\UpdateEventDTO;
+use TitaKita\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
+use TitaKita\Jobs\Event\Webhook\DispatchEventWebhookJob;
+use TitaKita\Jobs\Event\Webhook\ReportEventToDirectoryJob;
+use TitaKita\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
 use Illuminate\Database\DatabaseManager;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 use Throwable;

@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Domain\User;
+namespace TitaKita\Services\Domain\User;
 
-use HiEvents\DomainObjects\UserDomainObject;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Repository\Interfaces\AccountUserRepositoryInterface;
-use HiEvents\Repository\Interfaces\UserRepositoryInterface;
+use TitaKita\DomainObjects\UserDomainObject;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Repository\Interfaces\AccountUserRepositoryInterface;
+use TitaKita\Repository\Interfaces\UserRepositoryInterface;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 
 class VerifyUserEmailService

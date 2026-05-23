@@ -2,12 +2,12 @@
 
 namespace Tests\Unit\Services\Application\Handlers\Event;
 
-use HiEvents\Exceptions\CannotDeleteEntityException;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Event\DeleteEventHandler;
-use HiEvents\Services\Application\Handlers\Event\DTO\DeleteEventDTO;
-use HiEvents\Services\Domain\Event\EventDeletionService;
+use TitaKita\Exceptions\CannotDeleteEntityException;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Event\DeleteEventHandler;
+use TitaKita\Services\Application\Handlers\Event\DTO\DeleteEventDTO;
+use TitaKita\Services\Domain\Event\EventDeletionService;
 use Illuminate\Database\DatabaseManager;
 use Mockery as m;
 use Tests\TestCase;

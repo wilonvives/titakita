@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Resources\Account\Stripe;
+namespace TitaKita\Resources\Account\Stripe;
 
-use HiEvents\Resources\Account\AccountResource;
-use HiEvents\Services\Application\Handlers\Account\Payment\Stripe\DTO\CreateStripeConnectAccountResponse;
+use TitaKita\Resources\Account\AccountResource;
+use TitaKita\Services\Application\Handlers\Account\Payment\Stripe\DTO\CreateStripeConnectAccountResponse;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**

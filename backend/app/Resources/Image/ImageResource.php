@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Resources\Image;
+namespace TitaKita\Resources\Image;
 
-use HiEvents\DomainObjects\ImageDomainObject;
-use HiEvents\Helper\Url;
-use HiEvents\Resources\BaseResource;
+use TitaKita\DomainObjects\ImageDomainObject;
+use TitaKita\Helper\Url;
+use TitaKita\Resources\BaseResource;
 
 /**
  * @mixin ImageDomainObject

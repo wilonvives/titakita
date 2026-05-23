@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Http\Actions\PromoCodes;
+namespace TitaKita\Http\Actions\PromoCodes;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\Generated\PromoCodeDomainObjectAbstract;
-use HiEvents\Exceptions\ResourceNotFoundException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Repository\Interfaces\PromoCodeRepositoryInterface;
-use HiEvents\Resources\PromoCode\PromoCodeResource;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\Generated\PromoCodeDomainObjectAbstract;
+use TitaKita\Exceptions\ResourceNotFoundException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Repository\Interfaces\PromoCodeRepositoryInterface;
+use TitaKita\Resources\PromoCode\PromoCodeResource;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

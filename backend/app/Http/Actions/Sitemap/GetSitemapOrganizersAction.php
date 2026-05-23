@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Sitemap;
+namespace TitaKita\Http\Actions\Sitemap;
 
-use HiEvents\Exceptions\ResourceNotFoundException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\Sitemap\GetSitemapOrganizersHandler;
+use TitaKita\Exceptions\ResourceNotFoundException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\Sitemap\GetSitemapOrganizersHandler;
 use Illuminate\Http\Response;
 
 class GetSitemapOrganizersAction extends BaseAction

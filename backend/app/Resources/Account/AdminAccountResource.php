@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Resources\Account;
+namespace TitaKita\Resources\Account;
 
-use HiEvents\Resources\BaseResource;
+use TitaKita\Resources\BaseResource;
 use Illuminate\Http\Request;
 
 class AdminAccountResource extends BaseResource

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Admin\Messages;
+namespace TitaKita\Http\Actions\Admin\Messages;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\Admin\ApproveMessageHandler;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\Admin\ApproveMessageHandler;
 use Illuminate\Http\JsonResponse;
 
 class ApproveMessageAction extends BaseAction

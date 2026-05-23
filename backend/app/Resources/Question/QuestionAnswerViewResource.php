@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Resources\Question;
+namespace TitaKita\Resources\Question;
 
-use HiEvents\DomainObjects\Enums\QuestionTypeEnum;
-use HiEvents\DomainObjects\QuestionAndAnswerViewDomainObject;
-use HiEvents\Services\Domain\Question\QuestionAnswerFormatter;
+use TitaKita\DomainObjects\Enums\QuestionTypeEnum;
+use TitaKita\DomainObjects\QuestionAndAnswerViewDomainObject;
+use TitaKita\Services\Domain\Question\QuestionAnswerFormatter;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 

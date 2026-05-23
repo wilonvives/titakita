@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Product\DTO;
+namespace TitaKita\Services\Application\Handlers\Product\DTO;
 
-use HiEvents\DataTransferObjects\Attributes\CollectionOf;
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\DomainObjects\Enums\ProductPriceType;
-use HiEvents\DomainObjects\Enums\ProductType;
-use HiEvents\Services\Domain\Product\DTO\ProductPriceDTO;
+use TitaKita\DataTransferObjects\Attributes\CollectionOf;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\DomainObjects\Enums\ProductPriceType;
+use TitaKita\DomainObjects\Enums\ProductType;
+use TitaKita\Services\Domain\Product\DTO\ProductPriceDTO;
 use Illuminate\Support\Collection;
 
 class UpsertProductDTO extends BaseDTO

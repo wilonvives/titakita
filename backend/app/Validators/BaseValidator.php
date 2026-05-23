@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Validators;
+namespace TitaKita\Validators;
 
 abstract class BaseValidator
 {

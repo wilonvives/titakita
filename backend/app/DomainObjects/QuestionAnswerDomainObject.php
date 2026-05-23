@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\DomainObjects;
+namespace TitaKita\DomainObjects;
 
-use HiEvents\DomainObjects\Generated\OrderDomainObjectAbstract;
+use TitaKita\DomainObjects\Generated\OrderDomainObjectAbstract;
 
 class QuestionAnswerDomainObject extends Generated\QuestionAnswerDomainObjectAbstract
 {

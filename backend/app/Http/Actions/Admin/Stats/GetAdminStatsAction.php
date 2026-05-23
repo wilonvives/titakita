@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Admin\Stats;
+namespace TitaKita\Http\Actions\Admin\Stats;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\Admin\GetAdminStatsHandler;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\Admin\GetAdminStatsHandler;
 use Illuminate\Http\JsonResponse;
 
 class GetAdminStatsAction extends BaseAction

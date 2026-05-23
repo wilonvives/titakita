@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\AccountStripePlatformDomainObject;
-use HiEvents\Models\AccountStripePlatform;
-use HiEvents\Repository\Interfaces\AccountStripePlatformRepositoryInterface;
+use TitaKita\DomainObjects\AccountStripePlatformDomainObject;
+use TitaKita\Models\AccountStripePlatform;
+use TitaKita\Repository\Interfaces\AccountStripePlatformRepositoryInterface;
 
 /**
  * @extends BaseRepository<AccountStripePlatformDomainObject>

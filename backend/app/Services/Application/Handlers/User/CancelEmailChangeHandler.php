@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\User;
+namespace TitaKita\Services\Application\Handlers\User;
 
-use HiEvents\DomainObjects\UserDomainObject;
-use HiEvents\Exceptions\ResourceNotFoundException;
-use HiEvents\Repository\Interfaces\UserRepositoryInterface;
-use HiEvents\Services\Application\Handlers\User\DTO\CancelEmailChangeDTO;
+use TitaKita\DomainObjects\UserDomainObject;
+use TitaKita\Exceptions\ResourceNotFoundException;
+use TitaKita\Repository\Interfaces\UserRepositoryInterface;
+use TitaKita\Services\Application\Handlers\User\DTO\CancelEmailChangeDTO;
 use Psr\Log\LoggerInterface;
 
 class CancelEmailChangeHandler

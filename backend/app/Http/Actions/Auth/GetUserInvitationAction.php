@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Http\Actions\Auth;
+namespace TitaKita\Http\Actions\Auth;
 
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Repository\Interfaces\UserRepositoryInterface;
-use HiEvents\Resources\User\UserResource;
-use HiEvents\Services\Infrastructure\Encryption\EncryptedPayloadService;
-use HiEvents\Services\Infrastructure\Encryption\Exception\DecryptionFailedException;
-use HiEvents\Services\Infrastructure\Encryption\Exception\EncryptedPayloadExpiredException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Repository\Interfaces\UserRepositoryInterface;
+use TitaKita\Resources\User\UserResource;
+use TitaKita\Services\Infrastructure\Encryption\EncryptedPayloadService;
+use TitaKita\Services\Infrastructure\Encryption\Exception\DecryptionFailedException;
+use TitaKita\Services\Infrastructure\Encryption\Exception\EncryptedPayloadExpiredException;
 use Illuminate\Http\JsonResponse;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpKernel\Exception\HttpException;

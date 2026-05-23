@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Domain\Event\DTO;
+namespace TitaKita\Services\Domain\Event\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
+use TitaKita\DataTransferObjects\BaseDTO;
 
 class DuplicateEventDataDTO extends BaseDTO
 {

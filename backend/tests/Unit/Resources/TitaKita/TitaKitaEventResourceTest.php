@@ -2,9 +2,9 @@
 
 namespace Tests\Unit\Resources\TitaKita;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Resources\TitaKita\TitaKitaEventResource;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Resources\TitaKita\TitaKitaEventResource;
 use Illuminate\Http\Request;
 use Tests\TestCase;
 

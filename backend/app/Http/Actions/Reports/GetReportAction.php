@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Http\Actions\Reports;
+namespace TitaKita\Http\Actions\Reports;
 
-use HiEvents\DomainObjects\Enums\ReportTypes;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Report\GetReportRequest;
-use HiEvents\Services\Application\Handlers\Reports\DTO\GetReportDTO;
-use HiEvents\Services\Application\Handlers\Reports\GetReportHandler;
+use TitaKita\DomainObjects\Enums\ReportTypes;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Report\GetReportRequest;
+use TitaKita\Services\Application\Handlers\Reports\DTO\GetReportDTO;
+use TitaKita\Services\Application\Handlers\Reports\GetReportHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Carbon;
 use Illuminate\Validation\ValidationException;

@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Services\Domain\Event;
+namespace TitaKita\Services\Domain\Event;
 
 use Carbon\Carbon;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Event\DTO\EventStatsRequestDTO;
-use HiEvents\Services\Application\Handlers\Event\DTO\EventStatsResponseDTO;
-use HiEvents\Services\Domain\Event\DTO\EventCheckInStatsResponseDTO;
-use HiEvents\Services\Domain\Event\DTO\EventDailyStatsResponseDTO;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Event\DTO\EventStatsRequestDTO;
+use TitaKita\Services\Application\Handlers\Event\DTO\EventStatsResponseDTO;
+use TitaKita\Services\Domain\Event\DTO\EventCheckInStatsResponseDTO;
+use TitaKita\Services\Domain\Event\DTO\EventDailyStatsResponseDTO;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Support\Collection;
 

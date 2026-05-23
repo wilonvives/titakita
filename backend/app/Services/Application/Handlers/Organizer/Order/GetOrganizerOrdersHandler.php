@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Organizer\Order;
+namespace TitaKita\Services\Application\Handlers\Organizer\Order;
 
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\DomainObjects\InvoiceDomainObject;
-use HiEvents\DomainObjects\OrderItemDomainObject;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\DomainObjects\InvoiceDomainObject;
+use TitaKita\DomainObjects\OrderItemDomainObject;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 class GetOrganizerOrdersHandler

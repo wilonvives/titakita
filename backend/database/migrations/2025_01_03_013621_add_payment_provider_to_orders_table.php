@@ -1,6 +1,6 @@
 <?php
 
-use HiEvents\DomainObjects\Enums\PaymentProviders;
+use TitaKita\DomainObjects\Enums\PaymentProviders;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;

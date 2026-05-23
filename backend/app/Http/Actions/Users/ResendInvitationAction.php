@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Http\Actions\Users;
+namespace TitaKita\Http\Actions\Users;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\DomainObjects\Status\UserStatus;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Repository\Interfaces\UserRepositoryInterface;
-use HiEvents\Services\Domain\User\SendUserInvitationService;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\DomainObjects\Status\UserStatus;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Repository\Interfaces\UserRepositoryInterface;
+use TitaKita\Services\Domain\User\SendUserInvitationService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 

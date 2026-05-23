@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Orders\Public;
+namespace TitaKita\Http\Actions\Orders\Public;
 
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Order\CreateOrderRequest;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Resources\Order\OrderResourcePublic;
-use HiEvents\Services\Application\Handlers\Order\CreateOrderHandler;
-use HiEvents\Services\Application\Handlers\Order\DTO\CreateOrderPublicDTO;
-use HiEvents\Services\Application\Handlers\Order\DTO\ProductOrderDetailsDTO;
-use HiEvents\Services\Application\Locale\LocaleService;
-use HiEvents\Services\Domain\Order\OrderCreateRequestValidationService;
-use HiEvents\Services\Infrastructure\Session\CheckoutSessionManagementService;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Order\CreateOrderRequest;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Resources\Order\OrderResourcePublic;
+use TitaKita\Services\Application\Handlers\Order\CreateOrderHandler;
+use TitaKita\Services\Application\Handlers\Order\DTO\CreateOrderPublicDTO;
+use TitaKita\Services\Application\Handlers\Order\DTO\ProductOrderDetailsDTO;
+use TitaKita\Services\Application\Locale\LocaleService;
+use TitaKita\Services\Domain\Order\OrderCreateRequestValidationService;
+use TitaKita\Services\Infrastructure\Session\CheckoutSessionManagementService;
 use Illuminate\Http\JsonResponse;
 use Throwable;
 

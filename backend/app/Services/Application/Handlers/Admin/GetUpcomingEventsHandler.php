@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Admin;
+namespace TitaKita\Services\Application\Handlers\Admin;
 
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Admin\DTO\GetUpcomingEventsDTO;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Admin\DTO\GetUpcomingEventsDTO;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 class GetUpcomingEventsHandler

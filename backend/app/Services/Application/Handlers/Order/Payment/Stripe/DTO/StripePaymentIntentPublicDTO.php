@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Order\Payment\Stripe\DTO;
+namespace TitaKita\Services\Application\Handlers\Order\Payment\Stripe\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
+use TitaKita\DataTransferObjects\BaseDTO;
 
 class StripePaymentIntentPublicDTO extends BaseDTO
 {

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Request\Affiliate;
+namespace TitaKita\Http\Request\Affiliate;
 
-use HiEvents\Http\Request\BaseRequest;
-use HiEvents\Validators\Rules\AffiliateRules;
+use TitaKita\Http\Request\BaseRequest;
+use TitaKita\Validators\Rules\AffiliateRules;
 
 class CreateUpdateAffiliateRequest extends BaseRequest
 {

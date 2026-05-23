@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Http\Actions\ProductCategories;
+namespace TitaKita\Http\Actions\ProductCategories;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\ProductCategory\UpsertProductCategoryRequest;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Resources\ProductCategory\ProductCategoryResource;
-use HiEvents\Services\Application\Handlers\ProductCategory\CreateProductCategoryHandler;
-use HiEvents\Services\Application\Handlers\ProductCategory\DTO\UpsertProductCategoryDTO;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\ProductCategory\UpsertProductCategoryRequest;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Resources\ProductCategory\ProductCategoryResource;
+use TitaKita\Services\Application\Handlers\ProductCategory\CreateProductCategoryHandler;
+use TitaKita\Services\Application\Handlers\ProductCategory\DTO\UpsertProductCategoryDTO;
 use Illuminate\Http\JsonResponse;
 
 class CreateProductCategoryAction extends BaseAction

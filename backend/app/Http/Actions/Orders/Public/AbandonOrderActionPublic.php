@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Http\Actions\Orders\Public;
+namespace TitaKita\Http\Actions\Orders\Public;
 
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Exceptions\UnauthorizedException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Order\OrderResourcePublic;
-use HiEvents\Services\Application\Handlers\Order\Public\AbandonOrderPublicHandler;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Exceptions\UnauthorizedException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Order\OrderResourcePublic;
+use TitaKita\Services\Application\Handlers\Order\Public\AbandonOrderPublicHandler;
 use Illuminate\Http\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;

@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\SelfService;
+namespace TitaKita\Services\Application\Handlers\SelfService;
 
-use HiEvents\DomainObjects\Generated\AttendeeDomainObjectAbstract;
-use HiEvents\Exceptions\SelfServiceDisabledException;
-use HiEvents\Repository\Interfaces\AttendeeRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Services\Application\Handlers\SelfService\DTO\EditAttendeePublicDTO;
-use HiEvents\Services\Domain\SelfService\DTO\EditAttendeeResultDTO;
-use HiEvents\Services\Domain\SelfService\SelfServiceEditAttendeeService;
+use TitaKita\DomainObjects\Generated\AttendeeDomainObjectAbstract;
+use TitaKita\Exceptions\SelfServiceDisabledException;
+use TitaKita\Repository\Interfaces\AttendeeRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Services\Application\Handlers\SelfService\DTO\EditAttendeePublicDTO;
+use TitaKita\Services\Domain\SelfService\DTO\EditAttendeeResultDTO;
+use TitaKita\Services\Domain\SelfService\SelfServiceEditAttendeeService;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 
 class EditAttendeePublicHandler

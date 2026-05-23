@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Services\Domain\EventStatistics;
+namespace TitaKita\Services\Domain\EventStatistics;
 
-use HiEvents\Exceptions\EventStatisticsVersionMismatchException;
-use HiEvents\Repository\Interfaces\EventDailyStatisticRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventStatisticRepositoryInterface;
-use HiEvents\Services\Infrastructure\Utlitiy\Retry\Retrier;
+use TitaKita\Exceptions\EventStatisticsVersionMismatchException;
+use TitaKita\Repository\Interfaces\EventDailyStatisticRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventStatisticRepositoryInterface;
+use TitaKita\Services\Infrastructure\Utlitiy\Retry\Retrier;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Support\Carbon;
 use Psr\Log\LoggerInterface;

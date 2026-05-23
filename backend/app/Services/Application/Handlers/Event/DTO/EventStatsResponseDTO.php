@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Event\DTO;
+namespace TitaKita\Services\Application\Handlers\Event\DTO;
 
-use HiEvents\DataTransferObjects\Attributes\CollectionOf;
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\Services\Domain\Event\DTO\EventCheckInStatsResponseDTO;
-use HiEvents\Services\Domain\Event\DTO\EventDailyStatsResponseDTO;
+use TitaKita\DataTransferObjects\Attributes\CollectionOf;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\Services\Domain\Event\DTO\EventCheckInStatsResponseDTO;
+use TitaKita\Services\Domain\Event\DTO\EventDailyStatsResponseDTO;
 use Illuminate\Support\Collection;
 
 class EventStatsResponseDTO extends BaseDTO

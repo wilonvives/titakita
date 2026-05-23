@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Resources\Event;
+namespace TitaKita\Resources\Event;
 
-use HiEvents\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**

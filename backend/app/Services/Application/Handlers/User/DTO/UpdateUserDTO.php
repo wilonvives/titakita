@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\User\DTO;
+namespace TitaKita\Services\Application\Handlers\User\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\DomainObjects\Status\UserStatus;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\DomainObjects\Status\UserStatus;
 
 class UpdateUserDTO extends BaseDTO
 {

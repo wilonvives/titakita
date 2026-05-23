@@ -1,17 +1,17 @@
 <?php
 
-namespace HiEvents\Providers;
+namespace TitaKita\Providers;
 
 use Doctrine\DBAL\Configuration;
 use Doctrine\DBAL\DriverManager;
 use Doctrine\DBAL\Schema\AbstractSchemaManager;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Models\Event;
-use HiEvents\Models\Organizer;
-use HiEvents\Services\Infrastructure\CurrencyConversion\CurrencyConversionClientInterface;
-use HiEvents\Services\Infrastructure\CurrencyConversion\NoOpCurrencyConversionClient;
-use HiEvents\Services\Infrastructure\CurrencyConversion\OpenExchangeRatesCurrencyConversionClient;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Models\Event;
+use TitaKita\Models\Organizer;
+use TitaKita\Services\Infrastructure\CurrencyConversion\CurrencyConversionClientInterface;
+use TitaKita\Services\Infrastructure\CurrencyConversion\NoOpCurrencyConversionClient;
+use TitaKita\Services\Infrastructure\CurrencyConversion\OpenExchangeRatesCurrencyConversionClient;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Facades\DB;
@@ -19,8 +19,8 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 use Stripe\StripeClient;
-use HiEvents\Services\Infrastructure\Stripe\StripeConfigurationService;
-use HiEvents\Services\Infrastructure\Stripe\StripeClientFactory;
+use TitaKita\Services\Infrastructure\Stripe\StripeConfigurationService;
+use TitaKita\Services\Infrastructure\Stripe\StripeClientFactory;
 
 class AppServiceProvider extends ServiceProvider
 {

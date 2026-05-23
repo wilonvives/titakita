@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\EmailTemplateDomainObject;
-use HiEvents\DomainObjects\Enums\EmailTemplateType;
-use HiEvents\Models\EmailTemplate;
-use HiEvents\Repository\Interfaces\EmailTemplateRepositoryInterface;
+use TitaKita\DomainObjects\EmailTemplateDomainObject;
+use TitaKita\DomainObjects\Enums\EmailTemplateType;
+use TitaKita\Models\EmailTemplate;
+use TitaKita\Repository\Interfaces\EmailTemplateRepositoryInterface;
 use Illuminate\Support\Collection;
 
 /**

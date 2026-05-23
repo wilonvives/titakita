@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Providers;
+namespace TitaKita\Providers;
 
-use HiEvents\Listeners\Webhook\WebhookEventListener;
-use HiEvents\Services\Infrastructure\DomainEvents\Events\AttendeeEvent;
-use HiEvents\Services\Infrastructure\DomainEvents\Events\CheckinEvent;
-use HiEvents\Services\Infrastructure\DomainEvents\Events\OrderEvent;
-use HiEvents\Services\Infrastructure\DomainEvents\Events\ProductEvent;
+use TitaKita\Listeners\Webhook\WebhookEventListener;
+use TitaKita\Services\Infrastructure\DomainEvents\Events\AttendeeEvent;
+use TitaKita\Services\Infrastructure\DomainEvents\Events\CheckinEvent;
+use TitaKita\Services\Infrastructure\DomainEvents\Events\OrderEvent;
+use TitaKita\Services\Infrastructure\DomainEvents\Events\ProductEvent;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Event;
 

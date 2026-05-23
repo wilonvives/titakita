@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\DataTransferObjects\Attributes;
+namespace TitaKita\DataTransferObjects\Attributes;
 
 use Attribute;
 

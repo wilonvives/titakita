@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\OrderPaymentPlatformFeeDomainObject;
+use TitaKita\DomainObjects\OrderPaymentPlatformFeeDomainObject;
 
 /**
  * @extends RepositoryInterface<OrderPaymentPlatformFeeDomainObject>

@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Validators\Rules;
+namespace TitaKita\Validators\Rules;
 
 class RulesHelper
 {

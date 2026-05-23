@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Events;
+namespace TitaKita\Events;
 
-use HiEvents\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
 use Illuminate\Foundation\Events\Dispatchable;
 
 class EventUpdateEvent

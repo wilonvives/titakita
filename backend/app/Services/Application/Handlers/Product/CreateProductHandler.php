@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Services\Application\Handlers\Product;
+namespace TitaKita\Services\Application\Handlers\Product;
 
-use HiEvents\DomainObjects\Enums\ProductPriceType;
-use HiEvents\DomainObjects\Generated\ProductPriceDomainObjectAbstract;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\DomainObjects\ProductPriceDomainObject;
-use HiEvents\Services\Application\Handlers\Product\DTO\UpsertProductDTO;
-use HiEvents\Services\Domain\Product\CreateProductService;
-use HiEvents\Services\Domain\Product\DTO\ProductPriceDTO;
-use HiEvents\Services\Domain\ProductCategory\GetProductCategoryService;
+use TitaKita\DomainObjects\Enums\ProductPriceType;
+use TitaKita\DomainObjects\Generated\ProductPriceDomainObjectAbstract;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\Services\Application\Handlers\Product\DTO\UpsertProductDTO;
+use TitaKita\Services\Domain\Product\CreateProductService;
+use TitaKita\Services\Domain\Product\DTO\ProductPriceDTO;
+use TitaKita\Services\Domain\ProductCategory\GetProductCategoryService;
 use Throwable;
 
 class CreateProductHandler

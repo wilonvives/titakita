@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\CapacityAssignmentDomainObject;
-use HiEvents\DomainObjects\Generated\CapacityAssignmentDomainObjectAbstract;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Models\CapacityAssignment;
-use HiEvents\Repository\Interfaces\CapacityAssignmentRepositoryInterface;
+use TitaKita\DomainObjects\CapacityAssignmentDomainObject;
+use TitaKita\DomainObjects\Generated\CapacityAssignmentDomainObjectAbstract;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Models\CapacityAssignment;
+use TitaKita\Repository\Interfaces\CapacityAssignmentRepositoryInterface;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Pagination\LengthAwarePaginator;
 

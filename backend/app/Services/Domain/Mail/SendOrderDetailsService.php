@@ -1,22 +1,22 @@
 <?php
 
-namespace HiEvents\Services\Domain\Mail;
+namespace TitaKita\Services\Domain\Mail;
 
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\InvoiceDomainObject;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\OrderItemDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Mail\Order\OrderFailed;
-use HiEvents\Mail\Order\OrderSummary;
-use HiEvents\Mail\Organizer\OrderSummaryForOrganizer;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Services\Domain\Attendee\SendAttendeeTicketService;
-use HiEvents\Services\Domain\Email\MailBuilderService;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\InvoiceDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\OrderItemDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Mail\Order\OrderFailed;
+use TitaKita\Mail\Order\OrderSummary;
+use TitaKita\Mail\Organizer\OrderSummaryForOrganizer;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Services\Domain\Attendee\SendAttendeeTicketService;
+use TitaKita\Services\Domain\Email\MailBuilderService;
 use Illuminate\Mail\Mailer;
 
 class SendOrderDetailsService

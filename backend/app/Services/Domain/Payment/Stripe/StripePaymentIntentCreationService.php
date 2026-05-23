@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Services\Domain\Payment\Stripe;
+namespace TitaKita\Services\Domain\Payment\Stripe;
 
-use HiEvents\DomainObjects\StripeCustomerDomainObject;
-use HiEvents\Exceptions\Stripe\CreatePaymentIntentFailedException;
-use HiEvents\Repository\Interfaces\StripeCustomerRepositoryInterface;
-use HiEvents\Services\Domain\Order\DTO\ApplicationFeeValuesDTO;
-use HiEvents\Services\Domain\Order\OrderApplicationFeeCalculationService;
-use HiEvents\Services\Domain\Payment\Stripe\DTOs\CreatePaymentIntentRequestDTO;
-use HiEvents\Services\Domain\Payment\Stripe\DTOs\CreatePaymentIntentResponseDTO;
+use TitaKita\DomainObjects\StripeCustomerDomainObject;
+use TitaKita\Exceptions\Stripe\CreatePaymentIntentFailedException;
+use TitaKita\Repository\Interfaces\StripeCustomerRepositoryInterface;
+use TitaKita\Services\Domain\Order\DTO\ApplicationFeeValuesDTO;
+use TitaKita\Services\Domain\Order\OrderApplicationFeeCalculationService;
+use TitaKita\Services\Domain\Payment\Stripe\DTOs\CreatePaymentIntentRequestDTO;
+use TitaKita\Services\Domain\Payment\Stripe\DTOs\CreatePaymentIntentResponseDTO;
 use Illuminate\Config\Repository;
 use Illuminate\Database\DatabaseManager;
 use Psr\Log\LoggerInterface;

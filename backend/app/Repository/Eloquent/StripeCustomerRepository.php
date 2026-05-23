@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\StripeCustomerDomainObject;
-use HiEvents\Models\StripeCustomer;
-use HiEvents\Repository\Interfaces\StripeCustomerRepositoryInterface;
+use TitaKita\DomainObjects\StripeCustomerDomainObject;
+use TitaKita\Models\StripeCustomer;
+use TitaKita\Repository\Interfaces\StripeCustomerRepositoryInterface;
 
 /**
  * @extends BaseRepository<StripeCustomerDomainObject>

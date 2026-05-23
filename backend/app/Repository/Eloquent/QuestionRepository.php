@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\Generated\QuestionDomainObjectAbstract;
-use HiEvents\DomainObjects\QuestionDomainObject;
-use HiEvents\Models\Question;
-use HiEvents\Models\ProductQuestion;
-use HiEvents\Repository\Interfaces\QuestionRepositoryInterface;
-use HiEvents\Repository\Interfaces\ProductRepositoryInterface;
+use TitaKita\DomainObjects\Generated\QuestionDomainObjectAbstract;
+use TitaKita\DomainObjects\QuestionDomainObject;
+use TitaKita\Models\Question;
+use TitaKita\Models\ProductQuestion;
+use TitaKita\Repository\Interfaces\QuestionRepositoryInterface;
+use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Collection;

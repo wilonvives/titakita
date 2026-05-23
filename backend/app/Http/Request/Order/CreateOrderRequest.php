@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Request\Order;
+namespace TitaKita\Http\Request\Order;
 
-use HiEvents\Http\Request\BaseRequest;
-use HiEvents\Services\Domain\Order\OrderCreateRequestValidationService;
+use TitaKita\Http\Request\BaseRequest;
+use TitaKita\Services\Domain\Order\OrderCreateRequestValidationService;
 
 class CreateOrderRequest extends BaseRequest
 {

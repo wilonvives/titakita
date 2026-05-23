@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\DomainObjects;
+namespace TitaKita\DomainObjects;
 
-use HiEvents\DomainObjects\DTO\AccountApplicationFeeDTO;
-use HiEvents\DomainObjects\Enums\StripePlatform;
+use TitaKita\DomainObjects\DTO\AccountApplicationFeeDTO;
+use TitaKita\DomainObjects\Enums\StripePlatform;
 use Illuminate\Support\Collection;
 
 class AccountDomainObject extends Generated\AccountDomainObjectAbstract

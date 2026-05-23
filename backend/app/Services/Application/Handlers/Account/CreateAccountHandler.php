@@ -2,24 +2,24 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Services\Application\Handlers\Account;
+namespace TitaKita\Services\Application\Handlers\Account;
 
-use HiEvents\DomainObjects\AccountDomainObject;
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\DomainObjects\Status\UserStatus;
-use HiEvents\DomainObjects\UserDomainObject;
-use HiEvents\Exceptions\EmailAlreadyExists;
-use HiEvents\Helper\IdHelper;
-use HiEvents\Repository\Interfaces\AccountAttributionRepositoryInterface;
-use HiEvents\Repository\Interfaces\AccountConfigurationRepositoryInterface;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Repository\Interfaces\AccountUserRepositoryInterface;
-use HiEvents\Repository\Interfaces\UserRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Account\DTO\CreateAccountDTO;
-use HiEvents\Services\Application\Handlers\Account\Exceptions\AccountConfigurationDoesNotExist;
-use HiEvents\Services\Application\Handlers\Account\Exceptions\AccountRegistrationDisabledException;
-use HiEvents\Services\Domain\Account\AccountUserAssociationService;
-use HiEvents\Services\Domain\User\EmailConfirmationService;
+use TitaKita\DomainObjects\AccountDomainObject;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\DomainObjects\Status\UserStatus;
+use TitaKita\DomainObjects\UserDomainObject;
+use TitaKita\Exceptions\EmailAlreadyExists;
+use TitaKita\Helper\IdHelper;
+use TitaKita\Repository\Interfaces\AccountAttributionRepositoryInterface;
+use TitaKita\Repository\Interfaces\AccountConfigurationRepositoryInterface;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Repository\Interfaces\AccountUserRepositoryInterface;
+use TitaKita\Repository\Interfaces\UserRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Account\DTO\CreateAccountDTO;
+use TitaKita\Services\Application\Handlers\Account\Exceptions\AccountConfigurationDoesNotExist;
+use TitaKita\Services\Application\Handlers\Account\Exceptions\AccountRegistrationDisabledException;
+use TitaKita\Services\Domain\Account\AccountUserAssociationService;
+use TitaKita\Services\Domain\User\EmailConfirmationService;
 use Illuminate\Config\Repository;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Hashing\HashManager;

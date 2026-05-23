@@ -1,7 +1,7 @@
 <?php
 
-use HiEvents\DomainObjects\Enums\CapacityAssignmentAppliesTo;
-use HiEvents\DomainObjects\Status\CapacityAssignmentStatus;
+use TitaKita\DomainObjects\Enums\CapacityAssignmentAppliesTo;
+use TitaKita\DomainObjects\Status\CapacityAssignmentStatus;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

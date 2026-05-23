@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Http\Request\Organizer\Settings;
+namespace TitaKita\Http\Request\Organizer\Settings;
 
-use HiEvents\DomainObjects\Enums\AttendeeDetailsCollectionMethod;
-use HiEvents\DomainObjects\Enums\HomepageBackgroundType;
-use HiEvents\DomainObjects\Enums\HomepageFontFamily;
-use HiEvents\DomainObjects\Enums\OrganizerHomepageVisibility;
-use HiEvents\DomainObjects\Enums\TrackingPixelProvider;
-use HiEvents\Http\Request\BaseRequest;
-use HiEvents\Validators\Rules\RulesHelper;
+use TitaKita\DomainObjects\Enums\AttendeeDetailsCollectionMethod;
+use TitaKita\DomainObjects\Enums\HomepageBackgroundType;
+use TitaKita\DomainObjects\Enums\HomepageFontFamily;
+use TitaKita\DomainObjects\Enums\OrganizerHomepageVisibility;
+use TitaKita\DomainObjects\Enums\TrackingPixelProvider;
+use TitaKita\Http\Request\BaseRequest;
+use TitaKita\Validators\Rules\RulesHelper;
 use Illuminate\Validation\Rule;
 
 class PartialUpdateOrganizerSettingsRequest extends BaseRequest

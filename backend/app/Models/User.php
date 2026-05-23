@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Models;
+namespace TitaKita\Models;
 
-use HiEvents\DomainObjects\Enums\Role;
+use TitaKita\DomainObjects\Enums\Role;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Auth\MustVerifyEmail;
 use Illuminate\Auth\Passwords\CanResetPassword;

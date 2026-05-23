@@ -1,28 +1,28 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\TicketLookup;
+namespace TitaKita\Services\Application\Handlers\TicketLookup;
 
 use Carbon\Carbon;
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\Generated\EventDomainObjectAbstract;
-use HiEvents\DomainObjects\Generated\OrderDomainObjectAbstract;
-use HiEvents\DomainObjects\Generated\OrganizerDomainObjectAbstract;
-use HiEvents\DomainObjects\Generated\ProductDomainObjectAbstract;
-use HiEvents\DomainObjects\ImageDomainObject;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\DomainObjects\ProductPriceDomainObject;
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\DomainObjects\TicketLookupTokenDomainObject;
-use HiEvents\Exceptions\InvalidTicketLookupTokenException;
-use HiEvents\Repository\Eloquent\Value\OrderAndDirection;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Repository\Interfaces\TicketLookupTokenRepositoryInterface;
-use HiEvents\Services\Application\Handlers\TicketLookup\DTO\GetOrdersByLookupTokenDTO;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\Generated\EventDomainObjectAbstract;
+use TitaKita\DomainObjects\Generated\OrderDomainObjectAbstract;
+use TitaKita\DomainObjects\Generated\OrganizerDomainObjectAbstract;
+use TitaKita\DomainObjects\Generated\ProductDomainObjectAbstract;
+use TitaKita\DomainObjects\ImageDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\DomainObjects\TicketLookupTokenDomainObject;
+use TitaKita\Exceptions\InvalidTicketLookupTokenException;
+use TitaKita\Repository\Eloquent\Value\OrderAndDirection;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Repository\Interfaces\TicketLookupTokenRepositoryInterface;
+use TitaKita\Services\Application\Handlers\TicketLookup\DTO\GetOrdersByLookupTokenDTO;
 use Illuminate\Support\Collection;
 
 class GetOrdersByLookupTokenHandler

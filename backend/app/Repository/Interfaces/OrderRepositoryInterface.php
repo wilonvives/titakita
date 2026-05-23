@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\OrderItemDomainObject;
-use HiEvents\Http\DTO\QueryParamsDTO;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\OrderItemDomainObject;
+use TitaKita\Http\DTO\QueryParamsDTO;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Order;
+namespace TitaKita\Services\Application\Handlers\Order;
 
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Services\Application\Handlers\Order\DTO\MarkOrderAsPaidDTO;
-use HiEvents\Services\Domain\Order\MarkOrderAsPaidService;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Services\Application\Handlers\Order\DTO\MarkOrderAsPaidDTO;
+use TitaKita\Services\Domain\Order\MarkOrderAsPaidService;
 use Psr\Log\LoggerInterface;
 use Throwable;
 

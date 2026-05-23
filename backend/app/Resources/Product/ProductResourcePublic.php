@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Resources\Product;
+namespace TitaKita\Resources\Product;
 
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\Resources\Tax\TaxAndFeeResource;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\Resources\Tax\TaxAndFeeResource;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Http\Actions\Orders;
+namespace TitaKita\Http\Actions\Orders;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Order\EditOrderRequest;
-use HiEvents\Resources\Order\OrderResource;
-use HiEvents\Services\Application\Handlers\Order\DTO\EditOrderDTO;
-use HiEvents\Services\Application\Handlers\Order\EditOrderHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Order\EditOrderRequest;
+use TitaKita\Resources\Order\OrderResource;
+use TitaKita\Services\Application\Handlers\Order\DTO\EditOrderDTO;
+use TitaKita\Services\Application\Handlers\Order\EditOrderHandler;
 use Illuminate\Http\JsonResponse;
 
 class EditOrderAction extends BaseAction

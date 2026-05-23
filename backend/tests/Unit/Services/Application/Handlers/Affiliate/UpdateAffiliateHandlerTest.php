@@ -2,11 +2,11 @@
 
 namespace Tests\Unit\Services\Application\Handlers\Affiliate;
 
-use HiEvents\DomainObjects\AffiliateDomainObject;
-use HiEvents\DomainObjects\Status\AffiliateStatus;
-use HiEvents\Repository\Interfaces\AffiliateRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Affiliate\UpdateAffiliateHandler;
-use HiEvents\Services\Application\Handlers\Affiliate\DTO\UpsertAffiliateDTO;
+use TitaKita\DomainObjects\AffiliateDomainObject;
+use TitaKita\DomainObjects\Status\AffiliateStatus;
+use TitaKita\Repository\Interfaces\AffiliateRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Affiliate\UpdateAffiliateHandler;
+use TitaKita\Services\Application\Handlers\Affiliate\DTO\UpsertAffiliateDTO;
 use Mockery as m;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Tests\TestCase;

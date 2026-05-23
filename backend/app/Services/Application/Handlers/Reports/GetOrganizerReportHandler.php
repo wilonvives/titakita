@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Reports;
+namespace TitaKita\Services\Application\Handlers\Reports;
 
-use HiEvents\Services\Application\Handlers\Reports\DTO\GetOrganizerReportDTO;
-use HiEvents\Services\Domain\Report\DTO\PaginatedReportDTO;
-use HiEvents\Services\Domain\Report\Factory\OrganizerReportServiceFactory;
-use HiEvents\Services\Domain\Report\OrganizerReports\PlatformFeesReport;
+use TitaKita\Services\Application\Handlers\Reports\DTO\GetOrganizerReportDTO;
+use TitaKita\Services\Domain\Report\DTO\PaginatedReportDTO;
+use TitaKita\Services\Domain\Report\Factory\OrganizerReportServiceFactory;
+use TitaKita\Services\Domain\Report\OrganizerReports\PlatformFeesReport;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 

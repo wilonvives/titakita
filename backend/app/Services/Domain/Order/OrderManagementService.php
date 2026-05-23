@@ -1,18 +1,18 @@
 <?php
 
-namespace HiEvents\Services\Domain\Order;
+namespace TitaKita\Services\Domain\Order;
 
 use Carbon\Carbon;
-use HiEvents\DomainObjects\AffiliateDomainObject;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\Generated\OrderDomainObjectAbstract;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\OrderItemDomainObject;
-use HiEvents\DomainObjects\PromoCodeDomainObject;
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\Helper\IdHelper;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Services\Domain\Tax\TaxAndFeeOrderRollupService;
+use TitaKita\DomainObjects\AffiliateDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\Generated\OrderDomainObjectAbstract;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\OrderItemDomainObject;
+use TitaKita\DomainObjects\PromoCodeDomainObject;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\Helper\IdHelper;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Services\Domain\Tax\TaxAndFeeOrderRollupService;
 use Illuminate\Support\Collection;
 
 class OrderManagementService

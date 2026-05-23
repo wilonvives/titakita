@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\PasswordResetDomainObject;
-use HiEvents\Models\PasswordReset;
-use HiEvents\Repository\Interfaces\PasswordResetRepositoryInterface;
+use TitaKita\DomainObjects\PasswordResetDomainObject;
+use TitaKita\Models\PasswordReset;
+use TitaKita\Repository\Interfaces\PasswordResetRepositoryInterface;
 
 /**
  * @extends BaseRepository<PasswordResetDomainObject>

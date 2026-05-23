@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Resources\Event;
+namespace TitaKita\Resources\Event;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Resources\BaseResource;
-use HiEvents\Resources\Image\ImageResource;
-use HiEvents\Resources\Organizer\OrganizerResourcePublic;
-use HiEvents\Resources\ProductCategory\ProductCategoryResourcePublic;
-use HiEvents\Resources\Question\QuestionResource;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Resources\BaseResource;
+use TitaKita\Resources\Image\ImageResource;
+use TitaKita\Resources\Organizer\OrganizerResourcePublic;
+use TitaKita\Resources\ProductCategory\ProductCategoryResourcePublic;
+use TitaKita\Resources\Question\QuestionResource;
 use Illuminate\Http\Request;
 
 /**

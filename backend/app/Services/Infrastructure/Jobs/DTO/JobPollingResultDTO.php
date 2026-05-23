@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Infrastructure\Jobs\DTO;
+namespace TitaKita\Services\Infrastructure\Jobs\DTO;
 
-use HiEvents\Services\Infrastructure\Jobs\Enum\JobStatusEnum;
+use TitaKita\Services\Infrastructure\Jobs\Enum\JobStatusEnum;
 
 class JobPollingResultDTO
 {

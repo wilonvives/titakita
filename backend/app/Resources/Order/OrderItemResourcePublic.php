@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Resources\Order;
+namespace TitaKita\Resources\Order;
 
-use HiEvents\DomainObjects\OrderItemDomainObject;
-use HiEvents\Resources\BaseResource;
-use HiEvents\Resources\Product\ProductResourcePublic;
+use TitaKita\DomainObjects\OrderItemDomainObject;
+use TitaKita\Resources\BaseResource;
+use TitaKita\Resources\Product\ProductResourcePublic;
 use Illuminate\Http\Request;
 
 /**

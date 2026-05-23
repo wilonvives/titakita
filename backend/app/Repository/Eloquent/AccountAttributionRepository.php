@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\AccountAttributionDomainObject;
-use HiEvents\DomainObjects\Status\EventStatus;
-use HiEvents\Models\AccountAttribution;
-use HiEvents\Repository\Interfaces\AccountAttributionRepositoryInterface;
+use TitaKita\DomainObjects\AccountAttributionDomainObject;
+use TitaKita\DomainObjects\Status\EventStatus;
+use TitaKita\Models\AccountAttribution;
+use TitaKita\Repository\Interfaces\AccountAttributionRepositoryInterface;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\DB;
 

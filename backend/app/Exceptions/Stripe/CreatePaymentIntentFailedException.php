@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Exceptions\Stripe;
+namespace TitaKita\Exceptions\Stripe;
 
 use Exception;
 

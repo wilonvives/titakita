@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\DomainObjects;
+namespace TitaKita\DomainObjects;
 
 use Carbon\Carbon;
-use HiEvents\DomainObjects\Enums\ProductPriceType;
-use HiEvents\Constants;
-use HiEvents\DomainObjects\Interfaces\IsSortable;
-use HiEvents\DomainObjects\SortingAndFiltering\AllowedSorts;
+use TitaKita\DomainObjects\Enums\ProductPriceType;
+use TitaKita\Constants;
+use TitaKita\DomainObjects\Interfaces\IsSortable;
+use TitaKita\DomainObjects\SortingAndFiltering\AllowedSorts;
 use Illuminate\Support\Collection;
 use LogicException;
 

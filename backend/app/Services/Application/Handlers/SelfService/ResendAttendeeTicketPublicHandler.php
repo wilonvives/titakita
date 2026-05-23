@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\SelfService;
+namespace TitaKita\Services\Application\Handlers\SelfService;
 
-use HiEvents\DomainObjects\Generated\AttendeeDomainObjectAbstract;
-use HiEvents\Repository\Interfaces\AttendeeRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Services\Application\Handlers\SelfService\DTO\ResendEmailPublicDTO;
-use HiEvents\Services\Domain\SelfService\SelfServiceResendEmailService;
+use TitaKita\DomainObjects\Generated\AttendeeDomainObjectAbstract;
+use TitaKita\Repository\Interfaces\AttendeeRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Services\Application\Handlers\SelfService\DTO\ResendEmailPublicDTO;
+use TitaKita\Services\Domain\SelfService\SelfServiceResendEmailService;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 
 class ResendAttendeeTicketPublicHandler

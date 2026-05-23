@@ -1,17 +1,17 @@
 <?php
 
-namespace HiEvents\Services\Domain\User;
+namespace TitaKita\Services\Domain\User;
 
 use Carbon\Carbon;
-use HiEvents\DomainObjects\UserDomainObject;
-use HiEvents\Mail\Account\ConfirmEmailAddressEmail;
-use HiEvents\Mail\Account\EmailConfirmationCodeEmail;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\UserRepositoryInterface;
-use HiEvents\Services\Infrastructure\Encryption\EncryptedPayloadService;
-use HiEvents\Services\Infrastructure\Encryption\Exception\DecryptionFailedException;
-use HiEvents\Services\Infrastructure\Encryption\Exception\EncryptedPayloadExpiredException;
-use HiEvents\Services\Infrastructure\User\EmailVerificationCodeService;
+use TitaKita\DomainObjects\UserDomainObject;
+use TitaKita\Mail\Account\ConfirmEmailAddressEmail;
+use TitaKita\Mail\Account\EmailConfirmationCodeEmail;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\UserRepositoryInterface;
+use TitaKita\Services\Infrastructure\Encryption\EncryptedPayloadService;
+use TitaKita\Services\Infrastructure\Encryption\Exception\DecryptionFailedException;
+use TitaKita\Services\Infrastructure\Encryption\Exception\EncryptedPayloadExpiredException;
+use TitaKita\Services\Infrastructure\User\EmailVerificationCodeService;
 use Illuminate\Contracts\Mail\Mailer;
 use Illuminate\Database\DatabaseManager;
 use Throwable;

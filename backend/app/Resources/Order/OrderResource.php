@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Resources\Order;
+namespace TitaKita\Resources\Order;
 
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\Resources\Attendee\AttendeeResource;
-use HiEvents\Resources\BaseResource;
-use HiEvents\Resources\Order\Invoice\InvoiceResource;
-use HiEvents\Resources\Question\QuestionAnswerViewResource;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\Resources\Attendee\AttendeeResource;
+use TitaKita\Resources\BaseResource;
+use TitaKita\Resources\Order\Invoice\InvoiceResource;
+use TitaKita\Resources\Question\QuestionAnswerViewResource;
 use Illuminate\Http\Request;
 
 /**

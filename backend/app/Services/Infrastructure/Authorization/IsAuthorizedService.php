@@ -1,23 +1,23 @@
 <?php
 
-namespace HiEvents\Services\Infrastructure\Authorization;
+namespace TitaKita\Services\Infrastructure\Authorization;
 
-use HiEvents\DomainObjects\AccountDomainObject;
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\ImageDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\DomainObjects\Status\UserStatus;
-use HiEvents\DomainObjects\TaxAndFeesDomainObject;
-use HiEvents\DomainObjects\UserDomainObject;
-use HiEvents\Exceptions\UnauthorizedException;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Repository\Interfaces\AccountUserRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\ImageRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrganizerRepositoryInterface;
-use HiEvents\Repository\Interfaces\TaxAndFeeRepositoryInterface;
-use HiEvents\Repository\Interfaces\UserRepositoryInterface;
+use TitaKita\DomainObjects\AccountDomainObject;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\ImageDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\Status\UserStatus;
+use TitaKita\DomainObjects\TaxAndFeesDomainObject;
+use TitaKita\DomainObjects\UserDomainObject;
+use TitaKita\Exceptions\UnauthorizedException;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Repository\Interfaces\AccountUserRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\ImageRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrganizerRepositoryInterface;
+use TitaKita\Repository\Interfaces\TaxAndFeeRepositoryInterface;
+use TitaKita\Repository\Interfaces\UserRepositoryInterface;
 use Illuminate\Auth\AuthManager;
 use Illuminate\Foundation\Application;
 

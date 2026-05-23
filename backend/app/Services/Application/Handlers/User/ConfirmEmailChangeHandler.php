@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\User;
+namespace TitaKita\Services\Application\Handlers\User;
 
-use HiEvents\DomainObjects\UserDomainObject;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Repository\Interfaces\UserRepositoryInterface;
-use HiEvents\Services\Application\Handlers\User\DTO\ConfirmEmailChangeDTO;
-use HiEvents\Services\Infrastructure\Encryption\EncryptedPayloadService;
-use HiEvents\Services\Infrastructure\Encryption\Exception\DecryptionFailedException;
+use TitaKita\DomainObjects\UserDomainObject;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Repository\Interfaces\UserRepositoryInterface;
+use TitaKita\Services\Application\Handlers\User\DTO\ConfirmEmailChangeDTO;
+use TitaKita\Services\Infrastructure\Encryption\EncryptedPayloadService;
+use TitaKita\Services\Infrastructure\Encryption\Exception\DecryptionFailedException;
 use Illuminate\Database\DatabaseManager;
 use Psr\Log\LoggerInterface;
 use Throwable;

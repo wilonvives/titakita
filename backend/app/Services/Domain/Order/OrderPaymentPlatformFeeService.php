@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Domain\Order;
+namespace TitaKita\Services\Domain\Order;
 
-use HiEvents\DomainObjects\Generated\OrderPaymentPlatformFeeDomainObjectAbstract;
-use HiEvents\Helper\Currency;
-use HiEvents\Repository\Interfaces\OrderPaymentPlatformFeeRepositoryInterface;
+use TitaKita\DomainObjects\Generated\OrderPaymentPlatformFeeDomainObjectAbstract;
+use TitaKita\Helper\Currency;
+use TitaKita\Repository\Interfaces\OrderPaymentPlatformFeeRepositoryInterface;
 
 class OrderPaymentPlatformFeeService
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Domain\Message\DTO;
+namespace TitaKita\Services\Domain\Message\DTO;
 
-use HiEvents\DataTransferObjects\BaseDataObject;
-use HiEvents\DomainObjects\Enums\MessagingTierViolationEnum;
+use TitaKita\DataTransferObjects\BaseDataObject;
+use TitaKita\DomainObjects\Enums\MessagingTierViolationEnum;
 
 class MessagingTierViolationDTO extends BaseDataObject
 {

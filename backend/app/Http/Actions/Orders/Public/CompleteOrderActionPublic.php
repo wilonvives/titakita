@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Orders\Public;
+namespace TitaKita\Http\Actions\Orders\Public;
 
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Order\CompleteOrderRequest;
-use HiEvents\Resources\Order\OrderResourcePublic;
-use HiEvents\Services\Application\Handlers\Order\CompleteOrderHandler;
-use HiEvents\Services\Application\Handlers\Order\DTO\CompleteOrderDTO;
-use HiEvents\Services\Application\Handlers\Order\DTO\CompleteOrderOrderDTO;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Order\CompleteOrderRequest;
+use TitaKita\Resources\Order\OrderResourcePublic;
+use TitaKita\Services\Application\Handlers\Order\CompleteOrderHandler;
+use TitaKita\Services\Application\Handlers\Order\DTO\CompleteOrderDTO;
+use TitaKita\Services\Application\Handlers\Order\DTO\CompleteOrderOrderDTO;
 use Illuminate\Http\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 

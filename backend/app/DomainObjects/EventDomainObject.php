@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\DomainObjects;
+namespace TitaKita\DomainObjects;
 
 use Carbon\Carbon;
-use HiEvents\DomainObjects\Interfaces\IsFilterable;
-use HiEvents\DomainObjects\Interfaces\IsSortable;
-use HiEvents\DomainObjects\SortingAndFiltering\AllowedSorts;
-use HiEvents\DomainObjects\Status\EventLifecycleStatus;
-use HiEvents\Helper\StringHelper;
-use HiEvents\Helper\Url;
+use TitaKita\DomainObjects\Interfaces\IsFilterable;
+use TitaKita\DomainObjects\Interfaces\IsSortable;
+use TitaKita\DomainObjects\SortingAndFiltering\AllowedSorts;
+use TitaKita\DomainObjects\Status\EventLifecycleStatus;
+use TitaKita\Helper\StringHelper;
+use TitaKita\Helper\Url;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 

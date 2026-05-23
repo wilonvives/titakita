@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Domain\Product;
+namespace TitaKita\Services\Domain\Product;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\ProductPriceDomainObject;
-use HiEvents\Helper\DateHelper;
-use HiEvents\Repository\Eloquent\ProductPriceRepository;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\Helper\DateHelper;
+use TitaKita\Repository\Eloquent\ProductPriceRepository;
 use Illuminate\Support\Collection;
 
 class ProductPriceCreateService

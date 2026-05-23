@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Services\Infrastructure\DomainEvents\Events;
+namespace TitaKita\Services\Infrastructure\DomainEvents\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 

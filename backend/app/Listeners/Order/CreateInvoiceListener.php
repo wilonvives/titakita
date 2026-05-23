@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Listeners\Order;
+namespace TitaKita\Listeners\Order;
 
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\Events\OrderStatusChangedEvent;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Services\Domain\Invoice\InvoiceCreateService;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\Events\OrderStatusChangedEvent;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Services\Domain\Invoice\InvoiceCreateService;
 
 class CreateInvoiceListener
 {

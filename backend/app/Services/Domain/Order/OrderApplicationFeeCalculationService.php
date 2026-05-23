@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Services\Domain\Order;
+namespace TitaKita\Services\Domain\Order;
 
 use Brick\Money\Currency;
-use HiEvents\DomainObjects\AccountConfigurationDomainObject;
-use HiEvents\DomainObjects\AccountVatSettingDomainObject;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\Services\Domain\Order\DTO\ApplicationFeeValuesDTO;
-use HiEvents\Services\Domain\Order\Vat\VatRateDeterminationService;
-use HiEvents\Services\Infrastructure\CurrencyConversion\CurrencyConversionClientInterface;
-use HiEvents\Values\MoneyValue;
+use TitaKita\DomainObjects\AccountConfigurationDomainObject;
+use TitaKita\DomainObjects\AccountVatSettingDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\Services\Domain\Order\DTO\ApplicationFeeValuesDTO;
+use TitaKita\Services\Domain\Order\Vat\VatRateDeterminationService;
+use TitaKita\Services\Infrastructure\CurrencyConversion\CurrencyConversionClientInterface;
+use TitaKita\Values\MoneyValue;
 use Illuminate\Config\Repository;
 
 class OrderApplicationFeeCalculationService

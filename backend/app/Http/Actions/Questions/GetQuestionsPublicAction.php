@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Http\Actions\Questions;
+namespace TitaKita\Http\Actions\Questions;
 
-use HiEvents\DomainObjects\Generated\QuestionDomainObjectAbstract;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Repository\Interfaces\QuestionRepositoryInterface;
-use HiEvents\Resources\Question\QuestionResourcePublic;
+use TitaKita\DomainObjects\Generated\QuestionDomainObjectAbstract;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Repository\Interfaces\QuestionRepositoryInterface;
+use TitaKita\Resources\Question\QuestionResourcePublic;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

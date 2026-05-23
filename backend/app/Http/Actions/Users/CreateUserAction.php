@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Users;
+namespace TitaKita\Http\Actions\Users;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\User\CreateUserRequest;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Resources\User\UserResource;
-use HiEvents\Services\Application\Handlers\User\CreateUserHandler;
-use HiEvents\Services\Application\Handlers\User\DTO\CreateUserDTO;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\User\CreateUserRequest;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Resources\User\UserResource;
+use TitaKita\Services\Application\Handlers\User\CreateUserHandler;
+use TitaKita\Services\Application\Handlers\User\DTO\CreateUserDTO;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Validation\ValidationException;
 use Throwable;

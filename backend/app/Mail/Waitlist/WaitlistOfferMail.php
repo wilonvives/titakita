@@ -1,16 +1,16 @@
 <?php
 
-namespace HiEvents\Mail\Waitlist;
+namespace TitaKita\Mail\Waitlist;
 
 use Carbon\Carbon;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\DomainObjects\ProductPriceDomainObject;
-use HiEvents\DomainObjects\WaitlistEntryDomainObject;
-use HiEvents\Helper\Url;
-use HiEvents\Mail\BaseMail;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\DomainObjects\WaitlistEntryDomainObject;
+use TitaKita\Helper\Url;
+use TitaKita\Mail\BaseMail;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 

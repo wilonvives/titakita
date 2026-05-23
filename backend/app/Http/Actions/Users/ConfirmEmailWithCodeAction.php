@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\Users;
+namespace TitaKita\Http\Actions\Users;
 
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\User\ConfirmEmailWithCodeHandler;
-use HiEvents\Services\Application\Handlers\User\DTO\ConfirmEmailWithCodeDTO;
-use HiEvents\Services\Application\Handlers\User\Exception\InvalidEmailVerificationCodeException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\User\ConfirmEmailWithCodeHandler;
+use TitaKita\Services\Application\Handlers\User\DTO\ConfirmEmailWithCodeDTO;
+use TitaKita\Services\Application\Handlers\User\Exception\InvalidEmailVerificationCodeException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;

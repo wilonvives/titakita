@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Organizer\DTO;
+namespace TitaKita\Services\Application\Handlers\Organizer\DTO;
 
-use HiEvents\DataTransferObjects\BaseDataObject;
+use TitaKita\DataTransferObjects\BaseDataObject;
 
 class SendOrganizerContactMessageDTO extends BaseDataObject
 {

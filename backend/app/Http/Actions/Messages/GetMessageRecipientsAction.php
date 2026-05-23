@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\Messages;
+namespace TitaKita\Http\Actions\Messages;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Message\OutgoingMessageResource;
-use HiEvents\Services\Application\Handlers\Message\GetMessageRecipientsHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Message\OutgoingMessageResource;
+use TitaKita\Services\Application\Handlers\Message\GetMessageRecipientsHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

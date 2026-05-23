@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\QuestionAndAnswerViewDomainObject;
+use TitaKita\DomainObjects\QuestionAndAnswerViewDomainObject;
 
 /**
  * @extends RepositoryInterface<QuestionAndAnswerViewDomainObject>

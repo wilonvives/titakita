@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\CheckInListDomainObject;
-use HiEvents\DomainObjects\Generated\CapacityAssignmentDomainObjectAbstract;
-use HiEvents\DomainObjects\Generated\CheckInListDomainObjectAbstract;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Models\CheckInList;
-use HiEvents\Repository\DTO\CheckedInAttendeesCountDTO;
-use HiEvents\Repository\Interfaces\CheckInListRepositoryInterface;
+use TitaKita\DomainObjects\CheckInListDomainObject;
+use TitaKita\DomainObjects\Generated\CapacityAssignmentDomainObjectAbstract;
+use TitaKita\DomainObjects\Generated\CheckInListDomainObjectAbstract;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Models\CheckInList;
+use TitaKita\Repository\DTO\CheckedInAttendeesCountDTO;
+use TitaKita\Repository\Interfaces\CheckInListRepositoryInterface;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;

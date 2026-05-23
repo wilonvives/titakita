@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\DataTransferObjects;
+namespace TitaKita\DataTransferObjects;
 
 class UpdateAdminAccountVatSettingDTO extends BaseDataObject
 {

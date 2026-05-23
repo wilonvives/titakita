@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\AccountConfigurationDomainObject;
+use TitaKita\DomainObjects\AccountConfigurationDomainObject;
 
 /**
  * @extends RepositoryInterface<AccountConfigurationDomainObject>

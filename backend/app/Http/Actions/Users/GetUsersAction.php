@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Users;
+namespace TitaKita\Http\Actions\Users;
 
-use HiEvents\DomainObjects\AccountUserDomainObject;
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\UserRepositoryInterface;
-use HiEvents\Resources\User\UserResource;
+use TitaKita\DomainObjects\AccountUserDomainObject;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\UserRepositoryInterface;
+use TitaKita\Resources\User\UserResource;
 use Illuminate\Http\JsonResponse;
 
 class GetUsersAction extends BaseAction

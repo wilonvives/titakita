@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Domain\Event;
+namespace TitaKita\Services\Domain\Event;
 
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\Exceptions\CannotDeleteEntityException;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\Exceptions\CannotDeleteEntityException;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
 use Illuminate\Database\DatabaseManager;
 use Psr\Log\LoggerInterface;
 use Throwable;

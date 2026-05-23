@@ -1,17 +1,17 @@
 <?php
 
-namespace HiEvents\Http\Actions\PromoCodes;
+namespace TitaKita\Http\Actions\PromoCodes;
 
-use HiEvents\DomainObjects\Enums\PromoCodeDiscountTypeEnum;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\PromoCode\CreateUpdatePromoCodeRequest;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Resources\PromoCode\PromoCodeResource;
-use HiEvents\Services\Application\Handlers\PromoCode\CreatePromoCodeHandler;
-use HiEvents\Services\Application\Handlers\PromoCode\DTO\UpsertPromoCodeDTO;
-use HiEvents\Services\Domain\Product\Exception\UnrecognizedProductIdException;
+use TitaKita\DomainObjects\Enums\PromoCodeDiscountTypeEnum;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\PromoCode\CreateUpdatePromoCodeRequest;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Resources\PromoCode\PromoCodeResource;
+use TitaKita\Services\Application\Handlers\PromoCode\CreatePromoCodeHandler;
+use TitaKita\Services\Application\Handlers\PromoCode\DTO\UpsertPromoCodeDTO;
+use TitaKita\Services\Domain\Product\Exception\UnrecognizedProductIdException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Validation\ValidationException;
 

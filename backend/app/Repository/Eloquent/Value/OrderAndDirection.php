@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent\Value;
+namespace TitaKita\Repository\Eloquent\Value;
 
 use InvalidArgumentException;
 

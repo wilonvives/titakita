@@ -1,21 +1,21 @@
 <?php
 
-namespace HiEvents\Services\Domain\Payment\Stripe;
+namespace TitaKita\Services\Domain\Payment\Stripe;
 
 use Brick\Math\Exception\MathException;
 use Brick\Math\Exception\NumberFormatException;
 use Brick\Math\Exception\RoundingNecessaryException;
 use Brick\Money\Exception\UnknownCurrencyException;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\DomainObjects\StripePaymentDomainObject;
-use HiEvents\Exceptions\Stripe\StripeClientConfigurationException;
-use HiEvents\Mail\Order\PaymentSuccessButOrderExpiredMail;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Services\Infrastructure\Stripe\StripeClientFactory;
-use HiEvents\Values\MoneyValue;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\StripePaymentDomainObject;
+use TitaKita\Exceptions\Stripe\StripeClientConfigurationException;
+use TitaKita\Mail\Order\PaymentSuccessButOrderExpiredMail;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Services\Infrastructure\Stripe\StripeClientFactory;
+use TitaKita\Values\MoneyValue;
 use Illuminate\Contracts\Mail\Mailer;
 use Psr\Log\LoggerInterface;
 use Stripe\Exception\ApiErrorException;

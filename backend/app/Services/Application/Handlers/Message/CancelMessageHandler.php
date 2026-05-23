@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Services\Application\Handlers\Message;
+namespace TitaKita\Services\Application\Handlers\Message;
 
-use HiEvents\DomainObjects\MessageDomainObject;
-use HiEvents\DomainObjects\Status\MessageStatus;
-use HiEvents\Exceptions\ResourceNotFoundException;
-use HiEvents\Repository\Interfaces\MessageRepositoryInterface;
+use TitaKita\DomainObjects\MessageDomainObject;
+use TitaKita\DomainObjects\Status\MessageStatus;
+use TitaKita\Exceptions\ResourceNotFoundException;
+use TitaKita\Repository\Interfaces\MessageRepositoryInterface;
 use Illuminate\Validation\ValidationException;
 
 class CancelMessageHandler

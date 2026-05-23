@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Domain\Organizer;
+namespace TitaKita\Services\Domain\Organizer;
 
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Exceptions\OrganizerNotFoundException;
-use HiEvents\Repository\Interfaces\OrganizerRepositoryInterface;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Exceptions\OrganizerNotFoundException;
+use TitaKita\Repository\Interfaces\OrganizerRepositoryInterface;
 
 class OrganizerFetchService
 {

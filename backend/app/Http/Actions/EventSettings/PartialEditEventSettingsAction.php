@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Http\Actions\EventSettings;
+namespace TitaKita\Http\Actions\EventSettings;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\EventSettings\UpdateEventSettingsRequest;
-use HiEvents\Resources\Event\EventSettingsResource;
-use HiEvents\Services\Application\Handlers\EventSettings\DTO\PartialUpdateEventSettingsDTO;
-use HiEvents\Services\Application\Handlers\EventSettings\PartialUpdateEventSettingsHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\EventSettings\UpdateEventSettingsRequest;
+use TitaKita\Resources\Event\EventSettingsResource;
+use TitaKita\Services\Application\Handlers\EventSettings\DTO\PartialUpdateEventSettingsDTO;
+use TitaKita\Services\Application\Handlers\EventSettings\PartialUpdateEventSettingsHandler;
 use Illuminate\Http\JsonResponse;
 use Throwable;
 

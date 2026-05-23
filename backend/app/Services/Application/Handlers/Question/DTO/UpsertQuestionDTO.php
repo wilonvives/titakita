@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Question\DTO;
+namespace TitaKita\Services\Application\Handlers\Question\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\DomainObjects\Enums\QuestionBelongsTo;
-use HiEvents\DomainObjects\Enums\QuestionTypeEnum;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\DomainObjects\Enums\QuestionBelongsTo;
+use TitaKita\DomainObjects\Enums\QuestionTypeEnum;
 
 class UpsertQuestionDTO extends BaseDTO
 {

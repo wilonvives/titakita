@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Services\Domain\Event\DTO;
+namespace TitaKita\Services\Domain\Event\DTO;
 
 readonly class EventDailyStatsResponseDTO
 {

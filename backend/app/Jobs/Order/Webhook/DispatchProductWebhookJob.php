@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Jobs\Order\Webhook;
+namespace TitaKita\Jobs\Order\Webhook;
 
-use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
-use HiEvents\Services\Infrastructure\Webhook\WebhookDispatchService;
+use TitaKita\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
+use TitaKita\Services\Infrastructure\Webhook\WebhookDispatchService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;

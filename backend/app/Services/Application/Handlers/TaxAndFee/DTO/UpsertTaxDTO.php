@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\TaxAndFee\DTO;
+namespace TitaKita\Services\Application\Handlers\TaxAndFee\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\DomainObjects\Enums\TaxCalculationType;
-use HiEvents\DomainObjects\Enums\TaxType;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\DomainObjects\Enums\TaxCalculationType;
+use TitaKita\DomainObjects\Enums\TaxType;
 
 class UpsertTaxDTO extends BaseDTO
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\PromoCode\DTO;
+namespace TitaKita\Services\Application\Handlers\PromoCode\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
+use TitaKita\DataTransferObjects\BaseDTO;
 
 class DeletePromoCodeDTO extends BaseDTO
 {

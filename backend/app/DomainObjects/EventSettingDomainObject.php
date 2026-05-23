@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\DomainObjects;
+namespace TitaKita\DomainObjects;
 
-use HiEvents\DataTransferObjects\AddressDTO;
-use HiEvents\Helper\AddressHelper;
+use TitaKita\DataTransferObjects\AddressDTO;
+use TitaKita\Helper\AddressHelper;
 
 class EventSettingDomainObject extends Generated\EventSettingDomainObjectAbstract
 {

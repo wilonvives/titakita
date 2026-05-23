@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\TaxAndFeesDomainObject;
+use TitaKita\DomainObjects\TaxAndFeesDomainObject;
 
 /**
  * @extends RepositoryInterface<TaxAndFeesDomainObject>

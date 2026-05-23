@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Products;
+namespace TitaKita\Http\Actions\Products;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\Generated\ProductDomainObjectAbstract;
-use HiEvents\DomainObjects\ProductPriceDomainObject;
-use HiEvents\DomainObjects\TaxAndFeesDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Repository\Interfaces\ProductRepositoryInterface;
-use HiEvents\Resources\Product\ProductResource;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\Generated\ProductDomainObjectAbstract;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\DomainObjects\TaxAndFeesDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
+use TitaKita\Resources\Product\ProductResource;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 

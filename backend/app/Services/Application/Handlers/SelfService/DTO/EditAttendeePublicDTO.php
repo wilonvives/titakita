@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\SelfService\DTO;
+namespace TitaKita\Services\Application\Handlers\SelfService\DTO;
 
-use HiEvents\DataTransferObjects\BaseDataObject;
+use TitaKita\DataTransferObjects\BaseDataObject;
 
 class EditAttendeePublicDTO extends BaseDataObject
 {

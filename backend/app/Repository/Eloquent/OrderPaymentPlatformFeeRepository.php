@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\OrderPaymentPlatformFeeDomainObject;
-use HiEvents\Models\OrderPaymentPlatformFee;
-use HiEvents\Repository\Interfaces\OrderPaymentPlatformFeeRepositoryInterface;
+use TitaKita\DomainObjects\OrderPaymentPlatformFeeDomainObject;
+use TitaKita\Models\OrderPaymentPlatformFee;
+use TitaKita\Repository\Interfaces\OrderPaymentPlatformFeeRepositoryInterface;
 
 /**
  * @extends BaseRepository<OrderPaymentPlatformFeeDomainObject>

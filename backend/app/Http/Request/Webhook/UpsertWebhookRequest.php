@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Request\Webhook;
+namespace TitaKita\Http\Request\Webhook;
 
-use HiEvents\DomainObjects\Status\WebhookStatus;
-use HiEvents\Http\Request\BaseRequest;
-use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
-use HiEvents\Validators\Rules\NoInternalUrlRule;
+use TitaKita\DomainObjects\Status\WebhookStatus;
+use TitaKita\Http\Request\BaseRequest;
+use TitaKita\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
+use TitaKita\Validators\Rules\NoInternalUrlRule;
 use Illuminate\Validation\Rule;
 
 class UpsertWebhookRequest extends BaseRequest

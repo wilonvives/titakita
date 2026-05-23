@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\DomainObjects;
+namespace TitaKita\DomainObjects;
 
-use HiEvents\DomainObjects\Generated\StripePayoutDomainObjectAbstract;
+use TitaKita\DomainObjects\Generated\StripePayoutDomainObjectAbstract;
 
 class StripePayoutDomainObject extends StripePayoutDomainObjectAbstract
 {

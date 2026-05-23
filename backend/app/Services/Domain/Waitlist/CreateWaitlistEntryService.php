@@ -1,16 +1,16 @@
 <?php
 
-namespace HiEvents\Services\Domain\Waitlist;
+namespace TitaKita\Services\Domain\Waitlist;
 
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\DomainObjects\Status\WaitlistEntryStatus;
-use HiEvents\DomainObjects\WaitlistEntryDomainObject;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Helper\EmailHelper;
-use HiEvents\Jobs\Waitlist\SendWaitlistConfirmationEmailJob;
-use HiEvents\Repository\Interfaces\WaitlistEntryRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Waitlist\DTO\CreateWaitlistEntryDTO;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\DomainObjects\Status\WaitlistEntryStatus;
+use TitaKita\DomainObjects\WaitlistEntryDomainObject;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Helper\EmailHelper;
+use TitaKita\Jobs\Waitlist\SendWaitlistConfirmationEmailJob;
+use TitaKita\Repository\Interfaces\WaitlistEntryRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Waitlist\DTO\CreateWaitlistEntryDTO;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Support\Str;
 

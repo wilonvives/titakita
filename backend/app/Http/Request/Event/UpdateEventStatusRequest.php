@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Http\Request\Event;
+namespace TitaKita\Http\Request\Event;
 
-use HiEvents\DomainObjects\Status\EventStatus;
-use HiEvents\Http\Request\BaseRequest;
+use TitaKita\DomainObjects\Status\EventStatus;
+use TitaKita\Http\Request\BaseRequest;
 use Illuminate\Validation\Rule;
 
 class UpdateEventStatusRequest extends BaseRequest

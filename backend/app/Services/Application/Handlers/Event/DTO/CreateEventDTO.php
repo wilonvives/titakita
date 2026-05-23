@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Event\DTO;
+namespace TitaKita\Services\Application\Handlers\Event\DTO;
 
-use HiEvents\DataTransferObjects\AddressDTO;
-use HiEvents\DataTransferObjects\Attributes\CollectionOf;
-use HiEvents\DataTransferObjects\AttributesDTO;
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\DomainObjects\Enums\EventCategory;
-use HiEvents\DomainObjects\Status\EventStatus;
-use HiEvents\Services\Application\Handlers\EventSettings\DTO\UpdateEventSettingsDTO;
+use TitaKita\DataTransferObjects\AddressDTO;
+use TitaKita\DataTransferObjects\Attributes\CollectionOf;
+use TitaKita\DataTransferObjects\AttributesDTO;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\DomainObjects\Enums\EventCategory;
+use TitaKita\DomainObjects\Status\EventStatus;
+use TitaKita\Services\Application\Handlers\EventSettings\DTO\UpdateEventSettingsDTO;
 use Illuminate\Support\Collection;
 
 class CreateEventDTO extends BaseDTO

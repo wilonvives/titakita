@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\CapacityAssignment;
+namespace TitaKita\Services\Application\Handlers\CapacityAssignment;
 
-use HiEvents\DomainObjects\CapacityAssignmentDomainObject;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\Repository\Interfaces\CapacityAssignmentRepositoryInterface;
+use TitaKita\DomainObjects\CapacityAssignmentDomainObject;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\Repository\Interfaces\CapacityAssignmentRepositoryInterface;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 
 class GetCapacityAssignmentHandler

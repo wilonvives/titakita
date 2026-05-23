@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Http\Actions\CheckInLists;
+namespace TitaKita\Http\Actions\CheckInLists;
 
-use HiEvents\DomainObjects\CheckInListDomainObject;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\CheckInList\CheckInListResource;
-use HiEvents\Services\Application\Handlers\CheckInList\DTO\GetCheckInListsDTO;
-use HiEvents\Services\Application\Handlers\CheckInList\GetCheckInListsHandler;
+use TitaKita\DomainObjects\CheckInListDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\CheckInList\CheckInListResource;
+use TitaKita\Services\Application\Handlers\CheckInList\DTO\GetCheckInListsDTO;
+use TitaKita\Services\Application\Handlers\CheckInList\GetCheckInListsHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

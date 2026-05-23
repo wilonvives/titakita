@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Order\Payment\Stripe;
+namespace TitaKita\Services\Application\Handlers\Order\Payment\Stripe;
 
-use HiEvents\Exceptions\CannotAcceptPaymentException;
-use HiEvents\Services\Application\Handlers\Order\Payment\Stripe\DTO\StripeWebhookDTO;
-use HiEvents\Services\Domain\Payment\Stripe\EventHandlers\AccountUpdateHandler;
-use HiEvents\Services\Domain\Payment\Stripe\EventHandlers\ChargeRefundUpdatedHandler;
-use HiEvents\Services\Domain\Payment\Stripe\EventHandlers\ChargeSucceededHandler;
-use HiEvents\Services\Domain\Payment\Stripe\EventHandlers\PaymentIntentFailedHandler;
-use HiEvents\Services\Domain\Payment\Stripe\EventHandlers\PaymentIntentSucceededHandler;
-use HiEvents\Services\Domain\Payment\Stripe\EventHandlers\PayoutPaidHandler;
+use TitaKita\Exceptions\CannotAcceptPaymentException;
+use TitaKita\Services\Application\Handlers\Order\Payment\Stripe\DTO\StripeWebhookDTO;
+use TitaKita\Services\Domain\Payment\Stripe\EventHandlers\AccountUpdateHandler;
+use TitaKita\Services\Domain\Payment\Stripe\EventHandlers\ChargeRefundUpdatedHandler;
+use TitaKita\Services\Domain\Payment\Stripe\EventHandlers\ChargeSucceededHandler;
+use TitaKita\Services\Domain\Payment\Stripe\EventHandlers\PaymentIntentFailedHandler;
+use TitaKita\Services\Domain\Payment\Stripe\EventHandlers\PaymentIntentSucceededHandler;
+use TitaKita\Services\Domain\Payment\Stripe\EventHandlers\PayoutPaidHandler;
 use Illuminate\Cache\Repository;
 use Illuminate\Log\Logger;
 use JsonException;
@@ -19,7 +19,7 @@ use Stripe\Exception\SignatureVerificationException;
 use Stripe\Webhook;
 use Throwable;
 use UnexpectedValueException;
-use HiEvents\Services\Infrastructure\Stripe\StripeConfigurationService;
+use TitaKita\Services\Infrastructure\Stripe\StripeConfigurationService;
 
 class IncomingWebhookHandler
 {

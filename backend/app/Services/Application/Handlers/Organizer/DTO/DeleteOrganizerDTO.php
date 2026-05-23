@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Organizer\DTO;
+namespace TitaKita\Services\Application\Handlers\Organizer\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
+use TitaKita\DataTransferObjects\BaseDTO;
 
 class DeleteOrganizerDTO extends BaseDTO
 {

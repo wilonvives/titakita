@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\ProductCategoryDomainObject;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Models\ProductCategory;
-use HiEvents\Repository\Interfaces\ProductCategoryRepositoryInterface;
+use TitaKita\DomainObjects\ProductCategoryDomainObject;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Models\ProductCategory;
+use TitaKita\Repository\Interfaces\ProductCategoryRepositoryInterface;
 use Illuminate\Support\Collection;
 
 /**

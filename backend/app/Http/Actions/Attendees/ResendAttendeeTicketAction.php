@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\Attendees;
+namespace TitaKita\Http\Actions\Attendees;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\Attendee\DTO\ResendAttendeeTicketDTO;
-use HiEvents\Services\Application\Handlers\Attendee\ResendAttendeeTicketHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\Attendee\DTO\ResendAttendeeTicketDTO;
+use TitaKita\Services\Application\Handlers\Attendee\ResendAttendeeTicketHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;

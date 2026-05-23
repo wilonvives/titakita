@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Helper;
+namespace TitaKita\Helper;
 
 use Illuminate\Support\Str;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Services\Infrastructure\Image\DTO;
+namespace TitaKita\Services\Infrastructure\Image\DTO;
 
 readonly class ImageMetadataDTO
 {

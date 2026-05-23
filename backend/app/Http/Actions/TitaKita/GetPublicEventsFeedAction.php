@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Http\Actions\TitaKita;
+namespace TitaKita\Http\Actions\TitaKita;
 
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\TitaKita\TitaKitaEventResource;
-use HiEvents\Services\Application\Handlers\TitaKita\GetPublicEventsFeedHandler;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\TitaKita\TitaKitaEventResource;
+use TitaKita\Services\Application\Handlers\TitaKita\GetPublicEventsFeedHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

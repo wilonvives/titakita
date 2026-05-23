@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Services\Domain\Sitemap;
+namespace TitaKita\Services\Domain\Sitemap;
 
 use Carbon\Carbon;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use XMLWriter;

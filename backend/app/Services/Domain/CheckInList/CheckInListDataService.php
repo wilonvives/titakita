@@ -1,16 +1,16 @@
 <?php
 
-namespace HiEvents\Services\Domain\CheckInList;
+namespace TitaKita\Services\Domain\CheckInList;
 
 use Exception;
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\DomainObjects\CheckInListDomainObject;
-use HiEvents\DomainObjects\Generated\AttendeeDomainObjectAbstract;
-use HiEvents\DomainObjects\Generated\CheckInListDomainObjectAbstract;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\Exceptions\CannotCheckInException;
-use HiEvents\Repository\Interfaces\AttendeeRepositoryInterface;
-use HiEvents\Repository\Interfaces\CheckInListRepositoryInterface;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\DomainObjects\CheckInListDomainObject;
+use TitaKita\DomainObjects\Generated\AttendeeDomainObjectAbstract;
+use TitaKita\DomainObjects\Generated\CheckInListDomainObjectAbstract;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\Exceptions\CannotCheckInException;
+use TitaKita\Repository\Interfaces\AttendeeRepositoryInterface;
+use TitaKita\Repository\Interfaces\CheckInListRepositoryInterface;
 use Illuminate\Support\Collection;
 
 class CheckInListDataService

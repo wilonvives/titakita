@@ -3,9 +3,9 @@
 namespace Tests\Unit\Services\Infrastructure\Encryption;
 
 use Carbon\Carbon;
-use HiEvents\Services\Infrastructure\Encryption\EncryptedPayloadService;
-use HiEvents\Services\Infrastructure\Encryption\Exception\DecryptionFailedException;
-use HiEvents\Services\Infrastructure\Encryption\Exception\EncryptedPayloadExpiredException;
+use TitaKita\Services\Infrastructure\Encryption\EncryptedPayloadService;
+use TitaKita\Services\Infrastructure\Encryption\Exception\DecryptionFailedException;
+use TitaKita\Services\Infrastructure\Encryption\Exception\EncryptedPayloadExpiredException;
 use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Contracts\Encryption\Encrypter;
 use Mockery as m;

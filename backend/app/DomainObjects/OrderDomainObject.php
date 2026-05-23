@@ -1,18 +1,18 @@
 <?php
 
-namespace HiEvents\DomainObjects;
+namespace TitaKita\DomainObjects;
 
 use Exception;
-use HiEvents\DataTransferObjects\AddressDTO;
-use HiEvents\DomainObjects\Enums\PaymentProviders;
-use HiEvents\DomainObjects\Enums\ProductType;
-use HiEvents\DomainObjects\Interfaces\IsFilterable;
-use HiEvents\DomainObjects\Interfaces\IsSortable;
-use HiEvents\DomainObjects\SortingAndFiltering\AllowedSorts;
-use HiEvents\DomainObjects\Status\OrderPaymentStatus;
-use HiEvents\DomainObjects\Status\OrderRefundStatus;
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\Helper\AddressHelper;
+use TitaKita\DataTransferObjects\AddressDTO;
+use TitaKita\DomainObjects\Enums\PaymentProviders;
+use TitaKita\DomainObjects\Enums\ProductType;
+use TitaKita\DomainObjects\Interfaces\IsFilterable;
+use TitaKita\DomainObjects\Interfaces\IsSortable;
+use TitaKita\DomainObjects\SortingAndFiltering\AllowedSorts;
+use TitaKita\DomainObjects\Status\OrderPaymentStatus;
+use TitaKita\DomainObjects\Status\OrderRefundStatus;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\Helper\AddressHelper;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use RuntimeException;

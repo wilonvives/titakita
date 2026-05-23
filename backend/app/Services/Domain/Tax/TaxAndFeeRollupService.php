@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Domain\Tax;
+namespace TitaKita\Services\Domain\Tax;
 
-namespace HiEvents\Services\Domain\Tax;
+namespace TitaKita\Services\Domain\Tax;
 
-use HiEvents\DomainObjects\TaxAndFeesDomainObject;
+use TitaKita\DomainObjects\TaxAndFeesDomainObject;
 use Illuminate\Support\Str;
 
 class TaxAndFeeRollupService

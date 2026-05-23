@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Services\Domain\CheckInList;
+namespace TitaKita\Services\Domain\CheckInList;
 
-use HiEvents\DomainObjects\CheckInListDomainObject;
-use HiEvents\DomainObjects\Generated\CheckInListDomainObjectAbstract;
-use HiEvents\Helper\DateHelper;
-use HiEvents\Repository\Interfaces\CheckInListRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Services\Domain\Product\EventProductValidationService;
-use HiEvents\Services\Domain\Product\Exception\UnrecognizedProductIdException;
+use TitaKita\DomainObjects\CheckInListDomainObject;
+use TitaKita\DomainObjects\Generated\CheckInListDomainObjectAbstract;
+use TitaKita\Helper\DateHelper;
+use TitaKita\Repository\Interfaces\CheckInListRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Services\Domain\Product\EventProductValidationService;
+use TitaKita\Services\Domain\Product\Exception\UnrecognizedProductIdException;
 use Illuminate\Database\DatabaseManager;
 
 class UpdateCheckInListService

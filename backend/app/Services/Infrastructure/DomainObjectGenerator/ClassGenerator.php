@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Services\Infrastructure\DomainObjectGenerator;
+namespace TitaKita\Services\Infrastructure\DomainObjectGenerator;
 
 use Doctrine\DBAL\Exception;
 use Doctrine\DBAL\Schema\AbstractSchemaManager;
@@ -10,8 +10,8 @@ use Doctrine\DBAL\Schema\Column;
 use Doctrine\DBAL\Schema\Table;
 use Doctrine\DBAL\Types\Type;
 use Doctrine\DBAL\Types\Types;
-use HiEvents\DomainObjects\AbstractDomainObject;
-use HiEvents\Exceptions\NoDefaultValueAvailableForGeneratedDoProperty;
+use TitaKita\DomainObjects\AbstractDomainObject;
+use TitaKita\Exceptions\NoDefaultValueAvailableForGeneratedDoProperty;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Pluralizer;
 use Illuminate\Support\Str;
@@ -27,9 +27,9 @@ class ClassGenerator
 {
     public const NO_TYPE = 'no-type';
 
-    private string $defaultAbstractNamespace = 'HiEvents\DomainObjects\Generated';
+    private string $defaultAbstractNamespace = 'TitaKita\DomainObjects\Generated';
 
-    private string $defaultConcreteNamespace = 'HiEvents\DomainObjects';
+    private string $defaultConcreteNamespace = 'TitaKita\DomainObjects';
 
     private string $defaultAbstractModelPath = "DomainObjects/Generated";
 

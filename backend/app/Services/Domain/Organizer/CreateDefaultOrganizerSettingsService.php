@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Domain\Organizer;
+namespace TitaKita\Services\Domain\Organizer;
 
-use HiEvents\DomainObjects\Enums\ColorTheme;
-use HiEvents\DomainObjects\Enums\OrganizerHomepageVisibility;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Repository\Interfaces\OrganizerSettingsRepositoryInterface;
+use TitaKita\DomainObjects\Enums\ColorTheme;
+use TitaKita\DomainObjects\Enums\OrganizerHomepageVisibility;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Repository\Interfaces\OrganizerSettingsRepositoryInterface;
 
 class CreateDefaultOrganizerSettingsService
 {

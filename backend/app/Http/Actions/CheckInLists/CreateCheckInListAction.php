@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Http\Actions\CheckInLists;
+namespace TitaKita\Http\Actions\CheckInLists;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\CheckInList\UpsertCheckInListRequest;
-use HiEvents\Resources\CheckInList\CheckInListResource;
-use HiEvents\Services\Application\Handlers\CheckInList\CreateCheckInListHandler;
-use HiEvents\Services\Application\Handlers\CheckInList\DTO\UpsertCheckInListDTO;
-use HiEvents\Services\Domain\Product\Exception\UnrecognizedProductIdException;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\CheckInList\UpsertCheckInListRequest;
+use TitaKita\Resources\CheckInList\CheckInListResource;
+use TitaKita\Services\Application\Handlers\CheckInList\CreateCheckInListHandler;
+use TitaKita\Services\Application\Handlers\CheckInList\DTO\UpsertCheckInListDTO;
+use TitaKita\Services\Domain\Product\Exception\UnrecognizedProductIdException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 

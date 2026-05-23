@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Http\Actions\Attendees;
+namespace TitaKita\Http\Actions\Attendees;
 
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Resources\Attendee\AttendeeResource;
-use HiEvents\Services\Application\Handlers\Attendee\GetAttendeesHandler;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Resources\Attendee\AttendeeResource;
+use TitaKita\Services\Application\Handlers\Attendee\GetAttendeesHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

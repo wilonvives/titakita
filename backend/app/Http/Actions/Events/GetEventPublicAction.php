@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Http\Actions\Events;
+namespace TitaKita\Http\Actions\Events;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\Status\EventStatus;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Event\EventResourcePublic;
-use HiEvents\Services\Application\Handlers\Event\DTO\GetPublicEventDTO;
-use HiEvents\Services\Application\Handlers\Event\GetPublicEventHandler;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\Status\EventStatus;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Event\EventResourcePublic;
+use TitaKita\Services\Application\Handlers\Event\DTO\GetPublicEventDTO;
+use TitaKita\Services\Application\Handlers\Event\GetPublicEventHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;

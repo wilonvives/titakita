@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\OrderRefundDomainObject;
-use HiEvents\Models\OrderRefund;
-use HiEvents\Repository\Interfaces\OrderRefundRepositoryInterface;
+use TitaKita\DomainObjects\OrderRefundDomainObject;
+use TitaKita\Models\OrderRefund;
+use TitaKita\Repository\Interfaces\OrderRefundRepositoryInterface;
 
 /**
  * @extends BaseRepository<OrderRefundDomainObject>

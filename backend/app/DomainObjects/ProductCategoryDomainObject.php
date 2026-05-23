@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\DomainObjects;
+namespace TitaKita\DomainObjects;
 
-use HiEvents\DomainObjects\Interfaces\IsSortable;
-use HiEvents\DomainObjects\SortingAndFiltering\AllowedSorts;
+use TitaKita\DomainObjects\Interfaces\IsSortable;
+use TitaKita\DomainObjects\SortingAndFiltering\AllowedSorts;
 use Illuminate\Support\Collection;
 
 class ProductCategoryDomainObject extends Generated\ProductCategoryDomainObjectAbstract implements IsSortable

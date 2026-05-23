@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Infrastructure\Stripe;
+namespace TitaKita\Services\Infrastructure\Stripe;
 
-use HiEvents\DomainObjects\Enums\StripePlatform;
-use HiEvents\Exceptions\Stripe\StripeClientConfigurationException;
+use TitaKita\DomainObjects\Enums\StripePlatform;
+use TitaKita\Exceptions\Stripe\StripeClientConfigurationException;
 use Stripe\StripeClient;
 
 class StripeClientFactory

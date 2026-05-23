@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
 
 /**
  * @extends RepositoryInterface<EventSettingDomainObject>

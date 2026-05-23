@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Affiliates;
+namespace TitaKita\Http\Actions\Affiliates;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\Affiliate\DeleteAffiliateHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\Affiliate\DeleteAffiliateHandler;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 

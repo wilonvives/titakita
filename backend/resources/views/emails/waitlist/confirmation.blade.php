@@ -1,11 +1,11 @@
-@php /** @var \HiEvents\DomainObjects\WaitlistEntryDomainObject $entry */ @endphp
-@php /** @var \HiEvents\DomainObjects\EventDomainObject $event */ @endphp
+@php /** @var \TitaKita\DomainObjects\WaitlistEntryDomainObject $entry */ @endphp
+@php /** @var \TitaKita\DomainObjects\EventDomainObject $event */ @endphp
 @php /** @var ?string $productName */ @endphp
-@php /** @var \HiEvents\DomainObjects\OrganizerDomainObject $organizer */ @endphp
-@php /** @var \HiEvents\DomainObjects\EventSettingDomainObject $eventSettings */ @endphp
+@php /** @var \TitaKita\DomainObjects\OrganizerDomainObject $organizer */ @endphp
+@php /** @var \TitaKita\DomainObjects\EventSettingDomainObject $eventSettings */ @endphp
 @php /** @var string $eventUrl */ @endphp
 
-@php /** @see \HiEvents\Mail\Waitlist\WaitlistConfirmationMail */ @endphp
+@php /** @see \TitaKita\Mail\Waitlist\WaitlistConfirmationMail */ @endphp
 
 <x-mail::message>
 # {{ __("You're on the waitlist!") }}

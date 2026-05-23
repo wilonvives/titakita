@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Http\Middleware;
+namespace TitaKita\Http\Middleware;
 
 use Illuminate\Auth\Middleware\Authenticate as Middleware;
 use Illuminate\Http\Request;

@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Order\Public;
+namespace TitaKita\Services\Application\Handlers\Order\Public;
 
-use HiEvents\DomainObjects\Generated\OrderDomainObjectAbstract;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Exceptions\UnauthorizedException;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Services\Infrastructure\Session\CheckoutSessionManagementService;
+use TitaKita\DomainObjects\Generated\OrderDomainObjectAbstract;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Exceptions\UnauthorizedException;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Services\Infrastructure\Session\CheckoutSessionManagementService;
 use Illuminate\Log\Logger;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 

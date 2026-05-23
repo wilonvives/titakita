@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\WebhookLogDomainObject;
+use TitaKita\DomainObjects\WebhookLogDomainObject;
 
 /**
  * @extends RepositoryInterface<WebhookLogDomainObject>

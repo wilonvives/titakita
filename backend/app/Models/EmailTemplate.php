@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Models;
+namespace TitaKita\Models;
 
-use HiEvents\DomainObjects\EmailTemplateDomainObject;
+use TitaKita\DomainObjects\EmailTemplateDomainObject;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 

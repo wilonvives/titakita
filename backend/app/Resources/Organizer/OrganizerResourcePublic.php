@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Resources\Organizer;
+namespace TitaKita\Resources\Organizer;
 
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Resources\Event\EventResourcePublic;
-use HiEvents\Resources\Image\ImageResource;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Resources\Event\EventResourcePublic;
+use TitaKita\Resources\Image\ImageResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**

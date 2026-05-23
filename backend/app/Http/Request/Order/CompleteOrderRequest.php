@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Request\Order;
+namespace TitaKita\Http\Request\Order;
 
-use HiEvents\Http\Request\BaseRequest;
-use HiEvents\Validators\CompleteOrderValidator;
+use TitaKita\Http\Request\BaseRequest;
+use TitaKita\Validators\CompleteOrderValidator;
 
 class CompleteOrderRequest extends BaseRequest
 {

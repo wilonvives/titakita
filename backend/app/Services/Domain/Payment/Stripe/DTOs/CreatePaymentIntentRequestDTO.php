@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Domain\Payment\Stripe\DTOs;
+namespace TitaKita\Services\Domain\Payment\Stripe\DTOs;
 
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\DomainObjects\AccountDomainObject;
-use HiEvents\DomainObjects\AccountVatSettingDomainObject;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\Values\MoneyValue;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\DomainObjects\AccountDomainObject;
+use TitaKita\DomainObjects\AccountVatSettingDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\Values\MoneyValue;
 
 class CreatePaymentIntentRequestDTO extends BaseDTO
 {

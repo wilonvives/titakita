@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Event\DTO;
+namespace TitaKita\Services\Application\Handlers\Event\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\DomainObjects\Enums\ImageType;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\DomainObjects\Enums\ImageType;
 use Illuminate\Http\UploadedFile;
 
 class CreateEventImageDTO extends BaseDTO

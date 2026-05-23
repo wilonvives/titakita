@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Affiliates;
+namespace TitaKita\Http\Actions\Affiliates;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Exports\AffiliatesExport;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Repository\Interfaces\AffiliateRepositoryInterface;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Exports\AffiliatesExport;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Repository\Interfaces\AffiliateRepositoryInterface;
 use Maatwebsite\Excel\Facades\Excel;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 

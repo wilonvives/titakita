@@ -1,10 +1,10 @@
-@php /** @var \HiEvents\DomainObjects\OrderDomainObject $order */ @endphp
-@php /** @var \HiEvents\DomainObjects\EventDomainObject $event */ @endphp
-@php /** @var \HiEvents\DomainObjects\OrganizerDomainObject $organizer */ @endphp
-@php /** @var \HiEvents\Values\MoneyValue $refundAmount */ @endphp
-@php /** @var \HiEvents\DomainObjects\EventSettingDomainObject $eventSettings */ @endphp
+@php /** @var \TitaKita\DomainObjects\OrderDomainObject $order */ @endphp
+@php /** @var \TitaKita\DomainObjects\EventDomainObject $event */ @endphp
+@php /** @var \TitaKita\DomainObjects\OrganizerDomainObject $organizer */ @endphp
+@php /** @var \TitaKita\Values\MoneyValue $refundAmount */ @endphp
+@php /** @var \TitaKita\DomainObjects\EventSettingDomainObject $eventSettings */ @endphp
 
-@php /** @see \HiEvents\Mail\Order\OrderRefunded */ @endphp
+@php /** @see \TitaKita\Mail\Order\OrderRefunded */ @endphp
 
 <x-mail::message>
 {{ __('Hello') }},

@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Admin;
+namespace TitaKita\Services\Application\Handlers\Admin;
 
-use HiEvents\Repository\Interfaces\AccountAttributionRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Admin\DTO\GetUtmAttributionStatsDTO;
+use TitaKita\Repository\Interfaces\AccountAttributionRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Admin\DTO\GetUtmAttributionStatsDTO;
 
 class GetUtmAttributionStatsHandler
 {

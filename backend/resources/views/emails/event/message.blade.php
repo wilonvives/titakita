@@ -1,8 +1,8 @@
-@php /** @var \HiEvents\DomainObjects\EventDomainObject $event */ @endphp
-@php /** @var \HiEvents\DomainObjects\EventSettingDomainObject $eventSettings */ @endphp
-@php /** @var \HiEvents\Services\Application\Handlers\Message\DTO\SendMessageDTO $messageData */ @endphp
+@php /** @var \TitaKita\DomainObjects\EventDomainObject $event */ @endphp
+@php /** @var \TitaKita\DomainObjects\EventSettingDomainObject $eventSettings */ @endphp
+@php /** @var \TitaKita\Services\Application\Handlers\Message\DTO\SendMessageDTO $messageData */ @endphp
 
-@php /** @see \HiEvents\Mail\Event\EventMessage */ @endphp
+@php /** @see \TitaKita\Mail\Event\EventMessage */ @endphp
 
 <x-mail::message>
 {!! $messageData->message !!}

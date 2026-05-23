@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\TaxAndFee\DTO;
+namespace TitaKita\Services\Application\Handlers\TaxAndFee\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
+use TitaKita\DataTransferObjects\BaseDTO;
 
 class DeleteTaxDTO extends BaseDTO
 {

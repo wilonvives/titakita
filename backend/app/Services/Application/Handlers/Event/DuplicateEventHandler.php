@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Event;
+namespace TitaKita\Services\Application\Handlers\Event;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Services\Domain\Event\DTO\DuplicateEventDataDTO;
-use HiEvents\Services\Domain\Event\DuplicateEventService;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Services\Domain\Event\DTO\DuplicateEventDataDTO;
+use TitaKita\Services\Domain\Event\DuplicateEventService;
 use Throwable;
 
 class DuplicateEventHandler

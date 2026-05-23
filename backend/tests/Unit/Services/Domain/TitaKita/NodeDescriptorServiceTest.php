@@ -2,7 +2,7 @@
 
 namespace Tests\Unit\Services\Domain\TitaKita;
 
-use HiEvents\Services\Domain\TitaKita\NodeDescriptorService;
+use TitaKita\Services\Domain\TitaKita\NodeDescriptorService;
 use Tests\TestCase;
 
 class NodeDescriptorServiceTest extends TestCase

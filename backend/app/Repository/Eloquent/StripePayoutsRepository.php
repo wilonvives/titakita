@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\Repository\Interfaces\StripePayoutsRepositoryInterface;
-use HiEvents\Models\StripePayout;
-use HiEvents\DomainObjects\StripePayoutDomainObject;
+use TitaKita\Repository\Interfaces\StripePayoutsRepositoryInterface;
+use TitaKita\Models\StripePayout;
+use TitaKita\DomainObjects\StripePayoutDomainObject;
 
 /**
  * @extends BaseRepository<StripePayoutDomainObject>

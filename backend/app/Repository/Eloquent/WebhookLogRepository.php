@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\WebhookLogDomainObject;
-use HiEvents\Models\WebhookLog;
-use HiEvents\Repository\Interfaces\WebhookLogRepositoryInterface;
+use TitaKita\DomainObjects\WebhookLogDomainObject;
+use TitaKita\Models\WebhookLog;
+use TitaKita\Repository\Interfaces\WebhookLogRepositoryInterface;
 
 /**
  * @extends BaseRepository<WebhookLogDomainObject>

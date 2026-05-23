@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Event;
+namespace TitaKita\Services\Application\Handlers\Event;
 
-use HiEvents\Services\Application\Handlers\Event\DTO\EventStatsRequestDTO;
-use HiEvents\Services\Application\Handlers\Event\DTO\EventStatsResponseDTO;
-use HiEvents\Services\Domain\Event\EventStatsFetchService;
+use TitaKita\Services\Application\Handlers\Event\DTO\EventStatsRequestDTO;
+use TitaKita\Services\Application\Handlers\Event\DTO\EventStatsResponseDTO;
+use TitaKita\Services\Domain\Event\EventStatsFetchService;
 
 readonly class GetEventStatsHandler
 {

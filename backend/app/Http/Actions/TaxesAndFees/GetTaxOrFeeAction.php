@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\TaxesAndFees;
+namespace TitaKita\Http\Actions\TaxesAndFees;
 
-use HiEvents\DomainObjects\AccountDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Repository\Interfaces\TaxAndFeeRepositoryInterface;
-use HiEvents\Resources\Tax\TaxAndFeeResource;
+use TitaKita\DomainObjects\AccountDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Repository\Interfaces\TaxAndFeeRepositoryInterface;
+use TitaKita\Resources\Tax\TaxAndFeeResource;
 use Illuminate\Http\JsonResponse;
 
 class GetTaxOrFeeAction extends BaseAction

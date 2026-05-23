@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Services\Infrastructure\Image\Exception;
+namespace TitaKita\Services\Infrastructure\Image\Exception;
 
 use Exception;
 

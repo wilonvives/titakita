@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Request\User;
+namespace TitaKita\Http\Request\User;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\DomainObjects\Status\UserStatus;
-use HiEvents\Http\Request\BaseRequest;
-use HiEvents\Validators\Rules\RulesHelper;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\DomainObjects\Status\UserStatus;
+use TitaKita\Http\Request\BaseRequest;
+use TitaKita\Validators\Rules\RulesHelper;
 use Illuminate\Validation\Rule;
 
 class UpdateUserRequest extends BaseRequest

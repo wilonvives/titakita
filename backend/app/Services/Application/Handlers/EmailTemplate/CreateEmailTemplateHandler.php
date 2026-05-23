@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\EmailTemplate;
+namespace TitaKita\Services\Application\Handlers\EmailTemplate;
 
-use HiEvents\DomainObjects\EmailTemplateDomainObject;
-use HiEvents\Exceptions\EmailTemplateValidationException;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Repository\Interfaces\EmailTemplateRepositoryInterface;
-use HiEvents\Services\Application\Handlers\EmailTemplate\DTO\UpsertEmailTemplateDTO;
-use HiEvents\Services\Domain\Email\EmailTemplateService;
-use HiEvents\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
+use TitaKita\DomainObjects\EmailTemplateDomainObject;
+use TitaKita\Exceptions\EmailTemplateValidationException;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Repository\Interfaces\EmailTemplateRepositoryInterface;
+use TitaKita\Services\Application\Handlers\EmailTemplate\DTO\UpsertEmailTemplateDTO;
+use TitaKita\Services\Domain\Email\EmailTemplateService;
+use TitaKita\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
 
 class CreateEmailTemplateHandler
 {

@@ -2,12 +2,12 @@
 
 namespace Tests\Unit\Services\Application\Handlers\OrganizerSettings;
 
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\DomainObjects\OrganizerSettingDomainObject;
-use HiEvents\Repository\Interfaces\OrganizerRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrganizerSettingsRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Organizer\DTO\PartialUpdateOrganizerSettingsDTO;
-use HiEvents\Services\Application\Handlers\Organizer\Settings\PartialUpdateOrganizerSettingsHandler;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\OrganizerSettingDomainObject;
+use TitaKita\Repository\Interfaces\OrganizerRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrganizerSettingsRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Organizer\DTO\PartialUpdateOrganizerSettingsDTO;
+use TitaKita\Services\Application\Handlers\Organizer\Settings\PartialUpdateOrganizerSettingsHandler;
 use Mockery;
 use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
 use Tests\TestCase;

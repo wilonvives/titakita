@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Services\Domain\TitaKita;
+namespace TitaKita\Services\Domain\TitaKita;
 
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
 

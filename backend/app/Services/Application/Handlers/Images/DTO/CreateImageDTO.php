@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Images\DTO;
+namespace TitaKita\Services\Application\Handlers\Images\DTO;
 
-use HiEvents\DomainObjects\Enums\ImageType;
+use TitaKita\DomainObjects\Enums\ImageType;
 use Illuminate\Http\UploadedFile;
 
 class CreateImageDTO

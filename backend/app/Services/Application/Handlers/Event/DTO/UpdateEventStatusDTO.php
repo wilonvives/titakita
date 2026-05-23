@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Event\DTO;
+namespace TitaKita\Services\Application\Handlers\Event\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
+use TitaKita\DataTransferObjects\BaseDTO;
 
 class UpdateEventStatusDTO extends BaseDTO
 {

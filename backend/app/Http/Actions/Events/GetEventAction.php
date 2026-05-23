@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Events;
+namespace TitaKita\Http\Actions\Events;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\ImageDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\DomainObjects\ProductCategoryDomainObject;
-use HiEvents\DomainObjects\TaxAndFeesDomainObject;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\DomainObjects\ProductPriceDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Resources\Event\EventResource;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\ImageDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\ProductCategoryDomainObject;
+use TitaKita\DomainObjects\TaxAndFeesDomainObject;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Resources\Event\EventResource;
 use Illuminate\Http\JsonResponse;
 
 class GetEventAction extends BaseAction

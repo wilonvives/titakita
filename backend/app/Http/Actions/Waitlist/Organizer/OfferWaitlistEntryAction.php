@@ -1,16 +1,16 @@
 <?php
 
-namespace HiEvents\Http\Actions\Waitlist\Organizer;
+namespace TitaKita\Http\Actions\Waitlist\Organizer;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Exceptions\NoCapacityAvailableException;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Exceptions\ResourceNotFoundException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Waitlist\OfferWaitlistEntryRequest;
-use HiEvents\Resources\Waitlist\WaitlistEntryResource;
-use HiEvents\Services\Application\Handlers\Waitlist\DTO\OfferWaitlistEntryDTO;
-use HiEvents\Services\Application\Handlers\Waitlist\OfferWaitlistEntryHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Exceptions\NoCapacityAvailableException;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Exceptions\ResourceNotFoundException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Waitlist\OfferWaitlistEntryRequest;
+use TitaKita\Resources\Waitlist\WaitlistEntryResource;
+use TitaKita\Services\Application\Handlers\Waitlist\DTO\OfferWaitlistEntryDTO;
+use TitaKita\Services\Application\Handlers\Waitlist\OfferWaitlistEntryHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Validation\ValidationException;
 use Symfony\Component\HttpFoundation\Response;

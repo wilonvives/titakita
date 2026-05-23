@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Models;
+namespace TitaKita\Models;
 
-use HiEvents\DomainObjects\Generated\ProductQuestionDomainObjectAbstract;
+use TitaKita\DomainObjects\Generated\ProductQuestionDomainObjectAbstract;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class ProductQuestion extends BaseModel

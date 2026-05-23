@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Infrastructure\DomainEvents\Enums;
+namespace TitaKita\Services\Infrastructure\DomainEvents\Enums;
 
-use HiEvents\DomainObjects\Enums\BaseEnum;
+use TitaKita\DomainObjects\Enums\BaseEnum;
 
 enum DomainEventType: string
 {

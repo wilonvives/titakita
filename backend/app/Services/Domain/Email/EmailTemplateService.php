@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Domain\Email;
+namespace TitaKita\Services\Domain\Email;
 
-use HiEvents\DomainObjects\EmailTemplateDomainObject;
-use HiEvents\DomainObjects\Enums\EmailTemplateType;
-use HiEvents\Repository\Interfaces\EmailTemplateRepositoryInterface;
-use HiEvents\Services\Domain\Email\DTO\RenderedEmailTemplateDTO;
-use HiEvents\Services\Infrastructure\Email\LiquidTemplateRenderer;
+use TitaKita\DomainObjects\EmailTemplateDomainObject;
+use TitaKita\DomainObjects\Enums\EmailTemplateType;
+use TitaKita\Repository\Interfaces\EmailTemplateRepositoryInterface;
+use TitaKita\Services\Domain\Email\DTO\RenderedEmailTemplateDTO;
+use TitaKita\Services\Infrastructure\Email\LiquidTemplateRenderer;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 
 class EmailTemplateService

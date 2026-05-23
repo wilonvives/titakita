@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Domain\Product\DTO;
+namespace TitaKita\Services\Domain\Product\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\DomainObjects\Status\ProductStatus;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\DomainObjects\Status\ProductStatus;
 
 class ProductPriceDTO extends BaseDTO
 {

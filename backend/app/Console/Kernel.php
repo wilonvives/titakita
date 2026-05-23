@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Console;
+namespace TitaKita\Console;
 
-use HiEvents\Jobs\Message\SendScheduledMessagesJob;
-use HiEvents\Jobs\Waitlist\ProcessExpiredWaitlistOffersJob;
+use TitaKita\Jobs\Message\SendScheduledMessagesJob;
+use TitaKita\Jobs\Waitlist\ProcessExpiredWaitlistOffersJob;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 

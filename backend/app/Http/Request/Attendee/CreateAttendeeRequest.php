@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Http\Request\Attendee;
+namespace TitaKita\Http\Request\Attendee;
 
-use HiEvents\Http\Request\BaseRequest;
-use HiEvents\Locale;
-use HiEvents\Validators\Rules\RulesHelper;
+use TitaKita\Http\Request\BaseRequest;
+use TitaKita\Locale;
+use TitaKita\Validators\Rules\RulesHelper;
 use Illuminate\Validation\Rule;
 
 class CreateAttendeeRequest extends BaseRequest

@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Jobs\Event;
+namespace TitaKita\Jobs\Event;
 
-use HiEvents\Exceptions\UnableToSendMessageException;
-use HiEvents\Services\Application\Handlers\Message\DTO\SendMessageDTO;
-use HiEvents\Services\Domain\Mail\SendEventEmailMessagesService;
+use TitaKita\Exceptions\UnableToSendMessageException;
+use TitaKita\Services\Application\Handlers\Message\DTO\SendMessageDTO;
+use TitaKita\Services\Domain\Mail\SendEventEmailMessagesService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;

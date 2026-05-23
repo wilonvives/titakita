@@ -1,26 +1,26 @@
 <?php
 
-namespace HiEvents\Services\Infrastructure\Webhook;
+namespace TitaKita\Services\Infrastructure\Webhook;
 
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\DomainObjects\OrderItemDomainObject;
-use HiEvents\DomainObjects\ProductPriceDomainObject;
-use HiEvents\DomainObjects\QuestionAndAnswerViewDomainObject;
-use HiEvents\DomainObjects\TaxAndFeesDomainObject;
-use HiEvents\DomainObjects\WebhookDomainObject;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\AttendeeCheckInRepositoryInterface;
-use HiEvents\Repository\Interfaces\AttendeeRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Repository\Interfaces\ProductRepositoryInterface;
-use HiEvents\Repository\Interfaces\WebhookRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Resources\Attendee\AttendeeResource;
-use HiEvents\Resources\Event\EventResource;
-use HiEvents\Resources\CheckInList\AttendeeCheckInResource;
-use HiEvents\Resources\Order\OrderResource;
-use HiEvents\Resources\Product\ProductResource;
-use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\DomainObjects\OrderItemDomainObject;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\DomainObjects\QuestionAndAnswerViewDomainObject;
+use TitaKita\DomainObjects\TaxAndFeesDomainObject;
+use TitaKita\DomainObjects\WebhookDomainObject;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\AttendeeCheckInRepositoryInterface;
+use TitaKita\Repository\Interfaces\AttendeeRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
+use TitaKita\Repository\Interfaces\WebhookRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Resources\Attendee\AttendeeResource;
+use TitaKita\Resources\Event\EventResource;
+use TitaKita\Resources\CheckInList\AttendeeCheckInResource;
+use TitaKita\Resources\Order\OrderResource;
+use TitaKita\Resources\Product\ProductResource;
+use TitaKita\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Psr\Log\LoggerInterface;
 use Spatie\WebhookServer\WebhookCall;

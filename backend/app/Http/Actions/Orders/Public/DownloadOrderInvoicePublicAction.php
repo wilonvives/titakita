@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Http\Actions\Orders\Public;
+namespace TitaKita\Http\Actions\Orders\Public;
 
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\Order\Public\DownloadOrderInvoicePublicHandler;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\Order\Public\DownloadOrderInvoicePublicHandler;
 use Illuminate\Http\Response;
 
 class DownloadOrderInvoicePublicAction extends BaseAction

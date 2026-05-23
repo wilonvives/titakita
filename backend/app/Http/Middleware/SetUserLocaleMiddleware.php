@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Http\Middleware;
+namespace TitaKita\Http\Middleware;
 
 use Closure;
-use HiEvents\DomainObjects\UserDomainObject;
-use HiEvents\Services\Application\Locale\LocaleService;
+use TitaKita\DomainObjects\UserDomainObject;
+use TitaKita\Services\Application\Locale\LocaleService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;

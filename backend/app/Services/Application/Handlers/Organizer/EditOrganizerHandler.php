@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Organizer;
+namespace TitaKita\Services\Application\Handlers\Organizer;
 
-use HiEvents\DomainObjects\ImageDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Repository\Interfaces\OrganizerRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Organizer\DTO\EditOrganizerDTO;
-use HiEvents\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
+use TitaKita\DomainObjects\ImageDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Repository\Interfaces\OrganizerRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Organizer\DTO\EditOrganizerDTO;
+use TitaKita\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
 use Illuminate\Database\DatabaseManager;
 use Throwable;
 

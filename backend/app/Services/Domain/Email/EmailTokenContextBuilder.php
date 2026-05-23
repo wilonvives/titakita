@@ -1,21 +1,21 @@
 <?php
 
-namespace HiEvents\Services\Domain\Email;
+namespace TitaKita\Services\Domain\Email;
 
 use Carbon\Carbon;
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\DomainObjects\Enums\PaymentProviders;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\OrderItemDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Helper\AddressHelper;
-use HiEvents\Helper\Currency;
-use HiEvents\Helper\DateHelper;
-use HiEvents\Helper\IdHelper;
-use HiEvents\Helper\Url;
-use HiEvents\Locale;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\DomainObjects\Enums\PaymentProviders;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\OrderItemDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Helper\AddressHelper;
+use TitaKita\Helper\Currency;
+use TitaKita\Helper\DateHelper;
+use TitaKita\Helper\IdHelper;
+use TitaKita\Helper\Url;
+use TitaKita\Locale;
 
 class EmailTokenContextBuilder
 {

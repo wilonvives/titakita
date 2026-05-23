@@ -1,6 +1,6 @@
 <?php
 
-use HiEvents\DomainObjects\Enums\HomepageBackgroundType;
+use TitaKita\DomainObjects\Enums\HomepageBackgroundType;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

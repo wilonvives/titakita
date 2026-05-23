@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Http\Actions\Orders\Public;
+namespace TitaKita\Http\Actions\Orders\Public;
 
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Order\OrderResourcePublic;
-use HiEvents\Services\Application\Handlers\Order\DTO\GetOrderPublicDTO;
-use HiEvents\Services\Application\Handlers\Order\GetOrderPublicHandler;
-use HiEvents\Services\Infrastructure\Session\CheckoutSessionManagementService;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Order\OrderResourcePublic;
+use TitaKita\Services\Application\Handlers\Order\DTO\GetOrderPublicDTO;
+use TitaKita\Services\Application\Handlers\Order\GetOrderPublicHandler;
+use TitaKita\Services\Infrastructure\Session\CheckoutSessionManagementService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

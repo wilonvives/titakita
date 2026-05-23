@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Services\Application\Handlers\Affiliate;
+namespace TitaKita\Services\Application\Handlers\Affiliate;
 
-use HiEvents\DomainObjects\AffiliateDomainObject;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Repository\Interfaces\AffiliateRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Affiliate\DTO\UpsertAffiliateDTO;
+use TitaKita\DomainObjects\AffiliateDomainObject;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Repository\Interfaces\AffiliateRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Affiliate\DTO\UpsertAffiliateDTO;
 
 class CreateAffiliateHandler
 {

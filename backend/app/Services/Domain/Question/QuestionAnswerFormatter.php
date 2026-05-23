@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Domain\Question;
+namespace TitaKita\Services\Domain\Question;
 
-use HiEvents\DomainObjects\Enums\QuestionTypeEnum;
+use TitaKita\DomainObjects\Enums\QuestionTypeEnum;
 
 class QuestionAnswerFormatter
 {

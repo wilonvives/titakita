@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\QuestionAndAnswerViewDomainObject;
-use HiEvents\Models\QuestionAndAnswerView;
-use HiEvents\Repository\Interfaces\QuestionAndAnswerViewRepositoryInterface;
+use TitaKita\DomainObjects\QuestionAndAnswerViewDomainObject;
+use TitaKita\Models\QuestionAndAnswerView;
+use TitaKita\Repository\Interfaces\QuestionAndAnswerViewRepositoryInterface;
 
 /**
  * @extends BaseRepository<QuestionAndAnswerViewDomainObject>

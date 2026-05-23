@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Resources\Webhook;
+namespace TitaKita\Resources\Webhook;
 
-use HiEvents\DomainObjects\WebhookDomainObject;
-use HiEvents\Resources\BaseResource;
+use TitaKita\DomainObjects\WebhookDomainObject;
+use TitaKita\Resources\BaseResource;
 
 /**
  * @mixin WebhookDomainObject

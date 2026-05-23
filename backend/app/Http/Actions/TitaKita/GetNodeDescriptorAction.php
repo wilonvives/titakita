@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Http\Actions\TitaKita;
+namespace TitaKita\Http\Actions\TitaKita;
 
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Domain\TitaKita\NodeDescriptorService;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Domain\TitaKita\NodeDescriptorService;
 use Illuminate\Http\JsonResponse;
 
 /**

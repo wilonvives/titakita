@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\PromoCode;
+namespace TitaKita\Services\Application\Handlers\PromoCode;
 
-use HiEvents\DomainObjects\PromoCodeDomainObject;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Services\Application\Handlers\PromoCode\DTO\UpsertPromoCodeDTO;
-use HiEvents\Services\Domain\Product\Exception\UnrecognizedProductIdException;
-use HiEvents\Services\Domain\PromoCode\CreatePromoCodeService;
+use TitaKita\DomainObjects\PromoCodeDomainObject;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Services\Application\Handlers\PromoCode\DTO\UpsertPromoCodeDTO;
+use TitaKita\Services\Domain\Product\Exception\UnrecognizedProductIdException;
+use TitaKita\Services\Domain\PromoCode\CreatePromoCodeService;
 
 readonly class CreatePromoCodeHandler
 {

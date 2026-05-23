@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Reports;
+namespace TitaKita\Services\Application\Handlers\Reports;
 
-use HiEvents\Services\Application\Handlers\Reports\DTO\GetReportDTO;
-use HiEvents\Services\Domain\Report\Factory\ReportServiceFactory;
+use TitaKita\Services\Application\Handlers\Reports\DTO\GetReportDTO;
+use TitaKita\Services\Domain\Report\Factory\ReportServiceFactory;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 

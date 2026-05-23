@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Product;
+namespace TitaKita\Services\Application\Handlers\Product;
 
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Repository\Interfaces\ProductCategoryRepositoryInterface;
-use HiEvents\Repository\Interfaces\ProductRepositoryInterface;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Repository\Interfaces\ProductCategoryRepositoryInterface;
+use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
 
 readonly class SortProductsHandler
 {

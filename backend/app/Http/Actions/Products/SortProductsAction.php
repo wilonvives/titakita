@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Http\Actions\Products;
+namespace TitaKita\Http\Actions\Products;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Product\SortProductsRequest;
-use HiEvents\Services\Application\Handlers\Product\SortProductsHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Product\SortProductsRequest;
+use TitaKita\Services\Application\Handlers\Product\SortProductsHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 

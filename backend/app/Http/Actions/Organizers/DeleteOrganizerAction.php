@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Organizers;
+namespace TitaKita\Http\Actions\Organizers;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Exceptions\CannotDeleteEntityException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\Organizer\DeleteOrganizerHandler;
-use HiEvents\Services\Application\Handlers\Organizer\DTO\DeleteOrganizerDTO;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Exceptions\CannotDeleteEntityException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\Organizer\DeleteOrganizerHandler;
+use TitaKita\Services\Application\Handlers\Organizer\DTO\DeleteOrganizerDTO;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 use Symfony\Component\HttpFoundation\Response as HttpResponse;

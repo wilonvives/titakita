@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Services\Domain\CheckInList;
+namespace TitaKita\Services\Domain\CheckInList;
 
-use HiEvents\DomainObjects\AttendeeCheckInDomainObject;
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\DomainObjects\Generated\AttendeeCheckInDomainObjectAbstract;
-use HiEvents\Exceptions\CannotCheckInException;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\AttendeeCheckInRepositoryInterface;
+use TitaKita\DomainObjects\AttendeeCheckInDomainObject;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\DomainObjects\Generated\AttendeeCheckInDomainObjectAbstract;
+use TitaKita\Exceptions\CannotCheckInException;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\AttendeeCheckInRepositoryInterface;
 
 class DeleteAttendeeCheckInService
 {

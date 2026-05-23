@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\EmailTemplate\DTO;
+namespace TitaKita\Services\Application\Handlers\EmailTemplate\DTO;
 
-use HiEvents\DataTransferObjects\BaseDataObject;
+use TitaKita\DataTransferObjects\BaseDataObject;
 
 class DeleteEmailTemplateDTO extends BaseDataObject
 {

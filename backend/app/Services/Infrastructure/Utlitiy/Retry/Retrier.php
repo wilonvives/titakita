@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Services\Infrastructure\Utlitiy\Retry;
+namespace TitaKita\Services\Infrastructure\Utlitiy\Retry;
 
 use Throwable;
 

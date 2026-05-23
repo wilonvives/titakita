@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Domain\TitaKita;
+namespace TitaKita\Services\Domain\TitaKita;
 
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
 use Illuminate\Support\Facades\Http;
 use Psr\Log\LoggerInterface;

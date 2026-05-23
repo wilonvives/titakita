@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Webhook;
+namespace TitaKita\Services\Application\Handlers\Webhook;
 
-use HiEvents\DomainObjects\WebhookDomainObject;
-use HiEvents\Repository\Interfaces\WebhookRepositoryInterface;
+use TitaKita\DomainObjects\WebhookDomainObject;
+use TitaKita\Repository\Interfaces\WebhookRepositoryInterface;
 
 class GetWebhookHandler
 {

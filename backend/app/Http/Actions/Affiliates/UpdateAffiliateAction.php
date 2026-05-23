@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Affiliates;
+namespace TitaKita\Http\Actions\Affiliates;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\Status\AffiliateStatus;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Affiliate\UpdateAffiliateRequest;
-use HiEvents\Resources\Affiliate\AffiliateResource;
-use HiEvents\Services\Application\Handlers\Affiliate\DTO\UpsertAffiliateDTO;
-use HiEvents\Services\Application\Handlers\Affiliate\UpdateAffiliateHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\Status\AffiliateStatus;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Affiliate\UpdateAffiliateRequest;
+use TitaKita\Resources\Affiliate\AffiliateResource;
+use TitaKita\Services\Application\Handlers\Affiliate\DTO\UpsertAffiliateDTO;
+use TitaKita\Services\Application\Handlers\Affiliate\UpdateAffiliateHandler;
 use Illuminate\Http\JsonResponse;
 
 class UpdateAffiliateAction extends BaseAction

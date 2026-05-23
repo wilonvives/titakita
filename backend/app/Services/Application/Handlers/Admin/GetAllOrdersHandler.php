@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Admin;
+namespace TitaKita\Services\Application\Handlers\Admin;
 
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Admin\DTO\GetAllOrdersDTO;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Admin\DTO\GetAllOrdersDTO;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 class GetAllOrdersHandler

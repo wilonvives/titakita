@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Waitlist;
+namespace TitaKita\Services\Application\Handlers\Waitlist;
 
-use HiEvents\Constants;
-use HiEvents\Repository\Interfaces\WaitlistEntryRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Waitlist\DTO\WaitlistProductStatsDTO;
-use HiEvents\Services\Application\Handlers\Waitlist\DTO\WaitlistStatsDTO;
-use HiEvents\Services\Domain\Product\AvailableProductQuantitiesFetchService;
+use TitaKita\Constants;
+use TitaKita\Repository\Interfaces\WaitlistEntryRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Waitlist\DTO\WaitlistProductStatsDTO;
+use TitaKita\Services\Application\Handlers\Waitlist\DTO\WaitlistStatsDTO;
+use TitaKita\Services\Domain\Product\AvailableProductQuantitiesFetchService;
 
 class GetWaitlistStatsHandler
 {

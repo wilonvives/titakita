@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Domain\Report\OrganizerReports;
+namespace TitaKita\Services\Domain\Report\OrganizerReports;
 
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\Services\Domain\Report\AbstractOrganizerReportService;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\Services\Domain\Report\AbstractOrganizerReportService;
 use Illuminate\Support\Carbon;
 
 class TaxSummaryReport extends AbstractOrganizerReportService

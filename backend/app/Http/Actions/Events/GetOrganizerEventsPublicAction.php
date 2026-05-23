@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\Events;
+namespace TitaKita\Http\Actions\Events;
 
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Event\EventResourcePublic;
-use HiEvents\Services\Application\Handlers\Event\DTO\GetPublicOrganizerEventsDTO;
-use HiEvents\Services\Application\Handlers\Event\GetPublicEventsHandler;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Event\EventResourcePublic;
+use TitaKita\Services\Application\Handlers\Event\DTO\GetPublicOrganizerEventsDTO;
+use TitaKita\Services\Application\Handlers\Event\GetPublicEventsHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

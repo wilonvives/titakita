@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent\Value;
+namespace TitaKita\Repository\Eloquent\Value;
 
-use HiEvents\DomainObjects\Interfaces\DomainObjectInterface;
+use TitaKita\DomainObjects\Interfaces\DomainObjectInterface;
 use InvalidArgumentException;
 
 class Relationship

@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Http\Actions\Questions;
+namespace TitaKita\Http\Actions\Questions;
 
-use HiEvents\DomainObjects\Enums\QuestionBelongsTo;
-use HiEvents\DomainObjects\Enums\QuestionTypeEnum;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Questions\UpsertQuestionRequest;
-use HiEvents\Resources\Question\QuestionResource;
-use HiEvents\Services\Application\Handlers\Question\DTO\UpsertQuestionDTO;
-use HiEvents\Services\Application\Handlers\Question\EditQuestionHandler;
+use TitaKita\DomainObjects\Enums\QuestionBelongsTo;
+use TitaKita\DomainObjects\Enums\QuestionTypeEnum;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Questions\UpsertQuestionRequest;
+use TitaKita\Resources\Question\QuestionResource;
+use TitaKita\Services\Application\Handlers\Question\DTO\UpsertQuestionDTO;
+use TitaKita\Services\Application\Handlers\Question\EditQuestionHandler;
 use Illuminate\Http\JsonResponse;
 use Throwable;
 

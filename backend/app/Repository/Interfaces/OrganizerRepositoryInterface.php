@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Repository\DTO\Organizer\OrganizerStatsResponseDTO;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Repository\DTO\Organizer\OrganizerStatsResponseDTO;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 /**

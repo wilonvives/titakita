@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\EmailTemplate;
+namespace TitaKita\Services\Application\Handlers\EmailTemplate;
 
-use HiEvents\Exceptions\EmailTemplateNotFoundException;
-use HiEvents\Repository\Interfaces\EmailTemplateRepositoryInterface;
-use HiEvents\Services\Application\Handlers\EmailTemplate\DTO\DeleteEmailTemplateDTO;
+use TitaKita\Exceptions\EmailTemplateNotFoundException;
+use TitaKita\Repository\Interfaces\EmailTemplateRepositoryInterface;
+use TitaKita\Services\Application\Handlers\EmailTemplate\DTO\DeleteEmailTemplateDTO;
 
 class DeleteEmailTemplateHandler
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Attendee;
+namespace TitaKita\Services\Application\Handlers\Attendee;
 
-use HiEvents\DomainObjects\AttendeeCheckInDomainObject;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\AttendeeRepositoryInterface;
+use TitaKita\DomainObjects\AttendeeCheckInDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\AttendeeRepositoryInterface;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 class GetAttendeesHandler

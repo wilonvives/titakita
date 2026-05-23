@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Auth;
+namespace TitaKita\Services\Application\Handlers\Auth;
 
-use HiEvents\Repository\Interfaces\AccountUserRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Auth\DTO\LoginCredentialsDTO;
-use HiEvents\Services\Domain\Auth\DTO\LoginResponse;
-use HiEvents\Services\Domain\Auth\LoginService;
+use TitaKita\Repository\Interfaces\AccountUserRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Auth\DTO\LoginCredentialsDTO;
+use TitaKita\Services\Domain\Auth\DTO\LoginResponse;
+use TitaKita\Services\Domain\Auth\LoginService;
 
 readonly class LoginHandler
 {

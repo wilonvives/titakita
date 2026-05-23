@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\DomainObjects;
+namespace TitaKita\DomainObjects;
 
-use HiEvents\DomainObjects\Enums\QuestionTypeEnum;
+use TitaKita\DomainObjects\Enums\QuestionTypeEnum;
 use Illuminate\Support\Collection;
 
 class QuestionDomainObject extends Generated\QuestionDomainObjectAbstract

@@ -1,20 +1,20 @@
 <?php
 
-namespace HiEvents\Http;
+namespace TitaKita\Http;
 
-use HiEvents\Http\Middleware\Authenticate;
-use HiEvents\Http\Middleware\EncryptCookies;
-use HiEvents\Http\Middleware\HandleDeprecatedTimezones;
-use HiEvents\Http\Middleware\LogImpersonationMiddleware;
-use HiEvents\Http\Middleware\PreventRequestsDuringMaintenance;
-use HiEvents\Http\Middleware\RedirectIfAuthenticated;
-use HiEvents\Http\Middleware\SetAccountContext;
-use HiEvents\Http\Middleware\SetUserLocaleMiddleware;
-use HiEvents\Http\Middleware\TrimStrings;
-use HiEvents\Http\Middleware\TrustProxies;
-use HiEvents\Http\Middleware\ValidateSignature;
-use HiEvents\Http\Middleware\VaporBinaryResponseMiddleware;
-use HiEvents\Http\Middleware\VerifyCsrfToken;
+use TitaKita\Http\Middleware\Authenticate;
+use TitaKita\Http\Middleware\EncryptCookies;
+use TitaKita\Http\Middleware\HandleDeprecatedTimezones;
+use TitaKita\Http\Middleware\LogImpersonationMiddleware;
+use TitaKita\Http\Middleware\PreventRequestsDuringMaintenance;
+use TitaKita\Http\Middleware\RedirectIfAuthenticated;
+use TitaKita\Http\Middleware\SetAccountContext;
+use TitaKita\Http\Middleware\SetUserLocaleMiddleware;
+use TitaKita\Http\Middleware\TrimStrings;
+use TitaKita\Http\Middleware\TrustProxies;
+use TitaKita\Http\Middleware\ValidateSignature;
+use TitaKita\Http\Middleware\VaporBinaryResponseMiddleware;
+use TitaKita\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Auth\Middleware\AuthenticateWithBasicAuth;
 use Illuminate\Auth\Middleware\Authorize;
 use Illuminate\Auth\Middleware\EnsureEmailIsVerified;

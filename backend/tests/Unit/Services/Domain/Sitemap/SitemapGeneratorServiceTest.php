@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Tests\Unit\Services\Domain\Sitemap;
 
 use Carbon\Carbon;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Services\Domain\Sitemap\SitemapGeneratorService;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Services\Domain\Sitemap\SitemapGeneratorService;
 use Illuminate\Support\Collection;
 use Mockery as m;
 use Tests\TestCase;

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Admin\Stats;
+namespace TitaKita\Http\Actions\Admin\Stats;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\Admin\DTO\GetAdminDashboardDataDTO;
-use HiEvents\Services\Application\Handlers\Admin\GetAdminDashboardDataHandler;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\Admin\DTO\GetAdminDashboardDataDTO;
+use TitaKita\Services\Application\Handlers\Admin\GetAdminDashboardDataHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

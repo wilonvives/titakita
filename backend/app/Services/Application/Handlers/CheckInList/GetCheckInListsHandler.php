@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\CheckInList;
+namespace TitaKita\Services\Application\Handlers\CheckInList;
 
-use HiEvents\DomainObjects\CheckInListDomainObject;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\CheckInListRepositoryInterface;
-use HiEvents\Services\Application\Handlers\CheckInList\DTO\GetCheckInListsDTO;
+use TitaKita\DomainObjects\CheckInListDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\CheckInListRepositoryInterface;
+use TitaKita\Services\Application\Handlers\CheckInList\DTO\GetCheckInListsDTO;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 class GetCheckInListsHandler

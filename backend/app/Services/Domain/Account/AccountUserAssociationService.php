@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Services\Domain\Account;
+namespace TitaKita\Services\Domain\Account;
 
-use HiEvents\DomainObjects\AccountDomainObject;
-use HiEvents\DomainObjects\AccountUserDomainObject;
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\DomainObjects\Status\UserStatus;
-use HiEvents\DomainObjects\UserDomainObject;
-use HiEvents\Exceptions\UnauthorizedException;
-use HiEvents\Repository\Interfaces\AccountUserRepositoryInterface;
+use TitaKita\DomainObjects\AccountDomainObject;
+use TitaKita\DomainObjects\AccountUserDomainObject;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\DomainObjects\Status\UserStatus;
+use TitaKita\DomainObjects\UserDomainObject;
+use TitaKita\Exceptions\UnauthorizedException;
+use TitaKita\Repository\Interfaces\AccountUserRepositoryInterface;
 
 readonly class AccountUserAssociationService
 {

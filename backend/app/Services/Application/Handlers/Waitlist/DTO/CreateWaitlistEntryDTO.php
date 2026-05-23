@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Waitlist\DTO;
+namespace TitaKita\Services\Application\Handlers\Waitlist\DTO;
 
-use HiEvents\DataTransferObjects\BaseDataObject;
+use TitaKita\DataTransferObjects\BaseDataObject;
 
 class CreateWaitlistEntryDTO extends BaseDataObject
 {

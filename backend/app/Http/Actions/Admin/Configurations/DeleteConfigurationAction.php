@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Admin\Configurations;
+namespace TitaKita\Http\Actions\Admin\Configurations;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\Exceptions\CannotDeleteEntityException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\Admin\DeleteConfigurationHandler;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\Exceptions\CannotDeleteEntityException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\Admin\DeleteConfigurationHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 use Illuminate\Validation\ValidationException;

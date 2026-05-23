@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\ProductCategory;
+namespace TitaKita\Services\Application\Handlers\ProductCategory;
 
-use HiEvents\DomainObjects\ProductCategoryDomainObject;
-use HiEvents\Services\Application\Handlers\ProductCategory\DTO\UpsertProductCategoryDTO;
-use HiEvents\Services\Domain\ProductCategory\CreateProductCategoryService;
-use HiEvents\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
+use TitaKita\DomainObjects\ProductCategoryDomainObject;
+use TitaKita\Services\Application\Handlers\ProductCategory\DTO\UpsertProductCategoryDTO;
+use TitaKita\Services\Domain\ProductCategory\CreateProductCategoryService;
+use TitaKita\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
 
 class CreateProductCategoryHandler
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Domain\Payment\Stripe\DTOs;
+namespace TitaKita\Services\Domain\Payment\Stripe\DTOs;
 
-use HiEvents\DataTransferObjects\BaseDataObject;
+use TitaKita\DataTransferObjects\BaseDataObject;
 
 class StripePayoutCreationDTO extends BaseDataObject
 {

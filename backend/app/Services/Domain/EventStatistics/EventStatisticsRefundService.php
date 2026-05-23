@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Services\Domain\EventStatistics;
+namespace TitaKita\Services\Domain\EventStatistics;
 
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\Repository\Interfaces\EventDailyStatisticRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventStatisticRepositoryInterface;
-use HiEvents\Values\MoneyValue;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\Repository\Interfaces\EventDailyStatisticRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventStatisticRepositoryInterface;
+use TitaKita\Values\MoneyValue;
 use Illuminate\Support\Carbon;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;

@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\User\DTO;
+namespace TitaKita\Services\Application\Handlers\User\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
+use TitaKita\DataTransferObjects\BaseDTO;
 
 class ConfirmEmailChangeDTO extends BaseDTO
 {

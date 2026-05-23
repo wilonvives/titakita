@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Admin\DTO;
+namespace TitaKita\Services\Application\Handlers\Admin\DTO;
 
-use HiEvents\DataTransferObjects\BaseDataObject;
-use HiEvents\DomainObjects\Generated\EventDomainObjectAbstract;
+use TitaKita\DataTransferObjects\BaseDataObject;
+use TitaKita\DomainObjects\Generated\EventDomainObjectAbstract;
 
 class GetAllEventsDTO extends BaseDataObject
 {

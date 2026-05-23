@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Auth;
+namespace TitaKita\Services\Application\Handlers\Auth;
 
-use HiEvents\DomainObjects\UserDomainObject;
-use HiEvents\Mail\User\ForgotPassword;
-use HiEvents\Repository\Interfaces\PasswordResetTokenRepositoryInterface;
-use HiEvents\Repository\Interfaces\UserRepositoryInterface;
-use HiEvents\Services\Infrastructure\TokenGenerator\TokenGeneratorService;
+use TitaKita\DomainObjects\UserDomainObject;
+use TitaKita\Mail\User\ForgotPassword;
+use TitaKita\Repository\Interfaces\PasswordResetTokenRepositoryInterface;
+use TitaKita\Repository\Interfaces\UserRepositoryInterface;
+use TitaKita\Services\Infrastructure\TokenGenerator\TokenGeneratorService;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Contracts\Mail\Mailer;
 use Psr\Log\LoggerInterface;

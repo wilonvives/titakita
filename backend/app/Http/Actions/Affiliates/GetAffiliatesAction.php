@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Affiliates;
+namespace TitaKita\Http\Actions\Affiliates;
 
-use HiEvents\DomainObjects\AffiliateDomainObject;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Repository\Interfaces\AffiliateRepositoryInterface;
-use HiEvents\Resources\Affiliate\AffiliateResource;
+use TitaKita\DomainObjects\AffiliateDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Repository\Interfaces\AffiliateRepositoryInterface;
+use TitaKita\Resources\Affiliate\AffiliateResource;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

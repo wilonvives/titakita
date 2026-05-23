@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Domain\ProductCategory;
+namespace TitaKita\Services\Domain\ProductCategory;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\ProductCategoryDomainObject;
-use HiEvents\Repository\Interfaces\ProductCategoryRepositoryInterface;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\ProductCategoryDomainObject;
+use TitaKita\Repository\Interfaces\ProductCategoryRepositoryInterface;
 
 class CreateProductCategoryService
 {

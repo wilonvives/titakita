@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Images\DTO;
+namespace TitaKita\Services\Application\Handlers\Images\DTO;
 
 class DeleteImageDTO
 {

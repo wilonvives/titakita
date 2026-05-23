@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Resources\CheckInList;
+namespace TitaKita\Resources\CheckInList;
 
-use HiEvents\DomainObjects\CheckInListDomainObject;
-use HiEvents\Resources\Product\ProductResource;
+use TitaKita\DomainObjects\CheckInListDomainObject;
+use TitaKita\Resources\Product\ProductResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**

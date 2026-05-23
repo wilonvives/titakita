@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\Orders;
+namespace TitaKita\Http\Actions\Orders;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Message\SendMessageRequest;
-use HiEvents\Jobs\Event\SendMessagesJob;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Message\SendMessageRequest;
+use TitaKita\Jobs\Event\SendMessagesJob;
 use Illuminate\Http\Response;
 
 class MessageOrderAction extends BaseAction

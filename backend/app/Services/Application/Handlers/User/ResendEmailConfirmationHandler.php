@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\User;
+namespace TitaKita\Services\Application\Handlers\User;
 
-use HiEvents\DomainObjects\UserDomainObject;
-use HiEvents\Services\Domain\User\EmailConfirmationService;
+use TitaKita\DomainObjects\UserDomainObject;
+use TitaKita\Services\Domain\User\EmailConfirmationService;
 
 class ResendEmailConfirmationHandler
 {

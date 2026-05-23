@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Services\Application\Handlers\Event;
+namespace TitaKita\Services\Application\Handlers\Event;
 
-use HiEvents\DomainObjects\Enums\EventCategory;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Exceptions\OrganizerNotFoundException;
-use HiEvents\Services\Application\Handlers\Event\DTO\CreateEventDTO;
-use HiEvents\Services\Domain\Event\CreateEventService;
-use HiEvents\Services\Domain\ProductCategory\CreateProductCategoryService;
-use HiEvents\Services\Domain\Organizer\OrganizerFetchService;
-use HiEvents\Jobs\Event\Webhook\DispatchEventWebhookJob;
-use HiEvents\Jobs\Event\Webhook\ReportEventToDirectoryJob;
-use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
+use TitaKita\DomainObjects\Enums\EventCategory;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Exceptions\OrganizerNotFoundException;
+use TitaKita\Services\Application\Handlers\Event\DTO\CreateEventDTO;
+use TitaKita\Services\Domain\Event\CreateEventService;
+use TitaKita\Services\Domain\ProductCategory\CreateProductCategoryService;
+use TitaKita\Services\Domain\Organizer\OrganizerFetchService;
+use TitaKita\Jobs\Event\Webhook\DispatchEventWebhookJob;
+use TitaKita\Jobs\Event\Webhook\ReportEventToDirectoryJob;
+use TitaKita\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
 use Illuminate\Database\DatabaseManager;
 use Throwable;
 

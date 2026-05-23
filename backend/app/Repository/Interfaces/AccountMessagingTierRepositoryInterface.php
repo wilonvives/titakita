@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\AccountMessagingTierDomainObject;
+use TitaKita\DomainObjects\AccountMessagingTierDomainObject;
 
 /**
  * @extends RepositoryInterface<AccountMessagingTierDomainObject>

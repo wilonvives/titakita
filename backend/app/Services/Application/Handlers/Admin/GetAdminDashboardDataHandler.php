@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Admin;
+namespace TitaKita\Services\Application\Handlers\Admin;
 
 use Carbon\Carbon;
-use HiEvents\DomainObjects\Status\EventStatus;
-use HiEvents\DomainObjects\Status\OrderPaymentStatus;
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\Services\Application\Handlers\Admin\DTO\AdminDashboardResponseDTO;
-use HiEvents\Services\Application\Handlers\Admin\DTO\GetAdminDashboardDataDTO;
+use TitaKita\DomainObjects\Status\EventStatus;
+use TitaKita\DomainObjects\Status\OrderPaymentStatus;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\Services\Application\Handlers\Admin\DTO\AdminDashboardResponseDTO;
+use TitaKita\Services\Application\Handlers\Admin\DTO\GetAdminDashboardDataDTO;
 use Illuminate\Support\Facades\DB;
 
 class GetAdminDashboardDataHandler

@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Http\Request\Auth;
+namespace TitaKita\Http\Request\Auth;
 
-use HiEvents\Http\Request\BaseRequest;
+use TitaKita\Http\Request\BaseRequest;
 
 class LoginRequest extends BaseRequest
 {

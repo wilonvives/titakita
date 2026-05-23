@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\CheckInList;
+namespace TitaKita\Services\Application\Handlers\CheckInList;
 
-use HiEvents\Repository\Interfaces\CheckInListRepositoryInterface;
+use TitaKita\Repository\Interfaces\CheckInListRepositoryInterface;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 
 class DeleteCheckInListHandler

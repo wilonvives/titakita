@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Services\Domain\Payment\Stripe;
+namespace TitaKita\Services\Domain\Payment\Stripe;
 
-use HiEvents\DomainObjects\Enums\PaymentProviders;
-use HiEvents\DomainObjects\Generated\OrderPaymentPlatformFeeDomainObjectAbstract;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\StripePaymentDomainObject;
-use HiEvents\Repository\Interfaces\OrderPaymentPlatformFeeRepositoryInterface;
-use HiEvents\Services\Domain\Order\OrderPaymentPlatformFeeService;
-use HiEvents\Services\Infrastructure\Stripe\StripeClientFactory;
+use TitaKita\DomainObjects\Enums\PaymentProviders;
+use TitaKita\DomainObjects\Generated\OrderPaymentPlatformFeeDomainObjectAbstract;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\StripePaymentDomainObject;
+use TitaKita\Repository\Interfaces\OrderPaymentPlatformFeeRepositoryInterface;
+use TitaKita\Services\Domain\Order\OrderPaymentPlatformFeeService;
+use TitaKita\Services\Infrastructure\Stripe\StripeClientFactory;
 use Psr\Log\LoggerInterface;
 use Stripe\Charge;
 use Throwable;

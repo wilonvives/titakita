@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\AccountAttributionDomainObject;
+use TitaKita\DomainObjects\AccountAttributionDomainObject;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 /**

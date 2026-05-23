@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Jobs\Waitlist;
+namespace TitaKita\Jobs\Waitlist;
 
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\DomainObjects\WaitlistEntryDomainObject;
-use HiEvents\Mail\Waitlist\WaitlistOfferMail;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\ProductPriceRepositoryInterface;
-use HiEvents\Repository\Interfaces\ProductRepositoryInterface;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\WaitlistEntryDomainObject;
+use TitaKita\Mail\Waitlist\WaitlistOfferMail;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\ProductPriceRepositoryInterface;
+use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;

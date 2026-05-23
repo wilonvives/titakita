@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Resources\Order\Invoice;
+namespace TitaKita\Resources\Order\Invoice;
 
-use HiEvents\DomainObjects\InvoiceDomainObject;
-use HiEvents\Resources\BaseResource;
+use TitaKita\DomainObjects\InvoiceDomainObject;
+use TitaKita\Resources\BaseResource;
 
 /** @mixin InvoiceDomainObject */
 class InvoiceResource extends BaseResource

@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\PasswordResetDomainObject;
+use TitaKita\DomainObjects\PasswordResetDomainObject;
 
 /**
  * @extends RepositoryInterface<PasswordResetDomainObject>

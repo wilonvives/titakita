@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Http\Request\Organizer;
+namespace TitaKita\Http\Request\Organizer;
 
-use HiEvents\DomainObjects\Status\OrganizerStatus;
-use HiEvents\Http\Request\BaseRequest;
+use TitaKita\DomainObjects\Status\OrganizerStatus;
+use TitaKita\Http\Request\BaseRequest;
 use Illuminate\Validation\Rule;
 
 class UpdateOrganizerStatusRequest extends BaseRequest

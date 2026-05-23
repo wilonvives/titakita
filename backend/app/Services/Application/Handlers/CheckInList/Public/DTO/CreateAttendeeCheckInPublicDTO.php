@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\CheckInList\Public\DTO;
+namespace TitaKita\Services\Application\Handlers\CheckInList\Public\DTO;
 
 use Illuminate\Support\Collection;
 use Spatie\LaravelData\Attributes\DataCollectionOf;

@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Providers;
+namespace TitaKita\Providers;
 
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;

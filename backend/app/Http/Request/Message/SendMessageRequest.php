@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Http\Request\Message;
+namespace TitaKita\Http\Request\Message;
 
-use HiEvents\DomainObjects\Enums\MessageTypeEnum;
-use HiEvents\DomainObjects\Status\OrderStatus;
+use TitaKita\DomainObjects\Enums\MessageTypeEnum;
+use TitaKita\DomainObjects\Status\OrderStatus;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\In;
 

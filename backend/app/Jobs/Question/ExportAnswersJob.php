@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Jobs\Question;
+namespace TitaKita\Jobs\Question;
 
-use HiEvents\Exports\AnswersExport;
-use HiEvents\Services\Application\Handlers\Question\ExportAnswersHandler;
+use TitaKita\Exports\AnswersExport;
+use TitaKita\Services\Application\Handlers\Question\ExportAnswersHandler;
 use Illuminate\Bus\Batchable;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;

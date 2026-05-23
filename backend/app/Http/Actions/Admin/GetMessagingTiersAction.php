@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Admin;
+namespace TitaKita\Http\Actions\Admin;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Resources\Admin\AccountMessagingTierResource;
-use HiEvents\Repository\Interfaces\AccountMessagingTierRepositoryInterface;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Resources\Admin\AccountMessagingTierResource;
+use TitaKita\Repository\Interfaces\AccountMessagingTierRepositoryInterface;
 use Illuminate\Http\JsonResponse;
 
 class GetMessagingTiersAction extends BaseAction

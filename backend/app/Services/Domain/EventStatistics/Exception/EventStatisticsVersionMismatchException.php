@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Services\Domain\EventStatistics\Exception;
+namespace TitaKita\Services\Domain\EventStatistics\Exception;
 
 use Exception;
 

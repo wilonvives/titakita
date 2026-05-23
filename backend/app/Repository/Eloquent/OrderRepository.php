@@ -2,25 +2,25 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\DomainObjects\Generated\OrderDomainObjectAbstract;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\OrderItemDomainObject;
-use HiEvents\DomainObjects\Status\OrderPaymentStatus;
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Models\Order;
-use HiEvents\Models\OrderItem;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\DomainObjects\Generated\OrderDomainObjectAbstract;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\OrderItemDomainObject;
+use TitaKita\DomainObjects\Status\OrderPaymentStatus;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Models\Order;
+use TitaKita\Models\OrderItem;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\AccountDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\AccountDomainObject;
 
 /**
  * @extends BaseRepository<OrderDomainObject>

@@ -2,15 +2,15 @@
 
 namespace Tests\Unit\Services\Application\Handlers\Organizer;
 
-use HiEvents\DomainObjects\AccountDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\DomainObjects\Status\OrganizerStatus;
-use HiEvents\Exceptions\CannotDeleteEntityException;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrganizerRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Organizer\DTO\UpdateOrganizerStatusDTO;
-use HiEvents\Services\Application\Handlers\Organizer\UpdateOrganizerStatusHandler;
+use TitaKita\DomainObjects\AccountDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\Status\OrganizerStatus;
+use TitaKita\Exceptions\CannotDeleteEntityException;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrganizerRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Organizer\DTO\UpdateOrganizerStatusDTO;
+use TitaKita\Services\Application\Handlers\Organizer\UpdateOrganizerStatusHandler;
 use Illuminate\Database\DatabaseManager;
 use Mockery as m;
 use Psr\Log\LoggerInterface;

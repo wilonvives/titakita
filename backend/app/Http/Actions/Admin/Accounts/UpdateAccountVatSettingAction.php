@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Admin\Accounts;
+namespace TitaKita\Http\Actions\Admin\Accounts;
 
-use HiEvents\DataTransferObjects\UpdateAdminAccountVatSettingDTO;
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Account\AccountVatSettingResource;
-use HiEvents\Services\Application\Handlers\Admin\UpdateAdminAccountVatSettingHandler;
+use TitaKita\DataTransferObjects\UpdateAdminAccountVatSettingDTO;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Account\AccountVatSettingResource;
+use TitaKita\Services\Application\Handlers\Admin\UpdateAdminAccountVatSettingHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

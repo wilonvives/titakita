@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Events;
+namespace TitaKita\Events;
 
-use HiEvents\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
 use Illuminate\Foundation\Events\Dispatchable;
 
 class OrderStatusChangedEvent

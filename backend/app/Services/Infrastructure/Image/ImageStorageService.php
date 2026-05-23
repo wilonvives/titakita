@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Infrastructure\Image;
+namespace TitaKita\Services\Infrastructure\Image;
 
-use HiEvents\Services\Infrastructure\Image\DTO\ImageStorageResponseDTO;
-use HiEvents\Services\Infrastructure\Image\Exception\CouldNotUploadImageException;
+use TitaKita\Services\Infrastructure\Image\DTO\ImageStorageResponseDTO;
+use TitaKita\Services\Infrastructure\Image\Exception\CouldNotUploadImageException;
 use Illuminate\Config\Repository;
 use Illuminate\Filesystem\FilesystemManager;
 use Illuminate\Http\UploadedFile;

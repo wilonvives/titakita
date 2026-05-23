@@ -1,16 +1,16 @@
 <?php
 
-namespace HiEvents\Http\Actions\Attendees;
+namespace TitaKita\Http\Actions\Attendees;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Exceptions\InvalidProductPriceId;
-use HiEvents\Exceptions\NoTicketsAvailableException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Attendee\CreateAttendeeRequest;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Resources\Attendee\AttendeeResource;
-use HiEvents\Services\Application\Handlers\Attendee\CreateAttendeeHandler;
-use HiEvents\Services\Application\Handlers\Attendee\DTO\CreateAttendeeDTO;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Exceptions\InvalidProductPriceId;
+use TitaKita\Exceptions\NoTicketsAvailableException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Attendee\CreateAttendeeRequest;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Resources\Attendee\AttendeeResource;
+use TitaKita\Services\Application\Handlers\Attendee\CreateAttendeeHandler;
+use TitaKita\Services\Application\Handlers\Attendee\DTO\CreateAttendeeDTO;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Validation\ValidationException;
 use Throwable;

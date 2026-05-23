@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Organizer;
+namespace TitaKita\Services\Application\Handlers\Organizer;
 
-use HiEvents\DomainObjects\Status\OrganizerStatus;
-use HiEvents\Mail\Organizer\OrganizerContactEmail;
-use HiEvents\Repository\Interfaces\OrganizerRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Organizer\DTO\SendOrganizerContactMessageDTO;
-use HiEvents\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
+use TitaKita\DomainObjects\Status\OrganizerStatus;
+use TitaKita\Mail\Organizer\OrganizerContactEmail;
+use TitaKita\Repository\Interfaces\OrganizerRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Organizer\DTO\SendOrganizerContactMessageDTO;
+use TitaKita\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
 use Illuminate\Mail\Mailer;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 

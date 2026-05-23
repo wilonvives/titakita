@@ -1,17 +1,17 @@
 <?php
 
-namespace HiEvents\Http\Actions\EmailTemplates;
+namespace TitaKita\Http\Actions\EmailTemplates;
 
-use HiEvents\DomainObjects\Enums\EmailTemplateType;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Exceptions\AccountNotVerifiedException;
-use HiEvents\Exceptions\EmailTemplateNotFoundException;
-use HiEvents\Exceptions\EmailTemplateValidationException;
-use HiEvents\Exceptions\InvalidEmailTemplateException;
-use HiEvents\Http\Resources\EmailTemplateResource;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Services\Application\Handlers\EmailTemplate\UpdateEmailTemplateHandler;
-use HiEvents\Services\Application\Handlers\EmailTemplate\DTO\UpsertEmailTemplateDTO;
+use TitaKita\DomainObjects\Enums\EmailTemplateType;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Exceptions\AccountNotVerifiedException;
+use TitaKita\Exceptions\EmailTemplateNotFoundException;
+use TitaKita\Exceptions\EmailTemplateValidationException;
+use TitaKita\Exceptions\InvalidEmailTemplateException;
+use TitaKita\Http\Resources\EmailTemplateResource;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Services\Application\Handlers\EmailTemplate\UpdateEmailTemplateHandler;
+use TitaKita\Services\Application\Handlers\EmailTemplate\DTO\UpsertEmailTemplateDTO;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;

@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Http\Request\Product;
+namespace TitaKita\Http\Request\Product;
 
 use Illuminate\Foundation\Http\FormRequest;
 

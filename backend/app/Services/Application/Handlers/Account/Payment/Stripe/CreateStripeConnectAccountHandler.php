@@ -1,23 +1,23 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Account\Payment\Stripe;
+namespace TitaKita\Services\Application\Handlers\Account\Payment\Stripe;
 
-use HiEvents\DomainObjects\AccountDomainObject;
-use HiEvents\DomainObjects\AccountStripePlatformDomainObject;
-use HiEvents\DomainObjects\Enums\StripeConnectAccountType;
-use HiEvents\DomainObjects\Enums\StripePlatform;
-use HiEvents\DomainObjects\Generated\AccountStripePlatformDomainObjectAbstract;
-use HiEvents\Exceptions\CreateStripeConnectAccountFailedException;
-use HiEvents\Exceptions\CreateStripeConnectAccountLinksFailedException;
-use HiEvents\Exceptions\SaasModeEnabledException;
-use HiEvents\Exceptions\Stripe\StripeClientConfigurationException;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Repository\Interfaces\AccountStripePlatformRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Account\Payment\Stripe\DTO\CreateStripeConnectAccountDTO;
-use HiEvents\Services\Application\Handlers\Account\Payment\Stripe\DTO\CreateStripeConnectAccountResponse;
-use HiEvents\Services\Domain\Payment\Stripe\StripeAccountSyncService;
-use HiEvents\Services\Infrastructure\Stripe\StripeClientFactory;
-use HiEvents\Services\Infrastructure\Stripe\StripeConfigurationService;
+use TitaKita\DomainObjects\AccountDomainObject;
+use TitaKita\DomainObjects\AccountStripePlatformDomainObject;
+use TitaKita\DomainObjects\Enums\StripeConnectAccountType;
+use TitaKita\DomainObjects\Enums\StripePlatform;
+use TitaKita\DomainObjects\Generated\AccountStripePlatformDomainObjectAbstract;
+use TitaKita\Exceptions\CreateStripeConnectAccountFailedException;
+use TitaKita\Exceptions\CreateStripeConnectAccountLinksFailedException;
+use TitaKita\Exceptions\SaasModeEnabledException;
+use TitaKita\Exceptions\Stripe\StripeClientConfigurationException;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Repository\Interfaces\AccountStripePlatformRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Account\Payment\Stripe\DTO\CreateStripeConnectAccountDTO;
+use TitaKita\Services\Application\Handlers\Account\Payment\Stripe\DTO\CreateStripeConnectAccountResponse;
+use TitaKita\Services\Domain\Payment\Stripe\StripeAccountSyncService;
+use TitaKita\Services\Infrastructure\Stripe\StripeClientFactory;
+use TitaKita\Services\Infrastructure\Stripe\StripeConfigurationService;
 use Illuminate\Config\Repository;
 use Illuminate\Database\DatabaseManager;
 use Psr\Log\LoggerInterface;

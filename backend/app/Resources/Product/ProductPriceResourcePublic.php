@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Resources\Product;
+namespace TitaKita\Resources\Product;
 
-use HiEvents\DomainObjects\ProductPriceDomainObject;
-use HiEvents\Resources\BaseResource;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\Resources\BaseResource;
 use Illuminate\Http\Request;
 
 /**

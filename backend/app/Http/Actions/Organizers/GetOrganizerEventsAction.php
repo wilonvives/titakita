@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Http\Actions\Organizers;
+namespace TitaKita\Http\Actions\Organizers;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Resources\Event\EventResource;
-use HiEvents\Services\Application\Handlers\Organizer\DTO\GetOrganizerEventsDTO;
-use HiEvents\Services\Application\Handlers\Organizer\GetOrganizerEventsHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Resources\Event\EventResource;
+use TitaKita\Services\Application\Handlers\Organizer\DTO\GetOrganizerEventsDTO;
+use TitaKita\Services\Application\Handlers\Organizer\GetOrganizerEventsHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

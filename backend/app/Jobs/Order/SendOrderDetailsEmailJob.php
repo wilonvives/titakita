@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Jobs\Order;
+namespace TitaKita\Jobs\Order;
 
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\Services\Domain\Mail\SendOrderDetailsService;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\Services\Domain\Mail\SendOrderDetailsService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;

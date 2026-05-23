@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Admin\Configurations;
+namespace TitaKita\Http\Actions\Admin\Configurations;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Repository\Interfaces\AccountConfigurationRepositoryInterface;
-use HiEvents\Resources\Account\AccountConfigurationResource;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Repository\Interfaces\AccountConfigurationRepositoryInterface;
+use TitaKita\Resources\Account\AccountConfigurationResource;
 use Illuminate\Http\JsonResponse;
 
 class GetAllConfigurationsAction extends BaseAction

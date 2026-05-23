@@ -1,25 +1,25 @@
 <?php
 
-namespace HiEvents\Services\Domain\CheckInList;
+namespace TitaKita\Services\Domain\CheckInList;
 
 use Exception;
-use HiEvents\DataTransferObjects\ErrorBagDTO;
-use HiEvents\DomainObjects\AttendeeCheckInDomainObject;
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\DomainObjects\CheckInListDomainObject;
-use HiEvents\DomainObjects\Enums\AttendeeCheckInActionType;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\Generated\AttendeeCheckInDomainObjectAbstract;
-use HiEvents\DomainObjects\Status\AttendeeStatus;
-use HiEvents\Exceptions\CannotCheckInException;
-use HiEvents\Helper\DateHelper;
-use HiEvents\Helper\IdHelper;
-use HiEvents\Repository\Interfaces\AttendeeCheckInRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventSettingsRepositoryInterface;
-use HiEvents\Services\Application\Handlers\CheckInList\Public\DTO\AttendeeAndActionDTO;
-use HiEvents\Services\Domain\CheckInList\DTO\CheckInResultDTO;
-use HiEvents\Services\Domain\CheckInList\DTO\CreateAttendeeCheckInsResponseDTO;
-use HiEvents\Services\Domain\Order\MarkOrderAsPaidService;
+use TitaKita\DataTransferObjects\ErrorBagDTO;
+use TitaKita\DomainObjects\AttendeeCheckInDomainObject;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\DomainObjects\CheckInListDomainObject;
+use TitaKita\DomainObjects\Enums\AttendeeCheckInActionType;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\Generated\AttendeeCheckInDomainObjectAbstract;
+use TitaKita\DomainObjects\Status\AttendeeStatus;
+use TitaKita\Exceptions\CannotCheckInException;
+use TitaKita\Helper\DateHelper;
+use TitaKita\Helper\IdHelper;
+use TitaKita\Repository\Interfaces\AttendeeCheckInRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventSettingsRepositoryInterface;
+use TitaKita\Services\Application\Handlers\CheckInList\Public\DTO\AttendeeAndActionDTO;
+use TitaKita\Services\Domain\CheckInList\DTO\CheckInResultDTO;
+use TitaKita\Services\Domain\CheckInList\DTO\CreateAttendeeCheckInsResponseDTO;
+use TitaKita\Services\Domain\Order\MarkOrderAsPaidService;
 use Illuminate\Database\ConnectionInterface;
 use Illuminate\Support\Collection;
 use Throwable;

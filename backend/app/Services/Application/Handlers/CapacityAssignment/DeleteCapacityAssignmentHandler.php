@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\CapacityAssignment;
+namespace TitaKita\Services\Application\Handlers\CapacityAssignment;
 
-use HiEvents\DomainObjects\Enums\CapacityChangeDirection;
-use HiEvents\Events\CapacityChangedEvent;
-use HiEvents\Models\CapacityAssignment;
-use HiEvents\Repository\Interfaces\CapacityAssignmentRepositoryInterface;
-use HiEvents\Repository\Interfaces\ProductRepositoryInterface;
+use TitaKita\DomainObjects\Enums\CapacityChangeDirection;
+use TitaKita\Events\CapacityChangedEvent;
+use TitaKita\Models\CapacityAssignment;
+use TitaKita\Repository\Interfaces\CapacityAssignmentRepositoryInterface;
+use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
 use Illuminate\Database\DatabaseManager;
 
 class DeleteCapacityAssignmentHandler

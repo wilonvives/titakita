@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Domain\Report\Factory;
+namespace TitaKita\Services\Domain\Report\Factory;
 
-use HiEvents\DomainObjects\Enums\ReportTypes;
-use HiEvents\Services\Domain\Report\AbstractReportService;
-use HiEvents\Services\Domain\Report\Reports\DailySalesReport;
-use HiEvents\Services\Domain\Report\Reports\ProductSalesReport;
-use HiEvents\Services\Domain\Report\Reports\PromoCodesReport;
+use TitaKita\DomainObjects\Enums\ReportTypes;
+use TitaKita\Services\Domain\Report\AbstractReportService;
+use TitaKita\Services\Domain\Report\Reports\DailySalesReport;
+use TitaKita\Services\Domain\Report\Reports\ProductSalesReport;
+use TitaKita\Services\Domain\Report\Reports\PromoCodesReport;
 use Illuminate\Support\Facades\App;
 
 class ReportServiceFactory

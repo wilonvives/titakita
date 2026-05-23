@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Http\Actions\Common;
+namespace TitaKita\Http\Actions\Common;
 
-use HiEvents\DomainObjects\Enums\ColorTheme;
-use HiEvents\Http\Actions\BaseAction;
+use TitaKita\DomainObjects\Enums\ColorTheme;
+use TitaKita\Http\Actions\BaseAction;
 use Illuminate\Http\JsonResponse;
 
 class GetColorThemesAction extends BaseAction

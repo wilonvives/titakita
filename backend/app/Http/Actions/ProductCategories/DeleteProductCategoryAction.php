@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\ProductCategories;
+namespace TitaKita\Http\Actions\ProductCategories;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Exceptions\CannotDeleteEntityException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\ProductCategory\DeleteProductCategoryHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Exceptions\CannotDeleteEntityException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\ProductCategory\DeleteProductCategoryHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 use Throwable;

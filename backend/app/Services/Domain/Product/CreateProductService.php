@@ -1,18 +1,18 @@
 <?php
 
-namespace HiEvents\Services\Domain\Product;
+namespace TitaKita\Services\Domain\Product;
 
 use Exception;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\Helper\DateHelper;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\ProductRepositoryInterface;
-use HiEvents\Services\Domain\Tax\DTO\TaxAndProductAssociateParams;
-use HiEvents\Services\Domain\Tax\TaxAndProductAssociationService;
-use HiEvents\Services\Infrastructure\DomainEvents\DomainEventDispatcherService;
-use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
-use HiEvents\Services\Infrastructure\DomainEvents\Events\ProductEvent;
-use HiEvents\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\Helper\DateHelper;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
+use TitaKita\Services\Domain\Tax\DTO\TaxAndProductAssociateParams;
+use TitaKita\Services\Domain\Tax\TaxAndProductAssociationService;
+use TitaKita\Services\Infrastructure\DomainEvents\DomainEventDispatcherService;
+use TitaKita\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
+use TitaKita\Services\Infrastructure\DomainEvents\Events\ProductEvent;
+use TitaKita\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Support\Collection;
 use Throwable;

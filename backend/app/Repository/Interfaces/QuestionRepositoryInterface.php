@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\QuestionDomainObject;
+use TitaKita\DomainObjects\QuestionDomainObject;
 use Illuminate\Support\Collection;
 
 /**

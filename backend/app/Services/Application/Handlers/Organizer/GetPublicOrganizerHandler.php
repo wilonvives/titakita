@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Organizer;
+namespace TitaKita\Services\Application\Handlers\Organizer;
 
-use HiEvents\DomainObjects\ImageDomainObject;
-use HiEvents\DomainObjects\OrganizerSettingDomainObject;
-use HiEvents\Repository\Interfaces\OrganizerRepositoryInterface;
+use TitaKita\DomainObjects\ImageDomainObject;
+use TitaKita\DomainObjects\OrganizerSettingDomainObject;
+use TitaKita\Repository\Interfaces\OrganizerRepositoryInterface;
 
 class GetPublicOrganizerHandler
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Services\Application\Handlers\Affiliate;
+namespace TitaKita\Services\Application\Handlers\Affiliate;
 
-use HiEvents\Repository\Interfaces\AffiliateRepositoryInterface;
+use TitaKita\Repository\Interfaces\AffiliateRepositoryInterface;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class DeleteAffiliateHandler

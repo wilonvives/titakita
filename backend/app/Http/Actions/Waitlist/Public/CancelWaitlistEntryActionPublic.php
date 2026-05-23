@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\Waitlist\Public;
+namespace TitaKita\Http\Actions\Waitlist\Public;
 
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Exceptions\ResourceNotFoundException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Domain\Waitlist\CancelWaitlistEntryService;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Exceptions\ResourceNotFoundException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Domain\Waitlist\CancelWaitlistEntryService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 use Symfony\Component\HttpFoundation\Response as SymfonyResponse;

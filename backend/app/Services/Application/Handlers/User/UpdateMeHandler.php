@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\User;
+namespace TitaKita\Services\Application\Handlers\User;
 
-use HiEvents\DomainObjects\UserDomainObject;
-use HiEvents\Exceptions\PasswordInvalidException;
-use HiEvents\Mail\User\ConfirmEmailChangeMail;
-use HiEvents\Repository\Interfaces\UserRepositoryInterface;
-use HiEvents\Services\Application\Handlers\User\DTO\UpdateMeDTO;
-use HiEvents\Services\Infrastructure\Encryption\EncryptedPayloadService;
+use TitaKita\DomainObjects\UserDomainObject;
+use TitaKita\Exceptions\PasswordInvalidException;
+use TitaKita\Mail\User\ConfirmEmailChangeMail;
+use TitaKita\Repository\Interfaces\UserRepositoryInterface;
+use TitaKita\Services\Application\Handlers\User\DTO\UpdateMeDTO;
+use TitaKita\Services\Infrastructure\Encryption\EncryptedPayloadService;
 use Illuminate\Contracts\Hashing\Hasher;
 use Illuminate\Contracts\Mail\Mailer;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;

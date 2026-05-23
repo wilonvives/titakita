@@ -2,7 +2,7 @@
 
 namespace Tests\Unit\Services\Infrastructure\Vat;
 
-use HiEvents\Services\Infrastructure\Vat\ViesValidationService;
+use TitaKita\Services\Infrastructure\Vat\ViesValidationService;
 use Illuminate\Http\Client\Factory as HttpClient;
 use Illuminate\Http\Client\Response;
 use Illuminate\Http\Client\ConnectionException;

@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Admin;
+namespace TitaKita\Services\Application\Handlers\Admin;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\Exceptions\UnauthorizedException;
-use HiEvents\Models\User;
-use HiEvents\Repository\Interfaces\AccountUserRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Admin\DTO\StartImpersonationDTO;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\Exceptions\UnauthorizedException;
+use TitaKita\Models\User;
+use TitaKita\Repository\Interfaces\AccountUserRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Admin\DTO\StartImpersonationDTO;
 use Illuminate\Auth\AuthManager;
 
 class StartImpersonationHandler

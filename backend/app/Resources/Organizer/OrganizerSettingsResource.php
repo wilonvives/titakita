@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Resources\Organizer;
+namespace TitaKita\Resources\Organizer;
 
-use HiEvents\DomainObjects\OrganizerSettingDomainObject;
-use HiEvents\Resources\BaseResource;
+use TitaKita\DomainObjects\OrganizerSettingDomainObject;
+use TitaKita\Resources\BaseResource;
 
 /**
  * @mixin OrganizerSettingDomainObject

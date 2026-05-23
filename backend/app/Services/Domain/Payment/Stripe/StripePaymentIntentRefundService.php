@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Domain\Payment\Stripe;
+namespace TitaKita\Services\Domain\Payment\Stripe;
 
 use Brick\Math\Exception\MathException;
-use HiEvents\DomainObjects\StripePaymentDomainObject;
-use HiEvents\Values\MoneyValue;
+use TitaKita\DomainObjects\StripePaymentDomainObject;
+use TitaKita\Values\MoneyValue;
 use Illuminate\Config\Repository;
 use RuntimeException;
 use Stripe\Exception\ApiErrorException;

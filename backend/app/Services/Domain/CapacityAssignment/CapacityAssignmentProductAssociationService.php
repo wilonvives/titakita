@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Domain\CapacityAssignment;
+namespace TitaKita\Services\Domain\CapacityAssignment;
 
-use HiEvents\Repository\Interfaces\ProductRepositoryInterface;
+use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
 use Illuminate\Database\DatabaseManager;
 
 class CapacityAssignmentProductAssociationService

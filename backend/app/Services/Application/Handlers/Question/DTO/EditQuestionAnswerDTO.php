@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Question\DTO;
+namespace TitaKita\Services\Application\Handlers\Question\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
+use TitaKita\DataTransferObjects\BaseDTO;
 
 class EditQuestionAnswerDTO extends BaseDTO
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Domain\Auth;
+namespace TitaKita\Services\Domain\Auth;
 
 use Carbon\Carbon;
-use HiEvents\DomainObjects\PasswordResetTokenDomainObject;
-use HiEvents\Exceptions\InvalidPasswordResetTokenException;
-use HiEvents\Repository\Interfaces\PasswordResetTokenRepositoryInterface;
+use TitaKita\DomainObjects\PasswordResetTokenDomainObject;
+use TitaKita\Exceptions\InvalidPasswordResetTokenException;
+use TitaKita\Repository\Interfaces\PasswordResetTokenRepositoryInterface;
 use Illuminate\Config\Repository;
 
 class ResetPasswordTokenValidateService

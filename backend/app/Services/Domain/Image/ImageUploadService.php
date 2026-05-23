@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Domain\Image;
+namespace TitaKita\Services\Domain\Image;
 
-use HiEvents\DomainObjects\ImageDomainObject;
-use HiEvents\Repository\Interfaces\ImageRepositoryInterface;
-use HiEvents\Services\Infrastructure\Image\Exception\CouldNotUploadImageException;
-use HiEvents\Services\Infrastructure\Image\ImageMetadataService;
-use HiEvents\Services\Infrastructure\Image\ImageStorageService;
+use TitaKita\DomainObjects\ImageDomainObject;
+use TitaKita\Repository\Interfaces\ImageRepositoryInterface;
+use TitaKita\Services\Infrastructure\Image\Exception\CouldNotUploadImageException;
+use TitaKita\Services\Infrastructure\Image\ImageMetadataService;
+use TitaKita\Services\Infrastructure\Image\ImageStorageService;
 use Illuminate\Http\UploadedFile;
 
 class ImageUploadService

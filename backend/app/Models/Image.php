@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Models;
+namespace TitaKita\Models;
 
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Database\Eloquent\SoftDeletes;

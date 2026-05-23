@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Http\Actions\Webhooks;
+namespace TitaKita\Http\Actions\Webhooks;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\Status\WebhookStatus;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Webhook\UpsertWebhookRequest;
-use HiEvents\Resources\Webhook\WebhookResource;
-use HiEvents\Services\Application\Handlers\Webhook\DTO\EditWebhookDTO;
-use HiEvents\Services\Application\Handlers\Webhook\EditWebhookHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\Status\WebhookStatus;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Webhook\UpsertWebhookRequest;
+use TitaKita\Resources\Webhook\WebhookResource;
+use TitaKita\Services\Application\Handlers\Webhook\DTO\EditWebhookDTO;
+use TitaKita\Services\Application\Handlers\Webhook\EditWebhookHandler;
 use Illuminate\Http\JsonResponse;
 
 class EditWebhookAction extends BaseAction

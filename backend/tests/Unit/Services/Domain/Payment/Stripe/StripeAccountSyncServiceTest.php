@@ -2,12 +2,12 @@
 
 namespace Tests\Unit\Services\Domain\Payment\Stripe;
 
-use HiEvents\DomainObjects\AccountDomainObject;
-use HiEvents\DomainObjects\AccountStripePlatformDomainObject;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Repository\Interfaces\AccountStripePlatformRepositoryInterface;
-use HiEvents\Repository\Interfaces\AccountVatSettingRepositoryInterface;
-use HiEvents\Services\Domain\Payment\Stripe\StripeAccountSyncService;
+use TitaKita\DomainObjects\AccountDomainObject;
+use TitaKita\DomainObjects\AccountStripePlatformDomainObject;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Repository\Interfaces\AccountStripePlatformRepositoryInterface;
+use TitaKita\Repository\Interfaces\AccountVatSettingRepositoryInterface;
+use TitaKita\Services\Domain\Payment\Stripe\StripeAccountSyncService;
 use Illuminate\Config\Repository;
 use Mockery as m;
 use Psr\Log\LoggerInterface;

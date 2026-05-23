@@ -1,6 +1,6 @@
 <?php
 
-use HiEvents\Services\Infrastructure\DomainObjectGenerator\ClassGenerator;
+use TitaKita\Services\Infrastructure\DomainObjectGenerator\ClassGenerator;
 use Illuminate\Support\Facades\Artisan;
 
 Artisan::command('generate-domain-objects',

@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Http\Actions\Users;
+namespace TitaKita\Http\Actions\Users;
 
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\User\ResendEmailConfirmationHandler;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\User\ResendEmailConfirmationHandler;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Cache;
 use Symfony\Component\HttpKernel\Exception\TooManyRequestsHttpException;

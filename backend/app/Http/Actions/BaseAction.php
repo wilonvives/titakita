@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions;
+namespace TitaKita\Http\Actions;
 
-use HiEvents\DataTransferObjects\BaseDataObject;
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\DomainObjects\Interfaces\DomainObjectInterface;
-use HiEvents\DomainObjects\Interfaces\IsFilterable;
-use HiEvents\DomainObjects\Interfaces\IsSortable;
-use HiEvents\DomainObjects\UserDomainObject;
-use HiEvents\Exceptions\UnauthorizedException;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Resources\BaseResource;
-use HiEvents\Services\Domain\Auth\AuthUserService;
-use HiEvents\Services\Infrastructure\Authorization\IsAuthorizedService;
+use TitaKita\DataTransferObjects\BaseDataObject;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\DomainObjects\Interfaces\DomainObjectInterface;
+use TitaKita\DomainObjects\Interfaces\IsFilterable;
+use TitaKita\DomainObjects\Interfaces\IsSortable;
+use TitaKita\DomainObjects\UserDomainObject;
+use TitaKita\Exceptions\UnauthorizedException;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Resources\BaseResource;
+use TitaKita\Services\Domain\Auth\AuthUserService;
+use TitaKita\Services\Infrastructure\Authorization\IsAuthorizedService;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\JsonResponse;

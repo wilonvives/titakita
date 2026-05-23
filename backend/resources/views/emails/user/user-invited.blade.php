@@ -1,4 +1,4 @@
-@php /** @var \HiEvents\DomainObjects\UserDomainObject $invitedUser */ @endphp
+@php /** @var \TitaKita\DomainObjects\UserDomainObject $invitedUser */ @endphp
 @php /** @var string $inviteLink */ @endphp
 @php /** @var string $appName */ @endphp
 

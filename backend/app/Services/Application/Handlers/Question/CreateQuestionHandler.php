@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Question;
+namespace TitaKita\Services\Application\Handlers\Question;
 
-use HiEvents\DomainObjects\QuestionDomainObject;
-use HiEvents\Services\Application\Handlers\Question\DTO\UpsertQuestionDTO;
-use HiEvents\Services\Domain\Question\CreateQuestionService;
-use HiEvents\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
+use TitaKita\DomainObjects\QuestionDomainObject;
+use TitaKita\Services\Application\Handlers\Question\DTO\UpsertQuestionDTO;
+use TitaKita\Services\Domain\Question\CreateQuestionService;
+use TitaKita\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
 use Throwable;
 
 class CreateQuestionHandler

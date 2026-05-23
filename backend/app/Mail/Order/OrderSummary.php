@@ -1,16 +1,16 @@
 <?php
 
-namespace HiEvents\Mail\Order;
+namespace TitaKita\Mail\Order;
 
 use Barryvdh\DomPDF\Facade\Pdf;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\InvoiceDomainObject;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Helper\Url;
-use HiEvents\Mail\BaseMail;
-use HiEvents\Services\Domain\Email\DTO\RenderedEmailTemplateDTO;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\InvoiceDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Helper\Url;
+use TitaKita\Mail\BaseMail;
+use TitaKita\Services\Domain\Email\DTO\RenderedEmailTemplateDTO;
 use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;

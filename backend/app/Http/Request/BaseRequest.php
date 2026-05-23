@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Request;
+namespace TitaKita\Http\Request;
 
 use Illuminate\Foundation\Http\FormRequest;
 

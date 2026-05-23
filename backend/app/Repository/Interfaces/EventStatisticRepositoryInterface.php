@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\EventStatisticDomainObject;
+use TitaKita\DomainObjects\EventStatisticDomainObject;
 
 /**
  * @extends RepositoryInterface<EventStatisticDomainObject>

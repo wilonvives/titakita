@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Jobs\Message;
+namespace TitaKita\Jobs\Message;
 
 use Carbon\Carbon;
-use HiEvents\DomainObjects\Status\MessageStatus;
-use HiEvents\Repository\Interfaces\MessageRepositoryInterface;
-use HiEvents\Services\Domain\Message\MessageDispatchService;
+use TitaKita\DomainObjects\Status\MessageStatus;
+use TitaKita\Repository\Interfaces\MessageRepositoryInterface;
+use TitaKita\Services\Domain\Message\MessageDispatchService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;

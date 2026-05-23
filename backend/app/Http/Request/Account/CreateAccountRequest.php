@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Request\Account;
+namespace TitaKita\Http\Request\Account;
 
-use HiEvents\Http\Request\BaseRequest;
-use HiEvents\Locale;
-use HiEvents\Validators\Rules\RulesHelper;
+use TitaKita\Http\Request\BaseRequest;
+use TitaKita\Locale;
+use TitaKita\Validators\Rules\RulesHelper;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\Rules\Password;
 

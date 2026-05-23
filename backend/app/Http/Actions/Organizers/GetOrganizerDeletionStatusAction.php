@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Organizers;
+namespace TitaKita\Http\Actions\Organizers;
 
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Domain\Organizer\OrganizerDeletionService;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Domain\Organizer\OrganizerDeletionService;
 use Illuminate\Http\JsonResponse;
 
 class GetOrganizerDeletionStatusAction extends BaseAction

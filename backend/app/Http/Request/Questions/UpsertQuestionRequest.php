@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Http\Request\Questions;
+namespace TitaKita\Http\Request\Questions;
 
-use HiEvents\DomainObjects\Enums\QuestionBelongsTo;
-use HiEvents\DomainObjects\Enums\QuestionTypeEnum;
-use HiEvents\Http\Request\BaseRequest;
+use TitaKita\DomainObjects\Enums\QuestionBelongsTo;
+use TitaKita\DomainObjects\Enums\QuestionTypeEnum;
+use TitaKita\Http\Request\BaseRequest;
 use Illuminate\Validation\Rule;
 
 class UpsertQuestionRequest extends BaseRequest

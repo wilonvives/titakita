@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Http\Actions\TaxesAndFees;
+namespace TitaKita\Http\Actions\TaxesAndFees;
 
-use HiEvents\DomainObjects\AccountDomainObject;
-use HiEvents\Exceptions\ResourceNameAlreadyExistsException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\TaxOrFee\CreateTaxOrFeeRequest;
-use HiEvents\Resources\Tax\TaxAndFeeResource;
-use HiEvents\Services\Application\Handlers\TaxAndFee\CreateTaxOrFeeHandler;
-use HiEvents\Services\Application\Handlers\TaxAndFee\DTO\UpsertTaxDTO;
+use TitaKita\DomainObjects\AccountDomainObject;
+use TitaKita\Exceptions\ResourceNameAlreadyExistsException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\TaxOrFee\CreateTaxOrFeeRequest;
+use TitaKita\Resources\Tax\TaxAndFeeResource;
+use TitaKita\Services\Application\Handlers\TaxAndFee\CreateTaxOrFeeHandler;
+use TitaKita\Services\Application\Handlers\TaxAndFee\DTO\UpsertTaxDTO;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Validation\ValidationException;
 

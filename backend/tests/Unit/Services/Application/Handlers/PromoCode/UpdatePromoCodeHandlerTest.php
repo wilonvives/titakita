@@ -2,15 +2,15 @@
 
 namespace Tests\Unit\Services\Application\Handlers\PromoCode;
 
-use HiEvents\DomainObjects\Enums\PromoCodeDiscountTypeEnum;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\PromoCodeDomainObject;
-use HiEvents\Exceptions\ResourceNotFoundException;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\PromoCodeRepositoryInterface;
-use HiEvents\Services\Application\Handlers\PromoCode\DTO\UpsertPromoCodeDTO;
-use HiEvents\Services\Application\Handlers\PromoCode\UpdatePromoCodeHandler;
-use HiEvents\Services\Domain\Product\EventProductValidationService;
+use TitaKita\DomainObjects\Enums\PromoCodeDiscountTypeEnum;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\PromoCodeDomainObject;
+use TitaKita\Exceptions\ResourceNotFoundException;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\PromoCodeRepositoryInterface;
+use TitaKita\Services\Application\Handlers\PromoCode\DTO\UpsertPromoCodeDTO;
+use TitaKita\Services\Application\Handlers\PromoCode\UpdatePromoCodeHandler;
+use TitaKita\Services\Domain\Product\EventProductValidationService;
 use Mockery as m;
 use Tests\TestCase;
 

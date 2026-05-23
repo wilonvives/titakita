@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Repository\DTO\Organizer;
+namespace TitaKita\Repository\DTO\Organizer;
 
 class OrganizerStatsResponseDTO
 {

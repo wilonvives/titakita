@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Products;
+namespace TitaKita\Http\Actions\Products;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Exceptions\CannotDeleteEntityException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\Product\DeleteProductHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Exceptions\CannotDeleteEntityException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\Product\DeleteProductHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 use Symfony\Component\HttpFoundation\Response as HttpResponse;

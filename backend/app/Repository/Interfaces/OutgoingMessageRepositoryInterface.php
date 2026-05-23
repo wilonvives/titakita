@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\OutgoingMessageDomainObject;
+use TitaKita\DomainObjects\OutgoingMessageDomainObject;
 
 /**
  * @extends RepositoryInterface<OutgoingMessageDomainObject>

@@ -1,28 +1,28 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Order\Payment\Stripe;
+namespace TitaKita\Services\Application\Handlers\Order\Payment\Stripe;
 
 use Brick\Math\Exception\MathException;
 use Brick\Math\Exception\NumberFormatException;
 use Brick\Math\Exception\RoundingNecessaryException;
 use Brick\Money\Exception\UnknownCurrencyException;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\Generated\OrderDomainObjectAbstract;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\DomainObjects\Status\OrderRefundStatus;
-use HiEvents\DomainObjects\StripePaymentDomainObject;
-use HiEvents\Exceptions\RefundNotPossibleException;
-use HiEvents\Mail\Order\OrderRefunded;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Order\DTO\RefundOrderDTO;
-use HiEvents\Services\Domain\Order\OrderCancelService;
-use HiEvents\Services\Domain\Payment\Stripe\StripePaymentIntentRefundService;
-use HiEvents\Services\Infrastructure\Stripe\StripeClientFactory;
-use HiEvents\Values\MoneyValue;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\Generated\OrderDomainObjectAbstract;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\Status\OrderRefundStatus;
+use TitaKita\DomainObjects\StripePaymentDomainObject;
+use TitaKita\Exceptions\RefundNotPossibleException;
+use TitaKita\Mail\Order\OrderRefunded;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Order\DTO\RefundOrderDTO;
+use TitaKita\Services\Domain\Order\OrderCancelService;
+use TitaKita\Services\Domain\Payment\Stripe\StripePaymentIntentRefundService;
+use TitaKita\Services\Infrastructure\Stripe\StripeClientFactory;
+use TitaKita\Values\MoneyValue;
 use Illuminate\Contracts\Mail\Mailer;
 use Illuminate\Database\DatabaseManager;
 use Stripe\Exception\ApiErrorException;

@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\Organizers;
+namespace TitaKita\Http\Actions\Organizers;
 
-use HiEvents\DomainObjects\ImageDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Repository\Interfaces\OrganizerRepositoryInterface;
-use HiEvents\Resources\Organizer\OrganizerResource;
+use TitaKita\DomainObjects\ImageDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Repository\Interfaces\OrganizerRepositoryInterface;
+use TitaKita\Resources\Organizer\OrganizerResource;
 use Illuminate\Http\JsonResponse;
 
 class GetOrganizersAction extends BaseAction

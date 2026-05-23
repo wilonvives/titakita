@@ -2,11 +2,11 @@
 
 namespace Tests\Unit\Services\Application\Handlers\Reports;
 
-use HiEvents\DomainObjects\Enums\OrganizerReportTypes;
-use HiEvents\Services\Application\Handlers\Reports\DTO\GetOrganizerReportDTO;
-use HiEvents\Services\Application\Handlers\Reports\GetOrganizerReportHandler;
-use HiEvents\Services\Domain\Report\AbstractOrganizerReportService;
-use HiEvents\Services\Domain\Report\Factory\OrganizerReportServiceFactory;
+use TitaKita\DomainObjects\Enums\OrganizerReportTypes;
+use TitaKita\Services\Application\Handlers\Reports\DTO\GetOrganizerReportDTO;
+use TitaKita\Services\Application\Handlers\Reports\GetOrganizerReportHandler;
+use TitaKita\Services\Domain\Report\AbstractOrganizerReportService;
+use TitaKita\Services\Domain\Report\Factory\OrganizerReportServiceFactory;
 use Mockery as m;
 use Tests\TestCase;
 

@@ -1,16 +1,16 @@
 <?php
 
-namespace HiEvents\Listeners\Waitlist;
+namespace TitaKita\Listeners\Waitlist;
 
 use Carbon\Carbon;
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\DomainObjects\Status\WaitlistEntryStatus;
-use HiEvents\DomainObjects\WaitlistEntryDomainObject;
-use HiEvents\Events\OrderStatusChangedEvent;
-use HiEvents\DomainObjects\Enums\CapacityChangeDirection;
-use HiEvents\Events\CapacityChangedEvent;
-use HiEvents\Repository\Interfaces\ProductPriceRepositoryInterface;
-use HiEvents\Repository\Interfaces\WaitlistEntryRepositoryInterface;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\DomainObjects\Status\WaitlistEntryStatus;
+use TitaKita\DomainObjects\WaitlistEntryDomainObject;
+use TitaKita\Events\OrderStatusChangedEvent;
+use TitaKita\DomainObjects\Enums\CapacityChangeDirection;
+use TitaKita\Events\CapacityChangedEvent;
+use TitaKita\Repository\Interfaces\ProductPriceRepositoryInterface;
+use TitaKita\Repository\Interfaces\WaitlistEntryRepositoryInterface;
 use Illuminate\Database\DatabaseManager;
 
 class ResolveWaitlistEntryOnOrderCompletedListener

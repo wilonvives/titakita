@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\OrderAuditLogDomainObject;
-use HiEvents\Models\OrderAuditLog;
-use HiEvents\Repository\Interfaces\OrderAuditLogRepositoryInterface;
+use TitaKita\DomainObjects\OrderAuditLogDomainObject;
+use TitaKita\Models\OrderAuditLog;
+use TitaKita\Repository\Interfaces\OrderAuditLogRepositoryInterface;
 
 /**
  * @extends BaseRepository<OrderAuditLogDomainObject>

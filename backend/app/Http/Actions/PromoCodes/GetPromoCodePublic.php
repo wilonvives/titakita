@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Http\Actions\PromoCodes;
+namespace TitaKita\Http\Actions\PromoCodes;
 
-use HiEvents\DomainObjects\Generated\PromoCodeDomainObjectAbstract;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Repository\Interfaces\PromoCodeRepositoryInterface;
+use TitaKita\DomainObjects\Generated\PromoCodeDomainObjectAbstract;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Repository\Interfaces\PromoCodeRepositoryInterface;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

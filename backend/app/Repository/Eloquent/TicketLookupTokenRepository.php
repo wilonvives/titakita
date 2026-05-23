@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\TicketLookupTokenDomainObject;
-use HiEvents\Models\TicketLookupToken;
-use HiEvents\Repository\Interfaces\TicketLookupTokenRepositoryInterface;
+use TitaKita\DomainObjects\TicketLookupTokenDomainObject;
+use TitaKita\Models\TicketLookupToken;
+use TitaKita\Repository\Interfaces\TicketLookupTokenRepositoryInterface;
 
 /**
  * @extends BaseRepository<TicketLookupTokenDomainObject>

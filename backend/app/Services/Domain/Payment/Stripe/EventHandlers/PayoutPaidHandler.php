@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Services\Domain\Payment\Stripe\EventHandlers;
+namespace TitaKita\Services\Domain\Payment\Stripe\EventHandlers;
 
-use HiEvents\DomainObjects\Generated\StripePaymentDomainObjectAbstract;
-use HiEvents\Repository\Eloquent\StripePaymentsRepository;
-use HiEvents\Services\Infrastructure\Stripe\StripeClientFactory;
-use HiEvents\Services\Infrastructure\Stripe\StripeConfigurationService;
-use HiEvents\Services\Domain\Payment\Stripe\StripePayoutService;
-use HiEvents\Services\Domain\Payment\Stripe\DTOs\StripePayoutCreationDTO;
+use TitaKita\DomainObjects\Generated\StripePaymentDomainObjectAbstract;
+use TitaKita\Repository\Eloquent\StripePaymentsRepository;
+use TitaKita\Services\Infrastructure\Stripe\StripeClientFactory;
+use TitaKita\Services\Infrastructure\Stripe\StripeConfigurationService;
+use TitaKita\Services\Domain\Payment\Stripe\StripePayoutService;
+use TitaKita\Services\Domain\Payment\Stripe\DTOs\StripePayoutCreationDTO;
 use Psr\Log\LoggerInterface;
 use Stripe\ApplicationFee;
 use Stripe\Payout;

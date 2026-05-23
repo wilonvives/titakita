@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Services\Application\Handlers\Sitemap;
+namespace TitaKita\Services\Application\Handlers\Sitemap;
 
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrganizerRepositoryInterface;
-use HiEvents\Services\Domain\Sitemap\SitemapGeneratorService;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrganizerRepositoryInterface;
+use TitaKita\Services\Domain\Sitemap\SitemapGeneratorService;
 use Illuminate\Support\Facades\Cache;
 
 class GetSitemapIndexHandler

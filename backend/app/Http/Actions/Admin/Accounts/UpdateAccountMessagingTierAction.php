@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Admin\Accounts;
+namespace TitaKita\Http\Actions\Admin\Accounts;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Account\AdminAccountDetailResource;
-use HiEvents\Services\Application\Handlers\Admin\GetAccountHandler;
-use HiEvents\Services\Application\Handlers\Admin\UpdateAccountMessagingTierHandler;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Account\AdminAccountDetailResource;
+use TitaKita\Services\Application\Handlers\Admin\GetAccountHandler;
+use TitaKita\Services\Application\Handlers\Admin\UpdateAccountMessagingTierHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

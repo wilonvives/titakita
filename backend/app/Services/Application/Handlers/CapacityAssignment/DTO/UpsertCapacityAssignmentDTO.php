@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\CapacityAssignment\DTO;
+namespace TitaKita\Services\Application\Handlers\CapacityAssignment\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\DomainObjects\Status\CapacityAssignmentStatus;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\DomainObjects\Status\CapacityAssignmentStatus;
 
 class UpsertCapacityAssignmentDTO extends BaseDTO
 {

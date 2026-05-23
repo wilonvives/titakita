@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Webhook;
+namespace TitaKita\Services\Application\Handlers\Webhook;
 
-use HiEvents\DomainObjects\WebhookDomainObject;
-use HiEvents\Services\Application\Handlers\Webhook\DTO\CreateWebhookDTO;
-use HiEvents\Services\Domain\CreateWebhookService;
+use TitaKita\DomainObjects\WebhookDomainObject;
+use TitaKita\Services\Application\Handlers\Webhook\DTO\CreateWebhookDTO;
+use TitaKita\Services\Domain\CreateWebhookService;
 use Illuminate\Database\DatabaseManager;
 use Throwable;
 

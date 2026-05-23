@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Question;
+namespace TitaKita\Services\Application\Handlers\Question;
 
-use HiEvents\DomainObjects\QuestionDomainObject;
-use HiEvents\Services\Application\Handlers\Question\DTO\UpsertQuestionDTO;
-use HiEvents\Services\Domain\Question\EditQuestionService;
+use TitaKita\DomainObjects\QuestionDomainObject;
+use TitaKita\Services\Application\Handlers\Question\DTO\UpsertQuestionDTO;
+use TitaKita\Services\Domain\Question\EditQuestionService;
 use Throwable;
 
 class EditQuestionHandler

@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Mail\Organizer;
+namespace TitaKita\Mail\Organizer;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\Helper\Currency;
-use HiEvents\Helper\Url;
-use HiEvents\Mail\BaseMail;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\Helper\Currency;
+use TitaKita\Helper\Url;
+use TitaKita\Mail\BaseMail;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Support\Str;

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Products;
+namespace TitaKita\Http\Actions\Products;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Product\ProductResource;
-use HiEvents\Services\Application\Handlers\Product\GetProductsHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Product\ProductResource;
+use TitaKita\Services\Application\Handlers\Product\GetProductsHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

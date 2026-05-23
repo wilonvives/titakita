@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\EventSettings;
+namespace TitaKita\Services\Application\Handlers\EventSettings;
 
 use Brick\Money\Currency;
-use HiEvents\DomainObjects\AccountConfigurationDomainObject;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Services\Application\Handlers\EventSettings\DTO\GetPlatformFeePreviewDTO;
-use HiEvents\Services\Application\Handlers\EventSettings\DTO\PlatformFeePreviewResponseDTO;
-use HiEvents\Services\Infrastructure\CurrencyConversion\CurrencyConversionClientInterface;
+use TitaKita\DomainObjects\AccountConfigurationDomainObject;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Services\Application\Handlers\EventSettings\DTO\GetPlatformFeePreviewDTO;
+use TitaKita\Services\Application\Handlers\EventSettings\DTO\PlatformFeePreviewResponseDTO;
+use TitaKita\Services\Infrastructure\CurrencyConversion\CurrencyConversionClientInterface;
 
 class GetPlatformFeePreviewHandler
 {

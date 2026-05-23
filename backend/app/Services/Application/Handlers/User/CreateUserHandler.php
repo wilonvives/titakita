@@ -1,18 +1,18 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\User;
+namespace TitaKita\Services\Application\Handlers\User;
 
-use HiEvents\DomainObjects\AccountDomainObject;
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\DomainObjects\Status\UserStatus;
-use HiEvents\DomainObjects\UserDomainObject;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Exceptions\UnauthorizedException;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Repository\Interfaces\UserRepositoryInterface;
-use HiEvents\Services\Application\Handlers\User\DTO\CreateUserDTO;
-use HiEvents\Services\Domain\Account\AccountUserAssociationService;
-use HiEvents\Services\Domain\User\SendUserInvitationService;
+use TitaKita\DomainObjects\AccountDomainObject;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\DomainObjects\Status\UserStatus;
+use TitaKita\DomainObjects\UserDomainObject;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Exceptions\UnauthorizedException;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Repository\Interfaces\UserRepositoryInterface;
+use TitaKita\Services\Application\Handlers\User\DTO\CreateUserDTO;
+use TitaKita\Services\Domain\Account\AccountUserAssociationService;
+use TitaKita\Services\Domain\User\SendUserInvitationService;
 use Illuminate\Database\DatabaseManager;
 use Throwable;
 

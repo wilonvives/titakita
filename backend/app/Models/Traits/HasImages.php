@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Models\Traits;
+namespace TitaKita\Models\Traits;
 
-use HiEvents\Models\Image;
+use TitaKita\Models\Image;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 trait HasImages

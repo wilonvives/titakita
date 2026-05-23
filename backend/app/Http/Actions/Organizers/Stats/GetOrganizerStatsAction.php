@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\Organizers\Stats;
+namespace TitaKita\Http\Actions\Organizers\Stats;
 
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\Organizer\DTO\GetOrganizerStatsRequestDTO;
-use HiEvents\Services\Application\Handlers\Organizer\GetOrganizerStatsHandler;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\Organizer\DTO\GetOrganizerStatsRequestDTO;
+use TitaKita\Services\Application\Handlers\Organizer\GetOrganizerStatsHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

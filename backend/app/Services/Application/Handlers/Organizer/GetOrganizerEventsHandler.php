@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Organizer;
+namespace TitaKita\Services\Application\Handlers\Organizer;
 
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\ImageDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Organizer\DTO\GetOrganizerEventsDTO;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\ImageDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Organizer\DTO\GetOrganizerEventsDTO;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 class GetOrganizerEventsHandler

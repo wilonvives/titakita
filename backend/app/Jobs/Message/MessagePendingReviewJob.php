@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Jobs\Message;
+namespace TitaKita\Jobs\Message;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\MessageDomainObject;
-use HiEvents\Mail\Admin\MessagePendingReviewMail;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\MessageRepositoryInterface;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\MessageDomainObject;
+use TitaKita\Mail\Admin\MessagePendingReviewMail;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\MessageRepositoryInterface;
 use Illuminate\Bus\Queueable;
 use Illuminate\Config\Repository;
 use Illuminate\Contracts\Mail\Mailer;

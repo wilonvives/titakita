@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Question;
+namespace TitaKita\Services\Application\Handlers\Question;
 
-use HiEvents\Exceptions\CannotDeleteEntityException;
-use HiEvents\Repository\Interfaces\QuestionAnswerRepositoryInterface;
-use HiEvents\Repository\Interfaces\QuestionRepositoryInterface;
+use TitaKita\Exceptions\CannotDeleteEntityException;
+use TitaKita\Repository\Interfaces\QuestionAnswerRepositoryInterface;
+use TitaKita\Repository\Interfaces\QuestionRepositoryInterface;
 use Illuminate\Database\DatabaseManager;
 use Throwable;
 

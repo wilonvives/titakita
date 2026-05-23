@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\ProductCategoryDomainObject;
-use HiEvents\Http\DTO\QueryParamsDTO;
+use TitaKita\DomainObjects\ProductCategoryDomainObject;
+use TitaKita\Http\DTO\QueryParamsDTO;
 use Illuminate\Support\Collection;
 
 /**

@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Http\Actions\Auth;
+namespace TitaKita\Http\Actions\Auth;
 
-use HiEvents\Exceptions\InvalidPasswordResetTokenException;
-use HiEvents\Exceptions\PasswordInvalidException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Auth\ResetPasswordRequest;
-use HiEvents\Services\Application\Handlers\Auth\DTO\ResetPasswordDTO;
-use HiEvents\Services\Application\Handlers\Auth\ResetPasswordHandler;
+use TitaKita\Exceptions\InvalidPasswordResetTokenException;
+use TitaKita\Exceptions\PasswordInvalidException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Auth\ResetPasswordRequest;
+use TitaKita\Services\Application\Handlers\Auth\DTO\ResetPasswordDTO;
+use TitaKita\Services\Application\Handlers\Auth\ResetPasswordHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Validation\ValidationException;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;

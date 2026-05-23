@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Http\Actions\Images;
+namespace TitaKita\Http\Actions\Images;
 
-use HiEvents\DomainObjects\ImageDomainObject;
-use HiEvents\Exceptions\CannotDeleteEntityException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\Images\DeleteImageHandler;
-use HiEvents\Services\Application\Handlers\Images\DTO\DeleteImageDTO;
+use TitaKita\DomainObjects\ImageDomainObject;
+use TitaKita\Exceptions\CannotDeleteEntityException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\Images\DeleteImageHandler;
+use TitaKita\Services\Application\Handlers\Images\DTO\DeleteImageDTO;
 use Illuminate\Http\Response;
 
 class DeleteImageAction extends BaseAction

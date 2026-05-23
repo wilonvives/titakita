@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Order;
+namespace TitaKita\Services\Application\Handlers\Order;
 
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\Services\Application\Handlers\Order\DTO\EditOrderDTO;
-use HiEvents\Services\Domain\Order\EditOrderService;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\Services\Application\Handlers\Order\DTO\EditOrderDTO;
+use TitaKita\Services\Domain\Order\EditOrderService;
 use Psr\Log\LoggerInterface;
 use Throwable;
 

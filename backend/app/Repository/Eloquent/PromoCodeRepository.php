@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\Generated\PromoCodeDomainObjectAbstract;
-use HiEvents\DomainObjects\PromoCodeDomainObject;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Models\PromoCode;
-use HiEvents\Repository\Interfaces\PromoCodeRepositoryInterface;
+use TitaKita\DomainObjects\Generated\PromoCodeDomainObjectAbstract;
+use TitaKita\DomainObjects\PromoCodeDomainObject;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Models\PromoCode;
+use TitaKita\Repository\Interfaces\PromoCodeRepositoryInterface;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Builder;
 

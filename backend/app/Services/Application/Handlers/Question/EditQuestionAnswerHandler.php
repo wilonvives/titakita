@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Question;
+namespace TitaKita\Services\Application\Handlers\Question;
 
-use HiEvents\Services\Application\Handlers\Question\DTO\EditQuestionAnswerDTO;
-use HiEvents\Services\Domain\Question\EditQuestionAnswerService;
-use HiEvents\Services\Domain\Question\Exception\InvalidAnswerException;
+use TitaKita\Services\Application\Handlers\Question\DTO\EditQuestionAnswerDTO;
+use TitaKita\Services\Domain\Question\EditQuestionAnswerService;
+use TitaKita\Services\Domain\Question\Exception\InvalidAnswerException;
 use JsonException;
 
 class EditQuestionAnswerHandler

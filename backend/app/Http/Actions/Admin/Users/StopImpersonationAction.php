@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Admin\Users;
+namespace TitaKita\Http\Actions\Admin\Users;
 
-use HiEvents\Http\Actions\Auth\BaseAuthAction;
-use HiEvents\Services\Application\Handlers\Admin\DTO\StopImpersonationDTO;
-use HiEvents\Services\Application\Handlers\Admin\StopImpersonationHandler;
+use TitaKita\Http\Actions\Auth\BaseAuthAction;
+use TitaKita\Services\Application\Handlers\Admin\DTO\StopImpersonationDTO;
+use TitaKita\Services\Application\Handlers\Admin\StopImpersonationHandler;
 use Illuminate\Auth\AuthManager;
 use Illuminate\Http\JsonResponse;
 

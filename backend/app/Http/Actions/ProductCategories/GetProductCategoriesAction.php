@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\ProductCategories;
+namespace TitaKita\Http\Actions\ProductCategories;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\ProductCategory\ProductCategoryResource;
-use HiEvents\Services\Application\Handlers\ProductCategory\GetProductCategoriesHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\ProductCategory\ProductCategoryResource;
+use TitaKita\Services\Application\Handlers\ProductCategory\GetProductCategoriesHandler;
 use Illuminate\Http\JsonResponse;
 
 class GetProductCategoriesAction extends BaseAction

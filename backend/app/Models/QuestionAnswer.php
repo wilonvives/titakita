@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Models;
+namespace TitaKita\Models;
 
-use HiEvents\DomainObjects\Generated\QuestionAnswerDomainObjectAbstract;
+use TitaKita\DomainObjects\Generated\QuestionAnswerDomainObjectAbstract;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 

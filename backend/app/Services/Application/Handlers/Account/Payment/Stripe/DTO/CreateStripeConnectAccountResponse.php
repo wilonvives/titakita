@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Account\Payment\Stripe\DTO;
+namespace TitaKita\Services\Application\Handlers\Account\Payment\Stripe\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\DomainObjects\AccountDomainObject;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\DomainObjects\AccountDomainObject;
 
 class CreateStripeConnectAccountResponse extends BaseDTO
 {

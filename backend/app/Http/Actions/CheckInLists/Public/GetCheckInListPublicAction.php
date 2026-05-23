@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Http\Actions\CheckInLists\Public;
+namespace TitaKita\Http\Actions\CheckInLists\Public;
 
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\CheckInList\CheckInListResourcePublic;
-use HiEvents\Services\Application\Handlers\CheckInList\Public\GetCheckInListPublicHandler;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\CheckInList\CheckInListResourcePublic;
+use TitaKita\Services\Application\Handlers\CheckInList\Public\GetCheckInListPublicHandler;
 use Illuminate\Http\JsonResponse;
 
 class GetCheckInListPublicAction extends BaseAction

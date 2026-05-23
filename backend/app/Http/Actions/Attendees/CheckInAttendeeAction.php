@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Http\Actions\Attendees;
+namespace TitaKita\Http\Actions\Attendees;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Exceptions\CannotCheckInException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Attendee\CheckInAttendeeRequest;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Resources\Attendee\AttendeeResource;
-use HiEvents\Services\Application\Handlers\Attendee\CheckInAttendeeHandler;
-use HiEvents\Services\Application\Handlers\Attendee\DTO\CheckInAttendeeDTO;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Exceptions\CannotCheckInException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Attendee\CheckInAttendeeRequest;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Resources\Attendee\AttendeeResource;
+use TitaKita\Services\Application\Handlers\Attendee\CheckInAttendeeHandler;
+use TitaKita\Services\Application\Handlers\Attendee\DTO\CheckInAttendeeDTO;
 use Illuminate\Http\JsonResponse;
 
 class CheckInAttendeeAction extends BaseAction

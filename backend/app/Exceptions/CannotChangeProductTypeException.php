@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Exceptions;
+namespace TitaKita\Exceptions;
 
 class CannotChangeProductTypeException extends BaseException
 {

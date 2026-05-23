@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\OrganizerSettingDomainObject;
+use TitaKita\DomainObjects\OrganizerSettingDomainObject;
 
 /**
  * @extends RepositoryInterface<OrganizerSettingDomainObject>

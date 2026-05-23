@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Domain\Tax;
+namespace TitaKita\Services\Domain\Tax;
 
 use Exception;
-use HiEvents\Exceptions\InvalidTaxOrFeeIdException;
-use HiEvents\Repository\Interfaces\ProductRepositoryInterface;
-use HiEvents\Repository\Interfaces\TaxAndFeeRepositoryInterface;
-use HiEvents\Services\Domain\Tax\DTO\TaxAndProductAssociateParams;
+use TitaKita\Exceptions\InvalidTaxOrFeeIdException;
+use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
+use TitaKita\Repository\Interfaces\TaxAndFeeRepositoryInterface;
+use TitaKita\Services\Domain\Tax\DTO\TaxAndProductAssociateParams;
 use Illuminate\Support\Collection;
 
 readonly class TaxAndProductAssociationService

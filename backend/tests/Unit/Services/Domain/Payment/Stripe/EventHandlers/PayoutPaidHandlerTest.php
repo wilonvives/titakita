@@ -2,13 +2,13 @@
 
 namespace Tests\Unit\Services\Domain\Payment\Stripe\EventHandlers;
 
-use HiEvents\DomainObjects\Generated\StripePaymentDomainObjectAbstract;
-use HiEvents\DomainObjects\StripePaymentDomainObject;
-use HiEvents\Repository\Eloquent\StripePaymentsRepository;
-use HiEvents\Services\Domain\Payment\Stripe\EventHandlers\PayoutPaidHandler;
-use HiEvents\Services\Domain\Payment\Stripe\StripePayoutService;
-use HiEvents\Services\Infrastructure\Stripe\StripeClientFactory;
-use HiEvents\Services\Infrastructure\Stripe\StripeConfigurationService;
+use TitaKita\DomainObjects\Generated\StripePaymentDomainObjectAbstract;
+use TitaKita\DomainObjects\StripePaymentDomainObject;
+use TitaKita\Repository\Eloquent\StripePaymentsRepository;
+use TitaKita\Services\Domain\Payment\Stripe\EventHandlers\PayoutPaidHandler;
+use TitaKita\Services\Domain\Payment\Stripe\StripePayoutService;
+use TitaKita\Services\Infrastructure\Stripe\StripeClientFactory;
+use TitaKita\Services\Infrastructure\Stripe\StripeConfigurationService;
 use Mockery as m;
 use Psr\Log\LoggerInterface;
 use Stripe\ApplicationFee;

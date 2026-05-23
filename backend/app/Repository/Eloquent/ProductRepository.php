@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
 use Exception;
-use HiEvents\Constants;
-use HiEvents\DomainObjects\CapacityAssignmentDomainObject;
-use HiEvents\DomainObjects\Generated\ProductDomainObjectAbstract;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\DomainObjects\TaxAndFeesDomainObject;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Models\CapacityAssignment;
-use HiEvents\Models\CheckInList;
-use HiEvents\Models\Product;
-use HiEvents\Repository\Interfaces\ProductRepositoryInterface;
+use TitaKita\Constants;
+use TitaKita\DomainObjects\CapacityAssignmentDomainObject;
+use TitaKita\DomainObjects\Generated\ProductDomainObjectAbstract;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\DomainObjects\TaxAndFeesDomainObject;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Models\CapacityAssignment;
+use TitaKita\Models\CheckInList;
+use TitaKita\Models\Product;
+use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;

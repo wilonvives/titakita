@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Http\Request\Attendee;
+namespace TitaKita\Http\Request\Attendee;
 
-use HiEvents\Http\Request\BaseRequest;
+use TitaKita\Http\Request\BaseRequest;
 
 class CheckInAttendeeRequest extends BaseRequest
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Domain\Order;
+namespace TitaKita\Services\Domain\Order;
 
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Services\Infrastructure\DomainEvents\DomainEventDispatcherService;
-use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
-use HiEvents\Services\Infrastructure\DomainEvents\Events\OrderEvent;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Services\Infrastructure\DomainEvents\DomainEventDispatcherService;
+use TitaKita\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
+use TitaKita\Services\Infrastructure\DomainEvents\Events\OrderEvent;
 use Illuminate\Database\DatabaseManager;
 use Throwable;
 

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Admin\FailedJobs;
+namespace TitaKita\Http\Actions\Admin\FailedJobs;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Resources\Admin\AdminFailedJobResource;
-use HiEvents\Services\Application\Handlers\Admin\DTO\GetAllFailedJobsDTO;
-use HiEvents\Services\Application\Handlers\Admin\GetAllFailedJobsHandler;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Resources\Admin\AdminFailedJobResource;
+use TitaKita\Services\Application\Handlers\Admin\DTO\GetAllFailedJobsDTO;
+use TitaKita\Services\Application\Handlers\Admin\GetAllFailedJobsHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

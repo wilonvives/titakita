@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Exceptions;
+namespace TitaKita\Exceptions;
 
-use HiEvents\Http\ResponseCodes;
+use TitaKita\Http\ResponseCodes;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Throwable;
 

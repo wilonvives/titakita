@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Http\Actions\Users;
+namespace TitaKita\Http\Actions\Users;
 
-use HiEvents\Exceptions\PasswordInvalidException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\User\UpdateMeRequest;
-use HiEvents\Resources\User\UserResource;
-use HiEvents\Services\Application\Handlers\User\DTO\UpdateMeDTO;
-use HiEvents\Services\Application\Handlers\User\UpdateMeHandler;
+use TitaKita\Exceptions\PasswordInvalidException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\User\UpdateMeRequest;
+use TitaKita\Resources\User\UserResource;
+use TitaKita\Services\Application\Handlers\User\DTO\UpdateMeDTO;
+use TitaKita\Services\Application\Handlers\User\UpdateMeHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Validation\ValidationException;
 

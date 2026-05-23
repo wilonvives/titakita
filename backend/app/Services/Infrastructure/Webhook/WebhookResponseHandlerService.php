@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Infrastructure\Webhook;
+namespace TitaKita\Services\Infrastructure\Webhook;
 
 use GuzzleHttp\Psr7\Response;
-use HiEvents\Repository\Interfaces\WebhookLogRepositoryInterface;
-use HiEvents\Repository\Interfaces\WebhookRepositoryInterface;
+use TitaKita\Repository\Interfaces\WebhookLogRepositoryInterface;
+use TitaKita\Repository\Interfaces\WebhookRepositoryInterface;
 use Illuminate\Database\DatabaseManager;
 use Psr\Log\LoggerInterface;
 

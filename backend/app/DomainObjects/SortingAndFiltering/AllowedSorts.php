@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\DomainObjects\SortingAndFiltering;
+namespace TitaKita\DomainObjects\SortingAndFiltering;
 
 use Illuminate\Support\Collection;
 use InvalidArgumentException;

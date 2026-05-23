@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Http\Request\Auth;
+namespace TitaKita\Http\Request\Auth;
 
-use HiEvents\Http\Request\BaseRequest;
-use HiEvents\Validators\Rules\RulesHelper;
+use TitaKita\Http\Request\BaseRequest;
+use TitaKita\Validators\Rules\RulesHelper;
 
 class AcceptInvitationRequest extends BaseRequest
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\PromoCode\DTO;
+namespace TitaKita\Services\Application\Handlers\PromoCode\DTO;
 
-use HiEvents\DomainObjects\Enums\PromoCodeDiscountTypeEnum;
+use TitaKita\DomainObjects\Enums\PromoCodeDiscountTypeEnum;
 
 class UpsertPromoCodeDTO
 {

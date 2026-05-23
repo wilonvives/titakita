@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Http\Actions\SelfService;
+namespace TitaKita\Http\Actions\SelfService;
 
-use HiEvents\Exceptions\SelfServiceDisabledException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\SelfService\EditOrderPublicRequest;
-use HiEvents\Services\Application\Handlers\SelfService\DTO\EditOrderPublicDTO;
-use HiEvents\Services\Application\Handlers\SelfService\EditOrderPublicHandler;
+use TitaKita\Exceptions\SelfServiceDisabledException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\SelfService\EditOrderPublicRequest;
+use TitaKita\Services\Application\Handlers\SelfService\DTO\EditOrderPublicDTO;
+use TitaKita\Services\Application\Handlers\SelfService\EditOrderPublicHandler;
 use Illuminate\Http\JsonResponse;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 

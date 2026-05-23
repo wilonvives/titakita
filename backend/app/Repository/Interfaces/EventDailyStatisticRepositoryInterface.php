@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\EventDailyStatisticDomainObject;
+use TitaKita\DomainObjects\EventDailyStatisticDomainObject;
 
 /**
  * @extends RepositoryInterface<EventDailyStatisticDomainObject>

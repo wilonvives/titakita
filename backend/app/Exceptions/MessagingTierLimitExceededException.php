@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Exceptions;
+namespace TitaKita\Exceptions;
 
 use Exception;
-use HiEvents\Services\Domain\Message\DTO\MessagingTierViolationDTO;
+use TitaKita\Services\Domain\Message\DTO\MessagingTierViolationDTO;
 
 class MessagingTierLimitExceededException extends Exception
 {

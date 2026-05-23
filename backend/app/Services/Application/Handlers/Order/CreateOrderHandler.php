@@ -2,24 +2,24 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Services\Application\Handlers\Order;
+namespace TitaKita\Services\Application\Handlers\Order;
 
-use HiEvents\DomainObjects\AffiliateDomainObject;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\Generated\AffiliateDomainObjectAbstract;
-use HiEvents\DomainObjects\Generated\PromoCodeDomainObjectAbstract;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\PromoCodeDomainObject;
-use HiEvents\DomainObjects\Status\AffiliateStatus;
-use HiEvents\DomainObjects\Status\EventStatus;
-use HiEvents\Repository\Interfaces\AffiliateRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\PromoCodeRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Order\DTO\CreateOrderPublicDTO;
-use HiEvents\Services\Domain\Order\OrderItemProcessingService;
-use HiEvents\Services\Domain\Order\OrderManagementService;
-use HiEvents\Services\Domain\Product\AvailableProductQuantitiesFetchService;
+use TitaKita\DomainObjects\AffiliateDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\Generated\AffiliateDomainObjectAbstract;
+use TitaKita\DomainObjects\Generated\PromoCodeDomainObjectAbstract;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\PromoCodeDomainObject;
+use TitaKita\DomainObjects\Status\AffiliateStatus;
+use TitaKita\DomainObjects\Status\EventStatus;
+use TitaKita\Repository\Interfaces\AffiliateRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\PromoCodeRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Order\DTO\CreateOrderPublicDTO;
+use TitaKita\Services\Domain\Order\OrderItemProcessingService;
+use TitaKita\Services\Domain\Order\OrderManagementService;
+use TitaKita\Services\Domain\Product\AvailableProductQuantitiesFetchService;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Validation\UnauthorizedException;
 use Illuminate\Validation\ValidationException;

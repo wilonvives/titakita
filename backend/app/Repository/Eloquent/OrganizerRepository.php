@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\Generated\OrganizerDomainObjectAbstract;
-use HiEvents\DomainObjects\Generated\OrganizerSettingDomainObjectAbstract;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\DomainObjects\Status\OrganizerStatus;
-use HiEvents\Models\Organizer;
-use HiEvents\Repository\DTO\Organizer\OrganizerStatsResponseDTO;
-use HiEvents\Repository\Interfaces\OrganizerRepositoryInterface;
+use TitaKita\DomainObjects\Generated\OrganizerDomainObjectAbstract;
+use TitaKita\DomainObjects\Generated\OrganizerSettingDomainObjectAbstract;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\Status\OrganizerStatus;
+use TitaKita\Models\Organizer;
+use TitaKita\Repository\DTO\Organizer\OrganizerStatsResponseDTO;
+use TitaKita\Repository\Interfaces\OrganizerRepositoryInterface;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 /**

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\AccountUserDomainObject;
-use HiEvents\DomainObjects\UserDomainObject;
-use HiEvents\Models\AccountUser;
-use HiEvents\Models\User;
-use HiEvents\Repository\Interfaces\UserRepositoryInterface;
+use TitaKita\DomainObjects\AccountUserDomainObject;
+use TitaKita\DomainObjects\UserDomainObject;
+use TitaKita\Models\AccountUser;
+use TitaKita\Models\User;
+use TitaKita\Repository\Interfaces\UserRepositoryInterface;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Collection;

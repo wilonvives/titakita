@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Resources\Account;
+namespace TitaKita\Resources\Account;
 
-use HiEvents\DomainObjects\AccountVatSettingDomainObject;
-use HiEvents\Resources\BaseResource;
+use TitaKita\DomainObjects\AccountVatSettingDomainObject;
+use TitaKita\Resources\BaseResource;
 
 /**
  * @mixin AccountVatSettingDomainObject

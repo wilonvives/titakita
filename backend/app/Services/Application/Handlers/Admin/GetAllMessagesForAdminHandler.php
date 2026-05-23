@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Admin;
+namespace TitaKita\Services\Application\Handlers\Admin;
 
-use HiEvents\Models\Message;
-use HiEvents\Services\Application\Handlers\Admin\DTO\GetAllMessagesForAdminDTO;
+use TitaKita\Models\Message;
+use TitaKita\Services\Application\Handlers\Admin\DTO\GetAllMessagesForAdminDTO;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 class GetAllMessagesForAdminHandler

@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Http\Actions\Attendees;
+namespace TitaKita\Http\Actions\Attendees;
 
-use HiEvents\DomainObjects\Generated\AttendeeDomainObjectAbstract;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\DomainObjects\ProductPriceDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\AttendeeRepositoryInterface;
-use HiEvents\Resources\Attendee\AttendeeResourcePublic;
+use TitaKita\DomainObjects\Generated\AttendeeDomainObjectAbstract;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\AttendeeRepositoryInterface;
+use TitaKita\Resources\Attendee\AttendeeResourcePublic;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 

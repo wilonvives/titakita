@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\CapacityAssignment;
+namespace TitaKita\Services\Application\Handlers\CapacityAssignment;
 
-use HiEvents\DomainObjects\CapacityAssignmentDomainObject;
-use HiEvents\DomainObjects\Enums\CapacityAssignmentAppliesTo;
-use HiEvents\DomainObjects\Enums\CapacityChangeDirection;
-use HiEvents\Events\CapacityChangedEvent;
-use HiEvents\Repository\Interfaces\CapacityAssignmentRepositoryInterface;
-use HiEvents\Services\Application\Handlers\CapacityAssignment\DTO\UpsertCapacityAssignmentDTO;
-use HiEvents\Services\Domain\CapacityAssignment\UpdateCapacityAssignmentService;
-use HiEvents\Services\Domain\Product\Exception\UnrecognizedProductIdException;
+use TitaKita\DomainObjects\CapacityAssignmentDomainObject;
+use TitaKita\DomainObjects\Enums\CapacityAssignmentAppliesTo;
+use TitaKita\DomainObjects\Enums\CapacityChangeDirection;
+use TitaKita\Events\CapacityChangedEvent;
+use TitaKita\Repository\Interfaces\CapacityAssignmentRepositoryInterface;
+use TitaKita\Services\Application\Handlers\CapacityAssignment\DTO\UpsertCapacityAssignmentDTO;
+use TitaKita\Services\Domain\CapacityAssignment\UpdateCapacityAssignmentService;
+use TitaKita\Services\Domain\Product\Exception\UnrecognizedProductIdException;
 
 class UpdateCapacityAssignmentHandler
 {

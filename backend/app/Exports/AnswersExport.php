@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Exports;
+namespace TitaKita\Exports;
 
-use HiEvents\DomainObjects\Enums\QuestionBelongsTo;
-use HiEvents\DomainObjects\QuestionAndAnswerViewDomainObject;
-use HiEvents\Exports\AnswerExportSheets\AttendeeAnswersSheet;
-use HiEvents\Exports\AnswerExportSheets\OrderAnswersSheet;
-use HiEvents\Exports\AnswerExportSheets\ProductAnswersSheet;
-use HiEvents\Services\Domain\Question\QuestionAnswerFormatter;
+use TitaKita\DomainObjects\Enums\QuestionBelongsTo;
+use TitaKita\DomainObjects\QuestionAndAnswerViewDomainObject;
+use TitaKita\Exports\AnswerExportSheets\AttendeeAnswersSheet;
+use TitaKita\Exports\AnswerExportSheets\OrderAnswersSheet;
+use TitaKita\Exports\AnswerExportSheets\ProductAnswersSheet;
+use TitaKita\Services\Domain\Question\QuestionAnswerFormatter;
 use Illuminate\Support\Collection;
 use Maatwebsite\Excel\Concerns\WithMultipleSheets;
 

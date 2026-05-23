@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Http\Actions\Organizers;
+namespace TitaKita\Http\Actions\Organizers;
 
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\DomainObjects\Status\OrganizerStatus;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Organizer\OrganizerResourcePublic;
-use HiEvents\Services\Application\Handlers\Organizer\GetPublicOrganizerHandler;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\Status\OrganizerStatus;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Organizer\OrganizerResourcePublic;
+use TitaKita\Services\Application\Handlers\Organizer\GetPublicOrganizerHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 use Psr\Log\LoggerInterface;

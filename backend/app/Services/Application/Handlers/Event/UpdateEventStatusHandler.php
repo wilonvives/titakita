@@ -1,16 +1,16 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Event;
+namespace TitaKita\Services\Application\Handlers\Event;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Exceptions\AccountNotVerifiedException;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Event\DTO\UpdateEventStatusDTO;
-use HiEvents\DomainObjects\Status\EventStatus;
-use HiEvents\Jobs\Event\Webhook\DispatchEventWebhookJob;
-use HiEvents\Jobs\Event\Webhook\ReportEventToDirectoryJob;
-use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Exceptions\AccountNotVerifiedException;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Event\DTO\UpdateEventStatusDTO;
+use TitaKita\DomainObjects\Status\EventStatus;
+use TitaKita\Jobs\Event\Webhook\DispatchEventWebhookJob;
+use TitaKita\Jobs\Event\Webhook\ReportEventToDirectoryJob;
+use TitaKita\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
 use Illuminate\Database\DatabaseManager;
 use Psr\Log\LoggerInterface;
 use Throwable;

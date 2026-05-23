@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Http\Middleware;
+namespace TitaKita\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\TrimStrings as Middleware;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\SelfService;
+namespace TitaKita\Http\Actions\SelfService;
 
-use HiEvents\Exceptions\SelfServiceDisabledException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\SelfService\DTO\ResendEmailPublicDTO;
-use HiEvents\Services\Application\Handlers\SelfService\ResendOrderConfirmationPublicHandler;
+use TitaKita\Exceptions\SelfServiceDisabledException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\SelfService\DTO\ResendEmailPublicDTO;
+use TitaKita\Services\Application\Handlers\SelfService\ResendOrderConfirmationPublicHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;

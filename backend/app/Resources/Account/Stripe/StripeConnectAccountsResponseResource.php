@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Resources\Account\Stripe;
+namespace TitaKita\Resources\Account\Stripe;
 
-use HiEvents\Resources\BaseResource;
-use HiEvents\Services\Application\Handlers\Account\Payment\Stripe\DTO\GetStripeConnectAccountsResponseDTO;
-use HiEvents\Services\Application\Handlers\Account\Payment\Stripe\DTO\StripeConnectAccountDTO;
+use TitaKita\Resources\BaseResource;
+use TitaKita\Services\Application\Handlers\Account\Payment\Stripe\DTO\GetStripeConnectAccountsResponseDTO;
+use TitaKita\Services\Application\Handlers\Account\Payment\Stripe\DTO\StripeConnectAccountDTO;
 use Illuminate\Http\Request;
 
 /**

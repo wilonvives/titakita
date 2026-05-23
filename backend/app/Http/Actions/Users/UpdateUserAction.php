@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Http\Actions\Users;
+namespace TitaKita\Http\Actions\Users;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\DomainObjects\UserDomainObject;
-use HiEvents\Exceptions\CannotUpdateResourceException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\User\UpdateUserRequest;
-use HiEvents\Resources\User\UserResource;
-use HiEvents\Services\Application\Handlers\User\DTO\UpdateUserDTO;
-use HiEvents\Services\Application\Handlers\User\UpdateUserHandler;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\DomainObjects\UserDomainObject;
+use TitaKita\Exceptions\CannotUpdateResourceException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\User\UpdateUserRequest;
+use TitaKita\Resources\User\UserResource;
+use TitaKita\Services\Application\Handlers\User\DTO\UpdateUserDTO;
+use TitaKita\Services\Application\Handlers\User\UpdateUserHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Validation\ValidationException;
 use Throwable;

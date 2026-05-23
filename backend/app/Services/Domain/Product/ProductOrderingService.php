@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Domain\Product;
+namespace TitaKita\Services\Domain\Product;
 
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\Repository\Interfaces\ProductRepositoryInterface;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
 
 class ProductOrderingService
 {

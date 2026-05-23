@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\WaitlistEntryDomainObject;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Services\Application\Handlers\Waitlist\DTO\WaitlistStatsDTO;
+use TitaKita\DomainObjects\WaitlistEntryDomainObject;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Services\Application\Handlers\Waitlist\DTO\WaitlistStatsDTO;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
 

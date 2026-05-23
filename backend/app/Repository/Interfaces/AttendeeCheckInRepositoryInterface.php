@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\AttendeeCheckInDomainObject;
+use TitaKita\DomainObjects\AttendeeCheckInDomainObject;
 
 /**
  * @extends RepositoryInterface<AttendeeCheckInDomainObject>

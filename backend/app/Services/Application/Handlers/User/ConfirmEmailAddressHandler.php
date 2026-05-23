@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\User;
+namespace TitaKita\Services\Application\Handlers\User;
 
-use HiEvents\Services\Application\Handlers\User\DTO\ConfirmEmailChangeDTO;
-use HiEvents\Services\Domain\User\EmailConfirmationService;
-use HiEvents\Services\Infrastructure\Encryption\Exception\DecryptionFailedException;
+use TitaKita\Services\Application\Handlers\User\DTO\ConfirmEmailChangeDTO;
+use TitaKita\Services\Domain\User\EmailConfirmationService;
+use TitaKita\Services\Infrastructure\Encryption\Exception\DecryptionFailedException;
 use Throwable;
 
 readonly class ConfirmEmailAddressHandler

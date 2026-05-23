@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Order\DTO;
+namespace TitaKita\Services\Application\Handlers\Order\DTO;
 
-use HiEvents\DataTransferObjects\Attributes\CollectionOf;
-use HiEvents\DataTransferObjects\BaseDTO;
+use TitaKita\DataTransferObjects\Attributes\CollectionOf;
+use TitaKita\DataTransferObjects\BaseDTO;
 use Illuminate\Support\Collection;
 
 class CompleteOrderDTO extends BaseDTO

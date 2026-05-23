@@ -1,23 +1,23 @@
 <?php
 
-namespace HiEvents\Services\Domain\Product;
+namespace TitaKita\Services\Domain\Product;
 
-use HiEvents\Constants;
-use HiEvents\DomainObjects\AccountConfigurationDomainObject;
-use HiEvents\DomainObjects\CapacityAssignmentDomainObject;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\ProductCategoryDomainObject;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\DomainObjects\ProductPriceDomainObject;
-use HiEvents\DomainObjects\PromoCodeDomainObject;
-use HiEvents\DomainObjects\TaxAndFeesDomainObject;
-use HiEvents\Helper\Currency;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Services\Domain\Order\OrderPlatformFeePassThroughService;
-use HiEvents\Services\Domain\Product\DTO\AvailableProductQuantitiesDTO;
-use HiEvents\Services\Domain\Tax\TaxAndFeeCalculationService;
+use TitaKita\Constants;
+use TitaKita\DomainObjects\AccountConfigurationDomainObject;
+use TitaKita\DomainObjects\CapacityAssignmentDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\ProductCategoryDomainObject;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\DomainObjects\PromoCodeDomainObject;
+use TitaKita\DomainObjects\TaxAndFeesDomainObject;
+use TitaKita\Helper\Currency;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Services\Domain\Order\OrderPlatformFeePassThroughService;
+use TitaKita\Services\Domain\Product\DTO\AvailableProductQuantitiesDTO;
+use TitaKita\Services\Domain\Tax\TaxAndFeeCalculationService;
 use Illuminate\Support\Collection;
 
 class ProductFilterService

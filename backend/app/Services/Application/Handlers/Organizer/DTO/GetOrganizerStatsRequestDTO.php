@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Organizer\DTO;
+namespace TitaKita\Services\Application\Handlers\Organizer\DTO;
 
 class GetOrganizerStatsRequestDTO
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\Orders\Public;
+namespace TitaKita\Http\Actions\Orders\Public;
 
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Order\OrderResourcePublic;
-use HiEvents\Services\Application\Handlers\Order\DTO\TransitionOrderToOfflinePaymentPublicDTO;
-use HiEvents\Services\Application\Handlers\Order\TransitionOrderToOfflinePaymentHandler;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Order\OrderResourcePublic;
+use TitaKita\Services\Application\Handlers\Order\DTO\TransitionOrderToOfflinePaymentPublicDTO;
+use TitaKita\Services\Application\Handlers\Order\TransitionOrderToOfflinePaymentHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

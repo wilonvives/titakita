@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Http\Actions\EmailTemplates;
+namespace TitaKita\Http\Actions\EmailTemplates;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Services\Application\Handlers\EmailTemplate\PreviewEmailTemplateHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Services\Application\Handlers\EmailTemplate\PreviewEmailTemplateHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

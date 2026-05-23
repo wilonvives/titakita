@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Reports\DTO;
+namespace TitaKita\Services\Application\Handlers\Reports\DTO;
 
-use HiEvents\DataTransferObjects\BaseDataObject;
-use HiEvents\DomainObjects\Enums\OrganizerReportTypes;
+use TitaKita\DataTransferObjects\BaseDataObject;
+use TitaKita\DomainObjects\Enums\OrganizerReportTypes;
 
 class GetOrganizerReportDTO extends BaseDataObject
 {

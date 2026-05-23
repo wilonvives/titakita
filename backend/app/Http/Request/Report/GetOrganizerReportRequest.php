@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Http\Request\Report;
+namespace TitaKita\Http\Request\Report;
 
-use HiEvents\Http\Request\BaseRequest;
+use TitaKita\Http\Request\BaseRequest;
 
 class GetOrganizerReportRequest extends BaseRequest
 {

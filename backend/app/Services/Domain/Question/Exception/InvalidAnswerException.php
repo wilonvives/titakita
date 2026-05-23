@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Services\Domain\Question\Exception;
+namespace TitaKita\Services\Domain\Question\Exception;
 
 use Exception;
 

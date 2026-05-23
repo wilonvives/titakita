@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\OrderItemDomainObject;
+use TitaKita\DomainObjects\OrderItemDomainObject;
 
 /**
  * @extends RepositoryInterface<OrderItemDomainObject>

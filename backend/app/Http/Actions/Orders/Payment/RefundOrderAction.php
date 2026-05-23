@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Http\Actions\Orders\Payment;
+namespace TitaKita\Http\Actions\Orders\Payment;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Exceptions\RefundNotPossibleException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Order\RefundOrderRequest;
-use HiEvents\Resources\Order\OrderResource;
-use HiEvents\Services\Application\Handlers\Order\DTO\RefundOrderDTO;
-use HiEvents\Services\Application\Handlers\Order\Payment\Stripe\RefundOrderHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Exceptions\RefundNotPossibleException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Order\RefundOrderRequest;
+use TitaKita\Resources\Order\OrderResource;
+use TitaKita\Services\Application\Handlers\Order\DTO\RefundOrderDTO;
+use TitaKita\Services\Application\Handlers\Order\Payment\Stripe\RefundOrderHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Validation\ValidationException;
 use Stripe\Exception\ApiErrorException;

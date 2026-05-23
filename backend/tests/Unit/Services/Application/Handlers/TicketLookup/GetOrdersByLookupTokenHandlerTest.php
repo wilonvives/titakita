@@ -3,13 +3,13 @@
 namespace Tests\Unit\Services\Application\Handlers\TicketLookup;
 
 use Carbon\Carbon;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\TicketLookupTokenDomainObject;
-use HiEvents\Exceptions\InvalidTicketLookupTokenException;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Repository\Interfaces\TicketLookupTokenRepositoryInterface;
-use HiEvents\Services\Application\Handlers\TicketLookup\DTO\GetOrdersByLookupTokenDTO;
-use HiEvents\Services\Application\Handlers\TicketLookup\GetOrdersByLookupTokenHandler;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\TicketLookupTokenDomainObject;
+use TitaKita\Exceptions\InvalidTicketLookupTokenException;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Repository\Interfaces\TicketLookupTokenRepositoryInterface;
+use TitaKita\Services\Application\Handlers\TicketLookup\DTO\GetOrdersByLookupTokenDTO;
+use TitaKita\Services\Application\Handlers\TicketLookup\GetOrdersByLookupTokenHandler;
 use Illuminate\Support\Collection;
 use Mockery as m;
 use Tests\TestCase;

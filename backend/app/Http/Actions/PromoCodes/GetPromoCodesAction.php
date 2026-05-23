@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Http\Actions\PromoCodes;
+namespace TitaKita\Http\Actions\PromoCodes;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\PromoCodeDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Repository\Interfaces\PromoCodeRepositoryInterface;
-use HiEvents\Resources\PromoCode\PromoCodeResource;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\PromoCodeDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Repository\Interfaces\PromoCodeRepositoryInterface;
+use TitaKita\Resources\PromoCode\PromoCodeResource;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

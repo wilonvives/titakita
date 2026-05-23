@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\DomainObjects\Enums;
+namespace TitaKita\DomainObjects\Enums;
 
 /**
  * Curated set of fonts available for public event and organizer homepages.

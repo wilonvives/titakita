@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\TicketLookup\DTO;
+namespace TitaKita\Services\Application\Handlers\TicketLookup\DTO;
 
-use HiEvents\DataTransferObjects\BaseDataObject;
+use TitaKita\DataTransferObjects\BaseDataObject;
 
 class SendTicketLookupEmailDTO extends BaseDataObject
 {

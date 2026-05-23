@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\TaxAndFee;
+namespace TitaKita\Services\Application\Handlers\TaxAndFee;
 
-use HiEvents\DomainObjects\Generated\TaxAndFeesDomainObjectAbstract;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Repository\Interfaces\TaxAndFeeRepositoryInterface;
-use HiEvents\Services\Application\Handlers\TaxAndFee\DTO\DeleteTaxDTO;
+use TitaKita\DomainObjects\Generated\TaxAndFeesDomainObjectAbstract;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Repository\Interfaces\TaxAndFeeRepositoryInterface;
+use TitaKita\Services\Application\Handlers\TaxAndFee\DTO\DeleteTaxDTO;
 use Illuminate\Database\DatabaseManager;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;

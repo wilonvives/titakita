@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Http\Actions\TicketLookup;
+namespace TitaKita\Http\Actions\TicketLookup;
 
-use HiEvents\Exceptions\InvalidTicketLookupTokenException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Order\OrderResourcePublic;
-use HiEvents\Services\Application\Handlers\TicketLookup\DTO\GetOrdersByLookupTokenDTO;
-use HiEvents\Services\Application\Handlers\TicketLookup\GetOrdersByLookupTokenHandler;
+use TitaKita\Exceptions\InvalidTicketLookupTokenException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Order\OrderResourcePublic;
+use TitaKita\Services\Application\Handlers\TicketLookup\DTO\GetOrdersByLookupTokenDTO;
+use TitaKita\Services\Application\Handlers\TicketLookup\GetOrdersByLookupTokenHandler;
 use Illuminate\Http\JsonResponse;
 
 class GetOrdersByLookupTokenAction extends BaseAction

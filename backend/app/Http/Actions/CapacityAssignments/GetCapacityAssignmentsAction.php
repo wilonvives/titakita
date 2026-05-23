@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Http\Actions\CapacityAssignments;
+namespace TitaKita\Http\Actions\CapacityAssignments;
 
-use HiEvents\DomainObjects\CapacityAssignmentDomainObject;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\CapacityAssignment\CapacityAssignmentResource;
-use HiEvents\Services\Application\Handlers\CapacityAssignment\DTO\GetCapacityAssignmentsDTO;
-use HiEvents\Services\Application\Handlers\CapacityAssignment\GetCapacityAssignmentsHandler;
+use TitaKita\DomainObjects\CapacityAssignmentDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\CapacityAssignment\CapacityAssignmentResource;
+use TitaKita\Services\Application\Handlers\CapacityAssignment\DTO\GetCapacityAssignmentsDTO;
+use TitaKita\Services\Application\Handlers\CapacityAssignment\GetCapacityAssignmentsHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

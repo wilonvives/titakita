@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\EventDailyStatisticDomainObject;
-use HiEvents\Models\EventDailyStatistic;
-use HiEvents\Repository\Interfaces\EventDailyStatisticRepositoryInterface;
+use TitaKita\DomainObjects\EventDailyStatisticDomainObject;
+use TitaKita\Models\EventDailyStatistic;
+use TitaKita\Repository\Interfaces\EventDailyStatisticRepositoryInterface;
 
 /**
  * @extends BaseRepository<EventDailyStatisticDomainObject>

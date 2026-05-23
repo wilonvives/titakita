@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
 use BadMethodCallException;
 use Carbon\Carbon;
-use HiEvents\DomainObjects\Interfaces\DomainObjectInterface;
-use HiEvents\DomainObjects\Interfaces\IsSortable;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Models\BaseModel;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\RepositoryInterface;
+use TitaKita\DomainObjects\Interfaces\DomainObjectInterface;
+use TitaKita\DomainObjects\Interfaces\IsSortable;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Models\BaseModel;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\RepositoryInterface;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Database\Eloquent\Builder;

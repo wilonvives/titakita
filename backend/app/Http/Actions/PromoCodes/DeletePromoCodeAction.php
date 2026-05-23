@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\PromoCodes;
+namespace TitaKita\Http\Actions\PromoCodes;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\PromoCode\DeletePromoCodeHandler;
-use HiEvents\Services\Application\Handlers\PromoCode\DTO\DeletePromoCodeDTO;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\PromoCode\DeletePromoCodeHandler;
+use TitaKita\Services\Application\Handlers\PromoCode\DTO\DeletePromoCodeDTO;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 

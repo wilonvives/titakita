@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Providers;
+namespace TitaKita\Providers;
 
 // use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;

@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Domain\Report\Reports;
+namespace TitaKita\Services\Domain\Report\Reports;
 
-use HiEvents\Services\Domain\Report\AbstractReportService;
+use TitaKita\Services\Domain\Report\AbstractReportService;
 use Illuminate\Support\Carbon;
 
 class DailySalesReport extends AbstractReportService

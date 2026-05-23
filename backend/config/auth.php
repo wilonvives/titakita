@@ -66,7 +66,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => \HiEvents\Models\User::class,
+            'model' => \TitaKita\Models\User::class,
         ],
 
         // 'users' => [

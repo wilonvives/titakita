@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\EmailTemplate\DTO;
+namespace TitaKita\Services\Application\Handlers\EmailTemplate\DTO;
 
-use HiEvents\DataTransferObjects\BaseDataObject;
-use HiEvents\DomainObjects\Enums\EmailTemplateType;
+use TitaKita\DataTransferObjects\BaseDataObject;
+use TitaKita\DomainObjects\Enums\EmailTemplateType;
 
 class PreviewEmailTemplateDTO extends BaseDataObject
 {

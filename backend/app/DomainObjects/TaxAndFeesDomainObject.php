@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\DomainObjects;
+namespace TitaKita\DomainObjects;
 
-use HiEvents\DomainObjects\Enums\TaxType;
+use TitaKita\DomainObjects\Enums\TaxType;
 
 class TaxAndFeesDomainObject extends Generated\TaxAndFeesDomainObjectAbstract
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\Events\Images;
+namespace TitaKita\Http\Actions\Events\Images;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Repository\Interfaces\ImageRepositoryInterface;
-use HiEvents\Resources\Image\ImageResource;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Repository\Interfaces\ImageRepositoryInterface;
+use TitaKita\Resources\Image\ImageResource;
 use Illuminate\Http\JsonResponse;
 
 class GetEventImagesAction extends BaseAction

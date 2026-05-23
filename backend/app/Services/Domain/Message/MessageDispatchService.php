@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Services\Domain\Message;
+namespace TitaKita\Services\Domain\Message;
 
-use HiEvents\DomainObjects\Enums\MessageTypeEnum;
-use HiEvents\DomainObjects\MessageDomainObject;
-use HiEvents\DomainObjects\Status\MessageStatus;
-use HiEvents\Jobs\Event\SendMessagesJob;
-use HiEvents\Repository\Interfaces\MessageRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Message\DTO\SendMessageDTO;
+use TitaKita\DomainObjects\Enums\MessageTypeEnum;
+use TitaKita\DomainObjects\MessageDomainObject;
+use TitaKita\DomainObjects\Status\MessageStatus;
+use TitaKita\Jobs\Event\SendMessagesJob;
+use TitaKita\Repository\Interfaces\MessageRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Message\DTO\SendMessageDTO;
 use Illuminate\Support\Facades\Log;
 use Throwable;
 

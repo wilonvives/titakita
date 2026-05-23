@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Locale;
+namespace TitaKita\Services\Application\Locale;
 
-use HiEvents\Locale;
+use TitaKita\Locale;
 use Illuminate\Config\Repository;
 
 class LocaleService

@@ -2,9 +2,9 @@
 
 namespace Tests\Unit\Services\Application\Handlers\Admin;
 
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Admin\DTO\GetAllOrdersDTO;
-use HiEvents\Services\Application\Handlers\Admin\GetAllOrdersHandler;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Admin\DTO\GetAllOrdersDTO;
+use TitaKita\Services\Application\Handlers\Admin\GetAllOrdersHandler;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Mockery;
 use Tests\TestCase;

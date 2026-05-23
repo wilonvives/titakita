@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Resources\Attendee;
+namespace TitaKita\Resources\Attendee;
 
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\DomainObjects\Enums\QuestionBelongsTo;
-use HiEvents\Resources\CheckInList\AttendeeCheckInResource;
-use HiEvents\Resources\Order\OrderResource;
-use HiEvents\Resources\Question\QuestionAnswerViewResource;
-use HiEvents\Resources\Product\ProductResource;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\DomainObjects\Enums\QuestionBelongsTo;
+use TitaKita\Resources\CheckInList\AttendeeCheckInResource;
+use TitaKita\Resources\Order\OrderResource;
+use TitaKita\Resources\Question\QuestionAnswerViewResource;
+use TitaKita\Resources\Product\ProductResource;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 

@@ -1,12 +1,12 @@
 <?php
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\OrderItemDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\Helper\IdHelper;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\OrderItemDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\Helper\IdHelper;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/mail-test', static function () {
@@ -50,7 +50,7 @@ Route::get('/mail-test', static function () {
         ->setOrganizer($organizer)
         ->setEventSettings($eventSettings);
 
-    return new \HiEvents\Mail\Organizer\OrderSummaryForOrganizer(
+    return new \TitaKita\Mail\Organizer\OrderSummaryForOrganizer(
         order: $order,
         event: $event,
     );

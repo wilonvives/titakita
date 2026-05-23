@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\AccountUserDomainObject;
-use HiEvents\Models\AccountUser;
-use HiEvents\Repository\Interfaces\AccountUserRepositoryInterface;
+use TitaKita\DomainObjects\AccountUserDomainObject;
+use TitaKita\Models\AccountUser;
+use TitaKita\Repository\Interfaces\AccountUserRepositoryInterface;
 
 /**
  * @extends BaseRepository<AccountUserDomainObject>

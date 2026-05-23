@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Validators\DTO;
+namespace TitaKita\Validators\DTO;
 
 class CompleteOrderResponseDTO
 {

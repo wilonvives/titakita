@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Http\Request\TicketLookup;
+namespace TitaKita\Http\Request\TicketLookup;
 
 use Illuminate\Foundation\Http\FormRequest;
 

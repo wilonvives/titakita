@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Domain\Message\DTO;
+namespace TitaKita\Services\Domain\Message\DTO;
 
-use HiEvents\DataTransferObjects\BaseDataObject;
-use HiEvents\DomainObjects\Enums\MessagingEligibilityFailureEnum;
+use TitaKita\DataTransferObjects\BaseDataObject;
+use TitaKita\DomainObjects\Enums\MessagingEligibilityFailureEnum;
 
 class MessagingEligibilityFailureDTO extends BaseDataObject
 {

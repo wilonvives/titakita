@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
 use Carbon\Carbon;
-use HiEvents\DomainObjects\Generated\MessageDomainObjectAbstract;
-use HiEvents\DomainObjects\MessageDomainObject;
-use HiEvents\DomainObjects\Status\MessageStatus;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Models\Message;
-use HiEvents\Repository\Interfaces\MessageRepositoryInterface;
+use TitaKita\DomainObjects\Generated\MessageDomainObjectAbstract;
+use TitaKita\DomainObjects\MessageDomainObject;
+use TitaKita\DomainObjects\Status\MessageStatus;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Models\Message;
+use TitaKita\Repository\Interfaces\MessageRepositoryInterface;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Pagination\LengthAwarePaginator;
 

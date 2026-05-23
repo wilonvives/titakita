@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Http\Actions\Images;
+namespace TitaKita\Http\Actions\Images;
 
-use HiEvents\DomainObjects\Enums\ImageType;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Image\CreateImageRequest;
-use HiEvents\Resources\Image\ImageResource;
-use HiEvents\Services\Application\Handlers\Images\CreateImageHandler;
-use HiEvents\Services\Application\Handlers\Images\DTO\CreateImageDTO;
-use HiEvents\Services\Infrastructure\Image\Exception\CouldNotUploadImageException;
+use TitaKita\DomainObjects\Enums\ImageType;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Image\CreateImageRequest;
+use TitaKita\Resources\Image\ImageResource;
+use TitaKita\Services\Application\Handlers\Images\CreateImageHandler;
+use TitaKita\Services\Application\Handlers\Images\DTO\CreateImageDTO;
+use TitaKita\Services\Infrastructure\Image\Exception\CouldNotUploadImageException;
 use Illuminate\Http\JsonResponse;
 
 class CreateImageAction extends BaseAction

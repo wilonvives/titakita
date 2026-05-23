@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\DomainObjects\Enums;
+namespace TitaKita\DomainObjects\Enums;
 
 enum PromoCodeDiscountTypeEnum
 {

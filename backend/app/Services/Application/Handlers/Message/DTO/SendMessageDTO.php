@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Message\DTO;
+namespace TitaKita\Services\Application\Handlers\Message\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\DomainObjects\Enums\MessageTypeEnum;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\DomainObjects\Enums\MessageTypeEnum;
 
 class SendMessageDTO extends BaseDTO
 {

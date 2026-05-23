@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Organizer\Settings;
+namespace TitaKita\Services\Application\Handlers\Organizer\Settings;
 
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\DomainObjects\OrganizerSettingDomainObject;
-use HiEvents\Repository\Interfaces\OrganizerRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrganizerSettingsRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Organizer\DTO\PartialUpdateOrganizerSettingsDTO;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\OrganizerSettingDomainObject;
+use TitaKita\Repository\Interfaces\OrganizerRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrganizerSettingsRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Organizer\DTO\PartialUpdateOrganizerSettingsDTO;
 use Spatie\LaravelData\Data;
 
 class PartialUpdateOrganizerSettingsHandler

@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Organizer;
+namespace TitaKita\Services\Application\Handlers\Organizer;
 
-use HiEvents\Exceptions\CannotDeleteEntityException;
-use HiEvents\Services\Application\Handlers\Organizer\DTO\DeleteOrganizerDTO;
-use HiEvents\Services\Domain\Organizer\OrganizerDeletionService;
+use TitaKita\Exceptions\CannotDeleteEntityException;
+use TitaKita\Services\Application\Handlers\Organizer\DTO\DeleteOrganizerDTO;
+use TitaKita\Services\Domain\Organizer\OrganizerDeletionService;
 use Throwable;
 
 class DeleteOrganizerHandler

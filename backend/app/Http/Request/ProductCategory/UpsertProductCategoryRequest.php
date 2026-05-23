@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Http\Request\ProductCategory;
+namespace TitaKita\Http\Request\ProductCategory;
 
-use HiEvents\Http\Request\BaseRequest;
+use TitaKita\Http\Request\BaseRequest;
 
 class UpsertProductCategoryRequest extends BaseRequest
 {

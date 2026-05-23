@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\DomainObjects;
+namespace TitaKita\DomainObjects;
 
 use Carbon\Carbon;
-use HiEvents\Helper\Currency;
+use TitaKita\Helper\Currency;
 use LogicException;
 
 class ProductPriceDomainObject extends Generated\ProductPriceDomainObjectAbstract

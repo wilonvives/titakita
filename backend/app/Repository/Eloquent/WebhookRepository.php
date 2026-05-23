@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\Status\WebhookStatus;
-use HiEvents\DomainObjects\WebhookDomainObject;
-use HiEvents\Models\Webhook;
-use HiEvents\Repository\Interfaces\WebhookRepositoryInterface;
+use TitaKita\DomainObjects\Status\WebhookStatus;
+use TitaKita\DomainObjects\WebhookDomainObject;
+use TitaKita\Models\Webhook;
+use TitaKita\Repository\Interfaces\WebhookRepositoryInterface;
 use Illuminate\Support\Collection;
 
 /**

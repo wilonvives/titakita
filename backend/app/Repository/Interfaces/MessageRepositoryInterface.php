@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\MessageDomainObject;
-use HiEvents\Http\DTO\QueryParamsDTO;
+use TitaKita\DomainObjects\MessageDomainObject;
+use TitaKita\Http\DTO\QueryParamsDTO;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 /**

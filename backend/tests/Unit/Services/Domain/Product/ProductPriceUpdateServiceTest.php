@@ -2,15 +2,15 @@
 
 namespace Tests\Unit\Services\Domain\Product;
 
-use HiEvents\DomainObjects\Enums\ProductPriceType;
-use HiEvents\DomainObjects\Enums\ProductType;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\DomainObjects\ProductPriceDomainObject;
-use HiEvents\Repository\Eloquent\ProductPriceRepository;
-use HiEvents\Services\Application\Handlers\Product\DTO\UpsertProductDTO;
-use HiEvents\Services\Domain\Product\DTO\ProductPriceDTO;
-use HiEvents\Services\Domain\Product\ProductPriceUpdateService;
+use TitaKita\DomainObjects\Enums\ProductPriceType;
+use TitaKita\DomainObjects\Enums\ProductType;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\Repository\Eloquent\ProductPriceRepository;
+use TitaKita\Services\Application\Handlers\Product\DTO\UpsertProductDTO;
+use TitaKita\Services\Domain\Product\DTO\ProductPriceDTO;
+use TitaKita\Services\Domain\Product\ProductPriceUpdateService;
 use Illuminate\Support\Collection;
 use Illuminate\Validation\ValidationException;
 use Mockery;

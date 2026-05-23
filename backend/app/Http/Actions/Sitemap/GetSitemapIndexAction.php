@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Sitemap;
+namespace TitaKita\Http\Actions\Sitemap;
 
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\Sitemap\GetSitemapIndexHandler;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\Sitemap\GetSitemapIndexHandler;
 use Illuminate\Http\Response;
 
 class GetSitemapIndexAction extends BaseAction

@@ -1,4 +1,4 @@
-@php /** @var \HiEvents\DomainObjects\UserDomainObject $user */ @endphp
+@php /** @var \TitaKita\DomainObjects\UserDomainObject $user */ @endphp
 @php /** @var string $code */ @endphp
 
 <x-mail::message>

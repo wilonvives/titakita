@@ -1,18 +1,18 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Images;
+namespace TitaKita\Services\Application\Handlers\Images;
 
-use HiEvents\DomainObjects\Enums\ImageType;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\ImageDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\DomainObjects\UserDomainObject;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\ImageRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrganizerRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Images\DTO\CreateImageDTO;
-use HiEvents\Services\Domain\Image\ImageUploadService;
-use HiEvents\Services\Infrastructure\Image\Exception\CouldNotUploadImageException;
+use TitaKita\DomainObjects\Enums\ImageType;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\ImageDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\UserDomainObject;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\ImageRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrganizerRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Images\DTO\CreateImageDTO;
+use TitaKita\Services\Domain\Image\ImageUploadService;
+use TitaKita\Services\Infrastructure\Image\Exception\CouldNotUploadImageException;
 
 class CreateImageHandler
 {

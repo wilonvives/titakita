@@ -3,7 +3,7 @@
 namespace Tests\Unit\Services\Infrastructure\Utlitiy\Retry;
 
 use Exception;
-use HiEvents\Services\Infrastructure\Utlitiy\Retry\Retrier;
+use TitaKita\Services\Infrastructure\Utlitiy\Retry\Retrier;
 use PHPUnit\Framework\TestCase;
 
 class RetrierTest extends TestCase

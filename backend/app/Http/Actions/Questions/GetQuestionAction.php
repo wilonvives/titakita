@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Http\Actions\Questions;
+namespace TitaKita\Http\Actions\Questions;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\Generated\QuestionDomainObjectAbstract;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\Exceptions\ResourceNotFoundException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Repository\Interfaces\QuestionRepositoryInterface;
-use HiEvents\Resources\Question\QuestionResource;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\Generated\QuestionDomainObjectAbstract;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\Exceptions\ResourceNotFoundException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Repository\Interfaces\QuestionRepositoryInterface;
+use TitaKita\Resources\Question\QuestionResource;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

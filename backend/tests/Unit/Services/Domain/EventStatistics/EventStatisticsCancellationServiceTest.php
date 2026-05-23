@@ -2,18 +2,18 @@
 
 namespace Tests\Unit\Services\Domain\EventStatistics;
 
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\DomainObjects\EventDailyStatisticDomainObject;
-use HiEvents\DomainObjects\EventStatisticDomainObject;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\OrderItemDomainObject;
-use HiEvents\DomainObjects\Status\AttendeeStatus;
-use HiEvents\Repository\Interfaces\AttendeeRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventDailyStatisticRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventStatisticRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Services\Domain\EventStatistics\EventStatisticsCancellationService;
-use HiEvents\Services\Infrastructure\Utlitiy\Retry\Retrier;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\DomainObjects\EventDailyStatisticDomainObject;
+use TitaKita\DomainObjects\EventStatisticDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\OrderItemDomainObject;
+use TitaKita\DomainObjects\Status\AttendeeStatus;
+use TitaKita\Repository\Interfaces\AttendeeRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventDailyStatisticRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventStatisticRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Services\Domain\EventStatistics\EventStatisticsCancellationService;
+use TitaKita\Services\Infrastructure\Utlitiy\Retry\Retrier;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Support\Collection;
 use Mockery;

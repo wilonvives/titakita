@@ -1,16 +1,16 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\ProductCategory;
+namespace TitaKita\Services\Application\Handlers\ProductCategory;
 
-use HiEvents\DomainObjects\Generated\ProductCategoryDomainObjectAbstract;
-use HiEvents\DomainObjects\Generated\ProductDomainObjectAbstract;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\DomainObjects\ProductPriceDomainObject;
-use HiEvents\DomainObjects\TaxAndFeesDomainObject;
-use HiEvents\Repository\Eloquent\Value\OrderAndDirection;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\ProductCategoryRepositoryInterface;
-use HiEvents\Services\Domain\Product\ProductFilterService;
+use TitaKita\DomainObjects\Generated\ProductCategoryDomainObjectAbstract;
+use TitaKita\DomainObjects\Generated\ProductDomainObjectAbstract;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\DomainObjects\TaxAndFeesDomainObject;
+use TitaKita\Repository\Eloquent\Value\OrderAndDirection;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\ProductCategoryRepositoryInterface;
+use TitaKita\Services\Domain\Product\ProductFilterService;
 use Illuminate\Support\Collection;
 
 class GetProductCategoriesHandler

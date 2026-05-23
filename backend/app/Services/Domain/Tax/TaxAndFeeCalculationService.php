@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Domain\Tax;
+namespace TitaKita\Services\Domain\Tax;
 
-use HiEvents\DomainObjects\Enums\TaxCalculationType;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\DomainObjects\ProductPriceDomainObject;
-use HiEvents\DomainObjects\TaxAndFeesDomainObject;
-use HiEvents\Services\Domain\Tax\DTO\TaxCalculationResponse;
+use TitaKita\DomainObjects\Enums\TaxCalculationType;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\DomainObjects\TaxAndFeesDomainObject;
+use TitaKita\Services\Domain\Tax\DTO\TaxCalculationResponse;
 use InvalidArgumentException;
 
 class TaxAndFeeCalculationService

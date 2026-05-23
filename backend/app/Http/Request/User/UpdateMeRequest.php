@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Http\Request\User;
+namespace TitaKita\Http\Request\User;
 
-use HiEvents\Http\Request\BaseRequest;
-use HiEvents\Locale;
+use TitaKita\Http\Request\BaseRequest;
+use TitaKita\Locale;
 use Illuminate\Validation\Rules\Password;
 
 class UpdateMeRequest extends BaseRequest

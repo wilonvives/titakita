@@ -1,21 +1,21 @@
 <?php
 
-namespace HiEvents\Services\Domain\SelfService;
+namespace TitaKita\Services\Domain\SelfService;
 
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\OrderItemDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\Helper\IdHelper;
-use HiEvents\Mail\Attendee\AttendeeDetailsChangedMail;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\AttendeeRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Services\Domain\Attendee\SendAttendeeTicketService;
-use HiEvents\Services\Domain\SelfService\DTO\EditAttendeeResultDTO;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\OrderItemDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\Helper\IdHelper;
+use TitaKita\Mail\Attendee\AttendeeDetailsChangedMail;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\AttendeeRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Services\Domain\Attendee\SendAttendeeTicketService;
+use TitaKita\Services\Domain\SelfService\DTO\EditAttendeeResultDTO;
 use Illuminate\Support\Facades\Mail;
 
 class SelfServiceEditAttendeeService

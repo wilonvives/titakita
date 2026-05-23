@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Http\Actions\CheckInLists\Public;
+namespace TitaKita\Http\Actions\CheckInLists\Public;
 
-use HiEvents\Exceptions\CannotCheckInException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\CheckInList\CreateAttendeeCheckInPublicRequest;
-use HiEvents\Resources\CheckInList\AttendeeCheckInPublicResource;
-use HiEvents\Services\Application\Handlers\CheckInList\Public\CreateAttendeeCheckInPublicHandler;
-use HiEvents\Services\Application\Handlers\CheckInList\Public\DTO\CreateAttendeeCheckInPublicDTO;
+use TitaKita\Exceptions\CannotCheckInException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\CheckInList\CreateAttendeeCheckInPublicRequest;
+use TitaKita\Resources\CheckInList\AttendeeCheckInPublicResource;
+use TitaKita\Services\Application\Handlers\CheckInList\Public\CreateAttendeeCheckInPublicHandler;
+use TitaKita\Services\Application\Handlers\CheckInList\Public\DTO\CreateAttendeeCheckInPublicDTO;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 

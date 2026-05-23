@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Admin;
+namespace TitaKita\Services\Application\Handlers\Admin;
 
-use HiEvents\DataTransferObjects\UpdateAdminAccountVatSettingDTO;
-use HiEvents\DomainObjects\AccountVatSettingDomainObject;
-use HiEvents\Repository\Interfaces\AccountVatSettingRepositoryInterface;
+use TitaKita\DataTransferObjects\UpdateAdminAccountVatSettingDTO;
+use TitaKita\DomainObjects\AccountVatSettingDomainObject;
+use TitaKita\Repository\Interfaces\AccountVatSettingRepositoryInterface;
 
 class UpdateAdminAccountVatSettingHandler
 {

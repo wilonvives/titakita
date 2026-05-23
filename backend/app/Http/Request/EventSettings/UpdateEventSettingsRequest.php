@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Http\Request\EventSettings;
+namespace TitaKita\Http\Request\EventSettings;
 
-use HiEvents\DomainObjects\Enums\AttendeeDetailsCollectionMethod;
-use HiEvents\DomainObjects\Enums\HomepageBackgroundType;
-use HiEvents\DomainObjects\Enums\HomepageFontFamily;
-use HiEvents\DomainObjects\Enums\PaymentProviders;
-use HiEvents\DomainObjects\Enums\PriceDisplayMode;
-use HiEvents\Http\Request\BaseRequest;
-use HiEvents\Validators\Rules\RulesHelper;
+use TitaKita\DomainObjects\Enums\AttendeeDetailsCollectionMethod;
+use TitaKita\DomainObjects\Enums\HomepageBackgroundType;
+use TitaKita\DomainObjects\Enums\HomepageFontFamily;
+use TitaKita\DomainObjects\Enums\PaymentProviders;
+use TitaKita\DomainObjects\Enums\PriceDisplayMode;
+use TitaKita\Http\Request\BaseRequest;
+use TitaKita\Validators\Rules\RulesHelper;
 use Illuminate\Validation\Rule;
 
 class UpdateEventSettingsRequest extends BaseRequest

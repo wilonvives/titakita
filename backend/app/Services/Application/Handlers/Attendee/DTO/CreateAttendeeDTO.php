@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Attendee\DTO;
+namespace TitaKita\Services\Application\Handlers\Attendee\DTO;
 
-use HiEvents\DataTransferObjects\Attributes\CollectionOf;
-use HiEvents\DataTransferObjects\BaseDTO;
+use TitaKita\DataTransferObjects\Attributes\CollectionOf;
+use TitaKita\DataTransferObjects\BaseDTO;
 use Illuminate\Support\Collection;
 
 class CreateAttendeeDTO extends BaseDTO

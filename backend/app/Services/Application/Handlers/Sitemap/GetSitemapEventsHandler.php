@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Services\Application\Handlers\Sitemap;
+namespace TitaKita\Services\Application\Handlers\Sitemap;
 
-use HiEvents\Exceptions\ResourceNotFoundException;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Services\Domain\Sitemap\SitemapGeneratorService;
+use TitaKita\Exceptions\ResourceNotFoundException;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Services\Domain\Sitemap\SitemapGeneratorService;
 use Illuminate\Support\Facades\Cache;
 
 class GetSitemapEventsHandler

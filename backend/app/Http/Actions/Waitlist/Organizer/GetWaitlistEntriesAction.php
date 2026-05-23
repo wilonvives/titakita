@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Http\Actions\Waitlist\Organizer;
+namespace TitaKita\Http\Actions\Waitlist\Organizer;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\WaitlistEntryDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Waitlist\WaitlistEntryResource;
-use HiEvents\Services\Application\Handlers\Waitlist\GetWaitlistEntriesHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\WaitlistEntryDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Waitlist\WaitlistEntryResource;
+use TitaKita\Services\Application\Handlers\Waitlist\GetWaitlistEntriesHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

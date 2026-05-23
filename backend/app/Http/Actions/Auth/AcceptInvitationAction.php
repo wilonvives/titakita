@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Http\Actions\Auth;
+namespace TitaKita\Http\Actions\Auth;
 
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Auth\AcceptInvitationRequest;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Services\Application\Handlers\Auth\AcceptInvitationHandler;
-use HiEvents\Services\Application\Handlers\Auth\DTO\AcceptInvitationDTO;
-use HiEvents\Services\Infrastructure\Encryption\Exception\DecryptionFailedException;
-use HiEvents\Services\Infrastructure\Encryption\Exception\EncryptedPayloadExpiredException;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Auth\AcceptInvitationRequest;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Services\Application\Handlers\Auth\AcceptInvitationHandler;
+use TitaKita\Services\Application\Handlers\Auth\DTO\AcceptInvitationDTO;
+use TitaKita\Services\Infrastructure\Encryption\Exception\DecryptionFailedException;
+use TitaKita\Services\Infrastructure\Encryption\Exception\EncryptedPayloadExpiredException;
 use Illuminate\Http\Response;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;

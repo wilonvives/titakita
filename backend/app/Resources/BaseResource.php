@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Resources;
+namespace TitaKita\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 

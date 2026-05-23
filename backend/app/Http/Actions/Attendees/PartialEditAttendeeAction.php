@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Http\Actions\Attendees;
+namespace TitaKita\Http\Actions\Attendees;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Attendee\PartialEditAttendeeRequest;
-use HiEvents\Resources\Attendee\AttendeeResource;
-use HiEvents\Services\Application\Handlers\Attendee\DTO\PartialEditAttendeeDTO;
-use HiEvents\Services\Application\Handlers\Attendee\PartialEditAttendeeHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Attendee\PartialEditAttendeeRequest;
+use TitaKita\Resources\Attendee\AttendeeResource;
+use TitaKita\Services\Application\Handlers\Attendee\DTO\PartialEditAttendeeDTO;
+use TitaKita\Services\Application\Handlers\Attendee\PartialEditAttendeeHandler;
 use Illuminate\Http\JsonResponse;
 
 class PartialEditAttendeeAction extends BaseAction

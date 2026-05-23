@@ -1,25 +1,25 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Message;
+namespace TitaKita\Services\Application\Handlers\Message;
 
 use Carbon\Carbon;
-use HiEvents\DomainObjects\Enums\MessageTypeEnum;
-use HiEvents\DomainObjects\MessageDomainObject;
-use HiEvents\DomainObjects\Status\MessageStatus;
-use HiEvents\Exceptions\AccountNotVerifiedException;
-use HiEvents\Exceptions\MessagingTierLimitExceededException;
-use HiEvents\Helper\DateHelper;
-use HiEvents\Jobs\Event\SendMessagesJob;
-use HiEvents\Jobs\Message\MessagePendingReviewJob;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Repository\Interfaces\AttendeeRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\MessageRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Repository\Interfaces\ProductRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Message\DTO\SendMessageDTO;
-use HiEvents\Services\Domain\Message\MessagingEligibilityService;
-use HiEvents\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
+use TitaKita\DomainObjects\Enums\MessageTypeEnum;
+use TitaKita\DomainObjects\MessageDomainObject;
+use TitaKita\DomainObjects\Status\MessageStatus;
+use TitaKita\Exceptions\AccountNotVerifiedException;
+use TitaKita\Exceptions\MessagingTierLimitExceededException;
+use TitaKita\Helper\DateHelper;
+use TitaKita\Jobs\Event\SendMessagesJob;
+use TitaKita\Jobs\Message\MessagePendingReviewJob;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Repository\Interfaces\AttendeeRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\MessageRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Message\DTO\SendMessageDTO;
+use TitaKita\Services\Domain\Message\MessagingEligibilityService;
+use TitaKita\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
 use Illuminate\Config\Repository;
 use Illuminate\Support\Collection;
 use Illuminate\Validation\ValidationException;

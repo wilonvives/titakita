@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Domain\Question;
+namespace TitaKita\Services\Domain\Question;
 
-use HiEvents\DomainObjects\Generated\QuestionDomainObjectAbstract;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\DomainObjects\QuestionDomainObject;
-use HiEvents\Repository\Interfaces\QuestionRepositoryInterface;
-use HiEvents\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
+use TitaKita\DomainObjects\Generated\QuestionDomainObjectAbstract;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\DomainObjects\QuestionDomainObject;
+use TitaKita\Repository\Interfaces\QuestionRepositoryInterface;
+use TitaKita\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
 use Illuminate\Database\DatabaseManager;
 use Throwable;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\DomainObjects\Enums;
+namespace TitaKita\DomainObjects\Enums;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\DomainObjects\UserDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\UserDomainObject;
 use InvalidArgumentException;
 
 enum ImageType

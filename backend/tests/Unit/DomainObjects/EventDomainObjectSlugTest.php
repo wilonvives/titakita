@@ -2,8 +2,8 @@
 
 namespace Tests\Unit\DomainObjects;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
 use Tests\TestCase;
 
 class EventDomainObjectSlugTest extends TestCase

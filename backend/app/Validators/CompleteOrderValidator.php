@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Validators;
+namespace TitaKita\Validators;
 
-use HiEvents\DomainObjects\Enums\QuestionBelongsTo;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\Generated\ProductDomainObjectAbstract;
-use HiEvents\DomainObjects\Generated\QuestionDomainObjectAbstract;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\DomainObjects\ProductPriceDomainObject;
-use HiEvents\DomainObjects\QuestionDomainObject;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\EventSettingsRepositoryInterface;
-use HiEvents\Repository\Interfaces\ProductRepositoryInterface;
-use HiEvents\Repository\Interfaces\QuestionRepositoryInterface;
-use HiEvents\Validators\Rules\OrderQuestionRule;
-use HiEvents\Validators\Rules\ProductQuestionRule;
+use TitaKita\DomainObjects\Enums\QuestionBelongsTo;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\Generated\ProductDomainObjectAbstract;
+use TitaKita\DomainObjects\Generated\QuestionDomainObjectAbstract;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\DomainObjects\QuestionDomainObject;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\EventSettingsRepositoryInterface;
+use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
+use TitaKita\Repository\Interfaces\QuestionRepositoryInterface;
+use TitaKita\Validators\Rules\OrderQuestionRule;
+use TitaKita\Validators\Rules\ProductQuestionRule;
 use Illuminate\Routing\Route;
 
 class CompleteOrderValidator extends BaseValidator

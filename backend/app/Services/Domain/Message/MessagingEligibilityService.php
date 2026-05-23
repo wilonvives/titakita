@@ -1,19 +1,19 @@
 <?php
 
-namespace HiEvents\Services\Domain\Message;
+namespace TitaKita\Services\Domain\Message;
 
 use Carbon\Carbon;
-use HiEvents\DomainObjects\AccountMessagingTierDomainObject;
-use HiEvents\DomainObjects\AccountStripePlatformDomainObject;
-use HiEvents\DomainObjects\Enums\MessagingEligibilityFailureEnum;
-use HiEvents\DomainObjects\Enums\MessagingTierViolationEnum;
-use HiEvents\Repository\Interfaces\AccountMessagingTierRepositoryInterface;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\MessageRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Services\Domain\Message\DTO\MessagingEligibilityFailureDTO;
-use HiEvents\Services\Domain\Message\DTO\MessagingTierViolationDTO;
+use TitaKita\DomainObjects\AccountMessagingTierDomainObject;
+use TitaKita\DomainObjects\AccountStripePlatformDomainObject;
+use TitaKita\DomainObjects\Enums\MessagingEligibilityFailureEnum;
+use TitaKita\DomainObjects\Enums\MessagingTierViolationEnum;
+use TitaKita\Repository\Interfaces\AccountMessagingTierRepositoryInterface;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\MessageRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Services\Domain\Message\DTO\MessagingEligibilityFailureDTO;
+use TitaKita\Services\Domain\Message\DTO\MessagingTierViolationDTO;
 
 class MessagingEligibilityService
 {

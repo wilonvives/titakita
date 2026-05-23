@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Models;
+namespace TitaKita\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;

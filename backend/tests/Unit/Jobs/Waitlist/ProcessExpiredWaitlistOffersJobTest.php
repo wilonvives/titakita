@@ -2,16 +2,16 @@
 
 namespace Tests\Unit\Jobs\Waitlist;
 
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\DomainObjects\Status\WaitlistEntryStatus;
-use HiEvents\DomainObjects\WaitlistEntryDomainObject;
-use HiEvents\Events\CapacityChangedEvent;
-use HiEvents\Jobs\Waitlist\ProcessExpiredWaitlistOffersJob;
-use HiEvents\Jobs\Waitlist\SendWaitlistOfferExpiredEmailJob;
-use HiEvents\DomainObjects\ProductPriceDomainObject;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Repository\Interfaces\ProductPriceRepositoryInterface;
-use HiEvents\Repository\Interfaces\WaitlistEntryRepositoryInterface;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\DomainObjects\Status\WaitlistEntryStatus;
+use TitaKita\DomainObjects\WaitlistEntryDomainObject;
+use TitaKita\Events\CapacityChangedEvent;
+use TitaKita\Jobs\Waitlist\ProcessExpiredWaitlistOffersJob;
+use TitaKita\Jobs\Waitlist\SendWaitlistOfferExpiredEmailJob;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Repository\Interfaces\ProductPriceRepositoryInterface;
+use TitaKita\Repository\Interfaces\WaitlistEntryRepositoryInterface;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Bus;

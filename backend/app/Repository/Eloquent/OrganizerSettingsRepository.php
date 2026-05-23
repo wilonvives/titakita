@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\OrganizerSettingDomainObject;
-use HiEvents\Models\OrganizerSetting;
-use HiEvents\Repository\Interfaces\OrganizerSettingsRepositoryInterface;
+use TitaKita\DomainObjects\OrganizerSettingDomainObject;
+use TitaKita\Models\OrganizerSetting;
+use TitaKita\Repository\Interfaces\OrganizerSettingsRepositoryInterface;
 
 /**
  * @extends BaseRepository<OrganizerSettingDomainObject>

@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Domain\Payment\Stripe\DTOs;
+namespace TitaKita\Services\Domain\Payment\Stripe\DTOs;
 
-use HiEvents\DomainObjects\Enums\StripePlatform;
-use HiEvents\Services\Domain\Order\DTO\ApplicationFeeValuesDTO;
+use TitaKita\DomainObjects\Enums\StripePlatform;
+use TitaKita\Services\Domain\Order\DTO\ApplicationFeeValuesDTO;
 
 readonly class CreatePaymentIntentResponseDTO
 {

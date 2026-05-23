@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Request\User;
+namespace TitaKita\Http\Request\User;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\Http\Request\BaseRequest;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\Http\Request\BaseRequest;
 use Illuminate\Validation\Rule;
 
 class CreateUserRequest extends BaseRequest

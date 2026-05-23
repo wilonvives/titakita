@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Order\Public;
+namespace TitaKita\Services\Application\Handlers\Order\Public;
 
-use HiEvents\Services\Domain\Order\DTO\InvoicePdfResponseDTO;
-use HiEvents\Services\Domain\Order\GenerateOrderInvoicePDFService;
+use TitaKita\Services\Domain\Order\DTO\InvoicePdfResponseDTO;
+use TitaKita\Services\Domain\Order\GenerateOrderInvoicePDFService;
 
 class DownloadOrderInvoicePublicHandler
 {

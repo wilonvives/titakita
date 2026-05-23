@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Domain\SelfService;
+namespace TitaKita\Services\Domain\SelfService;
 
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\DomainObjects\Enums\OrderAuditAction;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\Repository\Interfaces\OrderAuditLogRepositoryInterface;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\DomainObjects\Enums\OrderAuditAction;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\Repository\Interfaces\OrderAuditLogRepositoryInterface;
 
 class OrderAuditLogService
 {

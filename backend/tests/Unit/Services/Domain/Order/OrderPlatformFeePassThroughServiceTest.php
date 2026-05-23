@@ -3,11 +3,11 @@
 namespace Tests\Unit\Services\Domain\Order;
 
 use Brick\Money\Currency;
-use HiEvents\DomainObjects\AccountConfigurationDomainObject;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\Services\Domain\Order\OrderPlatformFeePassThroughService;
-use HiEvents\Services\Infrastructure\CurrencyConversion\CurrencyConversionClientInterface;
-use HiEvents\Values\MoneyValue;
+use TitaKita\DomainObjects\AccountConfigurationDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\Services\Domain\Order\OrderPlatformFeePassThroughService;
+use TitaKita\Services\Infrastructure\CurrencyConversion\CurrencyConversionClientInterface;
+use TitaKita\Values\MoneyValue;
 use Illuminate\Config\Repository;
 use PHPUnit\Framework\TestCase;
 

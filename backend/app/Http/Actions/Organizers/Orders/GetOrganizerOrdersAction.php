@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Http\Actions\Organizers\Orders;
+namespace TitaKita\Http\Actions\Organizers\Orders;
 
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Order\OrderResource;
-use HiEvents\Services\Application\Handlers\Organizer\Order\GetOrganizerOrdersHandler;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Order\OrderResource;
+use TitaKita\Services\Application\Handlers\Organizer\Order\GetOrganizerOrdersHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

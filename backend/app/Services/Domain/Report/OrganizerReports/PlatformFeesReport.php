@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Domain\Report\OrganizerReports;
+namespace TitaKita\Services\Domain\Report\OrganizerReports;
 
-use HiEvents\DomainObjects\Status\OrderRefundStatus;
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\Helper\Currency;
-use HiEvents\Repository\Interfaces\OrganizerRepositoryInterface;
-use HiEvents\Services\Domain\Report\DTO\PaginatedReportDTO;
+use TitaKita\DomainObjects\Status\OrderRefundStatus;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\Helper\Currency;
+use TitaKita\Repository\Interfaces\OrganizerRepositoryInterface;
+use TitaKita\Services\Domain\Report\DTO\PaginatedReportDTO;
 use Illuminate\Cache\Repository;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Support\Carbon;

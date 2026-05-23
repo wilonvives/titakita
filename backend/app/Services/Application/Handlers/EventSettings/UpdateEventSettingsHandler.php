@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\EventSettings;
+namespace TitaKita\Services\Application\Handlers\EventSettings;
 
-use HiEvents\DomainObjects\Enums\CapacityChangeDirection;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\Events\CapacityChangedEvent;
-use HiEvents\Repository\Interfaces\EventSettingsRepositoryInterface;
-use HiEvents\Services\Application\Handlers\EventSettings\DTO\UpdateEventSettingsDTO;
-use HiEvents\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
+use TitaKita\DomainObjects\Enums\CapacityChangeDirection;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\Events\CapacityChangedEvent;
+use TitaKita\Repository\Interfaces\EventSettingsRepositoryInterface;
+use TitaKita\Services\Application\Handlers\EventSettings\DTO\UpdateEventSettingsDTO;
+use TitaKita\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
 use Illuminate\Database\DatabaseManager;
 use Throwable;
 

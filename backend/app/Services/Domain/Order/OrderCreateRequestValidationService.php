@@ -1,21 +1,21 @@
 <?php
 
-namespace HiEvents\Services\Domain\Order;
+namespace TitaKita\Services\Domain\Order;
 
 use Exception;
-use HiEvents\DomainObjects\CapacityAssignmentDomainObject;
-use HiEvents\DomainObjects\Enums\ProductPriceType;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\Generated\PromoCodeDomainObjectAbstract;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\DomainObjects\ProductPriceDomainObject;
-use HiEvents\Helper\Currency;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\PromoCodeRepositoryInterface;
-use HiEvents\Repository\Interfaces\ProductRepositoryInterface;
-use HiEvents\Services\Domain\Product\AvailableProductQuantitiesFetchService;
-use HiEvents\Services\Domain\Product\DTO\AvailableProductQuantitiesDTO;
-use HiEvents\Services\Domain\Product\DTO\AvailableProductQuantitiesResponseDTO;
+use TitaKita\DomainObjects\CapacityAssignmentDomainObject;
+use TitaKita\DomainObjects\Enums\ProductPriceType;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\Generated\PromoCodeDomainObjectAbstract;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\Helper\Currency;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\PromoCodeRepositoryInterface;
+use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
+use TitaKita\Services\Domain\Product\AvailableProductQuantitiesFetchService;
+use TitaKita\Services\Domain\Product\DTO\AvailableProductQuantitiesDTO;
+use TitaKita\Services\Domain\Product\DTO\AvailableProductQuantitiesResponseDTO;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;

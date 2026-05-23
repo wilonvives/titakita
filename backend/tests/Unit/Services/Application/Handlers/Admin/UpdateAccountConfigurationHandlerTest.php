@@ -2,12 +2,12 @@
 
 namespace Tests\Unit\Services\Application\Handlers\Admin;
 
-use HiEvents\DataTransferObjects\UpdateAccountConfigurationDTO;
-use HiEvents\DomainObjects\AccountConfigurationDomainObject;
-use HiEvents\DomainObjects\AccountDomainObject;
-use HiEvents\Repository\Interfaces\AccountConfigurationRepositoryInterface;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Admin\UpdateAccountConfigurationHandler;
+use TitaKita\DataTransferObjects\UpdateAccountConfigurationDTO;
+use TitaKita\DomainObjects\AccountConfigurationDomainObject;
+use TitaKita\DomainObjects\AccountDomainObject;
+use TitaKita\Repository\Interfaces\AccountConfigurationRepositoryInterface;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Admin\UpdateAccountConfigurationHandler;
 use Mockery;
 use Tests\TestCase;
 

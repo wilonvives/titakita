@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\CheckInListDomainObject;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Repository\DTO\CheckedInAttendeesCountDTO;
+use TitaKita\DomainObjects\CheckInListDomainObject;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Repository\DTO\CheckedInAttendeesCountDTO;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
 

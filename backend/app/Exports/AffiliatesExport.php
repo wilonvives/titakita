@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Exports;
+namespace TitaKita\Exports;
 
 use Carbon\Carbon;
-use HiEvents\DomainObjects\AffiliateDomainObject;
-use HiEvents\Resources\Affiliate\AffiliateResource;
+use TitaKita\DomainObjects\AffiliateDomainObject;
+use TitaKita\Resources\Affiliate\AffiliateResource;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Maatwebsite\Excel\Concerns\FromCollection;

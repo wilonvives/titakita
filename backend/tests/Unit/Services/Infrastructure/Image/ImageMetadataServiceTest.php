@@ -2,7 +2,7 @@
 
 namespace Tests\Unit\Services\Infrastructure\Image;
 
-use HiEvents\Services\Infrastructure\Image\ImageMetadataService;
+use TitaKita\Services\Infrastructure\Image\ImageMetadataService;
 use Illuminate\Http\UploadedFile;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;

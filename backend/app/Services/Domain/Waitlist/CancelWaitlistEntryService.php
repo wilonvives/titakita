@@ -1,17 +1,17 @@
 <?php
 
-namespace HiEvents\Services\Domain\Waitlist;
+namespace TitaKita\Services\Domain\Waitlist;
 
-use HiEvents\DomainObjects\Enums\CapacityChangeDirection;
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\DomainObjects\Status\WaitlistEntryStatus;
-use HiEvents\DomainObjects\WaitlistEntryDomainObject;
-use HiEvents\Events\CapacityChangedEvent;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Exceptions\ResourceNotFoundException;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Repository\Interfaces\ProductPriceRepositoryInterface;
-use HiEvents\Repository\Interfaces\WaitlistEntryRepositoryInterface;
+use TitaKita\DomainObjects\Enums\CapacityChangeDirection;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\DomainObjects\Status\WaitlistEntryStatus;
+use TitaKita\DomainObjects\WaitlistEntryDomainObject;
+use TitaKita\Events\CapacityChangedEvent;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Exceptions\ResourceNotFoundException;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Repository\Interfaces\ProductPriceRepositoryInterface;
+use TitaKita\Repository\Interfaces\WaitlistEntryRepositoryInterface;
 use Illuminate\Database\DatabaseManager;
 
 class CancelWaitlistEntryService

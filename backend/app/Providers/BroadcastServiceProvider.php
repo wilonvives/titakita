@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Providers;
+namespace TitaKita\Providers;
 
 use Illuminate\Support\Facades\Broadcast;
 use Illuminate\Support\ServiceProvider;

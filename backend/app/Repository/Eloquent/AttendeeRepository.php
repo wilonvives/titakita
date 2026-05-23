@@ -1,16 +1,16 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\AttendeeCheckInDomainObject;
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\DomainObjects\Generated\AttendeeDomainObjectAbstract;
-use HiEvents\DomainObjects\Status\AttendeeStatus;
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Models\Attendee;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\AttendeeRepositoryInterface;
+use TitaKita\DomainObjects\AttendeeCheckInDomainObject;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\DomainObjects\Generated\AttendeeDomainObjectAbstract;
+use TitaKita\DomainObjects\Status\AttendeeStatus;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Models\Attendee;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\AttendeeRepositoryInterface;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Pagination\LengthAwarePaginator;

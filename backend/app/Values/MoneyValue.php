@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Values;
+namespace TitaKita\Values;
 
 use Brick\Math\Exception\MathException;
 use Brick\Math\Exception\NumberFormatException;

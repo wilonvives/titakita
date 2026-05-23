@@ -3,15 +3,15 @@
 namespace Tests\Unit\Services\Application\Handlers\EventSettings;
 
 use Brick\Money\Currency;
-use HiEvents\DomainObjects\AccountConfigurationDomainObject;
-use HiEvents\DomainObjects\AccountDomainObject;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Services\Application\Handlers\EventSettings\DTO\GetPlatformFeePreviewDTO;
-use HiEvents\Services\Application\Handlers\EventSettings\GetPlatformFeePreviewHandler;
-use HiEvents\Services\Infrastructure\CurrencyConversion\CurrencyConversionClientInterface;
-use HiEvents\Values\MoneyValue;
+use TitaKita\DomainObjects\AccountConfigurationDomainObject;
+use TitaKita\DomainObjects\AccountDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Services\Application\Handlers\EventSettings\DTO\GetPlatformFeePreviewDTO;
+use TitaKita\Services\Application\Handlers\EventSettings\GetPlatformFeePreviewHandler;
+use TitaKita\Services\Infrastructure\CurrencyConversion\CurrencyConversionClientInterface;
+use TitaKita\Values\MoneyValue;
 use Mockery;
 use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
 use Tests\TestCase;

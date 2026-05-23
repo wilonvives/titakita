@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents;
+namespace TitaKita;
 
-use HiEvents\DomainObjects\Enums\BaseEnum;
+use TitaKita\DomainObjects\Enums\BaseEnum;
 
 enum Locale: string
 {

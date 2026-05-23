@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Http\Resources;
+namespace TitaKita\Http\Resources;
 
-use HiEvents\DomainObjects\EmailTemplateDomainObject;
-use HiEvents\Resources\BaseResource;
+use TitaKita\DomainObjects\EmailTemplateDomainObject;
+use TitaKita\Resources\BaseResource;
 use Illuminate\Http\Request;
 
 /**

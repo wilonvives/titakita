@@ -1,17 +1,17 @@
 <?php
 
-namespace HiEvents\Http\Actions\Accounts\Stripe;
+namespace TitaKita\Http\Actions\Accounts\Stripe;
 
-use HiEvents\DomainObjects\AccountDomainObject;
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\DomainObjects\Enums\StripePlatform;
-use HiEvents\Exceptions\CreateStripeConnectAccountFailedException;
-use HiEvents\Exceptions\CreateStripeConnectAccountLinksFailedException;
-use HiEvents\Exceptions\SaasModeEnabledException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Account\Stripe\StripeConnectAccountResponseResource;
-use HiEvents\Services\Application\Handlers\Account\Payment\Stripe\CreateStripeConnectAccountHandler;
-use HiEvents\Services\Application\Handlers\Account\Payment\Stripe\DTO\CreateStripeConnectAccountDTO;
+use TitaKita\DomainObjects\AccountDomainObject;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\DomainObjects\Enums\StripePlatform;
+use TitaKita\Exceptions\CreateStripeConnectAccountFailedException;
+use TitaKita\Exceptions\CreateStripeConnectAccountLinksFailedException;
+use TitaKita\Exceptions\SaasModeEnabledException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Account\Stripe\StripeConnectAccountResponseResource;
+use TitaKita\Services\Application\Handlers\Account\Payment\Stripe\CreateStripeConnectAccountHandler;
+use TitaKita\Services\Application\Handlers\Account\Payment\Stripe\DTO\CreateStripeConnectAccountDTO;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;

@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Listeners\Waitlist;
+namespace TitaKita\Listeners\Waitlist;
 
-use HiEvents\DomainObjects\Enums\CapacityChangeDirection;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\Events\CapacityChangedEvent;
-use HiEvents\Exceptions\NoCapacityAvailableException;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Services\Domain\Product\AvailableProductQuantitiesFetchService;
-use HiEvents\Services\Domain\Waitlist\ProcessWaitlistService;
+use TitaKita\DomainObjects\Enums\CapacityChangeDirection;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\Events\CapacityChangedEvent;
+use TitaKita\Exceptions\NoCapacityAvailableException;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Services\Domain\Product\AvailableProductQuantitiesFetchService;
+use TitaKita\Services\Domain\Waitlist\ProcessWaitlistService;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
 class ProcessWaitlistOnCapacityAvailableListener implements ShouldQueue

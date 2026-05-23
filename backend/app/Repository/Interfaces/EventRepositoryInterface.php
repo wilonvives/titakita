@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\DTO\QueryParamsDTO;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\DTO\QueryParamsDTO;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 /**

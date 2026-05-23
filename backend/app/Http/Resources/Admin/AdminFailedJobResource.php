@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Resources\Admin;
+namespace TitaKita\Http\Resources\Admin;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;

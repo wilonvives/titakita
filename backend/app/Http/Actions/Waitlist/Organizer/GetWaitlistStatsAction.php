@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Http\Actions\Waitlist\Organizer;
+namespace TitaKita\Http\Actions\Waitlist\Organizer;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\Waitlist\GetWaitlistStatsHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\Waitlist\GetWaitlistStatsHandler;
 use Illuminate\Http\JsonResponse;
 
 class GetWaitlistStatsAction extends BaseAction

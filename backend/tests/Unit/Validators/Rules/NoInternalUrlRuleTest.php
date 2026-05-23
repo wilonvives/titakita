@@ -2,7 +2,7 @@
 
 namespace Tests\Unit\Validators\Rules;
 
-use HiEvents\Validators\Rules\NoInternalUrlRule;
+use TitaKita\Validators\Rules\NoInternalUrlRule;
 use Tests\TestCase;
 
 class NoInternalUrlRuleTest extends TestCase

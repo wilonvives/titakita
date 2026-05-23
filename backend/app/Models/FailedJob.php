@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Models;
+namespace TitaKita\Models;
 
 class FailedJob extends BaseModel
 {

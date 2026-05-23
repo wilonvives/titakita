@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Mail\TicketLookup;
+namespace TitaKita\Mail\TicketLookup;
 
-use HiEvents\Helper\Url;
-use HiEvents\Mail\BaseMail;
+use TitaKita\Helper\Url;
+use TitaKita\Mail\BaseMail;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 

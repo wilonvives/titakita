@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\AccountVatSettingDomainObject;
-use HiEvents\Models\AccountVatSetting;
-use HiEvents\Repository\Interfaces\AccountVatSettingRepositoryInterface;
+use TitaKita\DomainObjects\AccountVatSettingDomainObject;
+use TitaKita\Models\AccountVatSetting;
+use TitaKita\Repository\Interfaces\AccountVatSettingRepositoryInterface;
 
 /**
  * @extends BaseRepository<AccountVatSettingDomainObject>

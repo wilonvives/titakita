@@ -1,16 +1,16 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Account\Payment\Stripe;
+namespace TitaKita\Services\Application\Handlers\Account\Payment\Stripe;
 
-use HiEvents\DomainObjects\AccountDomainObject;
-use HiEvents\DomainObjects\AccountStripePlatformDomainObject;
-use HiEvents\DomainObjects\Enums\StripePlatform;
-use HiEvents\Exceptions\Stripe\StripeClientConfigurationException;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Account\Payment\Stripe\DTO\GetStripeConnectAccountsResponseDTO;
-use HiEvents\Services\Application\Handlers\Account\Payment\Stripe\DTO\StripeConnectAccountDTO;
-use HiEvents\Services\Domain\Payment\Stripe\StripeAccountSyncService;
-use HiEvents\Services\Infrastructure\Stripe\StripeClientFactory;
+use TitaKita\DomainObjects\AccountDomainObject;
+use TitaKita\DomainObjects\AccountStripePlatformDomainObject;
+use TitaKita\DomainObjects\Enums\StripePlatform;
+use TitaKita\Exceptions\Stripe\StripeClientConfigurationException;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Account\Payment\Stripe\DTO\GetStripeConnectAccountsResponseDTO;
+use TitaKita\Services\Application\Handlers\Account\Payment\Stripe\DTO\StripeConnectAccountDTO;
+use TitaKita\Services\Domain\Payment\Stripe\StripeAccountSyncService;
+use TitaKita\Services\Infrastructure\Stripe\StripeClientFactory;
 use Illuminate\Support\Collection;
 use Psr\Log\LoggerInterface;
 use Throwable;

@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\Questions;
+namespace TitaKita\Http\Actions\Questions;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Exceptions\CannotDeleteEntityException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\Question\DeleteQuestionHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Exceptions\CannotDeleteEntityException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\Question\DeleteQuestionHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 use Throwable;

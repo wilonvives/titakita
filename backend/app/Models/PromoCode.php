@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Models;
+namespace TitaKita\Models;
 
-use HiEvents\DomainObjects\Generated\PromoCodeDomainObjectAbstract;
+use TitaKita\DomainObjects\Generated\PromoCodeDomainObjectAbstract;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class PromoCode extends BaseModel

@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\ProductCategory;
+namespace TitaKita\Services\Application\Handlers\ProductCategory;
 
-use HiEvents\Exceptions\CannotDeleteEntityException;
-use HiEvents\Services\Domain\ProductCategory\DeleteProductCategoryService;
+use TitaKita\Exceptions\CannotDeleteEntityException;
+use TitaKita\Services\Domain\ProductCategory\DeleteProductCategoryService;
 use Throwable;
 
 class DeleteProductCategoryHandler

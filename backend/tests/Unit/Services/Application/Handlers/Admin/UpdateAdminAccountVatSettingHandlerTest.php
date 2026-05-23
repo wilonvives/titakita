@@ -2,10 +2,10 @@
 
 namespace Tests\Unit\Services\Application\Handlers\Admin;
 
-use HiEvents\DataTransferObjects\UpdateAdminAccountVatSettingDTO;
-use HiEvents\DomainObjects\AccountVatSettingDomainObject;
-use HiEvents\Repository\Interfaces\AccountVatSettingRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Admin\UpdateAdminAccountVatSettingHandler;
+use TitaKita\DataTransferObjects\UpdateAdminAccountVatSettingDTO;
+use TitaKita\DomainObjects\AccountVatSettingDomainObject;
+use TitaKita\Repository\Interfaces\AccountVatSettingRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Admin\UpdateAdminAccountVatSettingHandler;
 use Mockery;
 use Tests\TestCase;
 

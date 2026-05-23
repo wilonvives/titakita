@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Http\Actions\CapacityAssignments;
+namespace TitaKita\Http\Actions\CapacityAssignments;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\CapacityAssignment\DeleteCapacityAssignmentHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\CapacityAssignment\DeleteCapacityAssignmentHandler;
 use Illuminate\Http\Response;
 
 class DeleteCapacityAssignmentAction extends BaseAction

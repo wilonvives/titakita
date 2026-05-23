@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\ImageDomainObject;
-use HiEvents\Models\Image;
-use HiEvents\Repository\Interfaces\ImageRepositoryInterface;
+use TitaKita\DomainObjects\ImageDomainObject;
+use TitaKita\Models\Image;
+use TitaKita\Repository\Interfaces\ImageRepositoryInterface;
 
 /**
  * @extends BaseRepository<ImageDomainObject>

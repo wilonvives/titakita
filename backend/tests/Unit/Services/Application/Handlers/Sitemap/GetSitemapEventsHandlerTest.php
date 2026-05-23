@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Tests\Unit\Services\Application\Handlers\Sitemap;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Exceptions\ResourceNotFoundException;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Sitemap\GetSitemapEventsHandler;
-use HiEvents\Services\Domain\Sitemap\SitemapGeneratorService;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Exceptions\ResourceNotFoundException;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Sitemap\GetSitemapEventsHandler;
+use TitaKita\Services\Domain\Sitemap\SitemapGeneratorService;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;

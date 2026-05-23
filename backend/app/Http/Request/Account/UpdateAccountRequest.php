@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Http\Request\Account;
+namespace TitaKita\Http\Request\Account;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;

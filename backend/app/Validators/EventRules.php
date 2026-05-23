@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Validators;
+namespace TitaKita\Validators;
 
-use HiEvents\DomainObjects\Enums\EventCategory;
+use TitaKita\DomainObjects\Enums\EventCategory;
 use Illuminate\Validation\Rule;
 
 trait EventRules

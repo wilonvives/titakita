@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Resources\Waitlist;
+namespace TitaKita\Resources\Waitlist;
 
-use HiEvents\DomainObjects\WaitlistEntryDomainObject;
-use HiEvents\Resources\BaseResource;
-use HiEvents\Resources\Product\ProductPriceResource;
-use HiEvents\Resources\Product\ProductResource;
+use TitaKita\DomainObjects\WaitlistEntryDomainObject;
+use TitaKita\Resources\BaseResource;
+use TitaKita\Resources\Product\ProductPriceResource;
+use TitaKita\Resources\Product\ProductResource;
 use Illuminate\Http\Request;
 
 /**

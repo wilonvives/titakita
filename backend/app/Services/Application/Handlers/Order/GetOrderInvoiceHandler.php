@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Order;
+namespace TitaKita\Services\Application\Handlers\Order;
 
-use HiEvents\Services\Application\Handlers\Order\DTO\GetOrderInvoiceDTO;
-use HiEvents\Services\Domain\Order\DTO\InvoicePdfResponseDTO;
-use HiEvents\Services\Domain\Order\GenerateOrderInvoicePDFService;
+use TitaKita\Services\Application\Handlers\Order\DTO\GetOrderInvoiceDTO;
+use TitaKita\Services\Domain\Order\DTO\InvoicePdfResponseDTO;
+use TitaKita\Services\Domain\Order\GenerateOrderInvoicePDFService;
 
 class GetOrderInvoiceHandler
 {

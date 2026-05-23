@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Webhook;
+namespace TitaKita\Services\Application\Handlers\Webhook;
 
-use HiEvents\Repository\Interfaces\WebhookLogRepositoryInterface;
-use HiEvents\Repository\Interfaces\WebhookRepositoryInterface;
+use TitaKita\Repository\Interfaces\WebhookLogRepositoryInterface;
+use TitaKita\Repository\Interfaces\WebhookRepositoryInterface;
 use Illuminate\Database\DatabaseManager;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 

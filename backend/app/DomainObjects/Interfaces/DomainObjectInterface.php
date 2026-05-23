@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\DomainObjects\Interfaces;
+namespace TitaKita\DomainObjects\Interfaces;
 
 use Illuminate\Database\Eloquent\Model;
 

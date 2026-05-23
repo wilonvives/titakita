@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Http\Actions\Organizers\Webhooks;
+namespace TitaKita\Http\Actions\Organizers\Webhooks;
 
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\Webhook\DeleteWebhookHandler;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\Webhook\DeleteWebhookHandler;
 use Illuminate\Http\Response;
 
 class DeleteOrganizerWebhookAction extends BaseAction

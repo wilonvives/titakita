@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Infrastructure\Image;
+namespace TitaKita\Services\Infrastructure\Image;
 
-use HiEvents\Services\Infrastructure\Image\DTO\ImageMetadataDTO;
+use TitaKita\Services\Infrastructure\Image\DTO\ImageMetadataDTO;
 use Illuminate\Http\UploadedFile;
 use Imagick;
 use Psr\Log\LoggerInterface;

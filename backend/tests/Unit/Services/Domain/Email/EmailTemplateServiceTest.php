@@ -2,12 +2,12 @@
 
 namespace Tests\Unit\Services\Domain\Email;
 
-use HiEvents\DomainObjects\EmailTemplateDomainObject;
-use HiEvents\DomainObjects\Enums\EmailTemplateType;
-use HiEvents\Repository\Interfaces\EmailTemplateRepositoryInterface;
-use HiEvents\Services\Domain\Email\EmailTemplateService;
-use HiEvents\Services\Domain\Email\EmailTokenContextBuilder;
-use HiEvents\Services\Infrastructure\Email\LiquidTemplateRenderer;
+use TitaKita\DomainObjects\EmailTemplateDomainObject;
+use TitaKita\DomainObjects\Enums\EmailTemplateType;
+use TitaKita\Repository\Interfaces\EmailTemplateRepositoryInterface;
+use TitaKita\Services\Domain\Email\EmailTemplateService;
+use TitaKita\Services\Domain\Email\EmailTokenContextBuilder;
+use TitaKita\Services\Infrastructure\Email\LiquidTemplateRenderer;
 use Tests\TestCase;
 use Mockery;
 

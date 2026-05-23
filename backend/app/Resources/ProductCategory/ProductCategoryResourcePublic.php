@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Resources\ProductCategory;
+namespace TitaKita\Resources\ProductCategory;
 
-use HiEvents\DomainObjects\ProductCategoryDomainObject;
-use HiEvents\Resources\Product\ProductResourcePublic;
+use TitaKita\DomainObjects\ProductCategoryDomainObject;
+use TitaKita\Resources\Product\ProductResourcePublic;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**

@@ -1,21 +1,21 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\Generated\OrderDomainObjectAbstract;
-use HiEvents\DomainObjects\Generated\ProductDomainObjectAbstract;
-use HiEvents\DomainObjects\Generated\ProductPriceDomainObjectAbstract;
-use HiEvents\DomainObjects\Generated\WaitlistEntryDomainObjectAbstract;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\DomainObjects\ProductPriceDomainObject;
-use HiEvents\DomainObjects\Status\WaitlistEntryStatus;
-use HiEvents\DomainObjects\WaitlistEntryDomainObject;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Models\WaitlistEntry;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\WaitlistEntryRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Waitlist\DTO\WaitlistStatsDTO;
+use TitaKita\DomainObjects\Generated\OrderDomainObjectAbstract;
+use TitaKita\DomainObjects\Generated\ProductDomainObjectAbstract;
+use TitaKita\DomainObjects\Generated\ProductPriceDomainObjectAbstract;
+use TitaKita\DomainObjects\Generated\WaitlistEntryDomainObjectAbstract;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\DomainObjects\Status\WaitlistEntryStatus;
+use TitaKita\DomainObjects\WaitlistEntryDomainObject;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Models\WaitlistEntry;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\WaitlistEntryRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Waitlist\DTO\WaitlistStatsDTO;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\DB;

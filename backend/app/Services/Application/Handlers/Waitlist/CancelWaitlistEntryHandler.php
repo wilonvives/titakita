@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Waitlist;
+namespace TitaKita\Services\Application\Handlers\Waitlist;
 
-use HiEvents\DomainObjects\WaitlistEntryDomainObject;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Exceptions\ResourceNotFoundException;
-use HiEvents\Services\Domain\Waitlist\CancelWaitlistEntryService;
+use TitaKita\DomainObjects\WaitlistEntryDomainObject;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Exceptions\ResourceNotFoundException;
+use TitaKita\Services\Domain\Waitlist\CancelWaitlistEntryService;
 
 class CancelWaitlistEntryHandler
 {

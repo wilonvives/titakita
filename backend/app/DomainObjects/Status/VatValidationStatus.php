@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\DomainObjects\Status;
+namespace TitaKita\DomainObjects\Status;
 
-use HiEvents\DomainObjects\Enums\BaseEnum;
+use TitaKita\DomainObjects\Enums\BaseEnum;
 
 enum VatValidationStatus: string
 {

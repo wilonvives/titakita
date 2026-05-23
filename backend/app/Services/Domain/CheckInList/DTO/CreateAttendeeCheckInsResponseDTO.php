@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Domain\CheckInList\DTO;
+namespace TitaKita\Services\Domain\CheckInList\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\DataTransferObjects\ErrorBagDTO;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\DataTransferObjects\ErrorBagDTO;
 use Illuminate\Support\Collection;
 
 class CreateAttendeeCheckInsResponseDTO extends BaseDTO

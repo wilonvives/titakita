@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Resources\Order;
+namespace TitaKita\Resources\Order;
 
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\Resources\BaseResource;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\Resources\BaseResource;
 use Illuminate\Http\Request;
 
 /**

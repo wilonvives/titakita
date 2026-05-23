@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\AccountDomainObject;
-use HiEvents\Models\Account;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\DomainObjects\AccountDomainObject;
+use TitaKita\Models\Account;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 /**

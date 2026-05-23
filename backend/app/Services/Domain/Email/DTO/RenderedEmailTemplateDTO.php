@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Domain\Email\DTO;
+namespace TitaKita\Services\Domain\Email\DTO;
 
-use HiEvents\DataTransferObjects\BaseDataObject;
+use TitaKita\DataTransferObjects\BaseDataObject;
 
 class RenderedEmailTemplateDTO extends BaseDataObject
 {

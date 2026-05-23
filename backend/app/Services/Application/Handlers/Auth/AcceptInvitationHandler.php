@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Auth;
+namespace TitaKita\Services\Application\Handlers\Auth;
 
-use HiEvents\DomainObjects\Status\UserStatus;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Repository\Interfaces\AccountUserRepositoryInterface;
-use HiEvents\Repository\Interfaces\UserRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Auth\DTO\AcceptInvitationDTO;
-use HiEvents\Services\Infrastructure\Encryption\EncryptedPayloadService;
-use HiEvents\Services\Infrastructure\Encryption\Exception\DecryptionFailedException;
-use HiEvents\Services\Infrastructure\Encryption\Exception\EncryptedPayloadExpiredException;
+use TitaKita\DomainObjects\Status\UserStatus;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Repository\Interfaces\AccountUserRepositoryInterface;
+use TitaKita\Repository\Interfaces\UserRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Auth\DTO\AcceptInvitationDTO;
+use TitaKita\Services\Infrastructure\Encryption\EncryptedPayloadService;
+use TitaKita\Services\Infrastructure\Encryption\Exception\DecryptionFailedException;
+use TitaKita\Services\Infrastructure\Encryption\Exception\EncryptedPayloadExpiredException;
 use Illuminate\Contracts\Hashing\Hasher;
 use Illuminate\Database\DatabaseManager;
 use Psr\Log\LoggerInterface;

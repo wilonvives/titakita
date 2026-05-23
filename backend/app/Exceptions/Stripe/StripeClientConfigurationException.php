@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Exceptions\Stripe;
+namespace TitaKita\Exceptions\Stripe;
 
-use HiEvents\Exceptions\BaseException;
+use TitaKita\Exceptions\BaseException;
 
 class StripeClientConfigurationException extends BaseException
 {

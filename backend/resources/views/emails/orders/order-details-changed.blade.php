@@ -1,6 +1,6 @@
-@php /** @var \HiEvents\DomainObjects\EventDomainObject $event */ @endphp
-@php /** @var \HiEvents\DomainObjects\OrganizerDomainObject $organizer */ @endphp
-@php /** @var \HiEvents\DomainObjects\EventSettingDomainObject $eventSettings */ @endphp
+@php /** @var \TitaKita\DomainObjects\EventDomainObject $event */ @endphp
+@php /** @var \TitaKita\DomainObjects\OrganizerDomainObject $organizer */ @endphp
+@php /** @var \TitaKita\DomainObjects\EventSettingDomainObject $eventSettings */ @endphp
 @php /** @var array $changedFields */ @endphp
 
 <x-mail::message>

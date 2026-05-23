@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Console\Commands;
+namespace TitaKita\Console\Commands;
 
 use Exception;
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\Repository\Interfaces\AccountUserRepositoryInterface;
-use HiEvents\Repository\Interfaces\UserRepositoryInterface;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\Repository\Interfaces\AccountUserRepositoryInterface;
+use TitaKita\Repository\Interfaces\UserRepositoryInterface;
 use Illuminate\Console\Command;
 use Psr\Log\LoggerInterface;
 

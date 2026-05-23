@@ -1,16 +1,16 @@
 <?php
 
-namespace HiEvents\Http\Actions\Organizers;
+namespace TitaKita\Http\Actions\Organizers;
 
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Exceptions\AccountNotVerifiedException;
-use HiEvents\Exceptions\CannotDeleteEntityException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Organizer\UpdateOrganizerStatusRequest;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Resources\Organizer\OrganizerResource;
-use HiEvents\Services\Application\Handlers\Organizer\DTO\UpdateOrganizerStatusDTO;
-use HiEvents\Services\Application\Handlers\Organizer\UpdateOrganizerStatusHandler;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Exceptions\AccountNotVerifiedException;
+use TitaKita\Exceptions\CannotDeleteEntityException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Organizer\UpdateOrganizerStatusRequest;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Resources\Organizer\OrganizerResource;
+use TitaKita\Services\Application\Handlers\Organizer\DTO\UpdateOrganizerStatusDTO;
+use TitaKita\Services\Application\Handlers\Organizer\UpdateOrganizerStatusHandler;
 use Illuminate\Http\JsonResponse;
 
 class UpdateOrganizerStatusAction extends BaseAction

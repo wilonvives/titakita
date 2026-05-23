@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\DomainObjects;
+namespace TitaKita\DomainObjects;
 
-use HiEvents\DomainObjects\Generated\WaitlistEntryDomainObjectAbstract;
-use HiEvents\DomainObjects\Interfaces\IsFilterable;
-use HiEvents\DomainObjects\Interfaces\IsSortable;
-use HiEvents\DomainObjects\SortingAndFiltering\AllowedSorts;
+use TitaKita\DomainObjects\Generated\WaitlistEntryDomainObjectAbstract;
+use TitaKita\DomainObjects\Interfaces\IsFilterable;
+use TitaKita\DomainObjects\Interfaces\IsSortable;
+use TitaKita\DomainObjects\SortingAndFiltering\AllowedSorts;
 
 class WaitlistEntryDomainObject extends WaitlistEntryDomainObjectAbstract implements IsSortable, IsFilterable
 {

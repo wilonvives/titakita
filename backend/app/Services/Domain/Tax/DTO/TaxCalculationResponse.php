@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Domain\Tax\DTO;
+namespace TitaKita\Services\Domain\Tax\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
+use TitaKita\DataTransferObjects\BaseDTO;
 
 class TaxCalculationResponse extends BaseDTO
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Order\DTO;
+namespace TitaKita\Services\Application\Handlers\Order\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
+use TitaKita\DataTransferObjects\BaseDTO;
 
 class TransitionOrderToOfflinePaymentPublicDTO extends BaseDTO
 {

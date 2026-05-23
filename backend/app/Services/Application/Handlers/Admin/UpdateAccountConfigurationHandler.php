@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Admin;
+namespace TitaKita\Services\Application\Handlers\Admin;
 
-use HiEvents\DataTransferObjects\UpdateAccountConfigurationDTO;
-use HiEvents\DomainObjects\AccountConfigurationDomainObject;
-use HiEvents\Repository\Interfaces\AccountConfigurationRepositoryInterface;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\DataTransferObjects\UpdateAccountConfigurationDTO;
+use TitaKita\DomainObjects\AccountConfigurationDomainObject;
+use TitaKita\Repository\Interfaces\AccountConfigurationRepositoryInterface;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
 
 class UpdateAccountConfigurationHandler
 {

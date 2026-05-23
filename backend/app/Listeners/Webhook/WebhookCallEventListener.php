@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Listeners\Webhook;
+namespace TitaKita\Listeners\Webhook;
 
-use HiEvents\Services\Infrastructure\Webhook\WebhookResponseHandlerService;
+use TitaKita\Services\Infrastructure\Webhook\WebhookResponseHandlerService;
 use RuntimeException;
 use Spatie\WebhookServer\Events\WebhookCallEvent;
 

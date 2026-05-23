@@ -60,8 +60,8 @@ return [
     */
 
     'middleware' => [
-        'verify_csrf_token' => \HiEvents\Http\Middleware\VerifyCsrfToken::class,
-        'encrypt_cookies' => \HiEvents\Http\Middleware\EncryptCookies::class,
+        'verify_csrf_token' => \TitaKita\Http\Middleware\VerifyCsrfToken::class,
+        'encrypt_cookies' => \TitaKita\Http\Middleware\EncryptCookies::class,
     ],
 
 ];

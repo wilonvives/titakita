@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Domain\Product;
+namespace TitaKita\Services\Domain\Product;
 
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\Repository\Interfaces\ProductRepositoryInterface;
-use HiEvents\Services\Domain\Product\Exception\UnrecognizedProductIdException;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
+use TitaKita\Services\Domain\Product\Exception\UnrecognizedProductIdException;
 
 class EventProductValidationService
 {

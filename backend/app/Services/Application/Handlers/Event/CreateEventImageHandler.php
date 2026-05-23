@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Event;
+namespace TitaKita\Services\Application\Handlers\Event;
 
-use HiEvents\DomainObjects\ImageDomainObject;
-use HiEvents\Services\Application\Handlers\Event\DTO\CreateEventImageDTO;
-use HiEvents\Services\Domain\Event\CreateEventImageService;
+use TitaKita\DomainObjects\ImageDomainObject;
+use TitaKita\Services\Application\Handlers\Event\DTO\CreateEventImageDTO;
+use TitaKita\Services\Domain\Event\CreateEventImageService;
 use Throwable;
 
 class CreateEventImageHandler

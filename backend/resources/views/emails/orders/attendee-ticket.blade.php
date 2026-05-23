@@ -1,13 +1,13 @@
-@php use HiEvents\Helper\DateHelper; @endphp
-@php /** @uses \HiEvents\Mail\Order\OrderSummary */ @endphp
-@php /** @var \HiEvents\DomainObjects\EventDomainObject $event */ @endphp
-@php /** @var \HiEvents\DomainObjects\EventSettingDomainObject $eventSettings */ @endphp
-@php /** @var \HiEvents\DomainObjects\OrganizerDomainObject $organizer */ @endphp
-@php /** @var \HiEvents\DomainObjects\AttendeeDomainObject $attendee */ @endphp
-@php /** @var \HiEvents\DomainObjects\OrderDomainObject $order */ @endphp
+@php use TitaKita\Helper\DateHelper; @endphp
+@php /** @uses \TitaKita\Mail\Order\OrderSummary */ @endphp
+@php /** @var \TitaKita\DomainObjects\EventDomainObject $event */ @endphp
+@php /** @var \TitaKita\DomainObjects\EventSettingDomainObject $eventSettings */ @endphp
+@php /** @var \TitaKita\DomainObjects\OrganizerDomainObject $organizer */ @endphp
+@php /** @var \TitaKita\DomainObjects\AttendeeDomainObject $attendee */ @endphp
+@php /** @var \TitaKita\DomainObjects\OrderDomainObject $order */ @endphp
 
 @php /** @var string $ticketUrl */ @endphp
-@php /** @see \HiEvents\Mail\Attendee\AttendeeTicketMail */ @endphp
+@php /** @see \TitaKita\Mail\Attendee\AttendeeTicketMail */ @endphp
 
 <x-mail::message>
 # {{ __('You\'re going to') }} {{ $event->getTitle() }}! 🎉

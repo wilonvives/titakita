@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Question;
+namespace TitaKita\Services\Application\Handlers\Question;
 
-use HiEvents\Repository\Interfaces\QuestionAndAnswerViewRepositoryInterface;
+use TitaKita\Repository\Interfaces\QuestionAndAnswerViewRepositoryInterface;
 use Illuminate\Support\Collection;
 
 class ExportAnswersHandler

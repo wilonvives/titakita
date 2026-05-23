@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\Common\Webhooks;
+namespace TitaKita\Http\Actions\Common\Webhooks;
 
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Services\Application\Handlers\Order\Payment\Stripe\DTO\StripeWebhookDTO;
-use HiEvents\Services\Application\Handlers\Order\Payment\Stripe\IncomingWebhookHandler;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Services\Application\Handlers\Order\Payment\Stripe\DTO\StripeWebhookDTO;
+use TitaKita\Services\Application\Handlers\Order\Payment\Stripe\IncomingWebhookHandler;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Throwable;

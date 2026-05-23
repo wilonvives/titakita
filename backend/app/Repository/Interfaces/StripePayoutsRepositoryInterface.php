@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\StripePayoutDomainObject;
+use TitaKita\DomainObjects\StripePayoutDomainObject;
 
 /**
  * @extends RepositoryInterface<StripePayoutDomainObject>

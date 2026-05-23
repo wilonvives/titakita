@@ -2,17 +2,17 @@
 
 namespace Tests\Unit\Services\Domain\Waitlist;
 
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\DomainObjects\Status\WaitlistEntryStatus;
-use HiEvents\DomainObjects\WaitlistEntryDomainObject;
-use HiEvents\Events\CapacityChangedEvent;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Exceptions\ResourceNotFoundException;
-use HiEvents\DomainObjects\ProductPriceDomainObject;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Repository\Interfaces\ProductPriceRepositoryInterface;
-use HiEvents\Repository\Interfaces\WaitlistEntryRepositoryInterface;
-use HiEvents\Services\Domain\Waitlist\CancelWaitlistEntryService;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\DomainObjects\Status\WaitlistEntryStatus;
+use TitaKita\DomainObjects\WaitlistEntryDomainObject;
+use TitaKita\Events\CapacityChangedEvent;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Exceptions\ResourceNotFoundException;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Repository\Interfaces\ProductPriceRepositoryInterface;
+use TitaKita\Repository\Interfaces\WaitlistEntryRepositoryInterface;
+use TitaKita\Services\Domain\Waitlist\CancelWaitlistEntryService;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Support\Facades\Event;
 use Mockery;

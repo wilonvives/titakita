@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Services\Infrastructure\User;
+namespace TitaKita\Services\Infrastructure\User;
 
 use Illuminate\Cache\Repository;
 

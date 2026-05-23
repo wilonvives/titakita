@@ -2,14 +2,14 @@
 
 namespace Tests\Unit\Services\Application\Handlers\TicketLookup;
 
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\Mail\TicketLookup\TicketLookupEmail;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Repository\Interfaces\TicketLookupTokenRepositoryInterface;
-use HiEvents\Services\Application\Handlers\TicketLookup\DTO\SendTicketLookupEmailDTO;
-use HiEvents\Services\Application\Handlers\TicketLookup\SendTicketLookupEmailHandler;
-use HiEvents\Services\Infrastructure\TokenGenerator\TokenGeneratorService;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\Mail\TicketLookup\TicketLookupEmail;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Repository\Interfaces\TicketLookupTokenRepositoryInterface;
+use TitaKita\Services\Application\Handlers\TicketLookup\DTO\SendTicketLookupEmailDTO;
+use TitaKita\Services\Application\Handlers\TicketLookup\SendTicketLookupEmailHandler;
+use TitaKita\Services\Infrastructure\TokenGenerator\TokenGeneratorService;
 use Illuminate\Contracts\Mail\Mailer;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Support\Collection;

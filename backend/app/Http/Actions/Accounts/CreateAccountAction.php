@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Accounts;
+namespace TitaKita\Http\Actions\Accounts;
 
-use HiEvents\Exceptions\EmailAlreadyExists;
-use HiEvents\Exceptions\UnauthorizedException;
-use HiEvents\Http\Actions\Auth\BaseAuthAction;
-use HiEvents\Http\Request\Account\CreateAccountRequest;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Resources\Account\AccountResource;
-use HiEvents\Services\Application\Handlers\Account\CreateAccountHandler;
-use HiEvents\Services\Application\Handlers\Account\DTO\CreateAccountDTO;
-use HiEvents\Services\Application\Handlers\Account\Exceptions\AccountConfigurationDoesNotExist;
-use HiEvents\Services\Application\Handlers\Account\Exceptions\AccountRegistrationDisabledException;
-use HiEvents\Services\Application\Handlers\Auth\DTO\LoginCredentialsDTO;
-use HiEvents\Services\Application\Handlers\Auth\LoginHandler;
-use HiEvents\Services\Application\Locale\LocaleService;
+use TitaKita\Exceptions\EmailAlreadyExists;
+use TitaKita\Exceptions\UnauthorizedException;
+use TitaKita\Http\Actions\Auth\BaseAuthAction;
+use TitaKita\Http\Request\Account\CreateAccountRequest;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Resources\Account\AccountResource;
+use TitaKita\Services\Application\Handlers\Account\CreateAccountHandler;
+use TitaKita\Services\Application\Handlers\Account\DTO\CreateAccountDTO;
+use TitaKita\Services\Application\Handlers\Account\Exceptions\AccountConfigurationDoesNotExist;
+use TitaKita\Services\Application\Handlers\Account\Exceptions\AccountRegistrationDisabledException;
+use TitaKita\Services\Application\Handlers\Auth\DTO\LoginCredentialsDTO;
+use TitaKita\Services\Application\Handlers\Auth\LoginHandler;
+use TitaKita\Services\Application\Locale\LocaleService;
 use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Validation\ValidationException;

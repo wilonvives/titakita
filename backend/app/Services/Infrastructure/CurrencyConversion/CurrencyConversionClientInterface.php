@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Infrastructure\CurrencyConversion;
+namespace TitaKita\Services\Infrastructure\CurrencyConversion;
 
 use Brick\Money\Currency;
-use HiEvents\Values\MoneyValue;
+use TitaKita\Values\MoneyValue;
 
 interface CurrencyConversionClientInterface
 {

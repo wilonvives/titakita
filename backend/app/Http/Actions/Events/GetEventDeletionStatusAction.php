@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Events;
+namespace TitaKita\Http\Actions\Events;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Domain\Event\EventDeletionService;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Domain\Event\EventDeletionService;
 use Illuminate\Http\JsonResponse;
 
 class GetEventDeletionStatusAction extends BaseAction

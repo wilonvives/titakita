@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Http\Actions\Events\Images;
+namespace TitaKita\Http\Actions\Events\Images;
 
-use HiEvents\DomainObjects\Enums\ImageType;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Event\CreateEventImageRequest;
-use HiEvents\Resources\Image\ImageResource;
-use HiEvents\Services\Application\Handlers\Event\CreateEventImageHandler;
-use HiEvents\Services\Application\Handlers\Event\DTO\CreateEventImageDTO;
+use TitaKita\DomainObjects\Enums\ImageType;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Event\CreateEventImageRequest;
+use TitaKita\Resources\Image\ImageResource;
+use TitaKita\Services\Application\Handlers\Event\CreateEventImageHandler;
+use TitaKita\Services\Application\Handlers\Event\DTO\CreateEventImageDTO;
 use Illuminate\Http\JsonResponse;
 
 class CreateEventImageAction extends BaseAction

@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Domain\Order\DTO;
+namespace TitaKita\Services\Domain\Order\DTO;
 
-use HiEvents\DataTransferObjects\BaseDataObject;
-use HiEvents\Values\MoneyValue;
+use TitaKita\DataTransferObjects\BaseDataObject;
+use TitaKita\Values\MoneyValue;
 
 class ApplicationFeeValuesDTO extends BaseDataObject
 {

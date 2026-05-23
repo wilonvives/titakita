@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\SelfService;
+namespace TitaKita\Services\Application\Handlers\SelfService;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\Exceptions\SelfServiceDisabledException;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\Exceptions\SelfServiceDisabledException;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 
 trait SelfServiceValidationTrait

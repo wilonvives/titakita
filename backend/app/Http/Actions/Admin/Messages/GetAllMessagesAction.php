@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Admin\Messages;
+namespace TitaKita\Http\Actions\Admin\Messages;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Resources\Admin\AdminMessageResource;
-use HiEvents\Services\Application\Handlers\Admin\DTO\GetAllMessagesForAdminDTO;
-use HiEvents\Services\Application\Handlers\Admin\GetAllMessagesForAdminHandler;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Resources\Admin\AdminMessageResource;
+use TitaKita\Services\Application\Handlers\Admin\DTO\GetAllMessagesForAdminDTO;
+use TitaKita\Services\Application\Handlers\Admin\GetAllMessagesForAdminHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

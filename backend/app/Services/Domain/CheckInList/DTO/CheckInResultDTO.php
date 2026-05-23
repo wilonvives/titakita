@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Services\Domain\CheckInList\DTO;
+namespace TitaKita\Services\Domain\CheckInList\DTO;
 
 class CheckInResultDTO
 {

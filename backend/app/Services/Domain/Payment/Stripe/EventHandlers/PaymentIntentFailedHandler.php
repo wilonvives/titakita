@@ -1,17 +1,17 @@
 <?php
 
-namespace HiEvents\Services\Domain\Payment\Stripe\EventHandlers;
+namespace TitaKita\Services\Domain\Payment\Stripe\EventHandlers;
 
-use HiEvents\DomainObjects\Generated\OrderDomainObjectAbstract;
-use HiEvents\DomainObjects\Generated\StripePaymentDomainObjectAbstract;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\OrderItemDomainObject;
-use HiEvents\DomainObjects\Status\OrderPaymentStatus;
-use HiEvents\Events\OrderStatusChangedEvent;
-use HiEvents\Repository\Eloquent\StripePaymentsRepository;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Services\Domain\Payment\Stripe\StripePaymentUpdateFromPaymentIntentService;
+use TitaKita\DomainObjects\Generated\OrderDomainObjectAbstract;
+use TitaKita\DomainObjects\Generated\StripePaymentDomainObjectAbstract;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\OrderItemDomainObject;
+use TitaKita\DomainObjects\Status\OrderPaymentStatus;
+use TitaKita\Events\OrderStatusChangedEvent;
+use TitaKita\Repository\Eloquent\StripePaymentsRepository;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Services\Domain\Payment\Stripe\StripePaymentUpdateFromPaymentIntentService;
 use Illuminate\Database\DatabaseManager;
 use Stripe\PaymentIntent;
 use Throwable;

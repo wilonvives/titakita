@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Models;
+namespace TitaKita\Models;
 
-use HiEvents\DomainObjects\Generated\EventDomainObjectAbstract;
-use HiEvents\Models\Traits\HasImages;
+use TitaKita\DomainObjects\Generated\EventDomainObjectAbstract;
+use TitaKita\Models\Traits\HasImages;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;

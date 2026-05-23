@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Http\Request\SelfService;
+namespace TitaKita\Http\Request\SelfService;
 
-use HiEvents\Http\Request\BaseRequest;
+use TitaKita\Http\Request\BaseRequest;
 
 class EditOrderPublicRequest extends BaseRequest
 {

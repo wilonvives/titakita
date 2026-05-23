@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Domain\Order\Vat;
+namespace TitaKita\Services\Domain\Order\Vat;
 
-use HiEvents\DomainObjects\AccountVatSettingDomainObject;
-use HiEvents\DomainObjects\Enums\CountryCode;
+use TitaKita\DomainObjects\AccountVatSettingDomainObject;
+use TitaKita\DomainObjects\Enums\CountryCode;
 use Illuminate\Config\Repository;
 use ValueError;
 

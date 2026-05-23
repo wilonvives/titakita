@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Admin;
+namespace TitaKita\Http\Actions\Admin;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\Http\Actions\BaseAction;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\Http\Actions\BaseAction;
 use Illuminate\Http\JsonResponse;
 
 class GetSystemInfoAction extends BaseAction

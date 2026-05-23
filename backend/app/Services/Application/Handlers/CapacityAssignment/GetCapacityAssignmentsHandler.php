@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\CapacityAssignment;
+namespace TitaKita\Services\Application\Handlers\CapacityAssignment;
 
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\Repository\Interfaces\CapacityAssignmentRepositoryInterface;
-use HiEvents\Services\Application\Handlers\CapacityAssignment\DTO\GetCapacityAssignmentsDTO;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\Repository\Interfaces\CapacityAssignmentRepositoryInterface;
+use TitaKita\Services\Application\Handlers\CapacityAssignment\DTO\GetCapacityAssignmentsDTO;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 class GetCapacityAssignmentsHandler

@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Domain\Payment\Stripe;
+namespace TitaKita\Services\Domain\Payment\Stripe;
 
-use HiEvents\DomainObjects\Generated\StripePaymentDomainObjectAbstract;
-use HiEvents\Repository\Eloquent\StripePaymentsRepository;
+use TitaKita\DomainObjects\Generated\StripePaymentDomainObjectAbstract;
+use TitaKita\Repository\Eloquent\StripePaymentsRepository;
 use Stripe\PaymentIntent;
 
 readonly class StripePaymentUpdateFromPaymentIntentService

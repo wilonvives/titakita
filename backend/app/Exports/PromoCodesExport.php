@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Exports;
+namespace TitaKita\Exports;
 
-use HiEvents\Resources\PromoCode\PromoCodeResource;
+use TitaKita\Resources\PromoCode\PromoCodeResource;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 use Maatwebsite\Excel\Concerns\WithMapping;

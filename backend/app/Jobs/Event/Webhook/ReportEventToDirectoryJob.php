@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Jobs\Event\Webhook;
+namespace TitaKita\Jobs\Event\Webhook;
 
-use HiEvents\Services\Domain\TitaKita\DirectoryReportingService;
-use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
+use TitaKita\Services\Domain\TitaKita\DirectoryReportingService;
+use TitaKita\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;

@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Jobs\Event;
+namespace TitaKita\Jobs\Event;
 
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\Exceptions\EventStatisticsVersionMismatchException;
-use HiEvents\Services\Domain\EventStatistics\EventStatisticsIncrementService;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\Exceptions\EventStatisticsVersionMismatchException;
+use TitaKita\Services\Domain\EventStatistics\EventStatisticsIncrementService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;

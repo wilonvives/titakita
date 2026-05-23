@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Admin\DTO;
+namespace TitaKita\Services\Application\Handlers\Admin\DTO;
 
-use HiEvents\DataTransferObjects\BaseDataObject;
+use TitaKita\DataTransferObjects\BaseDataObject;
 
 class GetAllUsersDTO extends BaseDataObject
 {

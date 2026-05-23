@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\User;
+namespace TitaKita\Services\Application\Handlers\User;
 
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Repository\Interfaces\UserRepositoryInterface;
-use HiEvents\Services\Application\Handlers\User\DTO\ConfirmEmailWithCodeDTO;
-use HiEvents\Services\Application\Handlers\User\Exception\InvalidEmailVerificationCodeException;
-use HiEvents\Services\Domain\User\VerifyUserEmailService;
-use HiEvents\Services\Infrastructure\User\EmailVerificationCodeService;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Repository\Interfaces\UserRepositoryInterface;
+use TitaKita\Services\Application\Handlers\User\DTO\ConfirmEmailWithCodeDTO;
+use TitaKita\Services\Application\Handlers\User\Exception\InvalidEmailVerificationCodeException;
+use TitaKita\Services\Domain\User\VerifyUserEmailService;
+use TitaKita\Services\Infrastructure\User\EmailVerificationCodeService;
 use Illuminate\Database\DatabaseManager;
 
 class ConfirmEmailWithCodeHandler

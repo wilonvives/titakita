@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Http\Actions\Waitlist\Public;
+namespace TitaKita\Http\Actions\Waitlist\Public;
 
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Waitlist\CreateWaitlistEntryRequest;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Resources\Waitlist\WaitlistEntryResource;
-use HiEvents\Services\Application\Handlers\Waitlist\CreateWaitlistEntryHandler;
-use HiEvents\Services\Application\Handlers\Waitlist\DTO\CreateWaitlistEntryDTO;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Waitlist\CreateWaitlistEntryRequest;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Resources\Waitlist\WaitlistEntryResource;
+use TitaKita\Services\Application\Handlers\Waitlist\CreateWaitlistEntryHandler;
+use TitaKita\Services\Application\Handlers\Waitlist\DTO\CreateWaitlistEntryDTO;
 use Illuminate\Http\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 

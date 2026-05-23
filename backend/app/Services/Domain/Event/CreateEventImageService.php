@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Domain\Event;
+namespace TitaKita\Services\Domain\Event;
 
-use HiEvents\DomainObjects\Enums\ImageType;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\ImageDomainObject;
-use HiEvents\Repository\Interfaces\ImageRepositoryInterface;
-use HiEvents\Services\Domain\Image\ImageUploadService;
+use TitaKita\DomainObjects\Enums\ImageType;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\ImageDomainObject;
+use TitaKita\Repository\Interfaces\ImageRepositoryInterface;
+use TitaKita\Services\Domain\Image\ImageUploadService;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Http\UploadedFile;
 use Throwable;

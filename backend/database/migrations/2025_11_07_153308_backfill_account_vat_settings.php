@@ -1,8 +1,8 @@
 <?php
 
-use HiEvents\DomainObjects\Enums\CountryCode;
-use HiEvents\Models\AccountStripePlatform;
-use HiEvents\Models\AccountVatSetting;
+use TitaKita\DomainObjects\Enums\CountryCode;
+use TitaKita\Models\AccountStripePlatform;
+use TitaKita\Models\AccountVatSetting;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Migrations\Migration;

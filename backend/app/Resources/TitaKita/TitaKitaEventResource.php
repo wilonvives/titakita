@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Resources\TitaKita;
+namespace TitaKita\Resources\TitaKita;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Helper\Url;
-use HiEvents\Resources\BaseResource;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Helper\Url;
+use TitaKita\Resources\BaseResource;
 use Illuminate\Http\Request;
 
 /**

@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\InvoiceDomainObject;
+use TitaKita\DomainObjects\InvoiceDomainObject;
 
 /**
  * @extends RepositoryInterface<InvoiceDomainObject>

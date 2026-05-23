@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Console\Commands;
+namespace TitaKita\Console\Commands;
 
-use HiEvents\DomainObjects\Generated\StripePaymentDomainObjectAbstract;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\StripePaymentDomainObject;
-use HiEvents\Repository\Eloquent\StripePaymentsRepository;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\OrderPaymentPlatformFeeRepositoryInterface;
-use HiEvents\Services\Domain\Payment\Stripe\StripePaymentPlatformFeeExtractionService;
-use HiEvents\Services\Infrastructure\Stripe\StripeClientFactory;
+use TitaKita\DomainObjects\Generated\StripePaymentDomainObjectAbstract;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\StripePaymentDomainObject;
+use TitaKita\Repository\Eloquent\StripePaymentsRepository;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\OrderPaymentPlatformFeeRepositoryInterface;
+use TitaKita\Services\Domain\Payment\Stripe\StripePaymentPlatformFeeExtractionService;
+use TitaKita\Services\Infrastructure\Stripe\StripeClientFactory;
 use Illuminate\Console\Command;
 use Throwable;
 

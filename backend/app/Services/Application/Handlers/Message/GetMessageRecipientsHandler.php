@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Message;
+namespace TitaKita\Services\Application\Handlers\Message;
 
-use HiEvents\Exceptions\ResourceNotFoundException;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Repository\Interfaces\MessageRepositoryInterface;
-use HiEvents\Repository\Interfaces\OutgoingMessageRepositoryInterface;
+use TitaKita\Exceptions\ResourceNotFoundException;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Repository\Interfaces\MessageRepositoryInterface;
+use TitaKita\Repository\Interfaces\OutgoingMessageRepositoryInterface;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 class GetMessageRecipientsHandler

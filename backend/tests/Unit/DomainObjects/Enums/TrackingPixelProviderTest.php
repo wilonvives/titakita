@@ -2,7 +2,7 @@
 
 namespace Tests\Unit\DomainObjects\Enums;
 
-use HiEvents\DomainObjects\Enums\TrackingPixelProvider;
+use TitaKita\DomainObjects\Enums\TrackingPixelProvider;
 use PHPUnit\Framework\Attributes\DataProvider;
 use Tests\TestCase;
 

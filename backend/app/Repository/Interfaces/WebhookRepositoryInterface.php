@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\WebhookDomainObject;
+use TitaKita\DomainObjects\WebhookDomainObject;
 use Illuminate\Support\Collection;
 
 /**

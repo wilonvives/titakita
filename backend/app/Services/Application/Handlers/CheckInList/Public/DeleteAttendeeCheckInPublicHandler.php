@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\CheckInList\Public;
+namespace TitaKita\Services\Application\Handlers\CheckInList\Public;
 
-use HiEvents\Exceptions\CannotCheckInException;
-use HiEvents\Services\Application\Handlers\CheckInList\Public\DTO\DeleteAttendeeCheckInPublicDTO;
-use HiEvents\Services\Domain\CheckInList\DeleteAttendeeCheckInService;
-use HiEvents\Services\Infrastructure\DomainEvents\DomainEventDispatcherService;
-use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
-use HiEvents\Services\Infrastructure\DomainEvents\Events\CheckinEvent;
+use TitaKita\Exceptions\CannotCheckInException;
+use TitaKita\Services\Application\Handlers\CheckInList\Public\DTO\DeleteAttendeeCheckInPublicDTO;
+use TitaKita\Services\Domain\CheckInList\DeleteAttendeeCheckInService;
+use TitaKita\Services\Infrastructure\DomainEvents\DomainEventDispatcherService;
+use TitaKita\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
+use TitaKita\Services\Infrastructure\DomainEvents\Events\CheckinEvent;
 use Illuminate\Database\DatabaseManager;
 use Psr\Log\LoggerInterface;
 use Throwable;

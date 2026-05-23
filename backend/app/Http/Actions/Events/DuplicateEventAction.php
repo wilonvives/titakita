@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Http\Actions\Events;
+namespace TitaKita\Http\Actions\Events;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Event\DuplicateEventRequest;
-use HiEvents\Resources\Event\EventResource;
-use HiEvents\Services\Application\Handlers\Event\DuplicateEventHandler;
-use HiEvents\Services\Domain\Event\DTO\DuplicateEventDataDTO;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Event\DuplicateEventRequest;
+use TitaKita\Resources\Event\EventResource;
+use TitaKita\Services\Application\Handlers\Event\DuplicateEventHandler;
+use TitaKita\Services\Domain\Event\DTO\DuplicateEventDataDTO;
 use Illuminate\Http\JsonResponse;
 use Throwable;
 

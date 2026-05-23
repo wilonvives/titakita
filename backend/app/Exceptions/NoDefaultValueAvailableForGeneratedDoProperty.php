@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Exceptions;
+namespace TitaKita\Exceptions;
 
 class NoDefaultValueAvailableForGeneratedDoProperty extends BaseException
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Validators\Rules;
+namespace TitaKita\Validators\Rules;
 
-use HiEvents\DomainObjects\Enums\AttendeeDetailsCollectionMethod;
-use HiEvents\DomainObjects\Enums\ProductType;
-use HiEvents\DomainObjects\QuestionDomainObject;
+use TitaKita\DomainObjects\Enums\AttendeeDetailsCollectionMethod;
+use TitaKita\DomainObjects\Enums\ProductType;
+use TitaKita\DomainObjects\QuestionDomainObject;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;

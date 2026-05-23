@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Http\Actions\Waitlist\Organizer;
+namespace TitaKita\Http\Actions\Waitlist\Organizer;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Exceptions\ResourceNotFoundException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\Waitlist\CancelWaitlistEntryHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Exceptions\ResourceNotFoundException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\Waitlist\CancelWaitlistEntryHandler;
 use Illuminate\Http\Response;
 use Symfony\Component\HttpFoundation\Response as SymfonyResponse;
 

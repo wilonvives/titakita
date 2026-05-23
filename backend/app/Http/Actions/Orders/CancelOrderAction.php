@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Http\Actions\Orders;
+namespace TitaKita\Http\Actions\Orders;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\Exceptions\RefundNotPossibleException;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Order\OrderResource;
-use HiEvents\Services\Application\Handlers\Order\CancelOrderHandler;
-use HiEvents\Services\Application\Handlers\Order\DTO\CancelOrderDTO;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\Exceptions\RefundNotPossibleException;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Order\OrderResource;
+use TitaKita\Services\Application\Handlers\Order\CancelOrderHandler;
+use TitaKita\Services\Application\Handlers\Order\DTO\CancelOrderDTO;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;

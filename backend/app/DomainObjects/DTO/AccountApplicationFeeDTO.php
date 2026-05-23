@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\DomainObjects\DTO;
+namespace TitaKita\DomainObjects\DTO;
 
 class AccountApplicationFeeDTO
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\OutgoingMessageDomainObject;
-use HiEvents\Models\OutgoingMessage;
-use HiEvents\Repository\Interfaces\OutgoingMessageRepositoryInterface;
+use TitaKita\DomainObjects\OutgoingMessageDomainObject;
+use TitaKita\Models\OutgoingMessage;
+use TitaKita\Repository\Interfaces\OutgoingMessageRepositoryInterface;
 
 /**
  * @extends BaseRepository<OutgoingMessageDomainObject>

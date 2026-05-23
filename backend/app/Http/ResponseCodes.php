@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Http;
+namespace TitaKita\Http;
 
 class ResponseCodes
 {

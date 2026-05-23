@@ -2,14 +2,14 @@
 
 namespace Tests\Unit\Services\Application\Handlers\Account\Payment\Stripe;
 
-use HiEvents\Exceptions\SaasModeEnabledException;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Repository\Interfaces\AccountStripePlatformRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Account\Payment\Stripe\CreateStripeConnectAccountHandler;
-use HiEvents\Services\Application\Handlers\Account\Payment\Stripe\DTO\CreateStripeConnectAccountDTO;
-use HiEvents\Services\Domain\Payment\Stripe\StripeAccountSyncService;
-use HiEvents\Services\Infrastructure\Stripe\StripeClientFactory;
-use HiEvents\Services\Infrastructure\Stripe\StripeConfigurationService;
+use TitaKita\Exceptions\SaasModeEnabledException;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Repository\Interfaces\AccountStripePlatformRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Account\Payment\Stripe\CreateStripeConnectAccountHandler;
+use TitaKita\Services\Application\Handlers\Account\Payment\Stripe\DTO\CreateStripeConnectAccountDTO;
+use TitaKita\Services\Domain\Payment\Stripe\StripeAccountSyncService;
+use TitaKita\Services\Infrastructure\Stripe\StripeClientFactory;
+use TitaKita\Services\Infrastructure\Stripe\StripeConfigurationService;
 use Illuminate\Config\Repository;
 use Illuminate\Database\DatabaseManager;
 use Mockery as m;

@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Resources\Product;
+namespace TitaKita\Resources\Product;
 
-use HiEvents\DomainObjects\ProductDomainObject;
+use TitaKita\DomainObjects\ProductDomainObject;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 

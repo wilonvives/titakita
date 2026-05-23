@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Http\Actions\Auth;
+namespace TitaKita\Http\Actions\Auth;
 
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Auth\AuthenticatedResponseResource;
-use HiEvents\Services\Application\Handlers\Auth\DTO\AuthenticatedResponseDTO;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Auth\AuthenticatedResponseResource;
+use TitaKita\Services\Application\Handlers\Auth\DTO\AuthenticatedResponseDTO;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 use Illuminate\Support\Collection;

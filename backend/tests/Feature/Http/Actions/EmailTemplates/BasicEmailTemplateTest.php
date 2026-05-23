@@ -2,9 +2,9 @@
 
 namespace Tests\Feature\Http\Actions\EmailTemplates;
 
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Models\AccountConfiguration;
-use HiEvents\Models\User;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Models\AccountConfiguration;
+use TitaKita\Models\User;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Tests\TestCase;
 

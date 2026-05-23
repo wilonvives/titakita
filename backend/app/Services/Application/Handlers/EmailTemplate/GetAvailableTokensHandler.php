@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\EmailTemplate;
+namespace TitaKita\Services\Application\Handlers\EmailTemplate;
 
-use HiEvents\DomainObjects\Enums\EmailTemplateType;
-use HiEvents\Services\Infrastructure\Email\LiquidTemplateRenderer;
+use TitaKita\DomainObjects\Enums\EmailTemplateType;
+use TitaKita\Services\Infrastructure\Email\LiquidTemplateRenderer;
 
 class GetAvailableTokensHandler
 {

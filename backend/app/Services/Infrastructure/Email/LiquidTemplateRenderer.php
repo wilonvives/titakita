@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Infrastructure\Email;
+namespace TitaKita\Services\Infrastructure\Email;
 
 use Exception;
-use HiEvents\DomainObjects\Enums\EmailTemplateType;
+use TitaKita\DomainObjects\Enums\EmailTemplateType;
 use Liquid\Exception\ParseException;
 use Liquid\Template;
 use RuntimeException;

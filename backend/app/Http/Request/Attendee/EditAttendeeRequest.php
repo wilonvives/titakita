@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Http\Request\Attendee;
+namespace TitaKita\Http\Request\Attendee;
 
-use HiEvents\Http\Request\BaseRequest;
-use HiEvents\Validators\Rules\RulesHelper;
+use TitaKita\Http\Request\BaseRequest;
+use TitaKita\Validators\Rules\RulesHelper;
 
 class EditAttendeeRequest extends BaseRequest
 {

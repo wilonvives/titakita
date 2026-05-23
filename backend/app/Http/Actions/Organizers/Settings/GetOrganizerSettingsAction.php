@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\Organizers\Settings;
+namespace TitaKita\Http\Actions\Organizers\Settings;
 
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Repository\Interfaces\OrganizerSettingsRepositoryInterface;
-use HiEvents\Resources\Organizer\OrganizerSettingsResource;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Repository\Interfaces\OrganizerSettingsRepositoryInterface;
+use TitaKita\Resources\Organizer\OrganizerSettingsResource;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 

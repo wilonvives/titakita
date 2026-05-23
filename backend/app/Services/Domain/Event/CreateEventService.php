@@ -1,23 +1,23 @@
 <?php
 
-namespace HiEvents\Services\Domain\Event;
+namespace TitaKita\Services\Domain\Event;
 
-use HiEvents\DomainObjects\Enums\HomepageBackgroundType;
-use HiEvents\DomainObjects\Enums\ImageType;
-use HiEvents\DomainObjects\Enums\PaymentProviders;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\DomainObjects\OrganizerSettingDomainObject;
-use HiEvents\Exceptions\OrganizerNotFoundException;
-use HiEvents\Helper\DateHelper;
-use HiEvents\Helper\IdHelper;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventSettingsRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventStatisticRepositoryInterface;
-use HiEvents\Repository\Interfaces\ImageRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrganizerRepositoryInterface;
-use HiEvents\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
+use TitaKita\DomainObjects\Enums\HomepageBackgroundType;
+use TitaKita\DomainObjects\Enums\ImageType;
+use TitaKita\DomainObjects\Enums\PaymentProviders;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\OrganizerSettingDomainObject;
+use TitaKita\Exceptions\OrganizerNotFoundException;
+use TitaKita\Helper\DateHelper;
+use TitaKita\Helper\IdHelper;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventSettingsRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventStatisticRepositoryInterface;
+use TitaKita\Repository\Interfaces\ImageRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrganizerRepositoryInterface;
+use TitaKita\Services\Infrastructure\HtmlPurifier\HtmlPurifierService;
 use Illuminate\Config\Repository;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Filesystem\FilesystemManager;

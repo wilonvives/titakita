@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\Orders;
+namespace TitaKita\Http\Actions\Orders;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\Order\DTO\GetOrderInvoiceDTO;
-use HiEvents\Services\Application\Handlers\Order\GetOrderInvoiceHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\Order\DTO\GetOrderInvoiceDTO;
+use TitaKita\Services\Application\Handlers\Order\GetOrderInvoiceHandler;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 

@@ -2,7 +2,7 @@
 
 namespace Tests\Unit\Services\Infrastructure\User;
 
-use HiEvents\Services\Infrastructure\User\EmailVerificationCodeService;
+use TitaKita\Services\Infrastructure\User\EmailVerificationCodeService;
 use Illuminate\Cache\Repository;
 use Mockery;
 use Mockery\MockInterface;

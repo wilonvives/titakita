@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Listeners\Webhook;
+namespace TitaKita\Listeners\Webhook;
 
 use Spatie\WebhookServer\Events\WebhookCallFailedEvent;
 

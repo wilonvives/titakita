@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Resources\PromoCode;
+namespace TitaKita\Resources\PromoCode;
 
-use HiEvents\DomainObjects\PromoCodeDomainObject;
+use TitaKita\DomainObjects\PromoCodeDomainObject;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 

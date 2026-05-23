@@ -1,6 +1,6 @@
-@php /** @var \HiEvents\DomainObjects\MessageDomainObject $message */ @endphp
-@php /** @var \HiEvents\DomainObjects\EventDomainObject $event */ @endphp
-@php /** @var \HiEvents\DomainObjects\AccountDomainObject $account */ @endphp
+@php /** @var \TitaKita\DomainObjects\MessageDomainObject $message */ @endphp
+@php /** @var \TitaKita\DomainObjects\EventDomainObject $event */ @endphp
+@php /** @var \TitaKita\DomainObjects\AccountDomainObject $account */ @endphp
 @php /** @var array $failures */ @endphp
 @php /** @var string $reviewUrl */ @endphp
 

@@ -1,6 +1,6 @@
 <?php
 
-use HiEvents\DomainObjects\Enums\ColorTheme;
+use TitaKita\DomainObjects\Enums\ColorTheme;
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
 
@@ -228,12 +228,12 @@ return [
         /*
          * Application Service Providers...
          */
-        \HiEvents\Providers\AppServiceProvider::class,
-        \HiEvents\Providers\AuthServiceProvider::class,
+        \TitaKita\Providers\AppServiceProvider::class,
+        \TitaKita\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
-        \HiEvents\Providers\EventServiceProvider::class,
-        \HiEvents\Providers\RouteServiceProvider::class,
-        \HiEvents\Providers\RepositoryServiceProvider::class
+        \TitaKita\Providers\EventServiceProvider::class,
+        \TitaKita\Providers\RouteServiceProvider::class,
+        \TitaKita\Providers\RepositoryServiceProvider::class
 
     ])->toArray(),
 

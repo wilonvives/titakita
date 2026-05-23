@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Http\Actions\Orders\Payment\Stripe;
+namespace TitaKita\Http\Actions\Orders\Payment\Stripe;
 
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\Order\Payment\Stripe\GetPaymentIntentHandler;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\Order\Payment\Stripe\GetPaymentIntentHandler;
 use Illuminate\Http\JsonResponse;
 
 class GetPaymentIntentActionPublic extends BaseAction

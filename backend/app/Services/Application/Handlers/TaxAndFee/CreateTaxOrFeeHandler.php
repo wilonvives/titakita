@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\TaxAndFee;
+namespace TitaKita\Services\Application\Handlers\TaxAndFee;
 
-use HiEvents\DomainObjects\TaxAndFeesDomainObject;
-use HiEvents\Exceptions\ResourceNameAlreadyExistsException;
-use HiEvents\Repository\Interfaces\TaxAndFeeRepositoryInterface;
-use HiEvents\Services\Application\Handlers\TaxAndFee\DTO\UpsertTaxDTO;
-use HiEvents\Services\Domain\Tax\DuplicateTaxService;
+use TitaKita\DomainObjects\TaxAndFeesDomainObject;
+use TitaKita\Exceptions\ResourceNameAlreadyExistsException;
+use TitaKita\Repository\Interfaces\TaxAndFeeRepositoryInterface;
+use TitaKita\Services\Application\Handlers\TaxAndFee\DTO\UpsertTaxDTO;
+use TitaKita\Services\Domain\Tax\DuplicateTaxService;
 use Psr\Log\LoggerInterface;
 
 class CreateTaxOrFeeHandler

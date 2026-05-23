@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Resources\Message;
+namespace TitaKita\Resources\Message;
 
-use HiEvents\DomainObjects\OutgoingMessageDomainObject;
+use TitaKita\DomainObjects\OutgoingMessageDomainObject;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 

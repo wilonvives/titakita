@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Validators\Rules;
+namespace TitaKita\Validators\Rules;
 
-use HiEvents\DomainObjects\Status\AffiliateStatus;
+use TitaKita\DomainObjects\Status\AffiliateStatus;
 use Illuminate\Validation\Rule;
 
 class AffiliateRules

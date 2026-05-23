@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\InvoiceDomainObject;
-use HiEvents\Models\Invoice;
-use HiEvents\Repository\Interfaces\InvoiceRepositoryInterface;
+use TitaKita\DomainObjects\InvoiceDomainObject;
+use TitaKita\Models\Invoice;
+use TitaKita\Repository\Interfaces\InvoiceRepositoryInterface;
 
 /**
  * @extends BaseRepository<InvoiceDomainObject>

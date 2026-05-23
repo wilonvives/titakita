@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\AccountMessagingTierDomainObject;
-use HiEvents\Models\AccountMessagingTier;
-use HiEvents\Repository\Interfaces\AccountMessagingTierRepositoryInterface;
+use TitaKita\DomainObjects\AccountMessagingTierDomainObject;
+use TitaKita\Models\AccountMessagingTier;
+use TitaKita\Repository\Interfaces\AccountMessagingTierRepositoryInterface;
 
 /**
  * @extends BaseRepository<AccountMessagingTierDomainObject>

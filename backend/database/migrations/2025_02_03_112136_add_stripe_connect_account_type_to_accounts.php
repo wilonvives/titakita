@@ -1,6 +1,6 @@
 <?php
 
-use HiEvents\DomainObjects\Enums\StripeConnectAccountType;
+use TitaKita\DomainObjects\Enums\StripeConnectAccountType;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;

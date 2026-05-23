@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Waitlist;
+namespace TitaKita\Services\Application\Handlers\Waitlist;
 
-use HiEvents\DomainObjects\WaitlistEntryDomainObject;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Exceptions\ResourceNotFoundException;
-use HiEvents\Repository\Interfaces\EventSettingsRepositoryInterface;
-use HiEvents\Repository\Interfaces\ProductPriceRepositoryInterface;
-use HiEvents\Repository\Interfaces\ProductRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Waitlist\DTO\CreateWaitlistEntryDTO;
-use HiEvents\Services\Domain\Waitlist\CreateWaitlistEntryService;
+use TitaKita\DomainObjects\WaitlistEntryDomainObject;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Exceptions\ResourceNotFoundException;
+use TitaKita\Repository\Interfaces\EventSettingsRepositoryInterface;
+use TitaKita\Repository\Interfaces\ProductPriceRepositoryInterface;
+use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Waitlist\DTO\CreateWaitlistEntryDTO;
+use TitaKita\Services\Domain\Waitlist\CreateWaitlistEntryService;
 
 class CreateWaitlistEntryHandler
 {

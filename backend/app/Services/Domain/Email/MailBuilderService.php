@@ -1,17 +1,17 @@
 <?php
 
-namespace HiEvents\Services\Domain\Email;
+namespace TitaKita\Services\Domain\Email;
 
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\DomainObjects\Enums\EmailTemplateType;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\InvoiceDomainObject;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Mail\Attendee\AttendeeTicketMail;
-use HiEvents\Mail\Order\OrderSummary;
-use HiEvents\Services\Domain\Email\DTO\RenderedEmailTemplateDTO;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\DomainObjects\Enums\EmailTemplateType;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\InvoiceDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Mail\Attendee\AttendeeTicketMail;
+use TitaKita\Mail\Order\OrderSummary;
+use TitaKita\Services\Domain\Email\DTO\RenderedEmailTemplateDTO;
 
 class MailBuilderService
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\User\Exception;
+namespace TitaKita\Services\Application\Handlers\User\Exception;
 
 use Exception;
 

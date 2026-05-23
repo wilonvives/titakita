@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Accounts\Vat;
+namespace TitaKita\Http\Actions\Accounts\Vat;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Account\AccountVatSettingResource;
-use HiEvents\Services\Application\Handlers\Account\Vat\GetAccountVatSettingHandler;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Account\AccountVatSettingResource;
+use TitaKita\Services\Application\Handlers\Account\Vat\GetAccountVatSettingHandler;
 use Illuminate\Http\JsonResponse;
 
 class GetAccountVatSettingAction extends BaseAction

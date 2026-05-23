@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Http\Request\CheckInList;
+namespace TitaKita\Http\Request\CheckInList;
 
-use HiEvents\DomainObjects\Enums\AttendeeCheckInActionType;
-use HiEvents\Http\Request\BaseRequest;
+use TitaKita\DomainObjects\Enums\AttendeeCheckInActionType;
+use TitaKita\Http\Request\BaseRequest;
 use Illuminate\Validation\Rule;
 
 class CreateAttendeeCheckInPublicRequest extends BaseRequest

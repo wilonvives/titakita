@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\DomainObjects;
+namespace TitaKita\DomainObjects;
 
 class QuestionOptionDomainObject extends Generated\QuestionOptionDomainObjectAbstract
 {

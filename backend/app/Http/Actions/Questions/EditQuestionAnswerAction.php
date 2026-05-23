@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Http\Actions\Questions;
+namespace TitaKita\Http\Actions\Questions;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Questions\EditQuestionAnswerRequest;
-use HiEvents\Services\Application\Handlers\Question\DTO\EditQuestionAnswerDTO;
-use HiEvents\Services\Application\Handlers\Question\EditQuestionAnswerHandler;
-use HiEvents\Services\Domain\Question\Exception\InvalidAnswerException;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Questions\EditQuestionAnswerRequest;
+use TitaKita\Services\Application\Handlers\Question\DTO\EditQuestionAnswerDTO;
+use TitaKita\Services\Application\Handlers\Question\EditQuestionAnswerHandler;
+use TitaKita\Services\Domain\Question\Exception\InvalidAnswerException;
 use Illuminate\Http\Response;
 use Illuminate\Validation\ValidationException;
 

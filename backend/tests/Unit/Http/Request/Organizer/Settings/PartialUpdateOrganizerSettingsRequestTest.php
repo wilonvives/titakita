@@ -2,7 +2,7 @@
 
 namespace Tests\Unit\Http\Request\Organizer\Settings;
 
-use HiEvents\Http\Request\Organizer\Settings\PartialUpdateOrganizerSettingsRequest;
+use TitaKita\Http\Request\Organizer\Settings\PartialUpdateOrganizerSettingsRequest;
 use Illuminate\Support\Facades\Validator;
 use Tests\TestCase;
 

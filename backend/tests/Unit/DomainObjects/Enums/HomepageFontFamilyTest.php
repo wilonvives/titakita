@@ -2,7 +2,7 @@
 
 namespace Tests\Unit\DomainObjects\Enums;
 
-use HiEvents\DomainObjects\Enums\HomepageFontFamily;
+use TitaKita\DomainObjects\Enums\HomepageFontFamily;
 use Tests\TestCase;
 
 class HomepageFontFamilyTest extends TestCase

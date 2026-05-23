@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Http\Actions\Events;
+namespace TitaKita\Http\Actions\Events;
 
-use HiEvents\Exceptions\OrganizerNotFoundException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Event\CreateEventRequest;
-use HiEvents\Resources\Event\EventResource;
-use HiEvents\Services\Application\Handlers\Event\CreateEventHandler;
-use HiEvents\Services\Application\Handlers\Event\DTO\CreateEventDTO;
+use TitaKita\Exceptions\OrganizerNotFoundException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Event\CreateEventRequest;
+use TitaKita\Resources\Event\EventResource;
+use TitaKita\Services\Application\Handlers\Event\CreateEventHandler;
+use TitaKita\Services\Application\Handlers\Event\DTO\CreateEventDTO;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Validation\ValidationException;
 use Throwable;

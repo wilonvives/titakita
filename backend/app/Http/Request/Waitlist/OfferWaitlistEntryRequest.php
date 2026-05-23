@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Http\Request\Waitlist;
+namespace TitaKita\Http\Request\Waitlist;
 
-use HiEvents\Http\Request\BaseRequest;
+use TitaKita\Http\Request\BaseRequest;
 
 class OfferWaitlistEntryRequest extends BaseRequest
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Auth\DTO;
+namespace TitaKita\Services\Application\Handlers\Auth\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\DomainObjects\UserDomainObject;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\DomainObjects\UserDomainObject;
 use Illuminate\Support\Collection;
 
 class AuthenticatedResponseDTO extends BaseDTO

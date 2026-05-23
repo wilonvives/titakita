@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Services\Domain\CapacityAssignment\Exception;
+namespace TitaKita\Services\Domain\CapacityAssignment\Exception;
 
 use Exception;
 

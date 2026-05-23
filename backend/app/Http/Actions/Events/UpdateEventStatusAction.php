@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Http\Actions\Events;
+namespace TitaKita\Http\Actions\Events;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Exceptions\AccountNotVerifiedException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Event\UpdateEventStatusRequest;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Resources\Event\EventResource;
-use HiEvents\Services\Application\Handlers\Event\DTO\UpdateEventStatusDTO;
-use HiEvents\Services\Application\Handlers\Event\UpdateEventStatusHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Exceptions\AccountNotVerifiedException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Event\UpdateEventStatusRequest;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Resources\Event\EventResource;
+use TitaKita\Services\Application\Handlers\Event\DTO\UpdateEventStatusDTO;
+use TitaKita\Services\Application\Handlers\Event\UpdateEventStatusHandler;
 use Illuminate\Http\JsonResponse;
 
 class UpdateEventStatusAction extends BaseAction

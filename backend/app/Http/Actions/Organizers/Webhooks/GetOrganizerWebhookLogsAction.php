@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Http\Actions\Organizers\Webhooks;
+namespace TitaKita\Http\Actions\Organizers\Webhooks;
 
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\DomainObjects\WebhookLogDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Webhook\WebhookLogResource;
-use HiEvents\Services\Application\Handlers\Webhook\GetWebhookLogsHandler;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\WebhookLogDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Webhook\WebhookLogResource;
+use TitaKita\Services\Application\Handlers\Webhook\GetWebhookLogsHandler;
 use Illuminate\Http\JsonResponse;
 
 class GetOrganizerWebhookLogsAction extends BaseAction

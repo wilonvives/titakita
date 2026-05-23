@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\CheckInList\Public;
+namespace TitaKita\Services\Application\Handlers\CheckInList\Public;
 
-use HiEvents\DomainObjects\AttendeeCheckInDomainObject;
-use HiEvents\Exceptions\CannotCheckInException;
-use HiEvents\Services\Application\Handlers\CheckInList\Public\DTO\CreateAttendeeCheckInPublicDTO;
-use HiEvents\Services\Domain\CheckInList\CreateAttendeeCheckInService;
-use HiEvents\Services\Domain\CheckInList\DTO\CreateAttendeeCheckInsResponseDTO;
-use HiEvents\Services\Infrastructure\DomainEvents\DomainEventDispatcherService;
-use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
-use HiEvents\Services\Infrastructure\DomainEvents\Events\CheckinEvent;
+use TitaKita\DomainObjects\AttendeeCheckInDomainObject;
+use TitaKita\Exceptions\CannotCheckInException;
+use TitaKita\Services\Application\Handlers\CheckInList\Public\DTO\CreateAttendeeCheckInPublicDTO;
+use TitaKita\Services\Domain\CheckInList\CreateAttendeeCheckInService;
+use TitaKita\Services\Domain\CheckInList\DTO\CreateAttendeeCheckInsResponseDTO;
+use TitaKita\Services\Infrastructure\DomainEvents\DomainEventDispatcherService;
+use TitaKita\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
+use TitaKita\Services\Infrastructure\DomainEvents\Events\CheckinEvent;
 use Psr\Log\LoggerInterface;
 use Throwable;
 

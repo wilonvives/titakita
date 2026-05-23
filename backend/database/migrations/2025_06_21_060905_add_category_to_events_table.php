@@ -1,6 +1,6 @@
 <?php
 
-use HiEvents\DomainObjects\Enums\EventCategory;
+use TitaKita\DomainObjects\Enums\EventCategory;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

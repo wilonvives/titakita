@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\DataTransferObjects;
+namespace TitaKita\DataTransferObjects;
 
-use HiEvents\DataTransferObjects\Attributes\CollectionOf;
+use TitaKita\DataTransferObjects\Attributes\CollectionOf;
 use Illuminate\Support\Collection;
 use ReflectionClass;
 use ReflectionProperty;

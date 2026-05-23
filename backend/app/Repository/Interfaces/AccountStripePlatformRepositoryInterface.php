@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\AccountStripePlatformDomainObject;
+use TitaKita\DomainObjects\AccountStripePlatformDomainObject;
 
 /**
  * @extends RepositoryInterface<AccountStripePlatformDomainObject>

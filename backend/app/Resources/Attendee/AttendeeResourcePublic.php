@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Resources\Attendee;
+namespace TitaKita\Resources\Attendee;
 
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\Resources\Product\ProductMinimalResourcePublic;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\Resources\Product\ProductMinimalResourcePublic;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 

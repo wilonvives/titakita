@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Http\Actions\Organizers;
+namespace TitaKita\Http\Actions\Organizers;
 
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Organizer\UpsertOrganizerRequest;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Resources\Organizer\OrganizerResource;
-use HiEvents\Services\Application\Handlers\Organizer\CreateOrganizerHandler;
-use HiEvents\Services\Application\Handlers\Organizer\DTO\CreateOrganizerDTO;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Organizer\UpsertOrganizerRequest;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Resources\Organizer\OrganizerResource;
+use TitaKita\Services\Application\Handlers\Organizer\CreateOrganizerHandler;
+use TitaKita\Services\Application\Handlers\Organizer\DTO\CreateOrganizerDTO;
 use Illuminate\Http\JsonResponse;
 
 class CreateOrganizerAction extends BaseAction

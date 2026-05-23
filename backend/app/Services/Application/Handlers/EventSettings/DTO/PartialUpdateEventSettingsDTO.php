@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\EventSettings\DTO;
+namespace TitaKita\Services\Application\Handlers\EventSettings\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
+use TitaKita\DataTransferObjects\BaseDTO;
 
 class PartialUpdateEventSettingsDTO extends BaseDTO
 {

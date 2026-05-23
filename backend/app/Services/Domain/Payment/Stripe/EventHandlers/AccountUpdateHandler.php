@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Domain\Payment\Stripe\EventHandlers;
+namespace TitaKita\Services\Domain\Payment\Stripe\EventHandlers;
 
-use HiEvents\DomainObjects\AccountStripePlatformDomainObject;
-use HiEvents\DomainObjects\Generated\AccountStripePlatformDomainObjectAbstract;
-use HiEvents\Repository\Interfaces\AccountStripePlatformRepositoryInterface;
-use HiEvents\Services\Domain\Payment\Stripe\StripeAccountSyncService;
+use TitaKita\DomainObjects\AccountStripePlatformDomainObject;
+use TitaKita\DomainObjects\Generated\AccountStripePlatformDomainObjectAbstract;
+use TitaKita\Repository\Interfaces\AccountStripePlatformRepositoryInterface;
+use TitaKita\Services\Domain\Payment\Stripe\StripeAccountSyncService;
 use Stripe\Account;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 

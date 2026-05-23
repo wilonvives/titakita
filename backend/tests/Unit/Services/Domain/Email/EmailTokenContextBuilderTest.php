@@ -2,14 +2,14 @@
 
 namespace Tests\Unit\Services\Domain\Email;
 
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\OrderItemDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\DomainObjects\Enums\PaymentProviders;
-use HiEvents\Services\Domain\Email\EmailTokenContextBuilder;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\OrderItemDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\Enums\PaymentProviders;
+use TitaKita\Services\Domain\Email\EmailTokenContextBuilder;
 use Illuminate\Support\Collection;
 use Mockery;
 use Tests\TestCase;

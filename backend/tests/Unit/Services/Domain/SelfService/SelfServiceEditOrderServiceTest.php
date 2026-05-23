@@ -2,16 +2,16 @@
 
 namespace Tests\Unit\Services\Domain\SelfService;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Mail\Order\OrderDetailsChangedMail;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Services\Domain\Mail\SendOrderDetailsService;
-use HiEvents\Services\Domain\SelfService\OrderAuditLogService;
-use HiEvents\Services\Domain\SelfService\SelfServiceEditOrderService;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Mail\Order\OrderDetailsChangedMail;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Services\Domain\Mail\SendOrderDetailsService;
+use TitaKita\Services\Domain\SelfService\OrderAuditLogService;
+use TitaKita\Services\Domain\SelfService\SelfServiceEditOrderService;
 use Illuminate\Support\Facades\Mail;
 use Mockery;
 use Mockery\MockInterface;

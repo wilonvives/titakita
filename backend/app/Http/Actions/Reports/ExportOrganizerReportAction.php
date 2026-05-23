@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Http\Actions\Reports;
+namespace TitaKita\Http\Actions\Reports;
 
-use HiEvents\DomainObjects\Enums\OrganizerReportTypes;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Report\GetOrganizerReportRequest;
-use HiEvents\Services\Application\Handlers\Reports\DTO\GetOrganizerReportDTO;
-use HiEvents\Services\Application\Handlers\Reports\GetOrganizerReportHandler;
-use HiEvents\Services\Domain\Report\DTO\PaginatedReportDTO;
+use TitaKita\DomainObjects\Enums\OrganizerReportTypes;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Report\GetOrganizerReportRequest;
+use TitaKita\Services\Application\Handlers\Reports\DTO\GetOrganizerReportDTO;
+use TitaKita\Services\Application\Handlers\Reports\GetOrganizerReportHandler;
+use TitaKita\Services\Domain\Report\DTO\PaginatedReportDTO;
 use Illuminate\Support\Carbon;
 use Illuminate\Validation\ValidationException;
 use Symfony\Component\HttpFoundation\StreamedResponse;

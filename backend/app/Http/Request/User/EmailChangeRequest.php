@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Http\Request\User;
+namespace TitaKita\Http\Request\User;
 
-use HiEvents\Http\Request\BaseRequest;
+use TitaKita\Http\Request\BaseRequest;
 
 class EmailChangeRequest extends BaseRequest
 {

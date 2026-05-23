@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Services\Domain\ProductCategory;
+namespace TitaKita\Services\Domain\ProductCategory;
 
-use HiEvents\DomainObjects\Generated\ProductCategoryDomainObjectAbstract;
-use HiEvents\DomainObjects\ProductCategoryDomainObject;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\Repository\Eloquent\Value\OrderAndDirection;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\ProductCategoryRepositoryInterface;
+use TitaKita\DomainObjects\Generated\ProductCategoryDomainObjectAbstract;
+use TitaKita\DomainObjects\ProductCategoryDomainObject;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\Repository\Eloquent\Value\OrderAndDirection;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\ProductCategoryRepositoryInterface;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 
 class GetProductCategoryService

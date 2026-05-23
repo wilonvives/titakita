@@ -1,16 +1,16 @@
 <?php
 
-namespace HiEvents\Services\Domain\PromoCode;
+namespace TitaKita\Services\Domain\PromoCode;
 
-use HiEvents\DomainObjects\Enums\PromoCodeDiscountTypeEnum;
-use HiEvents\DomainObjects\Generated\PromoCodeDomainObjectAbstract;
-use HiEvents\DomainObjects\PromoCodeDomainObject;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Helper\DateHelper;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\PromoCodeRepositoryInterface;
-use HiEvents\Services\Domain\Product\EventProductValidationService;
-use HiEvents\Services\Domain\Product\Exception\UnrecognizedProductIdException;
+use TitaKita\DomainObjects\Enums\PromoCodeDiscountTypeEnum;
+use TitaKita\DomainObjects\Generated\PromoCodeDomainObjectAbstract;
+use TitaKita\DomainObjects\PromoCodeDomainObject;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Helper\DateHelper;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\PromoCodeRepositoryInterface;
+use TitaKita\Services\Domain\Product\EventProductValidationService;
+use TitaKita\Services\Domain\Product\Exception\UnrecognizedProductIdException;
 
 class CreatePromoCodeService
 {

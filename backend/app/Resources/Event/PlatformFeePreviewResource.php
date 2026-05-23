@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Resources\Event;
+namespace TitaKita\Resources\Event;
 
-use HiEvents\Resources\BaseResource;
-use HiEvents\Services\Application\Handlers\EventSettings\DTO\PlatformFeePreviewResponseDTO;
+use TitaKita\Resources\BaseResource;
+use TitaKita\Services\Application\Handlers\EventSettings\DTO\PlatformFeePreviewResponseDTO;
 
 /**
  * @mixin PlatformFeePreviewResponseDTO

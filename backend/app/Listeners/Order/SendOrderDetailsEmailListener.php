@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Listeners\Order;
+namespace TitaKita\Listeners\Order;
 
-use HiEvents\Events\OrderStatusChangedEvent;
-use HiEvents\Jobs\Order\SendOrderDetailsEmailJob;
+use TitaKita\Events\OrderStatusChangedEvent;
+use TitaKita\Jobs\Order\SendOrderDetailsEmailJob;
 
 class SendOrderDetailsEmailListener
 {

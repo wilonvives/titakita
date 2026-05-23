@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Event;
+namespace TitaKita\Services\Application\Handlers\Event;
 
-use HiEvents\DomainObjects\Enums\HomepageBackgroundType;
-use HiEvents\DomainObjects\Enums\ImageType;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Repository\Interfaces\EventSettingsRepositoryInterface;
-use HiEvents\Repository\Interfaces\ImageRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Event\DTO\DeleteEventImageDTO;
+use TitaKita\DomainObjects\Enums\HomepageBackgroundType;
+use TitaKita\DomainObjects\Enums\ImageType;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Repository\Interfaces\EventSettingsRepositoryInterface;
+use TitaKita\Repository\Interfaces\ImageRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Event\DTO\DeleteEventImageDTO;
 use Illuminate\Database\DatabaseManager;
 use Throwable;
 

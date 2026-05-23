@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\DomainObjects\SortingAndFiltering;
+namespace TitaKita\DomainObjects\SortingAndFiltering;
 
 class AllowedSort
 {

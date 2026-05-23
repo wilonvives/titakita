@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\CapacityAssignments;
+namespace TitaKita\Http\Actions\CapacityAssignments;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\CapacityAssignment\CapacityAssignmentResource;
-use HiEvents\Services\Application\Handlers\CapacityAssignment\GetCapacityAssignmentHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\CapacityAssignment\CapacityAssignmentResource;
+use TitaKita\Services\Application\Handlers\CapacityAssignment\GetCapacityAssignmentHandler;
 use Illuminate\Http\JsonResponse;
 
 class GetCapacityAssignmentAction extends BaseAction

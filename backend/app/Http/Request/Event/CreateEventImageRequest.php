@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Http\Request\Event;
+namespace TitaKita\Http\Request\Event;
 
-use HiEvents\DomainObjects\Enums\ImageType;
-use HiEvents\Validators\Rules\RulesHelper;
+use TitaKita\DomainObjects\Enums\ImageType;
+use TitaKita\Validators\Rules\RulesHelper;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 

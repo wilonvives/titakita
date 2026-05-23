@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Resources\Organizer;
+namespace TitaKita\Resources\Organizer;
 
-use HiEvents\DomainObjects\Enums\TrackingPixelProvider;
-use HiEvents\DomainObjects\OrganizerSettingDomainObject;
+use TitaKita\DomainObjects\Enums\TrackingPixelProvider;
+use TitaKita\DomainObjects\OrganizerSettingDomainObject;
 
 /**
  * @mixin OrganizerSettingDomainObject

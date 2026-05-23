@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Admin;
+namespace TitaKita\Services\Application\Handlers\Admin;
 
-use HiEvents\Models\FailedJob;
+use TitaKita\Models\FailedJob;
 
 class DeleteFailedJobHandler
 {

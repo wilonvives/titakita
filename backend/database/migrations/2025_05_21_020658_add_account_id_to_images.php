@@ -21,17 +21,17 @@ return new class extends Migration
             FROM (
                 SELECT i.id,
                        CASE
-                           WHEN i.entity_type = 'HiEvents\\DomainObjects\\OrganizerDomainObject'
+                           WHEN i.entity_type = 'TitaKita\\DomainObjects\\OrganizerDomainObject'
                                THEN o.account_id
-                           WHEN i.entity_type = 'HiEvents\\DomainObjects\\EventDomainObject'
+                           WHEN i.entity_type = 'TitaKita\\DomainObjects\\EventDomainObject'
                                THEN e.account_id
-                           WHEN i.entity_type = 'HiEvents\\DomainObjects\\UserDomainObject'
+                           WHEN i.entity_type = 'TitaKita\\DomainObjects\\UserDomainObject'
                                THEN au.account_id
                            END AS account_id
                 FROM images i
-                LEFT JOIN organizers o ON i.entity_type = 'HiEvents\\DomainObjects\\OrganizerDomainObject' AND i.entity_id = o.id
-                LEFT JOIN events e ON i.entity_type = 'HiEvents\\DomainObjects\\EventDomainObject' AND i.entity_id = e.id
-                LEFT JOIN account_users au ON i.entity_type = 'HiEvents\\DomainObjects\\UserDomainObject' AND i.entity_id = au.user_id
+                LEFT JOIN organizers o ON i.entity_type = 'TitaKita\\DomainObjects\\OrganizerDomainObject' AND i.entity_id = o.id
+                LEFT JOIN events e ON i.entity_type = 'TitaKita\\DomainObjects\\EventDomainObject' AND i.entity_id = e.id
+                LEFT JOIN account_users au ON i.entity_type = 'TitaKita\\DomainObjects\\UserDomainObject' AND i.entity_id = au.user_id
             ) AS subquery
             WHERE images.id = subquery.id
         ");

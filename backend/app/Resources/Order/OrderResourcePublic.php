@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Resources\Order;
+namespace TitaKita\Resources\Order;
 
 use Carbon\Carbon;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\Status\OrderStatus;
-use HiEvents\Resources\Attendee\AttendeeResourcePublic;
-use HiEvents\Resources\BaseResource;
-use HiEvents\Resources\Event\EventResourcePublic;
-use HiEvents\Resources\Order\Invoice\InvoiceResourcePublic;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\Status\OrderStatus;
+use TitaKita\Resources\Attendee\AttendeeResourcePublic;
+use TitaKita\Resources\BaseResource;
+use TitaKita\Resources\Event\EventResourcePublic;
+use TitaKita\Resources\Order\Invoice\InvoiceResourcePublic;
 use Illuminate\Http\Request;
 
 /**

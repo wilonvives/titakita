@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Http\Request\PromoCode;
+namespace TitaKita\Http\Request\PromoCode;
 
-use HiEvents\DomainObjects\Enums\PromoCodeDiscountTypeEnum;
-use HiEvents\Http\Request\BaseRequest;
+use TitaKita\DomainObjects\Enums\PromoCodeDiscountTypeEnum;
+use TitaKita\Http\Request\BaseRequest;
 use Illuminate\Validation\Rule;
 
 class CreateUpdatePromoCodeRequest extends BaseRequest

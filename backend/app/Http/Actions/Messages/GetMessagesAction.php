@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Http\Actions\Messages;
+namespace TitaKita\Http\Actions\Messages;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\MessageDomainObject;
-use HiEvents\DomainObjects\UserDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\MessageRepositoryInterface;
-use HiEvents\Resources\Message\MessageResource;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\MessageDomainObject;
+use TitaKita\DomainObjects\UserDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\MessageRepositoryInterface;
+use TitaKita\Resources\Message\MessageResource;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\CapacityAssignment;
+namespace TitaKita\Services\Application\Handlers\CapacityAssignment;
 
-use HiEvents\DomainObjects\CapacityAssignmentDomainObject;
-use HiEvents\DomainObjects\Enums\CapacityAssignmentAppliesTo;
-use HiEvents\Services\Application\Handlers\CapacityAssignment\DTO\UpsertCapacityAssignmentDTO;
-use HiEvents\Services\Domain\CapacityAssignment\CreateCapacityAssignmentService;
-use HiEvents\Services\Domain\Product\Exception\UnrecognizedProductIdException;
+use TitaKita\DomainObjects\CapacityAssignmentDomainObject;
+use TitaKita\DomainObjects\Enums\CapacityAssignmentAppliesTo;
+use TitaKita\Services\Application\Handlers\CapacityAssignment\DTO\UpsertCapacityAssignmentDTO;
+use TitaKita\Services\Domain\CapacityAssignment\CreateCapacityAssignmentService;
+use TitaKita\Services\Domain\Product\Exception\UnrecognizedProductIdException;
 
 class CreateCapacityAssignmentHandler
 {

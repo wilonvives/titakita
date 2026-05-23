@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Account\Vat\DTO;
+namespace TitaKita\Services\Application\Handlers\Account\Vat\DTO;
 
-use HiEvents\DataTransferObjects\BaseDataObject;
+use TitaKita\DataTransferObjects\BaseDataObject;
 
 class UpsertAccountVatSettingDTO extends BaseDataObject
 {

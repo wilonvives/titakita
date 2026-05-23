@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Validators\Rules;
+namespace TitaKita\Validators\Rules;
 
-use HiEvents\DomainObjects\QuestionDomainObject;
+use TitaKita\DomainObjects\QuestionDomainObject;
 use Illuminate\Support\Collection;
 use Illuminate\Validation\ValidationException;
 

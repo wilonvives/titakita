@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Http\Actions\EmailTemplates;
+namespace TitaKita\Http\Actions\EmailTemplates;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Exceptions\AccountNotVerifiedException;
-use HiEvents\Exceptions\EmailTemplateNotFoundException;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Services\Application\Handlers\EmailTemplate\DeleteEmailTemplateHandler;
-use HiEvents\Services\Application\Handlers\EmailTemplate\DTO\DeleteEmailTemplateDTO;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Exceptions\AccountNotVerifiedException;
+use TitaKita\Exceptions\EmailTemplateNotFoundException;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Services\Application\Handlers\EmailTemplate\DeleteEmailTemplateHandler;
+use TitaKita\Services\Application\Handlers\EmailTemplate\DTO\DeleteEmailTemplateDTO;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 use Symfony\Component\HttpFoundation\Response as SymfonyResponse;

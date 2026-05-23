@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Domain\Event;
+namespace TitaKita\Services\Domain\Event;
 
-use HiEvents\Jobs\Event\UpdateEventPageViewsJob;
+use TitaKita\Jobs\Event\UpdateEventPageViewsJob;
 use Illuminate\Cache\CacheManager;
 use Illuminate\Config\Repository;
 use Illuminate\Queue\QueueManager;

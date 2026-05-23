@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Infrastructure\Stripe;
+namespace TitaKita\Services\Infrastructure\Stripe;
 
-use HiEvents\DomainObjects\Enums\StripePlatform;
+use TitaKita\DomainObjects\Enums\StripePlatform;
 
 class StripeConfigurationService
 {

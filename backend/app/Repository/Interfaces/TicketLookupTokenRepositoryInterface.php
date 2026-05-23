@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\TicketLookupTokenDomainObject;
+use TitaKita\DomainObjects\TicketLookupTokenDomainObject;
 
 /**
  * @extends RepositoryInterface<TicketLookupTokenDomainObject>

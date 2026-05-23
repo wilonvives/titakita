@@ -2,11 +2,11 @@
 
 namespace Tests\Unit\Services\Application\Handlers\Admin;
 
-use HiEvents\DomainObjects\AccountConfigurationDomainObject;
-use HiEvents\DomainObjects\AccountDomainObject;
-use HiEvents\Repository\Interfaces\AccountConfigurationRepositoryInterface;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Admin\AssignConfigurationHandler;
+use TitaKita\DomainObjects\AccountConfigurationDomainObject;
+use TitaKita\DomainObjects\AccountDomainObject;
+use TitaKita\Repository\Interfaces\AccountConfigurationRepositoryInterface;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Admin\AssignConfigurationHandler;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Mockery;
 use Tests\TestCase;

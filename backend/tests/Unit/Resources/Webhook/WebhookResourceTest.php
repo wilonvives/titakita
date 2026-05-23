@@ -2,9 +2,9 @@
 
 namespace Tests\Unit\Resources\Webhook;
 
-use HiEvents\DomainObjects\WebhookDomainObject;
-use HiEvents\Resources\Webhook\WebhookResource;
-use HiEvents\Resources\Webhook\WebhookResourceWithSecret;
+use TitaKita\DomainObjects\WebhookDomainObject;
+use TitaKita\Resources\Webhook\WebhookResource;
+use TitaKita\Resources\Webhook\WebhookResourceWithSecret;
 use Illuminate\Http\Request;
 use Tests\TestCase;
 

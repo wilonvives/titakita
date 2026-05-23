@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Services\Application\Handlers\Admin;
+namespace TitaKita\Services\Application\Handlers\Admin;
 
-use HiEvents\DomainObjects\AccountDomainObject;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\DomainObjects\AccountDomainObject;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
 
 class UpdateAccountMessagingTierHandler
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\PromoCode;
+namespace TitaKita\Services\Application\Handlers\PromoCode;
 
-use HiEvents\Repository\Interfaces\PromoCodeRepositoryInterface;
-use HiEvents\Services\Application\Handlers\PromoCode\DTO\DeletePromoCodeDTO;
+use TitaKita\Repository\Interfaces\PromoCodeRepositoryInterface;
+use TitaKita\Services\Application\Handlers\PromoCode\DTO\DeletePromoCodeDTO;
 use Psr\Log\LoggerInterface;
 
 readonly class DeletePromoCodeHandler

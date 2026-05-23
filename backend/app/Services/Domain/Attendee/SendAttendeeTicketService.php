@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Services\Domain\Attendee;
+namespace TitaKita\Services\Domain\Attendee;
 
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Services\Domain\Email\MailBuilderService;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Services\Domain\Email\MailBuilderService;
 use Illuminate\Contracts\Mail\Mailer;
 
 class SendAttendeeTicketService

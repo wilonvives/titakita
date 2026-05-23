@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\EventSettings\DTO;
+namespace TitaKita\Services\Application\Handlers\EventSettings\DTO;
 
-use HiEvents\DataTransferObjects\AddressDTO;
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\DomainObjects\Enums\AttendeeDetailsCollectionMethod;
-use HiEvents\DomainObjects\Enums\HomepageBackgroundType;
-use HiEvents\DomainObjects\Enums\PaymentProviders;
-use HiEvents\DomainObjects\Enums\PriceDisplayMode;
-use HiEvents\DomainObjects\OrganizerDomainObject;
+use TitaKita\DataTransferObjects\AddressDTO;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\DomainObjects\Enums\AttendeeDetailsCollectionMethod;
+use TitaKita\DomainObjects\Enums\HomepageBackgroundType;
+use TitaKita\DomainObjects\Enums\PaymentProviders;
+use TitaKita\DomainObjects\Enums\PriceDisplayMode;
+use TitaKita\DomainObjects\OrganizerDomainObject;
 
 class UpdateEventSettingsDTO extends BaseDTO
 {

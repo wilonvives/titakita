@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Http\Actions\Auth;
+namespace TitaKita\Http\Actions\Auth;
 
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;

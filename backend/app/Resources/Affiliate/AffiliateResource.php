@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Resources\Affiliate;
+namespace TitaKita\Resources\Affiliate;
 
-use HiEvents\DomainObjects\AffiliateDomainObject;
-use HiEvents\Resources\BaseResource;
+use TitaKita\DomainObjects\AffiliateDomainObject;
+use TitaKita\Resources\BaseResource;
 use Illuminate\Http\Request;
 
 /**

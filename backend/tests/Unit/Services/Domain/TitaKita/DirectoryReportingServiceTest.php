@@ -2,10 +2,10 @@
 
 namespace Tests\Unit\Services\Domain\TitaKita;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Services\Domain\TitaKita\DirectoryReportingService;
-use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Services\Domain\TitaKita\DirectoryReportingService;
+use TitaKita\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\Http;
 use Mockery;

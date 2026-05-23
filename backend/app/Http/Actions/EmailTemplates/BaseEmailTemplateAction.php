@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Http\Actions\EmailTemplates;
+namespace TitaKita\Http\Actions\EmailTemplates;
 
-use HiEvents\DomainObjects\Enums\EmailTemplateType;
-use HiEvents\Exceptions\AccountNotVerifiedException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Services\Application\Handlers\EmailTemplate\DTO\PreviewEmailTemplateDTO;
-use HiEvents\Services\Application\Handlers\EmailTemplate\PreviewEmailTemplateHandler;
+use TitaKita\DomainObjects\Enums\EmailTemplateType;
+use TitaKita\Exceptions\AccountNotVerifiedException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Services\Application\Handlers\EmailTemplate\DTO\PreviewEmailTemplateDTO;
+use TitaKita\Services\Application\Handlers\EmailTemplate\PreviewEmailTemplateHandler;
 use Illuminate\Config\Repository;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;

@@ -48,7 +48,7 @@
     },
     "autoload": {
         "psr-4": {
-            "HiEvents\\": "app/",
+            "TitaKita\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }

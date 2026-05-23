@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\DataTransferObjects;
+namespace TitaKita\DataTransferObjects;
 
 class AttributesDTO extends BaseDTO
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Console\Commands;
+namespace TitaKita\Console\Commands;
 
-use HiEvents\DomainObjects\Generated\ImageDomainObjectAbstract;
-use HiEvents\Models\Image;
-use HiEvents\Services\Infrastructure\Image\DTO\ImageMetadataDTO;
+use TitaKita\DomainObjects\Generated\ImageDomainObjectAbstract;
+use TitaKita\Models\Image;
+use TitaKita\Services\Infrastructure\Image\DTO\ImageMetadataDTO;
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\FilesystemManager;
 use Imagick;

@@ -1,20 +1,20 @@
 <?php
 
-namespace HiEvents\Services\Domain\Payment\Stripe\EventHandlers;
+namespace TitaKita\Services\Domain\Payment\Stripe\EventHandlers;
 
 use Brick\Money\Money;
-use HiEvents\DomainObjects\Enums\PaymentProviders;
-use HiEvents\DomainObjects\Generated\OrderDomainObjectAbstract;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\Status\OrderRefundStatus;
-use HiEvents\Repository\Interfaces\OrderRefundRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Repository\Interfaces\StripePaymentsRepositoryInterface;
-use HiEvents\Services\Domain\EventStatistics\EventStatisticsRefundService;
-use HiEvents\Services\Infrastructure\DomainEvents\DomainEventDispatcherService;
-use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
-use HiEvents\Services\Infrastructure\DomainEvents\Events\OrderEvent;
-use HiEvents\Values\MoneyValue;
+use TitaKita\DomainObjects\Enums\PaymentProviders;
+use TitaKita\DomainObjects\Generated\OrderDomainObjectAbstract;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\Status\OrderRefundStatus;
+use TitaKita\Repository\Interfaces\OrderRefundRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Repository\Interfaces\StripePaymentsRepositoryInterface;
+use TitaKita\Services\Domain\EventStatistics\EventStatisticsRefundService;
+use TitaKita\Services\Infrastructure\DomainEvents\DomainEventDispatcherService;
+use TitaKita\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
+use TitaKita\Services\Infrastructure\DomainEvents\Events\OrderEvent;
+use TitaKita\Values\MoneyValue;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Log\Logger;
 use Stripe\Refund;

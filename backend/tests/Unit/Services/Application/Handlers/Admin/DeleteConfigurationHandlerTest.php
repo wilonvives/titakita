@@ -2,10 +2,10 @@
 
 namespace Tests\Unit\Services\Application\Handlers\Admin;
 
-use HiEvents\DomainObjects\AccountConfigurationDomainObject;
-use HiEvents\Exceptions\CannotDeleteEntityException;
-use HiEvents\Repository\Interfaces\AccountConfigurationRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Admin\DeleteConfigurationHandler;
+use TitaKita\DomainObjects\AccountConfigurationDomainObject;
+use TitaKita\Exceptions\CannotDeleteEntityException;
+use TitaKita\Repository\Interfaces\AccountConfigurationRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Admin\DeleteConfigurationHandler;
 use Mockery;
 use Tests\TestCase;
 

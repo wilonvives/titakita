@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\CheckInLists\Public;
+namespace TitaKita\Http\Actions\CheckInLists\Public;
 
-use HiEvents\Exceptions\CannotCheckInException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Attendee\AttendeeWithCheckInPublicResource;
-use HiEvents\Services\Application\Handlers\CheckInList\Public\GetCheckInListAttendeePublicHandler;
+use TitaKita\Exceptions\CannotCheckInException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Attendee\AttendeeWithCheckInPublicResource;
+use TitaKita\Services\Application\Handlers\CheckInList\Public\GetCheckInListAttendeePublicHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;

@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Mail\Admin;
+namespace TitaKita\Mail\Admin;
 
-use HiEvents\DomainObjects\AccountDomainObject;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\MessageDomainObject;
-use HiEvents\Mail\BaseMail;
+use TitaKita\DomainObjects\AccountDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\MessageDomainObject;
+use TitaKita\Mail\BaseMail;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 

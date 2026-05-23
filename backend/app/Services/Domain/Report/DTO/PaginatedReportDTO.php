@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Domain\Report\DTO;
+namespace TitaKita\Services\Domain\Report\DTO;
 
-use HiEvents\DataTransferObjects\BaseDataObject;
+use TitaKita\DataTransferObjects\BaseDataObject;
 use Illuminate\Support\Collection;
 
 class PaginatedReportDTO extends BaseDataObject

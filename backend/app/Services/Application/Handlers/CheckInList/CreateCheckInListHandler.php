@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\CheckInList;
+namespace TitaKita\Services\Application\Handlers\CheckInList;
 
-use HiEvents\DomainObjects\CheckInListDomainObject;
-use HiEvents\Services\Application\Handlers\CheckInList\DTO\UpsertCheckInListDTO;
-use HiEvents\Services\Domain\CheckInList\CreateCheckInListService;
-use HiEvents\Services\Domain\Product\Exception\UnrecognizedProductIdException;
+use TitaKita\DomainObjects\CheckInListDomainObject;
+use TitaKita\Services\Application\Handlers\CheckInList\DTO\UpsertCheckInListDTO;
+use TitaKita\Services\Domain\CheckInList\CreateCheckInListService;
+use TitaKita\Services\Domain\Product\Exception\UnrecognizedProductIdException;
 
 class CreateCheckInListHandler
 {

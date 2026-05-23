@@ -1,17 +1,17 @@
 <?php
 
-namespace HiEvents\Mail\Attendee;
+namespace TitaKita\Mail\Attendee;
 
 use Carbon\Carbon;
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Helper\StringHelper;
-use HiEvents\Helper\Url;
-use HiEvents\Mail\BaseMail;
-use HiEvents\Services\Domain\Email\DTO\RenderedEmailTemplateDTO;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Helper\StringHelper;
+use TitaKita\Helper\Url;
+use TitaKita\Mail\BaseMail;
+use TitaKita\Services\Domain\Email\DTO\RenderedEmailTemplateDTO;
 use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;

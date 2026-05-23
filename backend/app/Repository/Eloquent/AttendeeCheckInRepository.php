@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\AttendeeCheckInDomainObject;
-use HiEvents\Models\AttendeeCheckIn;
-use HiEvents\Repository\Interfaces\AttendeeCheckInRepositoryInterface;
+use TitaKita\DomainObjects\AttendeeCheckInDomainObject;
+use TitaKita\Models\AttendeeCheckIn;
+use TitaKita\Repository\Interfaces\AttendeeCheckInRepositoryInterface;
 
 /**
  * @extends BaseRepository<AttendeeCheckInDomainObject>

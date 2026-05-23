@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\EmailTemplates;
+namespace TitaKita\Http\Actions\EmailTemplates;
 
-use HiEvents\DomainObjects\Enums\EmailTemplateType;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Services\Application\Handlers\EmailTemplate\GetAvailableTokensHandler;
+use TitaKita\DomainObjects\Enums\EmailTemplateType;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Services\Application\Handlers\EmailTemplate\GetAvailableTokensHandler;
 use Illuminate\Http\JsonResponse;
 
 class GetAvailableTokensAction extends BaseAction

@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Exports\AnswerExportSheets;
+namespace TitaKita\Exports\AnswerExportSheets;
 
-use HiEvents\DomainObjects\Enums\QuestionTypeEnum;
-use HiEvents\DomainObjects\QuestionAndAnswerViewDomainObject;
-use HiEvents\Helper\Url;
-use HiEvents\Services\Domain\Question\QuestionAnswerFormatter;
+use TitaKita\DomainObjects\Enums\QuestionTypeEnum;
+use TitaKita\DomainObjects\QuestionAndAnswerViewDomainObject;
+use TitaKita\Helper\Url;
+use TitaKita\Services\Domain\Question\QuestionAnswerFormatter;
 use Illuminate\Support\Collection;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\ShouldAutoSize;

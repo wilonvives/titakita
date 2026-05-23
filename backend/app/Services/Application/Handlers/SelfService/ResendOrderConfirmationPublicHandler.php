@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\SelfService;
+namespace TitaKita\Services\Application\Handlers\SelfService;
 
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Services\Application\Handlers\SelfService\DTO\ResendEmailPublicDTO;
-use HiEvents\Services\Domain\SelfService\SelfServiceResendEmailService;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Services\Application\Handlers\SelfService\DTO\ResendEmailPublicDTO;
+use TitaKita\Services\Domain\SelfService\SelfServiceResendEmailService;
 
 class ResendOrderConfirmationPublicHandler
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\TicketLookup;
+namespace TitaKita\Http\Actions\TicketLookup;
 
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\TicketLookup\SendTicketLookupEmailRequest;
-use HiEvents\Services\Application\Handlers\TicketLookup\DTO\SendTicketLookupEmailDTO;
-use HiEvents\Services\Application\Handlers\TicketLookup\SendTicketLookupEmailHandler;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\TicketLookup\SendTicketLookupEmailRequest;
+use TitaKita\Services\Application\Handlers\TicketLookup\DTO\SendTicketLookupEmailDTO;
+use TitaKita\Services\Application\Handlers\TicketLookup\SendTicketLookupEmailHandler;
 use Illuminate\Http\JsonResponse;
 
 class SendTicketLookupEmailAction extends BaseAction

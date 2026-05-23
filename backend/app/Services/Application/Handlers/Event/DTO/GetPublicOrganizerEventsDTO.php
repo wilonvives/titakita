@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Event\DTO;
+namespace TitaKita\Services\Application\Handlers\Event\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\Http\DTO\QueryParamsDTO;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\Http\DTO\QueryParamsDTO;
 
 class GetPublicOrganizerEventsDTO extends BaseDTO
 {

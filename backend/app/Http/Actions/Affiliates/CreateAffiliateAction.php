@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Affiliates;
+namespace TitaKita\Http\Actions\Affiliates;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\Status\AffiliateStatus;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Affiliate\CreateUpdateAffiliateRequest;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Resources\Affiliate\AffiliateResource;
-use HiEvents\Services\Application\Handlers\Affiliate\CreateAffiliateHandler;
-use HiEvents\Services\Application\Handlers\Affiliate\DTO\UpsertAffiliateDTO;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\Status\AffiliateStatus;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Affiliate\CreateUpdateAffiliateRequest;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Resources\Affiliate\AffiliateResource;
+use TitaKita\Services\Application\Handlers\Affiliate\CreateAffiliateHandler;
+use TitaKita\Services\Application\Handlers\Affiliate\DTO\UpsertAffiliateDTO;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Validation\ValidationException;
 

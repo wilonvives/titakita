@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Resources\Question;
+namespace TitaKita\Resources\Question;
 
-use HiEvents\DomainObjects\QuestionDomainObject;
-use HiEvents\Resources\BaseResource;
+use TitaKita\DomainObjects\QuestionDomainObject;
+use TitaKita\Resources\BaseResource;
 use Illuminate\Http\Request;
 
 /**

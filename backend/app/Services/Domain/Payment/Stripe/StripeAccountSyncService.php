@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Services\Domain\Payment\Stripe;
+namespace TitaKita\Services\Domain\Payment\Stripe;
 
-use HiEvents\DomainObjects\AccountStripePlatformDomainObject;
-use HiEvents\DomainObjects\Enums\CountryCode;
-use HiEvents\DomainObjects\Generated\AccountStripePlatformDomainObjectAbstract;
-use HiEvents\DomainObjects\Generated\AccountVatSettingDomainObjectAbstract;
-use HiEvents\Helper\Url;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Repository\Interfaces\AccountStripePlatformRepositoryInterface;
-use HiEvents\Repository\Interfaces\AccountVatSettingRepositoryInterface;
+use TitaKita\DomainObjects\AccountStripePlatformDomainObject;
+use TitaKita\DomainObjects\Enums\CountryCode;
+use TitaKita\DomainObjects\Generated\AccountStripePlatformDomainObjectAbstract;
+use TitaKita\DomainObjects\Generated\AccountVatSettingDomainObjectAbstract;
+use TitaKita\Helper\Url;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Repository\Interfaces\AccountStripePlatformRepositoryInterface;
+use TitaKita\Repository\Interfaces\AccountVatSettingRepositoryInterface;
 use Illuminate\Config\Repository;
 use Psr\Log\LoggerInterface;
 use Stripe\Account;

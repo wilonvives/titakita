@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\DomainObjects;
+namespace TitaKita\DomainObjects;
 
-use HiEvents\DomainObjects\Interfaces\IsSortable;
-use HiEvents\DomainObjects\SortingAndFiltering\AllowedSorts;
+use TitaKita\DomainObjects\Interfaces\IsSortable;
+use TitaKita\DomainObjects\SortingAndFiltering\AllowedSorts;
 
 class AffiliateDomainObject extends Generated\AffiliateDomainObjectAbstract implements IsSortable
 {

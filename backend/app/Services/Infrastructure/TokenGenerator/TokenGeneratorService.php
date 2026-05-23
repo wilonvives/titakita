@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Services\Infrastructure\TokenGenerator;
+namespace TitaKita\Services\Infrastructure\TokenGenerator;
 
 use InvalidArgumentException;
 use Random\Randomizer;

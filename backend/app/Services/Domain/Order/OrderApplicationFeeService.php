@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Domain\Order;
+namespace TitaKita\Services\Domain\Order;
 
-use HiEvents\DomainObjects\Enums\PaymentProviders;
-use HiEvents\DomainObjects\Generated\OrderApplicationFeeDomainObjectAbstract;
-use HiEvents\DomainObjects\Status\OrderApplicationFeeStatus;
-use HiEvents\Helper\Currency;
-use HiEvents\Repository\Interfaces\OrderApplicationFeeRepositoryInterface;
+use TitaKita\DomainObjects\Enums\PaymentProviders;
+use TitaKita\DomainObjects\Generated\OrderApplicationFeeDomainObjectAbstract;
+use TitaKita\DomainObjects\Status\OrderApplicationFeeStatus;
+use TitaKita\Helper\Currency;
+use TitaKita\Repository\Interfaces\OrderApplicationFeeRepositoryInterface;
 
 class OrderApplicationFeeService
 {

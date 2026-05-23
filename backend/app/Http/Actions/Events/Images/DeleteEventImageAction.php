@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\Events\Images;
+namespace TitaKita\Http\Actions\Events\Images;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\Event\DeleteEventImageHandler;
-use HiEvents\Services\Application\Handlers\Event\DTO\DeleteEventImageDTO;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\Event\DeleteEventImageHandler;
+use TitaKita\Services\Application\Handlers\Event\DTO\DeleteEventImageDTO;
 use Illuminate\Http\Response;
 
 class DeleteEventImageAction extends BaseAction

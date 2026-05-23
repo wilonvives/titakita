@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\StripeCustomerDomainObject;
+use TitaKita\DomainObjects\StripeCustomerDomainObject;
 
 /**
  * @extends RepositoryInterface<StripeCustomerDomainObject>

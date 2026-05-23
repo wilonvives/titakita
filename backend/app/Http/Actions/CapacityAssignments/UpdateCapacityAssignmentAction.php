@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Http\Actions\CapacityAssignments;
+namespace TitaKita\Http\Actions\CapacityAssignments;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\CapacityAssigment\UpsertCapacityAssignmentRequest;
-use HiEvents\Resources\CapacityAssignment\CapacityAssignmentResource;
-use HiEvents\Services\Application\Handlers\CapacityAssignment\DTO\UpsertCapacityAssignmentDTO;
-use HiEvents\Services\Application\Handlers\CapacityAssignment\UpdateCapacityAssignmentHandler;
-use HiEvents\Services\Domain\Product\Exception\UnrecognizedProductIdException;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\CapacityAssigment\UpsertCapacityAssignmentRequest;
+use TitaKita\Resources\CapacityAssignment\CapacityAssignmentResource;
+use TitaKita\Services\Application\Handlers\CapacityAssignment\DTO\UpsertCapacityAssignmentDTO;
+use TitaKita\Services\Application\Handlers\CapacityAssignment\UpdateCapacityAssignmentHandler;
+use TitaKita\Services\Domain\Product\Exception\UnrecognizedProductIdException;
 use Illuminate\Http\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 

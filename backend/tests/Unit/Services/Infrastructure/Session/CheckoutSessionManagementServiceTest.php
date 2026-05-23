@@ -2,7 +2,7 @@
 
 namespace Tests\Unit\Services\Infrastructure\Session;
 
-use HiEvents\Services\Infrastructure\Session\CheckoutSessionManagementService;
+use TitaKita\Services\Infrastructure\Session\CheckoutSessionManagementService;
 use Illuminate\Config\Repository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;

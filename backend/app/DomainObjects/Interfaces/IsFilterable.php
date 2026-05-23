@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\DomainObjects\Interfaces;
+namespace TitaKita\DomainObjects\Interfaces;
 
 interface IsFilterable
 {

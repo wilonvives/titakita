@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Http\Actions\Organizers\Webhooks;
+namespace TitaKita\Http\Actions\Organizers\Webhooks;
 
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Webhook\WebhookResource;
-use HiEvents\Services\Application\Handlers\Webhook\GetWebhooksHandler;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Webhook\WebhookResource;
+use TitaKita\Services\Application\Handlers\Webhook\GetWebhooksHandler;
 use Illuminate\Http\JsonResponse;
 
 class GetOrganizerWebhooksAction extends BaseAction

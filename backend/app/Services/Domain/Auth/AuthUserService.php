@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Services\Domain\Auth;
+namespace TitaKita\Services\Domain\Auth;
 
 use Exception;
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\DomainObjects\Interfaces\DomainObjectInterface;
-use HiEvents\DomainObjects\UserDomainObject;
-use HiEvents\Models\User;
-use HiEvents\Repository\Interfaces\AccountUserRepositoryInterface;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\DomainObjects\Interfaces\DomainObjectInterface;
+use TitaKita\DomainObjects\UserDomainObject;
+use TitaKita\Models\User;
+use TitaKita\Repository\Interfaces\AccountUserRepositoryInterface;
 use Illuminate\Auth\AuthManager;
 use PHPOpenSourceSaver\JWTAuth\Exceptions\JWTException;
 use PHPOpenSourceSaver\JWTAuth\Payload;

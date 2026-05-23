@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\EmailTemplate;
+namespace TitaKita\Services\Application\Handlers\EmailTemplate;
 
-use HiEvents\Repository\Interfaces\EmailTemplateRepositoryInterface;
-use HiEvents\Services\Application\Handlers\EmailTemplate\DTO\GetEmailTemplatesDTO;
+use TitaKita\Repository\Interfaces\EmailTemplateRepositoryInterface;
+use TitaKita\Services\Application\Handlers\EmailTemplate\DTO\GetEmailTemplatesDTO;
 use Illuminate\Support\Collection;
 
 class GetEmailTemplatesHandler

@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Domain\Order;
+namespace TitaKita\Services\Domain\Order;
 
 use Brick\Money\Currency as BrickCurrency;
-use HiEvents\DomainObjects\AccountConfigurationDomainObject;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\Helper\Currency;
-use HiEvents\Services\Infrastructure\CurrencyConversion\CurrencyConversionClientInterface;
+use TitaKita\DomainObjects\AccountConfigurationDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\Helper\Currency;
+use TitaKita\Services\Infrastructure\CurrencyConversion\CurrencyConversionClientInterface;
 use Illuminate\Config\Repository;
 
 class OrderPlatformFeePassThroughService

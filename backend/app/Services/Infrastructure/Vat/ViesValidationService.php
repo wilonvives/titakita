@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Services\Infrastructure\Vat;
+namespace TitaKita\Services\Infrastructure\Vat;
 
 use Exception;
-use HiEvents\Services\Application\Handlers\Account\Vat\DTO\ViesValidationResponseDTO;
+use TitaKita\Services\Application\Handlers\Account\Vat\DTO\ViesValidationResponseDTO;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\Client\Factory as HttpClient;
 use Psr\Log\LoggerInterface;

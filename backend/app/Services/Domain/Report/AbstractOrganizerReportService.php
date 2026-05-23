@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Domain\Report;
+namespace TitaKita\Services\Domain\Report;
 
-use HiEvents\Repository\Interfaces\OrganizerRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrganizerRepositoryInterface;
 use Illuminate\Cache\Repository;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Support\Carbon;

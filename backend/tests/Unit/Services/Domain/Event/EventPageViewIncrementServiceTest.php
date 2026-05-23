@@ -2,8 +2,8 @@
 
 namespace Tests\Unit\Services\Domain\Event;
 
-use HiEvents\Jobs\Event\UpdateEventPageViewsJob;
-use HiEvents\Services\Domain\Event\EventPageViewIncrementService;
+use TitaKita\Jobs\Event\UpdateEventPageViewsJob;
+use TitaKita\Services\Domain\Event\EventPageViewIncrementService;
 use Illuminate\Cache\CacheManager;
 use Illuminate\Config\Repository;
 use Illuminate\Queue\QueueManager;

@@ -2,13 +2,13 @@
 
 namespace Tests\Unit\Services\Domain\EventStatistics;
 
-use HiEvents\DomainObjects\EventDailyStatisticDomainObject;
-use HiEvents\DomainObjects\EventStatisticDomainObject;
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\Repository\Interfaces\EventDailyStatisticRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventStatisticRepositoryInterface;
-use HiEvents\Services\Domain\EventStatistics\EventStatisticsRefundService;
-use HiEvents\Values\MoneyValue;
+use TitaKita\DomainObjects\EventDailyStatisticDomainObject;
+use TitaKita\DomainObjects\EventStatisticDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\Repository\Interfaces\EventDailyStatisticRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventStatisticRepositoryInterface;
+use TitaKita\Services\Domain\EventStatistics\EventStatisticsRefundService;
+use TitaKita\Values\MoneyValue;
 use Mockery;
 use Mockery\MockInterface;
 use Psr\Log\LoggerInterface;

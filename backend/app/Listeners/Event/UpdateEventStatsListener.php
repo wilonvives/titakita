@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Listeners\Event;
+namespace TitaKita\Listeners\Event;
 
-use HiEvents\Events\OrderStatusChangedEvent;
-use HiEvents\Jobs\Event\UpdateEventStatisticsJob;
+use TitaKita\Events\OrderStatusChangedEvent;
+use TitaKita\Jobs\Event\UpdateEventStatisticsJob;
 
 class UpdateEventStatsListener
 {

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Auth;
+namespace TitaKita\Http\Actions\Auth;
 
-use HiEvents\Exceptions\UnauthorizedException;
-use HiEvents\Http\Request\Auth\LoginRequest;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Services\Application\Handlers\Auth\DTO\LoginCredentialsDTO;
-use HiEvents\Services\Application\Handlers\Auth\LoginHandler;
+use TitaKita\Exceptions\UnauthorizedException;
+use TitaKita\Http\Request\Auth\LoginRequest;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Services\Application\Handlers\Auth\DTO\LoginCredentialsDTO;
+use TitaKita\Services\Application\Handlers\Auth\LoginHandler;
 use Illuminate\Http\JsonResponse;
 
 class LoginAction extends BaseAuthAction

@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\CheckInList\Public\DTO;
+namespace TitaKita\Services\Application\Handlers\CheckInList\Public\DTO;
 
-use HiEvents\DomainObjects\Enums\AttendeeCheckInActionType;
+use TitaKita\DomainObjects\Enums\AttendeeCheckInActionType;
 use Spatie\LaravelData\Data;
 
 class AttendeeAndActionDTO extends Data

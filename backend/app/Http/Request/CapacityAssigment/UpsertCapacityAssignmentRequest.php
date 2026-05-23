@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Http\Request\CapacityAssigment;
+namespace TitaKita\Http\Request\CapacityAssigment;
 
-use HiEvents\DomainObjects\Status\CapacityAssignmentStatus;
-use HiEvents\Http\Request\BaseRequest;
-use HiEvents\Validators\Rules\RulesHelper;
+use TitaKita\DomainObjects\Status\CapacityAssignmentStatus;
+use TitaKita\Http\Request\BaseRequest;
+use TitaKita\Validators\Rules\RulesHelper;
 use Illuminate\Validation\Rule;
 
 class UpsertCapacityAssignmentRequest extends BaseRequest

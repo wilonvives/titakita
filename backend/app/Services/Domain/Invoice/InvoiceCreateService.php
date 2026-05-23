@@ -1,16 +1,16 @@
 <?php
 
-namespace HiEvents\Services\Domain\Invoice;
+namespace TitaKita\Services\Domain\Invoice;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\DomainObjects\InvoiceDomainObject;
-use HiEvents\DomainObjects\OrderItemDomainObject;
-use HiEvents\DomainObjects\Status\InvoiceStatus;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\InvoiceRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\DomainObjects\InvoiceDomainObject;
+use TitaKita\DomainObjects\OrderItemDomainObject;
+use TitaKita\DomainObjects\Status\InvoiceStatus;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\InvoiceRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
 
 class InvoiceCreateService
 {

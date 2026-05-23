@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\OrderAuditLogDomainObject;
+use TitaKita\DomainObjects\OrderAuditLogDomainObject;
 
 /**
  * @extends RepositoryInterface<OrderAuditLogDomainObject>

@@ -2,15 +2,15 @@
 
 namespace Tests\Unit\Services\Application\Handlers\Organizer;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Exceptions\CannotDeleteEntityException;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrganizerRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Organizer\DeleteOrganizerHandler;
-use HiEvents\Services\Application\Handlers\Organizer\DTO\DeleteOrganizerDTO;
-use HiEvents\Services\Domain\Event\EventDeletionService;
-use HiEvents\Services\Domain\Organizer\OrganizerDeletionService;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Exceptions\CannotDeleteEntityException;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrganizerRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Organizer\DeleteOrganizerHandler;
+use TitaKita\Services\Application\Handlers\Organizer\DTO\DeleteOrganizerDTO;
+use TitaKita\Services\Domain\Event\EventDeletionService;
+use TitaKita\Services\Domain\Organizer\OrganizerDeletionService;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Support\Collection;
 use Mockery as m;

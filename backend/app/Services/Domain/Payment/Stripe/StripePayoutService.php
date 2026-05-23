@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Domain\Payment\Stripe;
+namespace TitaKita\Services\Domain\Payment\Stripe;
 
-use HiEvents\Repository\Interfaces\StripePayoutsRepositoryInterface;
-use HiEvents\Repository\Interfaces\StripePaymentsRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrderPaymentPlatformFeeRepositoryInterface;
-use HiEvents\Services\Domain\Payment\Stripe\DTOs\StripePayoutCreationDTO;
+use TitaKita\Repository\Interfaces\StripePayoutsRepositoryInterface;
+use TitaKita\Repository\Interfaces\StripePaymentsRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrderPaymentPlatformFeeRepositoryInterface;
+use TitaKita\Services\Domain\Payment\Stripe\DTOs\StripePayoutCreationDTO;
 use Psr\Log\LoggerInterface;
 
 class StripePayoutService

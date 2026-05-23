@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Services\Domain\Product;
+namespace TitaKita\Services\Domain\Product;
 
-use HiEvents\DomainObjects\Enums\PromoCodeDiscountTypeEnum;
-use HiEvents\DomainObjects\Enums\ProductPriceType;
-use HiEvents\DomainObjects\PromoCodeDomainObject;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\DomainObjects\ProductPriceDomainObject;
-use HiEvents\Helper\Currency;
-use HiEvents\Services\Domain\Product\DTO\OrderProductPriceDTO;
-use HiEvents\Services\Domain\Product\DTO\PriceDTO;
+use TitaKita\DomainObjects\Enums\PromoCodeDiscountTypeEnum;
+use TitaKita\DomainObjects\Enums\ProductPriceType;
+use TitaKita\DomainObjects\PromoCodeDomainObject;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\Helper\Currency;
+use TitaKita\Services\Domain\Product\DTO\OrderProductPriceDTO;
+use TitaKita\Services\Domain\Product\DTO\PriceDTO;
 
 class ProductPriceService
 {

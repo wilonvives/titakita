@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Services\Application\Handlers\Affiliate\DTO;
+namespace TitaKita\Services\Application\Handlers\Affiliate\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\DomainObjects\Status\AffiliateStatus;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\DomainObjects\Status\AffiliateStatus;
 
 class UpsertAffiliateDTO extends BaseDTO
 {

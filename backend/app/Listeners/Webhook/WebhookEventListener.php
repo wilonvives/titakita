@@ -1,16 +1,16 @@
 <?php
 
-namespace HiEvents\Listeners\Webhook;
+namespace TitaKita\Listeners\Webhook;
 
-use HiEvents\Jobs\Order\Webhook\DispatchAttendeeWebhookJob;
-use HiEvents\Jobs\Order\Webhook\DispatchCheckInWebhookJob;
-use HiEvents\Jobs\Order\Webhook\DispatchOrderWebhookJob;
-use HiEvents\Jobs\Order\Webhook\DispatchProductWebhookJob;
-use HiEvents\Services\Infrastructure\DomainEvents\Events\AttendeeEvent;
-use HiEvents\Services\Infrastructure\DomainEvents\Events\BaseDomainEvent;
-use HiEvents\Services\Infrastructure\DomainEvents\Events\CheckinEvent;
-use HiEvents\Services\Infrastructure\DomainEvents\Events\OrderEvent;
-use HiEvents\Services\Infrastructure\DomainEvents\Events\ProductEvent;
+use TitaKita\Jobs\Order\Webhook\DispatchAttendeeWebhookJob;
+use TitaKita\Jobs\Order\Webhook\DispatchCheckInWebhookJob;
+use TitaKita\Jobs\Order\Webhook\DispatchOrderWebhookJob;
+use TitaKita\Jobs\Order\Webhook\DispatchProductWebhookJob;
+use TitaKita\Services\Infrastructure\DomainEvents\Events\AttendeeEvent;
+use TitaKita\Services\Infrastructure\DomainEvents\Events\BaseDomainEvent;
+use TitaKita\Services\Infrastructure\DomainEvents\Events\CheckinEvent;
+use TitaKita\Services\Infrastructure\DomainEvents\Events\OrderEvent;
+use TitaKita\Services\Infrastructure\DomainEvents\Events\ProductEvent;
 use Illuminate\Config\Repository;
 
 class WebhookEventListener

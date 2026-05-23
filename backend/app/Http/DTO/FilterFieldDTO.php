@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Http\DTO;
+namespace TitaKita\Http\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
+use TitaKita\DataTransferObjects\BaseDTO;
 
 class FilterFieldDTO extends BaseDTO
 {

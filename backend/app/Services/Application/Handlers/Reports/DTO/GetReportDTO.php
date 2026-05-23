@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Reports\DTO;
+namespace TitaKita\Services\Application\Handlers\Reports\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\DomainObjects\Enums\ReportTypes;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\DomainObjects\Enums\ReportTypes;
 
 class GetReportDTO extends BaseDTO
 {

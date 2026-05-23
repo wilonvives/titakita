@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Auth;
+namespace TitaKita\Services\Application\Handlers\Auth;
 
-use HiEvents\DomainObjects\UserDomainObject;
-use HiEvents\Exceptions\PasswordInvalidException;
-use HiEvents\Mail\User\ResetPasswordSuccess;
-use HiEvents\Repository\Interfaces\PasswordResetTokenRepositoryInterface;
-use HiEvents\Repository\Interfaces\UserRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Auth\DTO\ResetPasswordDTO;
-use HiEvents\Services\Domain\Auth\ResetPasswordTokenValidateService;
+use TitaKita\DomainObjects\UserDomainObject;
+use TitaKita\Exceptions\PasswordInvalidException;
+use TitaKita\Mail\User\ResetPasswordSuccess;
+use TitaKita\Repository\Interfaces\PasswordResetTokenRepositoryInterface;
+use TitaKita\Repository\Interfaces\UserRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Auth\DTO\ResetPasswordDTO;
+use TitaKita\Services\Domain\Auth\ResetPasswordTokenValidateService;
 use Illuminate\Contracts\Mail\Mailer;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Hashing\HashManager;

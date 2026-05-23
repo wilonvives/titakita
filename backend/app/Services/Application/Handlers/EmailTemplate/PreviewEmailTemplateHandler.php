@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\EmailTemplate;
+namespace TitaKita\Services\Application\Handlers\EmailTemplate;
 
-use HiEvents\Services\Application\Handlers\EmailTemplate\DTO\PreviewEmailTemplateDTO;
-use HiEvents\Services\Domain\Email\EmailTemplateService;
+use TitaKita\Services\Application\Handlers\EmailTemplate\DTO\PreviewEmailTemplateDTO;
+use TitaKita\Services\Domain\Email\EmailTemplateService;
 
 class PreviewEmailTemplateHandler
 {

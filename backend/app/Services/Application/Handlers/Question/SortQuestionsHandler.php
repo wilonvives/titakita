@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Question;
+namespace TitaKita\Services\Application\Handlers\Question;
 
-use HiEvents\Repository\Interfaces\QuestionRepositoryInterface;
+use TitaKita\Repository\Interfaces\QuestionRepositoryInterface;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 
 readonly class SortQuestionsHandler

@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\DomainObjects;
+namespace TitaKita\DomainObjects;
 
-use HiEvents\Helper\Currency;
+use TitaKita\Helper\Currency;
 
 class OrderItemDomainObject extends Generated\OrderItemDomainObjectAbstract
 {

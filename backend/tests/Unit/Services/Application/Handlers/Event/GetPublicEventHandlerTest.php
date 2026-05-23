@@ -2,14 +2,14 @@
 
 namespace Tests\Unit\Services\Application\Handlers\Event;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\PromoCodeDomainObject;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\PromoCodeRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Event\DTO\GetPublicEventDTO;
-use HiEvents\Services\Application\Handlers\Event\GetPublicEventHandler;
-use HiEvents\Services\Domain\Event\EventPageViewIncrementService;
-use HiEvents\Services\Domain\Product\ProductFilterService;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\PromoCodeDomainObject;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\PromoCodeRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Event\DTO\GetPublicEventDTO;
+use TitaKita\Services\Application\Handlers\Event\GetPublicEventHandler;
+use TitaKita\Services\Domain\Event\EventPageViewIncrementService;
+use TitaKita\Services\Domain\Product\ProductFilterService;
 use Mockery as m;
 use Tests\TestCase;
 

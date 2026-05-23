@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Resources\Account;
+namespace TitaKita\Resources\Account;
 
-use HiEvents\DomainObjects\AccountConfigurationDomainObject;
+use TitaKita\DomainObjects\AccountConfigurationDomainObject;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**

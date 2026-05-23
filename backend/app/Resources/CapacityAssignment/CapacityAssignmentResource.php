@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Resources\CapacityAssignment;
+namespace TitaKita\Resources\CapacityAssignment;
 
-use HiEvents\DomainObjects\CapacityAssignmentDomainObject;
-use HiEvents\DomainObjects\Enums\CapacityAssignmentAppliesTo;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\Resources\BaseResource;
+use TitaKita\DomainObjects\CapacityAssignmentDomainObject;
+use TitaKita\DomainObjects\Enums\CapacityAssignmentAppliesTo;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\Resources\BaseResource;
 use Illuminate\Http\Request;
 
 /**

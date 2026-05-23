@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Events;
+namespace TitaKita\Events;
 
-use HiEvents\DomainObjects\Enums\CapacityChangeDirection;
+use TitaKita\DomainObjects\Enums\CapacityChangeDirection;
 
 readonly class CapacityChangedEvent
 {

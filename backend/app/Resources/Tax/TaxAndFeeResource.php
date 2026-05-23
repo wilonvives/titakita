@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Resources\Tax;
+namespace TitaKita\Resources\Tax;
 
-use HiEvents\DomainObjects\TaxAndFeesDomainObject;
-use HiEvents\Resources\BaseResource;
+use TitaKita\DomainObjects\TaxAndFeesDomainObject;
+use TitaKita\Resources\BaseResource;
 
 /**
  * @mixin TaxAndFeesDomainObject

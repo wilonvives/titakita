@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Http\Actions\Events;
+namespace TitaKita\Http\Actions\Events;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Exceptions\CannotChangeCurrencyException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Event\UpdateEventRequest;
-use HiEvents\Resources\Event\EventResource;
-use HiEvents\Services\Application\Handlers\Event\DTO\UpdateEventDTO;
-use HiEvents\Services\Application\Handlers\Event\UpdateEventHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Exceptions\CannotChangeCurrencyException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Event\UpdateEventRequest;
+use TitaKita\Resources\Event\EventResource;
+use TitaKita\Services\Application\Handlers\Event\DTO\UpdateEventDTO;
+use TitaKita\Services\Application\Handlers\Event\UpdateEventHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Validation\ValidationException;
 use Throwable;

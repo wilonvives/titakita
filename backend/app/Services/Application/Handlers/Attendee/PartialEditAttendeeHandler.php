@@ -1,20 +1,20 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Attendee;
+namespace TitaKita\Services\Application\Handlers\Attendee;
 
-use HiEvents\DomainObjects\AttendeeDomainObject;
-use HiEvents\DomainObjects\Enums\CapacityChangeDirection;
-use HiEvents\DomainObjects\Status\AttendeeStatus;
-use HiEvents\Events\CapacityChangedEvent;
-use HiEvents\Repository\Interfaces\AttendeeRepositoryInterface;
-use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Attendee\DTO\PartialEditAttendeeDTO;
-use HiEvents\Services\Domain\EventStatistics\EventStatisticsCancellationService;
-use HiEvents\Services\Domain\EventStatistics\EventStatisticsReactivationService;
-use HiEvents\Services\Domain\Product\ProductQuantityUpdateService;
-use HiEvents\Services\Infrastructure\DomainEvents\DomainEventDispatcherService;
-use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
-use HiEvents\Services\Infrastructure\DomainEvents\Events\AttendeeEvent;
+use TitaKita\DomainObjects\AttendeeDomainObject;
+use TitaKita\DomainObjects\Enums\CapacityChangeDirection;
+use TitaKita\DomainObjects\Status\AttendeeStatus;
+use TitaKita\Events\CapacityChangedEvent;
+use TitaKita\Repository\Interfaces\AttendeeRepositoryInterface;
+use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Attendee\DTO\PartialEditAttendeeDTO;
+use TitaKita\Services\Domain\EventStatistics\EventStatisticsCancellationService;
+use TitaKita\Services\Domain\EventStatistics\EventStatisticsReactivationService;
+use TitaKita\Services\Domain\Product\ProductQuantityUpdateService;
+use TitaKita\Services\Infrastructure\DomainEvents\DomainEventDispatcherService;
+use TitaKita\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
+use TitaKita\Services\Infrastructure\DomainEvents\Events\AttendeeEvent;
 use Illuminate\Database\DatabaseManager;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;

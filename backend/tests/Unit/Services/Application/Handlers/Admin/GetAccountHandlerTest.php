@@ -2,9 +2,9 @@
 
 namespace Tests\Unit\Services\Application\Handlers\Admin;
 
-use HiEvents\Models\Account;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Admin\GetAccountHandler;
+use TitaKita\Models\Account;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Admin\GetAccountHandler;
 use Mockery;
 use Tests\TestCase;
 

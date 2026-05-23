@@ -1,14 +1,14 @@
 <?php
 
-namespace HiEvents\Http\Actions\Questions;
+namespace TitaKita\Http\Actions\Questions;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Http\Request\Questions\UpsertQuestionRequest;
-use HiEvents\Http\ResponseCodes;
-use HiEvents\Resources\Question\QuestionResource;
-use HiEvents\Services\Application\Handlers\Question\CreateQuestionHandler;
-use HiEvents\Services\Application\Handlers\Question\DTO\UpsertQuestionDTO;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Http\Request\Questions\UpsertQuestionRequest;
+use TitaKita\Http\ResponseCodes;
+use TitaKita\Resources\Question\QuestionResource;
+use TitaKita\Services\Application\Handlers\Question\CreateQuestionHandler;
+use TitaKita\Services\Application\Handlers\Question\DTO\UpsertQuestionDTO;
 use Illuminate\Http\JsonResponse;
 
 class CreateQuestionAction extends BaseAction

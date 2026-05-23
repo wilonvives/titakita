@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Services\Application\Handlers\Account\Vat;
+namespace TitaKita\Services\Application\Handlers\Account\Vat;
 
-use HiEvents\DomainObjects\AccountVatSettingDomainObject;
-use HiEvents\DomainObjects\Status\VatValidationStatus;
-use HiEvents\Jobs\Vat\ValidateVatNumberJob;
-use HiEvents\Repository\Interfaces\AccountVatSettingRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Account\Vat\DTO\UpsertAccountVatSettingDTO;
-use HiEvents\Services\Infrastructure\Vat\ViesValidationService;
+use TitaKita\DomainObjects\AccountVatSettingDomainObject;
+use TitaKita\DomainObjects\Status\VatValidationStatus;
+use TitaKita\Jobs\Vat\ValidateVatNumberJob;
+use TitaKita\Repository\Interfaces\AccountVatSettingRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Account\Vat\DTO\UpsertAccountVatSettingDTO;
+use TitaKita\Services\Infrastructure\Vat\ViesValidationService;
 use Psr\Log\LoggerInterface;
 
 class UpsertAccountVatSettingHandler

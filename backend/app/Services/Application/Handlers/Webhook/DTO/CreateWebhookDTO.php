@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Webhook\DTO;
+namespace TitaKita\Services\Application\Handlers\Webhook\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\DomainObjects\Status\WebhookStatus;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\DomainObjects\Status\WebhookStatus;
 
 class CreateWebhookDTO extends BaseDTO
 {

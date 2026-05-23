@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Validators\Rules;
+namespace TitaKita\Validators\Rules;
 
 use Closure;
-use HiEvents\DomainObjects\Enums\QuestionTypeEnum;
-use HiEvents\DomainObjects\QuestionDomainObject;
-use HiEvents\DomainObjects\ProductDomainObject;
-use HiEvents\DomainObjects\ProductPriceDomainObject;
+use TitaKita\DomainObjects\Enums\QuestionTypeEnum;
+use TitaKita\DomainObjects\QuestionDomainObject;
+use TitaKita\DomainObjects\ProductDomainObject;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
 use Illuminate\Contracts\Validation\DataAwareRule;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Contracts\Validation\ValidatorAwareRule;

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Admin\Users;
+namespace TitaKita\Http\Actions\Admin\Users;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\Http\Actions\Auth\BaseAuthAction;
-use HiEvents\Services\Application\Handlers\Admin\DTO\StartImpersonationDTO;
-use HiEvents\Services\Application\Handlers\Admin\StartImpersonationHandler;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\Http\Actions\Auth\BaseAuthAction;
+use TitaKita\Services\Application\Handlers\Admin\DTO\StartImpersonationDTO;
+use TitaKita\Services\Application\Handlers\Admin\StartImpersonationHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Resources\User;
+namespace TitaKita\Resources\User;
 
 use Exception;
-use HiEvents\DomainObjects\UserDomainObject;
-use HiEvents\Resources\BaseResource;
+use TitaKita\DomainObjects\UserDomainObject;
+use TitaKita\Resources\BaseResource;
 use Illuminate\Http\Request;
 
 /**

@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Auth;
 
-use HiEvents\Models\Account;
-use HiEvents\Models\AccountConfiguration;
-use HiEvents\Models\User;
+use TitaKita\Models\Account;
+use TitaKita\Models\AccountConfiguration;
+use TitaKita\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Config;
 use Tests\TestCase;

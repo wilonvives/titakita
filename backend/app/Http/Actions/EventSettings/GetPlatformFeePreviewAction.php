@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Http\Actions\EventSettings;
+namespace TitaKita\Http\Actions\EventSettings;
 
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Event\PlatformFeePreviewResource;
-use HiEvents\Services\Application\Handlers\EventSettings\DTO\GetPlatformFeePreviewDTO;
-use HiEvents\Services\Application\Handlers\EventSettings\GetPlatformFeePreviewHandler;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Event\PlatformFeePreviewResource;
+use TitaKita\Services\Application\Handlers\EventSettings\DTO\GetPlatformFeePreviewDTO;
+use TitaKita\Services\Application\Handlers\EventSettings\GetPlatformFeePreviewHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

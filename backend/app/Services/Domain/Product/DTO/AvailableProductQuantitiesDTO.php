@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Domain\Product\DTO;
+namespace TitaKita\Services\Domain\Product\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
-use HiEvents\DomainObjects\CapacityAssignmentDomainObject;
+use TitaKita\DataTransferObjects\BaseDTO;
+use TitaKita\DomainObjects\CapacityAssignmentDomainObject;
 use Illuminate\Support\Collection;
 
 class AvailableProductQuantitiesDTO extends BaseDTO

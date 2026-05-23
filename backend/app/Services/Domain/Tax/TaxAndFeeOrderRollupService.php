@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Services\Domain\Tax;
+namespace TitaKita\Services\Domain\Tax;
 
 use Illuminate\Support\Collection;
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Waitlist;
+namespace TitaKita\Services\Application\Handlers\Waitlist;
 
-use HiEvents\DomainObjects\EventSettingDomainObject;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
-use HiEvents\Repository\Interfaces\EventSettingsRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Waitlist\DTO\OfferWaitlistEntryDTO;
-use HiEvents\Services\Domain\Waitlist\ProcessWaitlistService;
+use TitaKita\DomainObjects\EventSettingDomainObject;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventSettingsRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Waitlist\DTO\OfferWaitlistEntryDTO;
+use TitaKita\Services\Domain\Waitlist\ProcessWaitlistService;
 use Illuminate\Support\Collection;
 
 class OfferWaitlistEntryHandler

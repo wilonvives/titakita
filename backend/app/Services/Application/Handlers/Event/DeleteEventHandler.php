@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Event;
+namespace TitaKita\Services\Application\Handlers\Event;
 
-use HiEvents\Exceptions\CannotDeleteEntityException;
-use HiEvents\Services\Application\Handlers\Event\DTO\DeleteEventDTO;
-use HiEvents\Services\Domain\Event\EventDeletionService;
+use TitaKita\Exceptions\CannotDeleteEntityException;
+use TitaKita\Services\Application\Handlers\Event\DTO\DeleteEventDTO;
+use TitaKita\Services\Domain\Event\EventDeletionService;
 use Throwable;
 
 class DeleteEventHandler

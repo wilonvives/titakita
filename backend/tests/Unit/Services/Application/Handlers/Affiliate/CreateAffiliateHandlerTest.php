@@ -2,12 +2,12 @@
 
 namespace Tests\Unit\Services\Application\Handlers\Affiliate;
 
-use HiEvents\DomainObjects\AffiliateDomainObject;
-use HiEvents\DomainObjects\Status\AffiliateStatus;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Repository\Interfaces\AffiliateRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Affiliate\CreateAffiliateHandler;
-use HiEvents\Services\Application\Handlers\Affiliate\DTO\UpsertAffiliateDTO;
+use TitaKita\DomainObjects\AffiliateDomainObject;
+use TitaKita\DomainObjects\Status\AffiliateStatus;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Repository\Interfaces\AffiliateRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Affiliate\CreateAffiliateHandler;
+use TitaKita\Services\Application\Handlers\Affiliate\DTO\UpsertAffiliateDTO;
 use Mockery as m;
 use Tests\TestCase;
 

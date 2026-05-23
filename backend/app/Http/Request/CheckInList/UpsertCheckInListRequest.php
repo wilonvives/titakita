@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Http\Request\CheckInList;
+namespace TitaKita\Http\Request\CheckInList;
 
-use HiEvents\Http\Request\BaseRequest;
-use HiEvents\Validators\Rules\RulesHelper;
+use TitaKita\Http\Request\BaseRequest;
+use TitaKita\Validators\Rules\RulesHelper;
 
 class UpsertCheckInListRequest extends BaseRequest
 {

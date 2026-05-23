@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\AffiliateDomainObject;
-use HiEvents\DomainObjects\Generated\AffiliateDomainObjectAbstract;
-use HiEvents\DomainObjects\Status\AffiliateStatus;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Models\Affiliate;
-use HiEvents\Repository\Interfaces\AffiliateRepositoryInterface;
+use TitaKita\DomainObjects\AffiliateDomainObject;
+use TitaKita\DomainObjects\Generated\AffiliateDomainObjectAbstract;
+use TitaKita\DomainObjects\Status\AffiliateStatus;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Models\Affiliate;
+use TitaKita\Repository\Interfaces\AffiliateRepositoryInterface;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Pagination\LengthAwarePaginator;
 

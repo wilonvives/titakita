@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Services\Domain\Question;
+namespace TitaKita\Services\Domain\Question;
 
-use HiEvents\DomainObjects\OrderDomainObject;
-use HiEvents\DomainObjects\QuestionDomainObject;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\QuestionAnswerRepositoryInterface;
-use HiEvents\Services\Domain\Question\Exception\InvalidAnswerException;
+use TitaKita\DomainObjects\OrderDomainObject;
+use TitaKita\DomainObjects\QuestionDomainObject;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\QuestionAnswerRepositoryInterface;
+use TitaKita\Services\Domain\Question\Exception\InvalidAnswerException;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 

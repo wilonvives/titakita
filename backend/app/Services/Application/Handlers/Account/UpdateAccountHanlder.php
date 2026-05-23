@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Account;
+namespace TitaKita\Services\Application\Handlers\Account;
 
-use HiEvents\DomainObjects\AccountDomainObject;
-use HiEvents\Repository\Interfaces\AccountRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Account\DTO\UpdateAccountDTO;
+use TitaKita\DomainObjects\AccountDomainObject;
+use TitaKita\Repository\Interfaces\AccountRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Account\DTO\UpdateAccountDTO;
 use Psr\Log\LoggerInterface;
 
 class UpdateAccountHanlder

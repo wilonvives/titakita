@@ -1,12 +1,12 @@
 <?php
 
-namespace HiEvents\Http\Actions\TaxesAndFees;
+namespace TitaKita\Http\Actions\TaxesAndFees;
 
-use HiEvents\DomainObjects\TaxAndFeesDomainObject;
-use HiEvents\Exceptions\ResourceConflictException;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Services\Application\Handlers\TaxAndFee\DeleteTaxHandler;
-use HiEvents\Services\Application\Handlers\TaxAndFee\DTO\DeleteTaxDTO;
+use TitaKita\DomainObjects\TaxAndFeesDomainObject;
+use TitaKita\Exceptions\ResourceConflictException;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Services\Application\Handlers\TaxAndFee\DeleteTaxHandler;
+use TitaKita\Services\Application\Handlers\TaxAndFee\DTO\DeleteTaxDTO;
 use Illuminate\Http\Response;
 use Throwable;
 

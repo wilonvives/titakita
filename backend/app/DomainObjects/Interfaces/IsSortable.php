@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\DomainObjects\Interfaces;
+namespace TitaKita\DomainObjects\Interfaces;
 
-use HiEvents\DomainObjects\SortingAndFiltering\AllowedSorts;
+use TitaKita\DomainObjects\SortingAndFiltering\AllowedSorts;
 
 interface IsSortable
 {

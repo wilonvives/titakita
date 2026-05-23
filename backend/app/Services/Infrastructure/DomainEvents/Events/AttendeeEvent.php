@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Infrastructure\DomainEvents\Events;
+namespace TitaKita\Services\Infrastructure\DomainEvents\Events;
 
-use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
+use TitaKita\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
 
 class AttendeeEvent extends BaseDomainEvent
 {

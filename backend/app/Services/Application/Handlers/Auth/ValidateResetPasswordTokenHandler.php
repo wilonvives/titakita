@@ -1,10 +1,10 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Auth;
+namespace TitaKita\Services\Application\Handlers\Auth;
 
-use HiEvents\DomainObjects\PasswordResetTokenDomainObject;
-use HiEvents\Exceptions\InvalidPasswordResetTokenException;
-use HiEvents\Services\Domain\Auth\ResetPasswordTokenValidateService;
+use TitaKita\DomainObjects\PasswordResetTokenDomainObject;
+use TitaKita\Exceptions\InvalidPasswordResetTokenException;
+use TitaKita\Services\Domain\Auth\ResetPasswordTokenValidateService;
 
 class ValidateResetPasswordTokenHandler
 {

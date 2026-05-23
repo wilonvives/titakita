@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\Interfaces;
+namespace TitaKita\Repository\Interfaces;
 
-use HiEvents\DomainObjects\OrderRefundDomainObject;
+use TitaKita\DomainObjects\OrderRefundDomainObject;
 
 /**
  * @extends RepositoryInterface<OrderRefundDomainObject>

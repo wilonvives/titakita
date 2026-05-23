@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Services\Infrastructure\Encryption\Exception;
+namespace TitaKita\Services\Infrastructure\Encryption\Exception;
 
 use Exception;
 

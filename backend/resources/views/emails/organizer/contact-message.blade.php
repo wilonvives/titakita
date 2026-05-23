@@ -4,7 +4,7 @@
 @php /** @var string $messageContent */ @endphp
 @php /** @var string $replySubject */ @endphp
 
-@php /** @see \HiEvents\Mail\Organizer\OrganizerContactEmail */ @endphp
+@php /** @see \TitaKita\Mail\Organizer\OrganizerContactEmail */ @endphp
 
 <x-mail::message>
 {{ __('Hello :name', ['name' => $organizerName]) }},

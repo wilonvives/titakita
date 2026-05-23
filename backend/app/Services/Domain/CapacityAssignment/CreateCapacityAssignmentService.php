@@ -1,15 +1,15 @@
 <?php
 
-namespace HiEvents\Services\Domain\CapacityAssignment;
+namespace TitaKita\Services\Domain\CapacityAssignment;
 
-use HiEvents\DomainObjects\CapacityAssignmentDomainObject;
-use HiEvents\DomainObjects\Enums\CapacityAssignmentAppliesTo;
-use HiEvents\DomainObjects\Generated\CapacityAssignmentDomainObjectAbstract;
-use HiEvents\DomainObjects\ProductPriceDomainObject;
-use HiEvents\Repository\Interfaces\CapacityAssignmentRepositoryInterface;
-use HiEvents\Repository\Interfaces\ProductPriceRepositoryInterface;
-use HiEvents\Services\Domain\Product\EventProductValidationService;
-use HiEvents\Services\Domain\Product\Exception\UnrecognizedProductIdException;
+use TitaKita\DomainObjects\CapacityAssignmentDomainObject;
+use TitaKita\DomainObjects\Enums\CapacityAssignmentAppliesTo;
+use TitaKita\DomainObjects\Generated\CapacityAssignmentDomainObjectAbstract;
+use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\Repository\Interfaces\CapacityAssignmentRepositoryInterface;
+use TitaKita\Repository\Interfaces\ProductPriceRepositoryInterface;
+use TitaKita\Services\Domain\Product\EventProductValidationService;
+use TitaKita\Services\Domain\Product\Exception\UnrecognizedProductIdException;
 use Illuminate\Database\DatabaseManager;
 
 class CreateCapacityAssignmentService

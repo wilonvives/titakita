@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\DomainObjects\Status;
+namespace TitaKita\DomainObjects\Status;
 
 enum OrderRefundStatus
 {

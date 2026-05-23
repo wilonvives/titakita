@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Admin;
+namespace TitaKita\Services\Application\Handlers\Admin;
 
-use HiEvents\Models\User;
-use HiEvents\Services\Application\Handlers\Admin\DTO\StopImpersonationDTO;
+use TitaKita\Models\User;
+use TitaKita\Services\Application\Handlers\Admin\DTO\StopImpersonationDTO;
 use Illuminate\Auth\AuthManager;
 
 class StopImpersonationHandler

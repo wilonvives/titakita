@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\ProductCategory\DTO;
+namespace TitaKita\Services\Application\Handlers\ProductCategory\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
+use TitaKita\DataTransferObjects\BaseDTO;
 
 class UpsertProductCategoryDTO extends BaseDTO
 {

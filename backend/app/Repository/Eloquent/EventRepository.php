@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Repository\Eloquent;
+namespace TitaKita\Repository\Eloquent;
 
-use HiEvents\DomainObjects\AccountDomainObject;
-use HiEvents\DomainObjects\EventDomainObject;
-use HiEvents\DomainObjects\EventStatisticDomainObject;
-use HiEvents\DomainObjects\Generated\EventDomainObjectAbstract;
-use HiEvents\DomainObjects\Generated\EventSettingDomainObjectAbstract;
-use HiEvents\DomainObjects\OrganizerDomainObject;
-use HiEvents\DomainObjects\Status\EventStatus;
-use HiEvents\Http\DTO\QueryParamsDTO;
-use HiEvents\Models\Event;
-use HiEvents\Repository\Eloquent\Value\Relationship;
-use HiEvents\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\DomainObjects\AccountDomainObject;
+use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\EventStatisticDomainObject;
+use TitaKita\DomainObjects\Generated\EventDomainObjectAbstract;
+use TitaKita\DomainObjects\Generated\EventSettingDomainObjectAbstract;
+use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\Status\EventStatus;
+use TitaKita\Http\DTO\QueryParamsDTO;
+use TitaKita\Models\Event;
+use TitaKita\Repository\Eloquent\Value\Relationship;
+use TitaKita\Repository\Interfaces\EventRepositoryInterface;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Pagination\LengthAwarePaginator;
 

@@ -1,10 +1,10 @@
 @php use Carbon\Carbon; @endphp
-@php use HiEvents\Helper\Currency; @endphp
-@php use HiEvents\DomainObjects\Status\InvoiceStatus; @endphp
-@php /** @var \HiEvents\DomainObjects\EventDomainObject $event */ @endphp
-@php /** @var \HiEvents\DomainObjects\EventSettingDomainObject $eventSettings */ @endphp
-@php /** @var \HiEvents\DomainObjects\OrderDomainObject $order */ @endphp
-@php /** @var \HiEvents\DomainObjects\InvoiceDomainObject $invoice */ @endphp
+@php use TitaKita\Helper\Currency; @endphp
+@php use TitaKita\DomainObjects\Status\InvoiceStatus; @endphp
+@php /** @var \TitaKita\DomainObjects\EventDomainObject $event */ @endphp
+@php /** @var \TitaKita\DomainObjects\EventSettingDomainObject $eventSettings */ @endphp
+@php /** @var \TitaKita\DomainObjects\OrderDomainObject $order */ @endphp
+@php /** @var \TitaKita\DomainObjects\InvoiceDomainObject $invoice */ @endphp
 @php
     $isPaid = $invoice->getStatus() === InvoiceStatus::PAID->name;
     $isVoid = $invoice->getStatus() === InvoiceStatus::VOID->name;

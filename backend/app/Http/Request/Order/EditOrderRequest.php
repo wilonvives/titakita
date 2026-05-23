@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Http\Request\Order;
+namespace TitaKita\Http\Request\Order;
 
-use HiEvents\Http\Request\BaseRequest;
-use HiEvents\Validators\Rules\RulesHelper;
+use TitaKita\Http\Request\BaseRequest;
+use TitaKita\Validators\Rules\RulesHelper;
 
 class EditOrderRequest extends BaseRequest
 {

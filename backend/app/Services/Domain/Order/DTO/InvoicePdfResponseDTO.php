@@ -1,6 +1,6 @@
 <?php
 
-namespace HiEvents\Services\Domain\Order\DTO;
+namespace TitaKita\Services\Domain\Order\DTO;
 
 use Barryvdh\DomPDF\PDF;
 

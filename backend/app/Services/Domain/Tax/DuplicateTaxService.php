@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Domain\Tax;
+namespace TitaKita\Services\Domain\Tax;
 
-use HiEvents\Repository\Interfaces\TaxAndFeeRepositoryInterface;
+use TitaKita\Repository\Interfaces\TaxAndFeeRepositoryInterface;
 
 class DuplicateTaxService
 {

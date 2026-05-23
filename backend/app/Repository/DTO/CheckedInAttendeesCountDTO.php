@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Repository\DTO;
+namespace TitaKita\Repository\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
+use TitaKita\DataTransferObjects\BaseDTO;
 
 class CheckedInAttendeesCountDTO extends BaseDTO
 {

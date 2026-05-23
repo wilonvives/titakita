@@ -1,10 +1,10 @@
-@php /** @var \HiEvents\DomainObjects\OrderDomainObject $order */ @endphp
-@php /** @var \HiEvents\DomainObjects\OrganizerDomainObject $organizer */ @endphp
-@php /** @var \HiEvents\DomainObjects\EventDomainObject $event */ @endphp
-@php /** @var \HiEvents\DomainObjects\EventSettingDomainObject $eventSettings */ @endphp
+@php /** @var \TitaKita\DomainObjects\OrderDomainObject $order */ @endphp
+@php /** @var \TitaKita\DomainObjects\OrganizerDomainObject $organizer */ @endphp
+@php /** @var \TitaKita\DomainObjects\EventDomainObject $event */ @endphp
+@php /** @var \TitaKita\DomainObjects\EventSettingDomainObject $eventSettings */ @endphp
 @php /** @var string $ticketUrl */ @endphp
 
-@php /** @see \HiEvents\Mail\Order\OrderCancelled */ @endphp
+@php /** @see \TitaKita\Mail\Order\OrderCancelled */ @endphp
 
 <x-mail::message>
 {{ __('Hello') }},

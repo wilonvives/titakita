@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Images;
+namespace TitaKita\Services\Application\Handlers\Images;
 
-use HiEvents\DomainObjects\ImageDomainObject;
-use HiEvents\Exceptions\CannotDeleteEntityException;
-use HiEvents\Repository\Interfaces\ImageRepositoryInterface;
-use HiEvents\Services\Application\Handlers\Images\DTO\DeleteImageDTO;
+use TitaKita\DomainObjects\ImageDomainObject;
+use TitaKita\Exceptions\CannotDeleteEntityException;
+use TitaKita\Repository\Interfaces\ImageRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Images\DTO\DeleteImageDTO;
 
 class DeleteImageHandler
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace HiEvents\Jobs\Event;
+namespace TitaKita\Jobs\Event;
 
 use Exception;
-use HiEvents\Repository\Interfaces\EventStatisticRepositoryInterface;
+use TitaKita\Repository\Interfaces\EventStatisticRepositoryInterface;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;

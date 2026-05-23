@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Models;
+namespace TitaKita\Models;
 
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;

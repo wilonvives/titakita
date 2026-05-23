@@ -1,8 +1,8 @@
 <?php
 
-namespace HiEvents\Services\Application\Handlers\Auth\DTO;
+namespace TitaKita\Services\Application\Handlers\Auth\DTO;
 
-use HiEvents\DataTransferObjects\BaseDTO;
+use TitaKita\DataTransferObjects\BaseDTO;
 
 class AcceptInvitationDTO extends BaseDTO
 {

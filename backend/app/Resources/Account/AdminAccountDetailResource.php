@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Resources\Account;
+namespace TitaKita\Resources\Account;
 
-use HiEvents\DomainObjects\AccountMessagingTierDomainObject;
-use HiEvents\Http\Resources\Admin\AccountMessagingTierResource;
-use HiEvents\Models\Account;
-use HiEvents\Resources\BaseResource;
+use TitaKita\DomainObjects\AccountMessagingTierDomainObject;
+use TitaKita\Http\Resources\Admin\AccountMessagingTierResource;
+use TitaKita\Models\Account;
+use TitaKita\Resources\BaseResource;
 use Illuminate\Http\Request;
 
 /**

@@ -1,11 +1,11 @@
 <?php
 
-namespace HiEvents\Services\Domain;
+namespace TitaKita\Services\Domain;
 
-use HiEvents\DomainObjects\Generated\WebhookDomainObjectAbstract;
-use HiEvents\DomainObjects\Status\WebhookStatus;
-use HiEvents\DomainObjects\WebhookDomainObject;
-use HiEvents\Repository\Interfaces\WebhookRepositoryInterface;
+use TitaKita\DomainObjects\Generated\WebhookDomainObjectAbstract;
+use TitaKita\DomainObjects\Status\WebhookStatus;
+use TitaKita\DomainObjects\WebhookDomainObject;
+use TitaKita\Repository\Interfaces\WebhookRepositoryInterface;
 use Illuminate\Support\Str;
 use Psr\Log\LoggerInterface;
 

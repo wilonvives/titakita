@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace HiEvents\Http\Actions\Admin\Events;
+namespace TitaKita\Http\Actions\Admin\Events;
 
-use HiEvents\DomainObjects\Enums\Role;
-use HiEvents\Http\Actions\BaseAction;
-use HiEvents\Resources\Event\AdminEventResource;
-use HiEvents\Services\Application\Handlers\Admin\DTO\GetAllEventsDTO;
-use HiEvents\Services\Application\Handlers\Admin\GetAllEventsHandler;
+use TitaKita\DomainObjects\Enums\Role;
+use TitaKita\Http\Actions\BaseAction;
+use TitaKita\Resources\Event\AdminEventResource;
+use TitaKita\Services\Application\Handlers\Admin\DTO\GetAllEventsDTO;
+use TitaKita\Services\Application\Handlers\Admin\GetAllEventsHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
