@@ -15,11 +15,15 @@ abstract class BaseAuthAction extends BaseAction
 {
     protected function getAuthCookie(string $token): SymfonyCookie
     {
+        // Secure/SameSite=None requires HTTPS; fall back to a plain cookie
+        // when served over HTTP (e.g. IP/port self-host) so login persists.
+        $secure = request()->isSecure();
+
         return Cookie::make(
             name: 'token',
             value: $token,
-            secure: true,
-            sameSite: 'None',
+            secure: $secure,
+            sameSite: $secure ? 'None' : 'Lax',
         );
     }
 
