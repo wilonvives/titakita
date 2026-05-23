@@ -6,8 +6,7 @@
                 <img src="{{ $appLogo }}" class="logo" alt="{{ config('app.name') }}"
                      style="max-width: 300px;">
             @else
-                <img src="{{ config('app.frontend_url') }}/logos/hi-events-stacked-light.png" class="logo" alt="{{ config('app.name') }}"
-                     style="max-width: 300px;">
+                <span style="font-size: 24px; font-weight: 800; letter-spacing: -0.02em; color: #18181b;">{{ config('app.name') }}</span>
             @endif
         </x-mail::header>
     </x-slot:header>
@@ -30,14 +29,7 @@
             @if($appEmailFooter = config('app.email_footer_text'))
                 {{ $appEmailFooter }}
             @else
-                {{-- (c) Hi.Events Ltd 2025 --}}
-                {{-- PLEASE NOTE: --}}
-                {{-- Hi.Events is licensed under the GNU Affero General Public License (AGPL) version 3. --}}
-                {{-- You can find the full license text at: https://github.com/HiEventsDev/hi.events/blob/main/LICENSE --}}
-                {{-- In accordance with Section 7(b) of the AGPL, we ask that you retain the "Powered by Hi.Events" notice. --}}
-                {{-- If you wish to remove this notice, a commercial license is available at: https://hi.events/licensing --}}
-
-                © {{ date('Y') }} {{ config('app.name') }} | Powered by <a title="Manage events and sell tickets online with Hi.Events" href="https://hi.events?utm_source=app-email-footer">Hi.Events</a>
+                © {{ date('Y') }} {{ config('app.name') }}
             @endif
         </x-mail::footer>
     </x-slot:footer>

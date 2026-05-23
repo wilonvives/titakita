@@ -20,3 +20,10 @@ prompts/
 
 /plans/**
 /plans
+
+# AI / editor assistant config — local only, never push to the repo
+.claude/
+.cursorrules
+CLAUDE.md
+AGENTS.md
+.github/copilot-instructions.md
