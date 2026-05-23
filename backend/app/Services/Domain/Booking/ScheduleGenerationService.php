@@ -10,12 +10,15 @@ use TitaKita\DomainObjects\Enums\ProductPriceType;
 use TitaKita\DomainObjects\Enums\ProductType;
 use TitaKita\DomainObjects\Enums\ScheduleScopeType;
 use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\Generated\ProductCategoryDomainObjectAbstract;
 use TitaKita\DomainObjects\Generated\ProductDomainObjectAbstract;
+use TitaKita\DomainObjects\ProductCategoryDomainObject;
 use TitaKita\DomainObjects\ProductDomainObject;
 use TitaKita\DomainObjects\ProductPriceDomainObject;
 use TitaKita\DomainObjects\ScheduleDomainObject;
 use TitaKita\Helper\DateHelper;
 use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\ProductCategoryRepositoryInterface;
 use TitaKita\Repository\Interfaces\ProductPriceRepositoryInterface;
 use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
 use TitaKita\Services\Domain\Booking\Exception\ScheduleRangeTooLongException;
@@ -28,6 +31,7 @@ class ScheduleGenerationService
         private readonly ProductRepositoryInterface $productRepository,
         private readonly ProductPriceRepositoryInterface $productPriceRepository,
         private readonly EventRepositoryInterface $eventRepository,
+        private readonly ProductCategoryRepositoryInterface $productCategoryRepository,
         private readonly DatabaseManager $databaseManager,
     ) {}
 
@@ -44,12 +48,27 @@ class ScheduleGenerationService
     {
         $event = $this->eventRepository->findById($schedule->getEventId());
         $timezone = $event->getTimezone() ?? config('app.default_timezone');
+        $categoryId = $this->resolveDefaultCategoryId($event->getId());
 
         $targets = $this->buildTargetSessions($schedule, $timezone);
 
-        $this->databaseManager->transaction(function () use ($schedule, $event, $timezone, $targets) {
-            $this->reconcile($schedule, $event, $timezone, $targets);
+        $this->databaseManager->transaction(function () use ($schedule, $event, $timezone, $categoryId, $targets) {
+            $this->reconcile($schedule, $event, $timezone, $categoryId, $targets);
         });
+    }
+
+    /**
+     * Session-products must belong to the event's default category, otherwise the public
+     * event endpoint (which buckets products under their category) silently drops them and
+     * checkout can't resolve the product to collect attendee details.
+     */
+    private function resolveDefaultCategoryId(int $eventId): int
+    {
+        return $this->productCategoryRepository
+            ->findWhere([ProductCategoryDomainObjectAbstract::EVENT_ID => $eventId])
+            ->sortBy(fn (ProductCategoryDomainObject $category) => $category->getOrder())
+            ->first()
+            ->getId();
     }
 
     /**
@@ -137,6 +156,7 @@ class ScheduleGenerationService
         ScheduleDomainObject $schedule,
         EventDomainObject $event,
         string $timezone,
+        int $categoryId,
         array $targets,
     ): void {
         $existing = $this->productRepository
@@ -172,6 +192,7 @@ class ScheduleGenerationService
             $this->createSessionProduct(
                 schedule: $schedule,
                 event: $event,
+                categoryId: $categoryId,
                 timezone: $timezone,
                 date: $target['date'],
                 startTime: $target['start_time'],
@@ -183,6 +204,7 @@ class ScheduleGenerationService
     private function createSessionProduct(
         ScheduleDomainObject $schedule,
         EventDomainObject $event,
+        int $categoryId,
         string $timezone,
         string $date,
         string $startTime,
@@ -195,6 +217,7 @@ class ScheduleGenerationService
             'title' => $this->buildTitle($localStart, $localEnd),
             'type' => ProductPriceType::FREE->name,
             'product_type' => ProductType::TICKET->name,
+            'product_category_id' => $categoryId,
             'order' => $order,
             'event_id' => $event->getId(),
             'schedule_id' => $schedule->getId(),

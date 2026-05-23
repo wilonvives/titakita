@@ -10,9 +10,11 @@ use TitaKita\DomainObjects\Enums\ScheduleScopeType;
 use TitaKita\DomainObjects\Generated\ProductDomainObjectAbstract;
 use TitaKita\DomainObjects\ProductDomainObject;
 use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\DomainObjects\Generated\ProductCategoryDomainObjectAbstract;
 use TitaKita\DomainObjects\ScheduleDomainObject;
 use TitaKita\Repository\Eloquent\Value\OrderAndDirection;
 use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Repository\Interfaces\ProductCategoryRepositoryInterface;
 use TitaKita\Repository\Interfaces\ProductPriceRepositoryInterface;
 use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
 use TitaKita\Repository\Interfaces\ScheduleRepositoryInterface;
@@ -34,6 +36,15 @@ class ScheduleGenerationServiceTest extends TestCase
     private function eventTimezone(int $eventId): string
     {
         return app(EventRepositoryInterface::class)->findById($eventId)->getTimezone();
+    }
+
+    private function defaultCategoryId(int $eventId): int
+    {
+        return app(ProductCategoryRepositoryInterface::class)
+            ->findWhere([ProductCategoryDomainObjectAbstract::EVENT_ID => $eventId])
+            ->sortBy(fn ($category) => $category->getOrder())
+            ->first()
+            ->getId();
     }
 
     private function service(): ScheduleGenerationService
@@ -70,6 +81,7 @@ class ScheduleGenerationServiceTest extends TestCase
     {
         $eventId = $this->eventId();
         $tz = $this->eventTimezone($eventId);
+        $expectedCategoryId = $this->defaultCategoryId($eventId);
 
         $schedule = $this->createSchedule($eventId, [
             'session_duration_minutes' => 120,
@@ -95,6 +107,7 @@ class ScheduleGenerationServiceTest extends TestCase
             $this->assertSame('TICKET', $product->getProductType());
             $this->assertSame('FREE', $product->getType());
             $this->assertSame($schedule->getId(), $product->getScheduleId());
+            $this->assertSame($expectedCategoryId, $product->getProductCategoryId());
 
             $start = Carbon::parse($product->getSessionStartAt(), 'UTC')->setTimezone($tz);
             $end = Carbon::parse($product->getSessionEndAt(), 'UTC')->setTimezone($tz);
