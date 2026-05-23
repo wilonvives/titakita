@@ -1,0 +1,116 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.stepLabel {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.dateList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.dateButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 72px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid var(--widget-secondary-color, #e0e0e0);
+  background: transparent;
+  cursor: pointer;
+  color: inherit;
+  line-height: 1.2;
+
+  &:hover {
+    border-color: var(--widget-primary-color, #7b5db8);
+  }
+
+  &.dateButtonSelected {
+    border-color: var(--widget-primary-color, #7b5db8);
+    background: var(--widget-primary-color, #7b5db8);
+    color: var(--widget-secondary-text-color, #fff);
+  }
+}
+
+.dateButtonWeekday {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.dateButtonDay {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.dateButtonMonth {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+.sessionList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sessionButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--widget-secondary-color, #e0e0e0);
+  background: transparent;
+  cursor: pointer;
+  color: inherit;
+  text-align: left;
+
+  &:hover:not(:disabled) {
+    border-color: var(--widget-primary-color, #7b5db8);
+  }
+
+  &.sessionButtonSelected {
+    border-color: var(--widget-primary-color, #7b5db8);
+    background: var(--widget-primary-color, #7b5db8);
+    color: var(--widget-secondary-text-color, #fff);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.sessionTime {
+  font-weight: 600;
+}
+
+.sessionCapacity {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.partySize {
+  max-width: 220px;
+}
+
+.footer {
+  margin-top: 0.5rem;
+}
+
+.emptyMessage {
+  padding: 1.5rem 0;
+  text-align: center;
+  opacity: 0.8;
+}

@@ -37,6 +37,7 @@ import {IconChevronRight, IconX} from "@tabler/icons-react"
 import {getSessionIdentifier} from "../../../../utilites/sessionIdentifier.ts";
 import {Constants} from "../../../../constants.ts";
 import {clearWaitlistJoinedForEvent} from "../../../../hooks/useWaitlistJoined.ts";
+import SessionPicker from "../SessionPicker";
 
 const AFFILIATE_EXPIRY_DAYS = 30;
 
@@ -78,7 +79,7 @@ interface SelectProductsProps {
     showPoweredBy?: boolean;
 }
 
-const SelectProducts = (props: SelectProductsProps) => {
+const SelectProductsForm = (props: SelectProductsProps) => {
     const {eventId} = useParams();
     const queryClient = useQueryClient();
     const navigate = useNavigate();
@@ -626,6 +627,23 @@ const SelectProducts = (props: SelectProductsProps) => {
             )}
         </div>
     );
+}
+
+const SelectProducts = (props: SelectProductsProps) => {
+    if (props.event?.event_type === 'booking') {
+        return (
+            <SessionPicker
+                event={props.event}
+                colors={props.colors}
+                padding={props.padding}
+                continueButtonText={props.continueButtonText}
+                widgetMode={props.widgetMode}
+                showPoweredBy={props.showPoweredBy}
+            />
+        );
+    }
+
+    return <SelectProductsForm {...props}/>;
 }
 
 export default SelectProducts;
