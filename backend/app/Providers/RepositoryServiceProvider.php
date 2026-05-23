@@ -40,6 +40,7 @@ use TitaKita\Repository\Eloquent\ProductPriceRepository;
 use TitaKita\Repository\Eloquent\ProductRepository;
 use TitaKita\Repository\Eloquent\PromoCodeRepository;
 use TitaKita\Repository\Eloquent\QuestionAndAnswerViewRepository;
+use TitaKita\Repository\Eloquent\ScheduleRepository;
 use TitaKita\Repository\Eloquent\QuestionAnswerRepository;
 use TitaKita\Repository\Eloquent\QuestionRepository;
 use TitaKita\Repository\Eloquent\StripeCustomerRepository;
@@ -87,6 +88,7 @@ use TitaKita\Repository\Interfaces\ProductPriceRepositoryInterface;
 use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
 use TitaKita\Repository\Interfaces\PromoCodeRepositoryInterface;
 use TitaKita\Repository\Interfaces\QuestionAndAnswerViewRepositoryInterface;
+use TitaKita\Repository\Interfaces\ScheduleRepositoryInterface;
 use TitaKita\Repository\Interfaces\QuestionAnswerRepositoryInterface;
 use TitaKita\Repository\Interfaces\QuestionRepositoryInterface;
 use TitaKita\Repository\Interfaces\StripeCustomerRepositoryInterface;
@@ -153,6 +155,7 @@ class RepositoryServiceProvider extends ServiceProvider
         TicketLookupTokenRepositoryInterface::class => TicketLookupTokenRepository::class,
         AccountMessagingTierRepositoryInterface::class => AccountMessagingTierRepository::class,
         WaitlistEntryRepositoryInterface::class => WaitlistEntryRepository::class,
+        ScheduleRepositoryInterface::class => ScheduleRepository::class,
     ];
 
     public function register(): void
