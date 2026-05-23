@@ -166,10 +166,10 @@ services:
             
             /usr/bin/mc alias set myminio $$MINIO_SERVER_URL $$MINIO_ROOT_USER $$MINIO_ROOT_PASSWORD;
                         
-            /usr/bin/mc mb myminio/hievents-public;
-            /usr/bin/mc mb myminio/hievents-private;
+            /usr/bin/mc mb myminio/titakita-public;
+            /usr/bin/mc mb myminio/titakita-private;
             
-            /usr/bin/mc anonymous set public myminio/hievents-public;
+            /usr/bin/mc anonymous set public myminio/titakita-public;
                         
             echo 'Buckets created and policies set.';
             exit 0;

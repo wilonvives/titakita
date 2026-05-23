@@ -1,9 +1,9 @@
 services:
-  hi-events-backend:
+  titakita-backend:
     build:
       context: ./../../backend
       dockerfile: Dockerfile
-    container_name: hi-events-backend
+    container_name: titakita-backend
     ports:
       - "8124:80"
     environment:
@@ -17,8 +17,8 @@ services:
       AWS_ACCESS_KEY_ID: ""
       AWS_SECRET_ACCESS_KEY: ""
       AWS_DEFAULT_REGION: "us-west-1"
-      AWS_PUBLIC_BUCKET: "hievents-public"
-      AWS_PRIVATE_BUCKET: "hievents-private"
+      AWS_PUBLIC_BUCKET: "titakita-public"
+      AWS_PRIVATE_BUCKET: "titakita-private"
       STRIPE_PUBLIC_KEY: ""
       STRIPE_SECRET_KEY: ""
       MAIL_MAILER: "smtp"

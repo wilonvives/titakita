@@ -1,9 +1,9 @@
 services:
-  hi-events-frontend:
+  titakita-frontend:
     build:
       context: ./../../frontend
       dockerfile: Dockerfile.ssr
-    container_name: hi-events-frontend
+    container_name: titakita-frontend
     ports:
       - "8125:80"
     environment:

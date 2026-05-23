@@ -38,7 +38,7 @@ services:
       - MAIL_FROM_NAME=${MAIL_FROM_NAME}
       - FILESYSTEM_PUBLIC_DISK=${FILESYSTEM_PUBLIC_DISK}
       - FILESYSTEM_PRIVATE_DISK=${FILESYSTEM_PRIVATE_DISK}
-      - DATABASE_URL=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-secret}@postgres:5432/${POSTGRES_DB:-hi-events}
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-secret}@postgres:5432/${POSTGRES_DB:-titakita}
       - REDIS_HOST=redis
       - REDIS_PASSWORD=
       - REDIS_PORT=6379
@@ -74,12 +74,12 @@ services:
     image: postgres:17-alpine
     restart: unless-stopped
     healthcheck:
-      test: [ "CMD-SHELL", "pg_isready -U $${POSTGRES_USER:-postgres} -d $${POSTGRES_DB:-hi-events}" ]
+      test: [ "CMD-SHELL", "pg_isready -U $${POSTGRES_USER:-postgres} -d $${POSTGRES_DB:-titakita}" ]
       interval: 10s
       timeout: 5s
       retries: 5
     environment:
-      POSTGRES_DB: ${POSTGRES_DB:-hi-events}
+      POSTGRES_DB: ${POSTGRES_DB:-titakita}
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-secret}
     volumes:
