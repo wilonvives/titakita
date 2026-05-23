@@ -50,19 +50,19 @@ export const WidgetEditor = () => {
     useEffect(() => {
         setHtmlEmbedCode(
             '<div ' +
-            'data-hievents-id="' + eventId + '" ' +
-            'data-hievents-primary-color="' + form.values.primary_color + '" ' +
-            'data-hievents-primary-text-color="' + form.values.primary_text_color + '" ' +
-            'data-hievents-secondary-color="' + form.values.secondary_color + '" ' +
-            'data-hievents-secondary-text-color="' + form.values.secondary_text_color + '" ' +
-            'data-hievents-background-color="' + form.values.background_color + '" ' +
-            'data-hievents-widget-type="widget" ' +
-            'data-hievents-widget-version="1.0" ' +
-            'data-hievents-locale="en" ' +
-            'data-hievents-padding="' + form.values.padding + 'px" ' +
-            'data-hievents-autoresize="' + form.values.autoResize + '" ' +
-            'data-hievents-continue-button-text="' + form.values.continue_button_text + '" ' +
-            'class="hievents-widget">' +
+            'data-titakita-id="' + eventId + '" ' +
+            'data-titakita-primary-color="' + form.values.primary_color + '" ' +
+            'data-titakita-primary-text-color="' + form.values.primary_text_color + '" ' +
+            'data-titakita-secondary-color="' + form.values.secondary_color + '" ' +
+            'data-titakita-secondary-text-color="' + form.values.secondary_text_color + '" ' +
+            'data-titakita-background-color="' + form.values.background_color + '" ' +
+            'data-titakita-widget-type="widget" ' +
+            'data-titakita-widget-version="1.0" ' +
+            'data-titakita-locale="en" ' +
+            'data-titakita-padding="' + form.values.padding + 'px" ' +
+            'data-titakita-autoresize="' + form.values.autoResize + '" ' +
+            'data-titakita-continue-button-text="' + form.values.continue_button_text + '" ' +
+            'class="titakita-widget">' +
             '</div>'
         );
 
@@ -93,16 +93,16 @@ const HiEventsWidget = ({
 
   return (
     <div
-      data-hievents-id={eventId}
-      data-hievents-primary-color={primaryColor}
-      data-hievents-primary-text-color={primaryTextColor}
-      data-hievents-secondary-color={secondaryColor}
-      data-hievents-secondary-text-color={secondaryTextColor}
-      data-hievents-background-color={backgroundColor}
-      data-hievents-widget-type={widgetType}
-      data-hievents-widget-version={widgetVersion}
-      data-hievents-locale={locale}
-      className="hievents-widget"
+      data-titakita-id={eventId}
+      data-titakita-primary-color={primaryColor}
+      data-titakita-primary-text-color={primaryTextColor}
+      data-titakita-secondary-color={secondaryColor}
+      data-titakita-secondary-text-color={secondaryTextColor}
+      data-titakita-background-color={backgroundColor}
+      data-titakita-widget-type={widgetType}
+      data-titakita-widget-version={widgetVersion}
+      data-titakita-locale={locale}
+      className="titakita-widget"
     />
   );
 };

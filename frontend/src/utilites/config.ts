@@ -32,6 +32,6 @@ export const getConfig = (key: ConfigKeys, fallback?: string): string | undefine
         return serverEnv[key] as string | undefined || fallback;
     }
 
-    const clientEnv = typeof window !== "undefined" && window.hievents ? window.hievents : {};
+    const clientEnv = typeof window !== "undefined" && window.titakita ? window.titakita : {};
     return clientEnv[key] || clientBuildEnv[key] || fallback;
 };

@@ -25,7 +25,7 @@ import {isConsentPending, setConsentState, updateGoogleConsentMode} from "./util
 
 declare global {
     interface Window {
-        hievents: Record<string, string>;
+        titakita: Record<string, string>;
     }
 }
 
