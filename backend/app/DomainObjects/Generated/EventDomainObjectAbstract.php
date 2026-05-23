@@ -30,6 +30,7 @@ abstract class EventDomainObjectAbstract extends \TitaKita\DomainObjects\Abstrac
     final public const SHORT_ID = 'short_id';
     final public const TICKET_QUANTITY_AVAILABLE = 'ticket_quantity_available';
     final public const CATEGORY = 'category';
+    final public const EVENT_TYPE = 'event_type';
 
     protected int $id;
     protected int $account_id;
@@ -51,6 +52,7 @@ abstract class EventDomainObjectAbstract extends \TitaKita\DomainObjects\Abstrac
     protected string $short_id;
     protected ?int $ticket_quantity_available = null;
     protected string $category = 'OTHER';
+    protected string $event_type = 'event';
 
     public function toArray(): array
     {
@@ -75,6 +77,7 @@ abstract class EventDomainObjectAbstract extends \TitaKita\DomainObjects\Abstrac
                     'short_id' => $this->short_id ?? null,
                     'ticket_quantity_available' => $this->ticket_quantity_available ?? null,
                     'category' => $this->category ?? null,
+                    'event_type' => $this->event_type ?? null,
                 ];
     }
 
@@ -296,5 +299,16 @@ abstract class EventDomainObjectAbstract extends \TitaKita\DomainObjects\Abstrac
     public function getCategory(): string
     {
         return $this->category;
+    }
+
+    public function setEventType(string $event_type): self
+    {
+        $this->event_type = $event_type;
+        return $this;
+    }
+
+    public function getEventType(): string
+    {
+        return $this->event_type;
     }
 }
