@@ -13,6 +13,7 @@ abstract class ProductDomainObjectAbstract extends \TitaKita\DomainObjects\Abstr
     final public const ID = 'id';
     final public const EVENT_ID = 'event_id';
     final public const PRODUCT_CATEGORY_ID = 'product_category_id';
+    final public const SCHEDULE_ID = 'schedule_id';
     final public const TITLE = 'title';
     final public const SALE_START_DATE = 'sale_start_date';
     final public const SALE_END_DATE = 'sale_end_date';
@@ -37,10 +38,13 @@ abstract class ProductDomainObjectAbstract extends \TitaKita\DomainObjects\Abstr
     final public const IS_HIGHLIGHTED = 'is_highlighted';
     final public const HIGHLIGHT_MESSAGE = 'highlight_message';
     final public const WAITLIST_ENABLED = 'waitlist_enabled';
+    final public const SESSION_START_AT = 'session_start_at';
+    final public const SESSION_END_AT = 'session_end_at';
 
     protected int $id;
     protected int $event_id;
     protected ?int $product_category_id = null;
+    protected ?int $schedule_id = null;
     protected string $title;
     protected ?string $sale_start_date = null;
     protected ?string $sale_end_date = null;
@@ -65,6 +69,8 @@ abstract class ProductDomainObjectAbstract extends \TitaKita\DomainObjects\Abstr
     protected bool $is_highlighted = false;
     protected ?string $highlight_message = null;
     protected ?bool $waitlist_enabled = null;
+    protected ?string $session_start_at = null;
+    protected ?string $session_end_at = null;
 
     public function toArray(): array
     {
@@ -72,6 +78,7 @@ abstract class ProductDomainObjectAbstract extends \TitaKita\DomainObjects\Abstr
                     'id' => $this->id ?? null,
                     'event_id' => $this->event_id ?? null,
                     'product_category_id' => $this->product_category_id ?? null,
+                    'schedule_id' => $this->schedule_id ?? null,
                     'title' => $this->title ?? null,
                     'sale_start_date' => $this->sale_start_date ?? null,
                     'sale_end_date' => $this->sale_end_date ?? null,
@@ -96,6 +103,8 @@ abstract class ProductDomainObjectAbstract extends \TitaKita\DomainObjects\Abstr
                     'is_highlighted' => $this->is_highlighted ?? null,
                     'highlight_message' => $this->highlight_message ?? null,
                     'waitlist_enabled' => $this->waitlist_enabled ?? null,
+                    'session_start_at' => $this->session_start_at ?? null,
+                    'session_end_at' => $this->session_end_at ?? null,
                 ];
     }
 
@@ -130,6 +139,17 @@ abstract class ProductDomainObjectAbstract extends \TitaKita\DomainObjects\Abstr
     public function getProductCategoryId(): ?int
     {
         return $this->product_category_id;
+    }
+
+    public function setScheduleId(?int $schedule_id): self
+    {
+        $this->schedule_id = $schedule_id;
+        return $this;
+    }
+
+    public function getScheduleId(): ?int
+    {
+        return $this->schedule_id;
     }
 
     public function setTitle(string $title): self
@@ -394,5 +414,27 @@ abstract class ProductDomainObjectAbstract extends \TitaKita\DomainObjects\Abstr
     public function getWaitlistEnabled(): ?bool
     {
         return $this->waitlist_enabled;
+    }
+
+    public function setSessionStartAt(?string $session_start_at): self
+    {
+        $this->session_start_at = $session_start_at;
+        return $this;
+    }
+
+    public function getSessionStartAt(): ?string
+    {
+        return $this->session_start_at;
+    }
+
+    public function setSessionEndAt(?string $session_end_at): self
+    {
+        $this->session_end_at = $session_end_at;
+        return $this;
+    }
+
+    public function getSessionEndAt(): ?string
+    {
+        return $this->session_end_at;
     }
 }

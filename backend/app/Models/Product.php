@@ -19,6 +19,8 @@ class Product extends BaseModel
         return [
             ProductDomainObjectAbstract::SALES_VOLUME => 'float',
             ProductDomainObjectAbstract::SALES_TAX_VOLUME => 'float',
+            ProductDomainObjectAbstract::SESSION_START_AT => 'datetime',
+            ProductDomainObjectAbstract::SESSION_END_AT => 'datetime',
         ];
     }
 
