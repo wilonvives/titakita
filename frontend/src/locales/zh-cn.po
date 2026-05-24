@@ -74,9 +74,17 @@ msgstr "剩余 {0}"
 msgid "{0} logo"
 msgstr "{0} 标志"
 
+#: src/components/routes/event/schedule.tsx:266
+msgid "{0} min"
+msgstr "{0} 分钟"
+
 #: src/components/routes/events/Dashboard/index.tsx:141
 msgid "{0} organizers"
 msgstr "{0} 位组织者"
+
+#: src/components/routes/event/schedule.tsx:241
+msgid "{0} session(s) scheduled."
+msgstr "已排 {0} 个场次。"
 
 #: src/components/routes/product-widget/CollectInformation/index.tsx:596
 msgid "{0} tickets"
@@ -89,6 +97,10 @@ msgstr "{0}更新成功"
 #: src/components/common/CheckIn/CheckInInfoModal.tsx:40
 msgid "{0}/{1} checked in"
 msgstr "{0}/{1} 已签到"
+
+#: src/components/routes/event/schedule.tsx:161
+msgid "{0}/{1} left"
+msgstr "剩 {0}/{1}"
 
 #: src/components/common/EventCard/index.tsx:123
 msgid "{availableCount} of {totalCount} available"
@@ -462,8 +474,8 @@ msgid "Add any notes about the order..."
 msgstr "添加关于订单的备注..."
 
 #: src/components/routes/event/schedule.tsx:95
-msgid "Add at least one start time"
-msgstr "请至少添加一个开始时间"
+#~ msgid "Add at least one start time"
+#~ msgstr "请至少添加一个开始时间"
 
 #: src/components/common/QuestionsTable/index.tsx:433
 msgid "Add custom questions to collect additional information during checkout"
@@ -490,8 +502,8 @@ msgid "Add New"
 msgstr "添加新内容"
 
 #: src/components/routes/event/schedule.tsx:258
-msgid "Add one or more start times for each day (e.g. 10:00, 13:00, 15:30)."
-msgstr "为每天添加一个或多个开始时间（例如 10:00、13:00、15:30）。"
+#~ msgid "Add one or more start times for each day (e.g. 10:00, 13:00, 15:30)."
+#~ msgstr "为每天添加一个或多个开始时间（例如 10:00、13:00、15:30）。"
 
 #: src/components/forms/QuestionForm/index.tsx:68
 msgid "Add Option"
@@ -510,9 +522,13 @@ msgstr "将产品添加到类别"
 msgid "Add Question"
 msgstr "添加问题"
 
+#: src/components/routes/event/schedule.tsx:207
+msgid "Add sessions"
+msgstr "添加场次"
+
 #: src/components/routes/event/schedule.tsx:291
-msgid "Add start time"
-msgstr "添加开始时间"
+#~ msgid "Add start time"
+#~ msgstr "添加开始时间"
 
 #: src/components/routes/account/ManageAccount/sections/TaxSettings/index.tsx:18
 msgid "Add Tax or Fee"
@@ -535,6 +551,10 @@ msgstr "增加层级"
 #: src/components/layouts/EventHomepage/index.tsx:346
 msgid "Add to Calendar"
 msgstr "添加到日历"
+
+#: src/components/routes/event/schedule.tsx:232
+msgid "Add to schedule"
+msgstr "添加到排期"
 
 #: src/components/routes/organizer/Settings/Sections/TrackingPixelSettings/index.tsx:172
 msgid "Add tracking pixels to your public event pages and organizer homepage. A cookie consent banner will be shown to visitors when tracking is active."
@@ -1308,11 +1328,11 @@ msgid "Body is required"
 msgstr "正文是必需的"
 
 #: src/components/routes/event/schedule.tsx:384
-msgid "bookable sessions will be generated."
-msgstr "个可预约场次将被生成。"
+#~ msgid "bookable sessions will be generated."
+#~ msgstr "个可预约场次将被生成。"
 
 #: src/components/layouts/Event/index.tsx:114
-#: src/components/routes/event/schedule.tsx:221
+#: src/components/routes/event/schedule.tsx:169
 msgid "Booking Schedule"
 msgstr "预约排期"
 
@@ -1413,6 +1433,7 @@ msgstr "活动"
 #: src/components/common/WaitlistTable/index.tsx:111
 #: src/components/common/WaitlistTable/index.tsx:132
 #: src/components/routes/event/messages.tsx:80
+#: src/components/routes/event/schedule.tsx:389
 #: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:61
 #: src/components/routes/organizer/Settings/Sections/DangerZoneSettings/index.tsx:67
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:85
@@ -1472,6 +1493,7 @@ msgid "Cannot delete the system default configuration"
 msgstr "无法删除系统默认配置"
 
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:42
+#: src/components/routes/event/schedule.tsx:374
 msgid "Capacity"
 msgstr "容量"
 
@@ -1491,7 +1513,7 @@ msgstr "容量分配"
 msgid "Capacity Management"
 msgstr "容量管理"
 
-#: src/components/routes/event/schedule.tsx:250
+#: src/components/routes/event/schedule.tsx:194
 msgid "Capacity per session"
 msgstr "每场次容量"
 
@@ -1683,8 +1705,8 @@ msgid "Choose calendar"
 msgstr "选择日历"
 
 #: src/components/routes/event/schedule.tsx:297
-msgid "Choose how the sessions repeat."
-msgstr "选择场次的重复方式。"
+#~ msgid "Choose how the sessions repeat."
+#~ msgstr "选择场次的重复方式。"
 
 #: src/components/routes/organizer/Settings/Sections/PlatformFeesSettings/index.tsx:45
 msgid "Choose the default setting for new events. This can be overridden for individual events."
@@ -1705,6 +1727,10 @@ msgstr "城市"
 #: src/components/common/SearchBar/index.tsx:75
 msgid "Clear Search Text"
 msgstr "清除搜索文本"
+
+#: src/components/routes/event/schedule.tsx:208
+msgid "Click a day, choose a start time, then add."
+msgstr "点选一天，选好开始时间，然后添加。"
 
 #: src/components/common/PromoCodeTable/index.tsx:98
 msgid "Click to copy"
@@ -2198,6 +2224,18 @@ msgstr "复制到剪贴板"
 msgid "Copy URL"
 msgstr "复制 URL"
 
+#: src/components/routes/event/schedule.tsx:110
+msgid "Could not add the sessions."
+msgstr "无法添加场次。"
+
+#: src/components/routes/event/schedule.tsx:119
+msgid "Could not remove the session."
+msgstr "无法删除场次。"
+
+#: src/components/routes/event/schedule.tsx:142
+msgid "Could not update the session."
+msgstr "无法更新场次。"
+
 #: src/components/common/CheckoutQuestion/index.tsx:174
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:152
 #: src/components/routes/organizer/Settings/Sections/AddressSettings/index.tsx:110
@@ -2609,7 +2647,7 @@ msgstr "数据所有权"
 #: src/components/common/AdminOrdersTable/index.tsx:94
 #: src/components/common/OrderDetails/index.tsx:39
 #: src/components/forms/QuestionForm/index.tsx:136
-#: src/components/routes/event/schedule.tsx:315
+#: src/components/routes/event/schedule.tsx:354
 #: src/components/routes/organizer/Reports/EventsPerformanceReport/index.tsx:56
 #: src/components/routes/organizer/Reports/RevenueSummaryReport/index.tsx:24
 msgid "Date"
@@ -2629,16 +2667,16 @@ msgid "Date order was placed"
 msgstr "下单日期"
 
 #: src/components/routes/event/schedule.tsx:368
-msgid "Dates"
-msgstr "日期"
+#~ msgid "Dates"
+#~ msgstr "日期"
 
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:38
 msgid "Day one capacity"
 msgstr "第一天容量"
 
 #: src/components/routes/event/schedule.tsx:326
-msgid "Days of the week"
-msgstr "星期几"
+#~ msgid "Days of the week"
+#~ msgstr "星期几"
 
 #: src/components/common/CookieConsentBanner/index.tsx:62
 msgid "Decline"
@@ -2660,9 +2698,13 @@ msgstr "默认费用处理"
 msgid "Default template will be used"
 msgstr "将使用默认模板"
 
+#: src/components/routes/event/schedule.tsx:178
+msgid "Defaults"
+msgstr "默认设置"
+
 #: src/components/routes/event/schedule.tsx:219
-msgid "Define your session length and times once — we'll generate bookable time slots customers can reserve."
-msgstr "只需设定一次场次时长和时间，我们将自动生成可供客人预约的时段。"
+#~ msgid "Define your session length and times once — we'll generate bookable time slots customers can reserve."
+#~ msgstr "只需设定一次场次时长和时间，我们将自动生成可供客人预约的时段。"
 
 #: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:101
 #: src/components/routes/organizer/Settings/Sections/DangerZoneSettings/index.tsx:107
@@ -2736,6 +2778,7 @@ msgstr "删除 Webhook"
 #: src/components/forms/ProductForm/index.tsx:280
 #: src/components/forms/TaxAndFeeForm/index.tsx:81
 #: src/components/modals/DuplicateEventModal/index.tsx:115
+#: src/components/routes/event/schedule.tsx:381
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:93
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:86
 msgid "Description"
@@ -2896,6 +2939,10 @@ msgstr "复制选项"
 msgid "Duplicate Product"
 msgstr "复制产品"
 
+#: src/components/routes/event/schedule.tsx:365
+msgid "Duration"
+msgstr "时长"
+
 #: src/components/common/LanguageSwitcher/index.tsx:26
 msgid "Dutch"
 msgstr "荷兰语"
@@ -2929,6 +2976,7 @@ msgstr "早起的鸟儿"
 #: src/components/modals/ManageAttendeeModal/index.tsx:221
 #: src/components/modals/ManageOrderModal/index.tsx:203
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:268
+#: src/components/routes/event/schedule.tsx:273
 #: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:236
 msgid "Edit"
 msgstr "编辑"
@@ -3019,6 +3067,11 @@ msgstr "编辑促销代码"
 #: src/components/modals/EditQuestionModal/index.tsx:101
 msgid "Edit Question"
 msgstr "编辑问题"
+
+#: src/components/routes/event/schedule.tsx:278
+#: src/components/routes/event/schedule.tsx:351
+msgid "Edit session"
+msgstr "编辑场次"
 
 #: src/components/routes/account/ManageAccount/sections/Users/index.tsx:119
 msgid "Edit user"
@@ -3216,8 +3269,8 @@ msgid "Enabled"
 msgstr "已启用"
 
 #: src/components/routes/event/schedule.tsx:346
-msgid "End date"
-msgstr "结束日期"
+#~ msgid "End date"
+#~ msgstr "结束日期"
 
 #: src/components/common/AdminEventsTable/index.tsx:107
 #: src/components/modals/DuplicateEventModal/index.tsx:129
@@ -4120,8 +4173,8 @@ msgid "French"
 msgstr "法语"
 
 #: src/components/routes/event/schedule.tsx:49
-msgid "Friday"
-msgstr "星期五"
+#~ msgid "Friday"
+#~ msgstr "星期五"
 
 #: src/components/routes/event/EventDashboard/index.tsx:298
 msgid "Full event duration"
@@ -4398,8 +4451,8 @@ msgid "How long a customer has to complete their purchase after receiving an off
 msgstr "客户收到报价后完成购买的时限。留空表示无时间限制。"
 
 #: src/components/routes/event/schedule.tsx:232
-msgid "How long each session lasts and how many people can book it."
-msgstr "每个场次的时长以及可预约人数。"
+#~ msgid "How long each session lasts and how many people can book it."
+#~ msgstr "每个场次的时长以及可预约人数。"
 
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:120
 msgid "How many minutes the customer has to complete their order. We recommend at least 15 minutes"
@@ -4866,6 +4919,10 @@ msgstr "最近触发"
 msgid "Last Used"
 msgstr "最近一次使用"
 
+#: src/components/routes/event/schedule.tsx:195
+msgid "Leave blank for unlimited"
+msgstr "留空表示不限"
+
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:191
 msgid "Leave blank to use the default word \"Invoice\""
 msgstr "留空以使用默认词“发票”"
@@ -5090,8 +5147,8 @@ msgid "Max Recipients / Message"
 msgstr "最大收件人数 / 消息"
 
 #: src/components/routes/event/schedule.tsx:251
-msgid "Maximum number of people per session. Leave blank for unlimited."
-msgstr "每场次的最大人数。留空表示无限制。"
+#~ msgid "Maximum number of people per session. Leave blank for unlimited."
+#~ msgstr "每场次的最大人数。留空表示无限制。"
 
 #: src/components/forms/ProductForm/index.tsx:442
 msgid "Maximum Per Order"
@@ -5187,9 +5244,14 @@ msgstr "每次订购的最低数量"
 msgid "Minimum Price"
 msgstr "最低价格"
 
-#: src/components/routes/event/schedule.tsx:243
+#: src/components/routes/event/schedule.tsx:191
+#: src/components/routes/event/schedule.tsx:371
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:71
 msgid "minutes"
+msgstr "分钟"
+
+#: src/components/routes/event/schedule.tsx:184
+msgid "Minutes"
 msgstr "分钟"
 
 #: src/components/routes/event/Settings/index.tsx:70
@@ -5209,8 +5271,8 @@ msgid "Mobile scanner with offline support and real-time tracking"
 msgstr "支持离线和实时跟踪的移动扫描仪"
 
 #: src/components/routes/event/schedule.tsx:45
-msgid "Monday"
-msgstr "星期一"
+#~ msgid "Monday"
+#~ msgstr "星期一"
 
 #: src/components/routes/admin/Dashboard/index.tsx:163
 msgid "Monetary values are approximate totals across all currencies"
@@ -5580,6 +5642,10 @@ msgstr "没有搜索结果"
 msgid "No search results."
 msgstr "没有搜索结果。"
 
+#: src/components/routes/event/schedule.tsx:246
+msgid "No sessions yet. Add your first one above."
+msgstr "还没有场次，在上方添加第一场吧。"
+
 #: src/components/common/TaxAndFeeList/index.tsx:105
 msgid "No Taxes or Fees have been added."
 msgstr "未加收任何税费。"
@@ -5829,6 +5895,10 @@ msgstr "方案 {i}"
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:253
 msgid "Optional additional information to appear on all invoices (e.g., payment terms, late payment fees, return policy)"
 msgstr "所有发票上显示的可选附加信息（例如，付款条款、逾期付款费用、退货政策）"
+
+#: src/components/routes/event/schedule.tsx:382
+msgid "Optional notes shown to customers for this session"
+msgstr "可选：向客人显示的本场次说明"
 
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:200
 msgid "Optional prefix for invoice numbers (e.g., INV-)"
@@ -6501,12 +6571,16 @@ msgstr "电话"
 #: src/components/routes/event/schedule.tsx:316
 #: src/components/routes/event/schedule.tsx:340
 #: src/components/routes/event/schedule.tsx:347
-msgid "Pick a date"
-msgstr "选择日期"
+#~ msgid "Pick a date"
+#~ msgstr "选择日期"
+
+#: src/components/routes/event/schedule.tsx:167
+msgid "Pick a date, set a start time, and add it. Tick repeat to roll it out weekly. Build your sessions exactly how you want."
+msgstr "选好日期、设定开始时间，点添加即可。勾选重复就按周自动铺开，完全按你的想法安排场次。"
 
 #: src/components/routes/event/schedule.tsx:369
-msgid "Pick dates"
-msgstr "选择多个日期"
+#~ msgid "Pick dates"
+#~ msgstr "选择多个日期"
 
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:82
 msgid "Pinterest"
@@ -6605,6 +6679,10 @@ msgstr "请输入您的增值税号码"
 msgid "Please Note"
 msgstr "请注意"
 
+#: src/components/routes/event/schedule.tsx:147
+msgid "Please pick a date on the calendar."
+msgstr "请在日历上选择一个日期。"
+
 #: src/components/common/Editor/Controls/InsertImageControl/index.tsx:35
 msgid "Please provide an image."
 msgstr "请提供一张图片。"
@@ -6632,6 +6710,10 @@ msgstr "请选择一张图片。"
 #: src/components/routes/product-widget/SelectProducts/index.tsx:286
 msgid "Please select at least one product"
 msgstr "请选择至少一个产品"
+
+#: src/components/routes/event/schedule.tsx:151
+msgid "Please set a start time."
+msgstr "请设置开始时间。"
 
 #: src/components/routes/event/Affiliates/index.tsx:52
 #: src/components/routes/event/attendees.tsx:137
@@ -7056,8 +7138,8 @@ msgid "Reconnect Stripe →"
 msgstr "重新连接 Stripe →"
 
 #: src/components/routes/event/schedule.tsx:307
-msgid "Recurring weekly"
-msgstr "每周重复"
+#~ msgid "Recurring weekly"
+#~ msgstr "每周重复"
 
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:80
 msgid "Reddit"
@@ -7153,13 +7235,22 @@ msgstr "去除"
 #: src/components/common/Editor/Controls/InsertImageControl/index.tsx:146
 #: src/components/common/WaitlistTable/index.tsx:78
 #: src/components/common/WaitlistTable/index.tsx:111
+#: src/components/routes/event/schedule.tsx:283
 #: src/components/routes/product-widget/SelectProducts/index.tsx:570
 msgid "Remove"
 msgstr "移除"
 
+#: src/components/routes/event/schedule.tsx:289
+msgid "Remove session"
+msgstr "删除场次"
+
 #: src/components/routes/event/schedule.tsx:272
-msgid "Remove start time"
-msgstr "删除开始时间"
+#~ msgid "Remove start time"
+#~ msgstr "删除开始时间"
+
+#: src/components/routes/event/schedule.tsx:223
+msgid "Repeat weekly (for the next 3 months)"
+msgstr "每周重复（往后3个月）"
 
 #: src/components/routes/organizer/Reports/ReportLayout/index.tsx:26
 msgid "Report not found"
@@ -7407,11 +7498,12 @@ msgid "San Francisco"
 msgstr "旧金山"
 
 #: src/components/routes/event/schedule.tsx:50
-msgid "Saturday"
-msgstr "星期六"
+#~ msgid "Saturday"
+#~ msgstr "星期六"
 
 #: src/components/common/PlatformFeesSettings/index.tsx:249
 #: src/components/common/QuestionAndAnswerList/index.tsx:142
+#: src/components/routes/event/schedule.tsx:406
 #: src/components/routes/event/Settings/Sections/EmailSettings/GeneralEmailSettings.tsx:81
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:129
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:132
@@ -7447,8 +7539,8 @@ msgid "Save Organizer"
 msgstr "保存组织器"
 
 #: src/components/routes/event/schedule.tsx:397
-msgid "Save schedule"
-msgstr "保存排期"
+#~ msgid "Save schedule"
+#~ msgstr "保存排期"
 
 #: src/components/routes/account/ManageAccount/sections/AccountSettings/index.tsx:90
 msgid "Save Settings"
@@ -7472,8 +7564,8 @@ msgid "Save VAT Settings"
 msgstr "保存增值税设置"
 
 #: src/components/routes/event/schedule.tsx:388
-msgid "Saving this schedule turns the event into a booking event and generates the sessions automatically. Existing booked sessions are never removed."
-msgstr "保存此排期会将活动转为预约活动并自动生成场次。已被预约的场次不会被删除。"
+#~ msgid "Saving this schedule turns the event into a booking event and generates the sessions automatically. Existing booked sessions are never removed."
+#~ msgstr "保存此排期会将活动转为预约活动并自动生成场次。已被预约的场次不会被删除。"
 
 #: src/components/layouts/CheckIn/index.tsx:443
 #: src/components/layouts/CheckIn/index.tsx:453
@@ -7489,14 +7581,18 @@ msgid "Schedule Message"
 msgstr "定时发送消息"
 
 #: src/components/routes/event/schedule.tsx:207
-msgid "Schedule saved. {0} bookable sessions were generated."
-msgstr ""
+#~ msgid "Schedule saved. {0} bookable sessions were generated."
+#~ msgstr ""
 
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:84
 #: src/components/routes/admin/Messages/index.tsx:125
 #: src/components/routes/event/messages.tsx:62
 msgid "Scheduled"
 msgstr "已安排"
+
+#: src/components/routes/event/schedule.tsx:240
+msgid "Scheduled sessions"
+msgstr "已排场次"
 
 #: src/components/modals/SendMessageModal/index.tsx:411
 msgid "Scheduled time"
@@ -7854,21 +7950,33 @@ msgstr "搜索引擎优化标题"
 msgid "Service Fee"
 msgstr "服务费"
 
-#: src/components/routes/event/schedule.tsx:238
+#: src/components/routes/event/schedule.tsx:183
 msgid "Session duration"
 msgstr "场次时长"
 
 #: src/components/routes/event/schedule.tsx:92
-msgid "Session duration must be at least 1 minute"
-msgstr "场次时长至少为 1 分钟"
+#~ msgid "Session duration must be at least 1 minute"
+#~ msgstr "场次时长至少为 1 分钟"
+
+#: src/components/routes/event/schedule.tsx:117
+msgid "Session removed."
+msgstr "已删除场次。"
 
 #: src/components/routes/event/schedule.tsx:231
-msgid "Session settings"
-msgstr "场次设置"
+#~ msgid "Session settings"
+#~ msgstr "场次设置"
+
+#: src/components/routes/event/schedule.tsx:140
+msgid "Session updated."
+msgstr "场次已更新。"
+
+#: src/components/routes/event/schedule.tsx:108
+msgid "Sessions added."
+msgstr "已添加场次。"
 
 #: src/components/routes/event/schedule.tsx:381
-msgid "Sessions preview"
-msgstr "场次预览"
+#~ msgid "Sessions preview"
+#~ msgstr "场次预览"
 
 #: src/components/forms/ProductForm/index.tsx:168
 msgid "Set a minimum price and let users pay more if they choose"
@@ -8010,8 +8118,8 @@ msgid "Simpson"
 msgstr "辛普森"
 
 #: src/components/routes/event/schedule.tsx:306
-msgid "Single day"
-msgstr "单日"
+#~ msgid "Single day"
+#~ msgstr "单日"
 
 #: src/components/forms/QuestionForm/index.tsx:100
 msgid "Single line text box"
@@ -8112,8 +8220,8 @@ msgid "Spanish"
 msgstr "西班牙语"
 
 #: src/components/routes/event/schedule.tsx:308
-msgid "Specific dates"
-msgstr "指定日期"
+#~ msgid "Specific dates"
+#~ msgstr "指定日期"
 
 #: src/constants/eventCategories.ts:8
 msgid "Sports"
@@ -8124,8 +8232,8 @@ msgid "Standard product with a fixed price"
 msgstr "固定价格的标准产品"
 
 #: src/components/routes/event/schedule.tsx:339
-msgid "Start date"
-msgstr "开始日期"
+#~ msgid "Start date"
+#~ msgstr "开始日期"
 
 #: src/components/common/AdminEventsTable/index.tsx:96
 #: src/components/modals/DuplicateEventModal/index.tsx:124
@@ -8145,7 +8253,8 @@ msgstr "开始日期和时间"
 msgid "Start date is required"
 msgstr "开始日期为必填项"
 
-#: src/components/routes/event/schedule.tsx:266
+#: src/components/routes/event/schedule.tsx:218
+#: src/components/routes/event/schedule.tsx:360
 msgid "Start time"
 msgstr "开始时间"
 
@@ -8155,8 +8264,8 @@ msgid "Start time of the event"
 msgstr "活动开始时间"
 
 #: src/components/routes/event/schedule.tsx:256
-msgid "Start times"
-msgstr "开始时间"
+#~ msgid "Start times"
+#~ msgstr "开始时间"
 
 #: src/components/common/CheckoutQuestion/index.tsx:165
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:139
@@ -8438,8 +8547,8 @@ msgid "Summer Music Festival 2025"
 msgstr "2025夏季音乐节"
 
 #: src/components/routes/event/schedule.tsx:51
-msgid "Sunday"
-msgstr "星期日"
+#~ msgid "Sunday"
+#~ msgstr "星期日"
 
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:48
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:81
@@ -8616,12 +8725,12 @@ msgid "The currency of the order"
 msgstr "订单的货币"
 
 #: src/components/routes/event/schedule.tsx:358
-msgid "The date range cannot be longer than 3 months."
-msgstr "日期范围不能超过 3 个月。"
+#~ msgid "The date range cannot be longer than 3 months."
+#~ msgstr "日期范围不能超过 3 个月。"
 
 #: src/components/routes/event/schedule.tsx:354
-msgid "The date range must be 3 months or less."
-msgstr "日期范围必须为 3 个月或更短。"
+#~ msgid "The date range must be 3 months or less."
+#~ msgstr "日期范围必须为 3 个月或更短。"
 
 #: src/components/routes/account/ManageAccount/sections/AccountSettings/index.tsx:75
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:118
@@ -8632,6 +8741,10 @@ msgstr "事件的默认货币。"
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:127
 msgid "The default timezone for your events."
 msgstr "事件的默认时区。"
+
+#: src/components/routes/event/schedule.tsx:179
+msgid "The duration and capacity new sessions use. You can override each session later."
+msgstr "新场次使用的时长和容量，之后每一场都可以单独修改。"
 
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:78
 msgid "The email address has been changed. The attendee will receive a new ticket at the updated email address."
@@ -8661,8 +8774,8 @@ msgid "The language the attendee will receive emails in."
 msgstr "与会者接收电子邮件的语言。"
 
 #: src/components/routes/event/schedule.tsx:239
-msgid "The length of a single session."
-msgstr ""
+#~ msgid "The length of a single session."
+#~ msgstr ""
 
 #: src/components/routes/product-widget/OrderSummaryAndProducts/LinkExpiredMessage/index.tsx:30
 msgid "The link you are trying to access has expired or is no longer valid. Please check your email for an updated link to manage your order."
@@ -8962,8 +9075,8 @@ msgid "This will not be visible to customers, but helps you identify the affilia
 msgstr "这对客户不可见，但有助于您识别推广员。"
 
 #: src/components/routes/event/schedule.tsx:48
-msgid "Thursday"
-msgstr "星期四"
+#~ msgid "Thursday"
+#~ msgstr "星期四"
 
 #: src/components/common/AttendeeTable/index.tsx:370
 #: src/components/routes/my-tickets/index.tsx:85
@@ -9285,8 +9398,8 @@ msgid "Try Hi.Events Free"
 msgstr "免费试用Hi.Events"
 
 #: src/components/routes/event/schedule.tsx:46
-msgid "Tuesday"
-msgstr "星期二"
+#~ msgid "Tuesday"
+#~ msgstr "星期二"
 
 #: src/components/common/LanguageSwitcher/index.tsx:38
 msgid "Turkish"
@@ -9404,7 +9517,9 @@ msgstr "未知参会者"
 #: src/components/modals/OfferWaitlistModal/index.tsx:189
 #: src/components/routes/event/Reports/PromoCodesReport/index.tsx:78
 #: src/components/routes/event/Reports/PromoCodesReport/index.tsx:84
-#: src/components/routes/event/schedule.tsx:252
+#: src/components/routes/event/schedule.tsx:159
+#: src/components/routes/event/schedule.tsx:196
+#: src/components/routes/event/schedule.tsx:375
 msgid "Unlimited"
 msgstr "无限制"
 
@@ -9993,8 +10108,8 @@ msgid "Website"
 msgstr "网站"
 
 #: src/components/routes/event/schedule.tsx:47
-msgid "Wednesday"
-msgstr "星期三"
+#~ msgid "Wednesday"
+#~ msgstr "星期三"
 
 #: src/components/routes/event/EventDashboard/index.tsx:275
 msgid "Week"
@@ -10149,8 +10264,8 @@ msgid "When customers purchase tickets, their orders will appear here."
 msgstr "当客户购买门票后，他们的订单将显示在此处。"
 
 #: src/components/routes/event/schedule.tsx:296
-msgid "When does it run?"
-msgstr "何时进行？"
+#~ msgid "When does it run?"
+#~ msgstr "何时进行？"
 
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:182
 msgid "When enabled, invoices will be generated for ticket orders. Invoices will sent along with the order confirmation email. Attendees can also download their invoices from the order confirmation page."

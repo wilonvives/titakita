@@ -7,6 +7,7 @@ use Tests\TestCase;
 use TitaKita\DomainObjects\Enums\ScheduleScopeType;
 use TitaKita\DomainObjects\ScheduleDomainObject;
 use TitaKita\Repository\Interfaces\EventRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Booking\DTO\BookingScheduleResultDTO;
 use TitaKita\Services\Application\Handlers\Booking\DTO\UpsertScheduleDTO;
 use TitaKita\Services\Application\Handlers\Booking\GetScheduleHandler;
 use TitaKita\Services\Application\Handlers\Booking\UpsertScheduleHandler;
@@ -23,13 +24,15 @@ class GetScheduleHandlerTest extends TestCase
         return $event->getId();
     }
 
-    public function test_returns_null_when_no_schedule_exists(): void
+    public function test_returns_null_schedule_when_none_exists(): void
     {
         $eventId = $this->eventId();
 
-        $schedule = app(GetScheduleHandler::class)->handle($eventId);
+        $result = app(GetScheduleHandler::class)->handle($eventId);
 
-        $this->assertNull($schedule);
+        $this->assertInstanceOf(BookingScheduleResultDTO::class, $result);
+        $this->assertNull($result->schedule);
+        $this->assertCount(0, $result->sessions);
     }
 
     public function test_returns_schedule_when_one_exists(): void
@@ -45,11 +48,14 @@ class GetScheduleHandlerTest extends TestCase
             'range_start_date' => '2026-06-06',
         ]));
 
-        $schedule = app(GetScheduleHandler::class)->handle($eventId);
+        $result = app(GetScheduleHandler::class)->handle($eventId);
 
-        $this->assertInstanceOf(ScheduleDomainObject::class, $schedule);
-        $this->assertSame($eventId, $schedule->getEventId());
-        $this->assertSame(90, $schedule->getSessionDurationMinutes());
-        $this->assertSame(['09:00'], $schedule->getStartTimes());
+        $this->assertInstanceOf(BookingScheduleResultDTO::class, $result);
+        $this->assertInstanceOf(ScheduleDomainObject::class, $result->schedule);
+        $this->assertSame($eventId, $result->schedule->getEventId());
+        $this->assertSame(90, $result->schedule->getSessionDurationMinutes());
+
+        // The single-day schedule generated one session for 09:00.
+        $this->assertCount(1, $result->sessions);
     }
 }

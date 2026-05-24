@@ -1,27 +1,56 @@
 import {api} from "./client";
 import {GenericDataResponse, IdParam, Schedule} from "../types";
 
-export interface UpsertScheduleRequest {
+export interface SaveBookingSettingsRequest {
     session_duration_minutes: number;
-    start_times: string[];
     capacity_per_session?: number | null;
-    scope_type: Schedule['scope_type'];
-    weekdays?: number[] | null;
-    range_start_date?: string | null;
-    range_end_date?: string | null;
-    specific_dates?: string[] | null;
+}
+
+export interface CreateBookingSessionsRequest {
+    session_date: string;
+    start_time: string;
+    duration_minutes: number;
+    capacity?: number | null;
+    description?: string | null;
+    repeat_weekly?: boolean;
+}
+
+export interface UpdateBookingSessionRequest {
+    session_date: string;
+    start_time: string;
+    duration_minutes: number;
+    capacity?: number | null;
+    description?: string | null;
 }
 
 export const scheduleClient = {
     get: async (eventId: IdParam) => {
-        const response = await api.get<GenericDataResponse<Schedule | null>>(
+        const response = await api.get<GenericDataResponse<Schedule>>(
             `events/${eventId}/schedule`
         );
         return response.data;
     },
-    upsert: async (eventId: IdParam, schedule: UpsertScheduleRequest) => {
+    saveSettings: async (eventId: IdParam, settings: SaveBookingSettingsRequest) => {
         const response = await api.post<GenericDataResponse<Schedule>>(
-            `events/${eventId}/schedule`, schedule
+            `events/${eventId}/booking-settings`, settings
+        );
+        return response.data;
+    },
+    createSessions: async (eventId: IdParam, sessions: CreateBookingSessionsRequest) => {
+        const response = await api.post<GenericDataResponse<Schedule>>(
+            `events/${eventId}/sessions`, sessions
+        );
+        return response.data;
+    },
+    updateSession: async (eventId: IdParam, productId: IdParam, session: UpdateBookingSessionRequest) => {
+        const response = await api.put<GenericDataResponse<Schedule>>(
+            `events/${eventId}/sessions/${productId}`, session
+        );
+        return response.data;
+    },
+    deleteSession: async (eventId: IdParam, productId: IdParam) => {
+        const response = await api.delete<GenericDataResponse<Schedule>>(
+            `events/${eventId}/sessions/${productId}`
         );
         return response.data;
     },

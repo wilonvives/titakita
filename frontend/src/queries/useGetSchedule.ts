@@ -6,7 +6,7 @@ import {IdParam, Schedule} from "../types.ts";
 export const GET_SCHEDULE_QUERY_KEY = 'getSchedule';
 
 export const useGetSchedule = (eventId: IdParam) => {
-    return useQuery<Schedule | null, AxiosError>({
+    return useQuery<Schedule, AxiosError>({
         queryKey: [GET_SCHEDULE_QUERY_KEY, eventId],
 
         queryFn: async () => {

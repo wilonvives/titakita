@@ -4,23 +4,17 @@ declare(strict_types=1);
 
 namespace TitaKita\Services\Application\Handlers\Booking;
 
-use TitaKita\DomainObjects\Generated\ScheduleDomainObjectAbstract;
-use TitaKita\DomainObjects\ScheduleDomainObject;
-use TitaKita\Repository\Interfaces\ScheduleRepositoryInterface;
+use TitaKita\Services\Application\Handlers\Booking\DTO\BookingScheduleResultDTO;
+use TitaKita\Services\Domain\Booking\BookingScheduleReader;
 
 class GetScheduleHandler
 {
     public function __construct(
-        private readonly ScheduleRepositoryInterface $scheduleRepository,
+        private readonly BookingScheduleReader $reader,
     ) {}
 
-    public function handle(int $eventId): ?ScheduleDomainObject
+    public function handle(int $eventId): BookingScheduleResultDTO
     {
-        /** @var ScheduleDomainObject|null $schedule */
-        $schedule = $this->scheduleRepository->findFirstWhere([
-            ScheduleDomainObjectAbstract::EVENT_ID => $eventId,
-        ]);
-
-        return $schedule;
+        return $this->reader->read($eventId);
     }
 }

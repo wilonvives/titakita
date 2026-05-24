@@ -2,10 +2,11 @@
 
 namespace TitaKita\DomainObjects\Enums;
 
+use InvalidArgumentException;
 use TitaKita\DomainObjects\EventDomainObject;
 use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\ProductDomainObject;
 use TitaKita\DomainObjects\UserDomainObject;
-use InvalidArgumentException;
 
 enum ImageType
 {
@@ -21,6 +22,9 @@ enum ImageType
     case ORGANIZER_LOGO;
     case ORGANIZER_COVER;
 
+    // Product images
+    case PRODUCT_IMAGE;
+
     public static function eventImageTypes(): array
     {
         return [
@@ -34,6 +38,13 @@ enum ImageType
         return [
             self::ORGANIZER_LOGO,
             self::ORGANIZER_COVER,
+        ];
+    }
+
+    public static function productImageTypes(): array
+    {
+        return [
+            self::PRODUCT_IMAGE,
         ];
     }
 
@@ -52,6 +63,7 @@ enum ImageType
             self::TICKET_LOGO->name => [100, 100],
             self::ORGANIZER_LOGO->name => [100, 100],
             self::ORGANIZER_COVER->name => [600, 50],
+            self::PRODUCT_IMAGE->name => [100, 100],
         ];
 
         return $map[$imageType->name] ?? $map[self::GENERIC->name];
@@ -67,10 +79,14 @@ enum ImageType
             return OrganizerDomainObject::class;
         }
 
+        if (in_array($this, self::productImageTypes())) {
+            return ProductDomainObject::class;
+        }
+
         if (in_array($this, self::genericImageTypes())) {
             return UserDomainObject::class;
         }
 
-        throw new InvalidArgumentException('Invalid image type: ' . $this->name);
+        throw new InvalidArgumentException('Invalid image type: '.$this->name);
     }
 }

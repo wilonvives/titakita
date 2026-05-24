@@ -74,9 +74,17 @@ msgstr "{0} left"
 msgid "{0} logo"
 msgstr "{0} logo"
 
+#: src/components/routes/event/schedule.tsx:266
+msgid "{0} min"
+msgstr "{0} min"
+
 #: src/components/routes/events/Dashboard/index.tsx:141
 msgid "{0} organizers"
 msgstr "{0} organizers"
+
+#: src/components/routes/event/schedule.tsx:241
+msgid "{0} session(s) scheduled."
+msgstr "{0} session(s) scheduled."
 
 #: src/components/routes/product-widget/CollectInformation/index.tsx:596
 msgid "{0} tickets"
@@ -89,6 +97,10 @@ msgstr "{0} updated successfully"
 #: src/components/common/CheckIn/CheckInInfoModal.tsx:40
 msgid "{0}/{1} checked in"
 msgstr "{0}/{1} checked in"
+
+#: src/components/routes/event/schedule.tsx:161
+msgid "{0}/{1} left"
+msgstr "{0}/{1} left"
 
 #: src/components/common/EventCard/index.tsx:123
 msgid "{availableCount} of {totalCount} available"
@@ -462,8 +474,8 @@ msgid "Add any notes about the order..."
 msgstr "Add any notes about the order..."
 
 #: src/components/routes/event/schedule.tsx:95
-msgid "Add at least one start time"
-msgstr "Add at least one start time"
+#~ msgid "Add at least one start time"
+#~ msgstr "Add at least one start time"
 
 #: src/components/common/QuestionsTable/index.tsx:433
 msgid "Add custom questions to collect additional information during checkout"
@@ -490,8 +502,8 @@ msgid "Add New"
 msgstr "Add New"
 
 #: src/components/routes/event/schedule.tsx:258
-msgid "Add one or more start times for each day (e.g. 10:00, 13:00, 15:30)."
-msgstr "Add one or more start times for each day (e.g. 10:00, 13:00, 15:30)."
+#~ msgid "Add one or more start times for each day (e.g. 10:00, 13:00, 15:30)."
+#~ msgstr "Add one or more start times for each day (e.g. 10:00, 13:00, 15:30)."
 
 #: src/components/forms/QuestionForm/index.tsx:68
 msgid "Add Option"
@@ -510,9 +522,13 @@ msgstr "Add Product to Category"
 msgid "Add Question"
 msgstr "Add Question"
 
+#: src/components/routes/event/schedule.tsx:207
+msgid "Add sessions"
+msgstr "Add sessions"
+
 #: src/components/routes/event/schedule.tsx:291
-msgid "Add start time"
-msgstr "Add start time"
+#~ msgid "Add start time"
+#~ msgstr "Add start time"
 
 #: src/components/routes/account/ManageAccount/sections/TaxSettings/index.tsx:18
 msgid "Add Tax or Fee"
@@ -535,6 +551,10 @@ msgstr "Add tier"
 #: src/components/layouts/EventHomepage/index.tsx:346
 msgid "Add to Calendar"
 msgstr "Add to Calendar"
+
+#: src/components/routes/event/schedule.tsx:232
+msgid "Add to schedule"
+msgstr "Add to schedule"
 
 #: src/components/routes/organizer/Settings/Sections/TrackingPixelSettings/index.tsx:172
 msgid "Add tracking pixels to your public event pages and organizer homepage. A cookie consent banner will be shown to visitors when tracking is active."
@@ -1308,11 +1328,11 @@ msgid "Body is required"
 msgstr "Body is required"
 
 #: src/components/routes/event/schedule.tsx:384
-msgid "bookable sessions will be generated."
-msgstr "bookable sessions will be generated."
+#~ msgid "bookable sessions will be generated."
+#~ msgstr "bookable sessions will be generated."
 
 #: src/components/layouts/Event/index.tsx:114
-#: src/components/routes/event/schedule.tsx:221
+#: src/components/routes/event/schedule.tsx:169
 msgid "Booking Schedule"
 msgstr "Booking Schedule"
 
@@ -1413,6 +1433,7 @@ msgstr "Campaign"
 #: src/components/common/WaitlistTable/index.tsx:111
 #: src/components/common/WaitlistTable/index.tsx:132
 #: src/components/routes/event/messages.tsx:80
+#: src/components/routes/event/schedule.tsx:389
 #: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:61
 #: src/components/routes/organizer/Settings/Sections/DangerZoneSettings/index.tsx:67
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:85
@@ -1472,6 +1493,7 @@ msgid "Cannot delete the system default configuration"
 msgstr "Cannot delete the system default configuration"
 
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:42
+#: src/components/routes/event/schedule.tsx:374
 msgid "Capacity"
 msgstr "Capacity"
 
@@ -1491,7 +1513,7 @@ msgstr "Capacity Assignments"
 msgid "Capacity Management"
 msgstr "Capacity Management"
 
-#: src/components/routes/event/schedule.tsx:250
+#: src/components/routes/event/schedule.tsx:194
 msgid "Capacity per session"
 msgstr "Capacity per session"
 
@@ -1683,8 +1705,8 @@ msgid "Choose calendar"
 msgstr "Choose calendar"
 
 #: src/components/routes/event/schedule.tsx:297
-msgid "Choose how the sessions repeat."
-msgstr "Choose how the sessions repeat."
+#~ msgid "Choose how the sessions repeat."
+#~ msgstr "Choose how the sessions repeat."
 
 #: src/components/routes/organizer/Settings/Sections/PlatformFeesSettings/index.tsx:45
 msgid "Choose the default setting for new events. This can be overridden for individual events."
@@ -1705,6 +1727,10 @@ msgstr "City"
 #: src/components/common/SearchBar/index.tsx:75
 msgid "Clear Search Text"
 msgstr "Clear Search Text"
+
+#: src/components/routes/event/schedule.tsx:208
+msgid "Click a day, choose a start time, then add."
+msgstr "Click a day, choose a start time, then add."
 
 #: src/components/common/PromoCodeTable/index.tsx:98
 msgid "Click to copy"
@@ -2198,6 +2224,18 @@ msgstr "Copy to clipboard"
 msgid "Copy URL"
 msgstr "Copy URL"
 
+#: src/components/routes/event/schedule.tsx:110
+msgid "Could not add the sessions."
+msgstr "Could not add the sessions."
+
+#: src/components/routes/event/schedule.tsx:119
+msgid "Could not remove the session."
+msgstr "Could not remove the session."
+
+#: src/components/routes/event/schedule.tsx:142
+msgid "Could not update the session."
+msgstr "Could not update the session."
+
 #: src/components/common/CheckoutQuestion/index.tsx:174
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:152
 #: src/components/routes/organizer/Settings/Sections/AddressSettings/index.tsx:110
@@ -2609,7 +2647,7 @@ msgstr "Data Ownership"
 #: src/components/common/AdminOrdersTable/index.tsx:94
 #: src/components/common/OrderDetails/index.tsx:39
 #: src/components/forms/QuestionForm/index.tsx:136
-#: src/components/routes/event/schedule.tsx:315
+#: src/components/routes/event/schedule.tsx:354
 #: src/components/routes/organizer/Reports/EventsPerformanceReport/index.tsx:56
 #: src/components/routes/organizer/Reports/RevenueSummaryReport/index.tsx:24
 msgid "Date"
@@ -2629,16 +2667,16 @@ msgid "Date order was placed"
 msgstr "Date order was placed"
 
 #: src/components/routes/event/schedule.tsx:368
-msgid "Dates"
-msgstr "Dates"
+#~ msgid "Dates"
+#~ msgstr "Dates"
 
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:38
 msgid "Day one capacity"
 msgstr "Day one capacity"
 
 #: src/components/routes/event/schedule.tsx:326
-msgid "Days of the week"
-msgstr "Days of the week"
+#~ msgid "Days of the week"
+#~ msgstr "Days of the week"
 
 #: src/components/common/CookieConsentBanner/index.tsx:62
 msgid "Decline"
@@ -2660,9 +2698,13 @@ msgstr "Default Fee Handling"
 msgid "Default template will be used"
 msgstr "Default template will be used"
 
+#: src/components/routes/event/schedule.tsx:178
+msgid "Defaults"
+msgstr "Defaults"
+
 #: src/components/routes/event/schedule.tsx:219
-msgid "Define your session length and times once — we'll generate bookable time slots customers can reserve."
-msgstr "Define your session length and times once — we'll generate bookable time slots customers can reserve."
+#~ msgid "Define your session length and times once — we'll generate bookable time slots customers can reserve."
+#~ msgstr "Define your session length and times once — we'll generate bookable time slots customers can reserve."
 
 #: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:101
 #: src/components/routes/organizer/Settings/Sections/DangerZoneSettings/index.tsx:107
@@ -2736,6 +2778,7 @@ msgstr "Delete webhook"
 #: src/components/forms/ProductForm/index.tsx:280
 #: src/components/forms/TaxAndFeeForm/index.tsx:81
 #: src/components/modals/DuplicateEventModal/index.tsx:115
+#: src/components/routes/event/schedule.tsx:381
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:93
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:86
 msgid "Description"
@@ -2898,6 +2941,10 @@ msgstr "Duplicate Options"
 msgid "Duplicate Product"
 msgstr "Duplicate Product"
 
+#: src/components/routes/event/schedule.tsx:365
+msgid "Duration"
+msgstr "Duration"
+
 #: src/components/common/LanguageSwitcher/index.tsx:26
 msgid "Dutch"
 msgstr "Dutch"
@@ -2931,6 +2978,7 @@ msgstr "Early bird"
 #: src/components/modals/ManageAttendeeModal/index.tsx:221
 #: src/components/modals/ManageOrderModal/index.tsx:203
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:268
+#: src/components/routes/event/schedule.tsx:273
 #: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:236
 msgid "Edit"
 msgstr "Edit"
@@ -3021,6 +3069,11 @@ msgstr "Edit Promo Code"
 #: src/components/modals/EditQuestionModal/index.tsx:101
 msgid "Edit Question"
 msgstr "Edit Question"
+
+#: src/components/routes/event/schedule.tsx:278
+#: src/components/routes/event/schedule.tsx:351
+msgid "Edit session"
+msgstr "Edit session"
 
 #: src/components/routes/account/ManageAccount/sections/Users/index.tsx:119
 msgid "Edit user"
@@ -3218,8 +3271,8 @@ msgid "Enabled"
 msgstr "Enabled"
 
 #: src/components/routes/event/schedule.tsx:346
-msgid "End date"
-msgstr "End date"
+#~ msgid "End date"
+#~ msgstr "End date"
 
 #: src/components/common/AdminEventsTable/index.tsx:107
 #: src/components/modals/DuplicateEventModal/index.tsx:129
@@ -4122,8 +4175,8 @@ msgid "French"
 msgstr "French"
 
 #: src/components/routes/event/schedule.tsx:49
-msgid "Friday"
-msgstr "Friday"
+#~ msgid "Friday"
+#~ msgstr "Friday"
 
 #: src/components/routes/event/EventDashboard/index.tsx:298
 msgid "Full event duration"
@@ -4400,8 +4453,8 @@ msgid "How long a customer has to complete their purchase after receiving an off
 msgstr "How long a customer has to complete their purchase after receiving an offer. Leave empty for no timeout."
 
 #: src/components/routes/event/schedule.tsx:232
-msgid "How long each session lasts and how many people can book it."
-msgstr "How long each session lasts and how many people can book it."
+#~ msgid "How long each session lasts and how many people can book it."
+#~ msgstr "How long each session lasts and how many people can book it."
 
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:120
 msgid "How many minutes the customer has to complete their order. We recommend at least 15 minutes"
@@ -4868,6 +4921,10 @@ msgstr "Last Triggered"
 msgid "Last Used"
 msgstr "Last Used"
 
+#: src/components/routes/event/schedule.tsx:195
+msgid "Leave blank for unlimited"
+msgstr "Leave blank for unlimited"
+
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:191
 msgid "Leave blank to use the default word \"Invoice\""
 msgstr "Leave blank to use the default word \"Invoice\""
@@ -5092,8 +5149,8 @@ msgid "Max Recipients / Message"
 msgstr "Max Recipients / Message"
 
 #: src/components/routes/event/schedule.tsx:251
-msgid "Maximum number of people per session. Leave blank for unlimited."
-msgstr "Maximum number of people per session. Leave blank for unlimited."
+#~ msgid "Maximum number of people per session. Leave blank for unlimited."
+#~ msgstr "Maximum number of people per session. Leave blank for unlimited."
 
 #: src/components/forms/ProductForm/index.tsx:442
 msgid "Maximum Per Order"
@@ -5189,10 +5246,15 @@ msgstr "Minimum Per Order"
 msgid "Minimum Price"
 msgstr "Minimum Price"
 
-#: src/components/routes/event/schedule.tsx:243
+#: src/components/routes/event/schedule.tsx:191
+#: src/components/routes/event/schedule.tsx:371
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:71
 msgid "minutes"
 msgstr "minutes"
+
+#: src/components/routes/event/schedule.tsx:184
+msgid "Minutes"
+msgstr "Minutes"
 
 #: src/components/routes/event/Settings/index.tsx:70
 msgid "Miscellaneous"
@@ -5211,8 +5273,8 @@ msgid "Mobile scanner with offline support and real-time tracking"
 msgstr "Mobile scanner with offline support and real-time tracking"
 
 #: src/components/routes/event/schedule.tsx:45
-msgid "Monday"
-msgstr "Monday"
+#~ msgid "Monday"
+#~ msgstr "Monday"
 
 #: src/components/routes/admin/Dashboard/index.tsx:163
 msgid "Monetary values are approximate totals across all currencies"
@@ -5582,6 +5644,10 @@ msgstr "No Search Results"
 msgid "No search results."
 msgstr "No search results."
 
+#: src/components/routes/event/schedule.tsx:246
+msgid "No sessions yet. Add your first one above."
+msgstr "No sessions yet. Add your first one above."
+
 #: src/components/common/TaxAndFeeList/index.tsx:105
 msgid "No Taxes or Fees have been added."
 msgstr "No Taxes or Fees have been added."
@@ -5831,6 +5897,10 @@ msgstr "Option {i}"
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:253
 msgid "Optional additional information to appear on all invoices (e.g., payment terms, late payment fees, return policy)"
 msgstr "Optional additional information to appear on all invoices (e.g., payment terms, late payment fees, return policy)"
+
+#: src/components/routes/event/schedule.tsx:382
+msgid "Optional notes shown to customers for this session"
+msgstr "Optional notes shown to customers for this session"
 
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:200
 msgid "Optional prefix for invoice numbers (e.g., INV-)"
@@ -6503,12 +6573,16 @@ msgstr "Phone"
 #: src/components/routes/event/schedule.tsx:316
 #: src/components/routes/event/schedule.tsx:340
 #: src/components/routes/event/schedule.tsx:347
-msgid "Pick a date"
-msgstr "Pick a date"
+#~ msgid "Pick a date"
+#~ msgstr "Pick a date"
+
+#: src/components/routes/event/schedule.tsx:167
+msgid "Pick a date, set a start time, and add it. Tick repeat to roll it out weekly. Build your sessions exactly how you want."
+msgstr "Pick a date, set a start time, and add it. Tick repeat to roll it out weekly. Build your sessions exactly how you want."
 
 #: src/components/routes/event/schedule.tsx:369
-msgid "Pick dates"
-msgstr "Pick dates"
+#~ msgid "Pick dates"
+#~ msgstr "Pick dates"
 
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:82
 msgid "Pinterest"
@@ -6607,6 +6681,10 @@ msgstr "Please enter your VAT number"
 msgid "Please Note"
 msgstr "Please Note"
 
+#: src/components/routes/event/schedule.tsx:147
+msgid "Please pick a date on the calendar."
+msgstr "Please pick a date on the calendar."
+
 #: src/components/common/Editor/Controls/InsertImageControl/index.tsx:35
 msgid "Please provide an image."
 msgstr "Please provide an image."
@@ -6634,6 +6712,10 @@ msgstr "Please select an image."
 #: src/components/routes/product-widget/SelectProducts/index.tsx:286
 msgid "Please select at least one product"
 msgstr "Please select at least one product"
+
+#: src/components/routes/event/schedule.tsx:151
+msgid "Please set a start time."
+msgstr "Please set a start time."
 
 #: src/components/routes/event/Affiliates/index.tsx:52
 #: src/components/routes/event/attendees.tsx:137
@@ -7060,8 +7142,8 @@ msgid "Reconnect Stripe →"
 msgstr "Reconnect Stripe →"
 
 #: src/components/routes/event/schedule.tsx:307
-msgid "Recurring weekly"
-msgstr "Recurring weekly"
+#~ msgid "Recurring weekly"
+#~ msgstr "Recurring weekly"
 
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:80
 msgid "Reddit"
@@ -7157,13 +7239,22 @@ msgstr "remove"
 #: src/components/common/Editor/Controls/InsertImageControl/index.tsx:146
 #: src/components/common/WaitlistTable/index.tsx:78
 #: src/components/common/WaitlistTable/index.tsx:111
+#: src/components/routes/event/schedule.tsx:283
 #: src/components/routes/product-widget/SelectProducts/index.tsx:570
 msgid "Remove"
 msgstr "Remove"
 
+#: src/components/routes/event/schedule.tsx:289
+msgid "Remove session"
+msgstr "Remove session"
+
 #: src/components/routes/event/schedule.tsx:272
-msgid "Remove start time"
-msgstr "Remove start time"
+#~ msgid "Remove start time"
+#~ msgstr "Remove start time"
+
+#: src/components/routes/event/schedule.tsx:223
+msgid "Repeat weekly (for the next 3 months)"
+msgstr "Repeat weekly (for the next 3 months)"
 
 #: src/components/routes/organizer/Reports/ReportLayout/index.tsx:26
 msgid "Report not found"
@@ -7411,11 +7502,12 @@ msgid "San Francisco"
 msgstr "San Francisco"
 
 #: src/components/routes/event/schedule.tsx:50
-msgid "Saturday"
-msgstr "Saturday"
+#~ msgid "Saturday"
+#~ msgstr "Saturday"
 
 #: src/components/common/PlatformFeesSettings/index.tsx:249
 #: src/components/common/QuestionAndAnswerList/index.tsx:142
+#: src/components/routes/event/schedule.tsx:406
 #: src/components/routes/event/Settings/Sections/EmailSettings/GeneralEmailSettings.tsx:81
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:129
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:132
@@ -7451,8 +7543,8 @@ msgid "Save Organizer"
 msgstr "Save Organizer"
 
 #: src/components/routes/event/schedule.tsx:397
-msgid "Save schedule"
-msgstr "Save schedule"
+#~ msgid "Save schedule"
+#~ msgstr "Save schedule"
 
 #: src/components/routes/account/ManageAccount/sections/AccountSettings/index.tsx:90
 msgid "Save Settings"
@@ -7476,8 +7568,8 @@ msgid "Save VAT Settings"
 msgstr "Save VAT Settings"
 
 #: src/components/routes/event/schedule.tsx:388
-msgid "Saving this schedule turns the event into a booking event and generates the sessions automatically. Existing booked sessions are never removed."
-msgstr "Saving this schedule turns the event into a booking event and generates the sessions automatically. Existing booked sessions are never removed."
+#~ msgid "Saving this schedule turns the event into a booking event and generates the sessions automatically. Existing booked sessions are never removed."
+#~ msgstr "Saving this schedule turns the event into a booking event and generates the sessions automatically. Existing booked sessions are never removed."
 
 #: src/components/layouts/CheckIn/index.tsx:443
 #: src/components/layouts/CheckIn/index.tsx:453
@@ -7493,14 +7585,18 @@ msgid "Schedule Message"
 msgstr "Schedule Message"
 
 #: src/components/routes/event/schedule.tsx:207
-msgid "Schedule saved. {0} bookable sessions were generated."
-msgstr "Schedule saved. {0} bookable sessions were generated."
+#~ msgid "Schedule saved. {0} bookable sessions were generated."
+#~ msgstr "Schedule saved. {0} bookable sessions were generated."
 
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:84
 #: src/components/routes/admin/Messages/index.tsx:125
 #: src/components/routes/event/messages.tsx:62
 msgid "Scheduled"
 msgstr "Scheduled"
+
+#: src/components/routes/event/schedule.tsx:240
+msgid "Scheduled sessions"
+msgstr "Scheduled sessions"
 
 #: src/components/modals/SendMessageModal/index.tsx:411
 msgid "Scheduled time"
@@ -7858,21 +7954,33 @@ msgstr "SEO Title"
 msgid "Service Fee"
 msgstr "Service Fee"
 
-#: src/components/routes/event/schedule.tsx:238
+#: src/components/routes/event/schedule.tsx:183
 msgid "Session duration"
 msgstr "Session duration"
 
 #: src/components/routes/event/schedule.tsx:92
-msgid "Session duration must be at least 1 minute"
-msgstr "Session duration must be at least 1 minute"
+#~ msgid "Session duration must be at least 1 minute"
+#~ msgstr "Session duration must be at least 1 minute"
+
+#: src/components/routes/event/schedule.tsx:117
+msgid "Session removed."
+msgstr "Session removed."
 
 #: src/components/routes/event/schedule.tsx:231
-msgid "Session settings"
-msgstr "Session settings"
+#~ msgid "Session settings"
+#~ msgstr "Session settings"
+
+#: src/components/routes/event/schedule.tsx:140
+msgid "Session updated."
+msgstr "Session updated."
+
+#: src/components/routes/event/schedule.tsx:108
+msgid "Sessions added."
+msgstr "Sessions added."
 
 #: src/components/routes/event/schedule.tsx:381
-msgid "Sessions preview"
-msgstr "Sessions preview"
+#~ msgid "Sessions preview"
+#~ msgstr "Sessions preview"
 
 #: src/components/forms/ProductForm/index.tsx:168
 msgid "Set a minimum price and let users pay more if they choose"
@@ -8014,8 +8122,8 @@ msgid "Simpson"
 msgstr "Simpson"
 
 #: src/components/routes/event/schedule.tsx:306
-msgid "Single day"
-msgstr "Single day"
+#~ msgid "Single day"
+#~ msgstr "Single day"
 
 #: src/components/forms/QuestionForm/index.tsx:100
 msgid "Single line text box"
@@ -8116,8 +8224,8 @@ msgid "Spanish"
 msgstr "Spanish"
 
 #: src/components/routes/event/schedule.tsx:308
-msgid "Specific dates"
-msgstr "Specific dates"
+#~ msgid "Specific dates"
+#~ msgstr "Specific dates"
 
 #: src/constants/eventCategories.ts:8
 msgid "Sports"
@@ -8128,8 +8236,8 @@ msgid "Standard product with a fixed price"
 msgstr "Standard product with a fixed price"
 
 #: src/components/routes/event/schedule.tsx:339
-msgid "Start date"
-msgstr "Start date"
+#~ msgid "Start date"
+#~ msgstr "Start date"
 
 #: src/components/common/AdminEventsTable/index.tsx:96
 #: src/components/modals/DuplicateEventModal/index.tsx:124
@@ -8149,7 +8257,8 @@ msgstr "Start Date & Time"
 msgid "Start date is required"
 msgstr "Start date is required"
 
-#: src/components/routes/event/schedule.tsx:266
+#: src/components/routes/event/schedule.tsx:218
+#: src/components/routes/event/schedule.tsx:360
 msgid "Start time"
 msgstr "Start time"
 
@@ -8159,8 +8268,8 @@ msgid "Start time of the event"
 msgstr "Start time of the event"
 
 #: src/components/routes/event/schedule.tsx:256
-msgid "Start times"
-msgstr "Start times"
+#~ msgid "Start times"
+#~ msgstr "Start times"
 
 #: src/components/common/CheckoutQuestion/index.tsx:165
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:139
@@ -8442,8 +8551,8 @@ msgid "Summer Music Festival 2025"
 msgstr "Summer Music Festival 2025"
 
 #: src/components/routes/event/schedule.tsx:51
-msgid "Sunday"
-msgstr "Sunday"
+#~ msgid "Sunday"
+#~ msgstr "Sunday"
 
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:48
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:81
@@ -8620,12 +8729,12 @@ msgid "The currency of the order"
 msgstr "The currency of the order"
 
 #: src/components/routes/event/schedule.tsx:358
-msgid "The date range cannot be longer than 3 months."
-msgstr "The date range cannot be longer than 3 months."
+#~ msgid "The date range cannot be longer than 3 months."
+#~ msgstr "The date range cannot be longer than 3 months."
 
 #: src/components/routes/event/schedule.tsx:354
-msgid "The date range must be 3 months or less."
-msgstr "The date range must be 3 months or less."
+#~ msgid "The date range must be 3 months or less."
+#~ msgstr "The date range must be 3 months or less."
 
 #: src/components/routes/account/ManageAccount/sections/AccountSettings/index.tsx:75
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:118
@@ -8636,6 +8745,10 @@ msgstr "The default currency for your events."
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:127
 msgid "The default timezone for your events."
 msgstr "The default timezone for your events."
+
+#: src/components/routes/event/schedule.tsx:179
+msgid "The duration and capacity new sessions use. You can override each session later."
+msgstr "The duration and capacity new sessions use. You can override each session later."
 
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:78
 msgid "The email address has been changed. The attendee will receive a new ticket at the updated email address."
@@ -8665,8 +8778,8 @@ msgid "The language the attendee will receive emails in."
 msgstr "The language the attendee will receive emails in."
 
 #: src/components/routes/event/schedule.tsx:239
-msgid "The length of a single session."
-msgstr "The length of a single session."
+#~ msgid "The length of a single session."
+#~ msgstr "The length of a single session."
 
 #: src/components/routes/product-widget/OrderSummaryAndProducts/LinkExpiredMessage/index.tsx:30
 msgid "The link you are trying to access has expired or is no longer valid. Please check your email for an updated link to manage your order."
@@ -8966,8 +9079,8 @@ msgid "This will not be visible to customers, but helps you identify the affilia
 msgstr "This will not be visible to customers, but helps you identify the affiliate."
 
 #: src/components/routes/event/schedule.tsx:48
-msgid "Thursday"
-msgstr "Thursday"
+#~ msgid "Thursday"
+#~ msgstr "Thursday"
 
 #: src/components/common/AttendeeTable/index.tsx:370
 #: src/components/routes/my-tickets/index.tsx:85
@@ -9289,8 +9402,8 @@ msgid "Try Hi.Events Free"
 msgstr "Try Hi.Events Free"
 
 #: src/components/routes/event/schedule.tsx:46
-msgid "Tuesday"
-msgstr "Tuesday"
+#~ msgid "Tuesday"
+#~ msgstr "Tuesday"
 
 #: src/components/common/LanguageSwitcher/index.tsx:38
 msgid "Turkish"
@@ -9408,7 +9521,9 @@ msgstr "Unknown Attendee"
 #: src/components/modals/OfferWaitlistModal/index.tsx:189
 #: src/components/routes/event/Reports/PromoCodesReport/index.tsx:78
 #: src/components/routes/event/Reports/PromoCodesReport/index.tsx:84
-#: src/components/routes/event/schedule.tsx:252
+#: src/components/routes/event/schedule.tsx:159
+#: src/components/routes/event/schedule.tsx:196
+#: src/components/routes/event/schedule.tsx:375
 msgid "Unlimited"
 msgstr "Unlimited"
 
@@ -9997,8 +10112,8 @@ msgid "Website"
 msgstr "Website"
 
 #: src/components/routes/event/schedule.tsx:47
-msgid "Wednesday"
-msgstr "Wednesday"
+#~ msgid "Wednesday"
+#~ msgstr "Wednesday"
 
 #: src/components/routes/event/EventDashboard/index.tsx:275
 msgid "Week"
@@ -10153,8 +10268,8 @@ msgid "When customers purchase tickets, their orders will appear here."
 msgstr "When customers purchase tickets, their orders will appear here."
 
 #: src/components/routes/event/schedule.tsx:296
-msgid "When does it run?"
-msgstr "When does it run?"
+#~ msgid "When does it run?"
+#~ msgstr "When does it run?"
 
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:182
 msgid "When enabled, invoices will be generated for ticket orders. Invoices will sent along with the order confirmation email. Attendees can also download their invoices from the order confirmation page."

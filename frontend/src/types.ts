@@ -314,18 +314,24 @@ export type EventType = 'event' | 'booking';
 
 export type ScheduleScopeType = 'single_day' | 'recurring_weekly' | 'specific_dates';
 
+export interface BookingSession {
+    product_id: IdParam;
+    session_start_at: string;
+    session_end_at: string;
+    duration_minutes: number | null;
+    capacity: number | null;
+    capacity_remaining: number | null;
+    sold_out: boolean;
+    description?: string | null;
+    image?: Image | null;
+}
+
 export interface Schedule {
-    id?: IdParam;
+    id?: IdParam | null;
     event_id?: IdParam;
-    session_duration_minutes: number;
-    start_times: string[];
+    session_duration_minutes: number | null;
     capacity_per_session?: number | null;
-    scope_type: ScheduleScopeType;
-    weekdays?: number[] | null;
-    range_start_date?: string | null;
-    range_end_date?: string | null;
-    specific_dates?: string[] | null;
-    generated_session_count?: number;
+    sessions: BookingSession[];
 }
 
 export interface Event extends EventBase {
