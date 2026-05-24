@@ -15,7 +15,7 @@ import {
     Textarea,
     Tooltip,
 } from "@mantine/core";
-import {DatePicker, DatePickerInput, TimePicker} from "@mantine/dates";
+import {DatePicker, DatePickerInput} from "@mantine/dates";
 import {IconCalendarPlus, IconInfoCircle, IconPencil, IconTrash} from "@tabler/icons-react";
 import dayjs from "dayjs";
 import {PageBody} from "../../common/PageBody";
@@ -23,6 +23,7 @@ import {PageTitle} from "../../common/PageTitle";
 import {Card} from "../../common/Card";
 import {HeadingWithDescription} from "../../common/Card/CardHeading";
 import {ImageUploadDropzone} from "../../common/ImageUploadDropzone";
+import {WheelTimePicker} from "../../common/WheelTimePicker";
 import {TableSkeleton} from "../../common/TableSkeleton";
 import {useGetEvent, GET_EVENT_QUERY_KEY} from "../../../queries/useGetEvent.ts";
 import {useGetSchedule, GET_SCHEDULE_QUERY_KEY} from "../../../queries/useGetSchedule.ts";
@@ -218,13 +219,10 @@ export const Schedule = () => {
                                 maxDate={THREE_MONTHS_OUT()}
                             />
                             <Stack gap="md" className={classes.addControls}>
-                                <TimePicker
+                                <WheelTimePicker
                                     label={t`Start time`}
                                     value={startTime}
                                     onChange={setStartTime}
-                                    format="24h"
-                                    withDropdown
-                                    minutesStep={5}
                                 />
                                 <Checkbox
                                     label={t`Repeat weekly (for the next 3 months)`}
@@ -379,13 +377,10 @@ const EditSessionModal = ({session, timezone, fallbackDuration, isSaving, onClos
                     minDate={dayjs().format("YYYY-MM-DD")}
                     maxDate={THREE_MONTHS_OUT()}
                 />
-                <TimePicker
+                <WheelTimePicker
                     label={t`Start time`}
                     value={time}
                     onChange={setTime}
-                    format="24h"
-                    withDropdown
-                    minutesStep={5}
                 />
                 <NumberInput
                     label={t`Duration`}
