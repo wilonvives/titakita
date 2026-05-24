@@ -106,8 +106,8 @@ msgstr "{0}/{1} 已签到"
 #~ msgstr "剩 {0}/{1}"
 
 #: src/components/routes/event/schedule.tsx:165
-msgid "{0}/{1} spots left"
-msgstr "剩 {0}/{1} 个名额"
+#~ msgid "{0}/{1} spots left"
+#~ msgstr "剩 {0}/{1} 个名额"
 
 #: src/components/common/EventCard/index.tsx:123
 msgid "{availableCount} of {totalCount} available"
@@ -164,7 +164,7 @@ msgstr "<0>设置一个单一的总人数上限，同时适用于多个票种。
 
 #: src/components/forms/ProductForm/index.tsx:326
 msgid "<0>The number of products available for this product</0><1>This value can be overridden if there are <2>Capacity Limits</2> associated with this product.</1>"
-msgstr "<0>该产品的可用数量</0><1>如果该产品有相关的<2>容量限制</2>，此值可以被覆盖。</1>"
+msgstr "<0>该产品的可用数量</0><1>如果该产品有相关的<2>名额限制</2>，此值可以被覆盖。</1>"
 
 #: src/components/common/OrganizerWebhookTable/index.tsx:205
 #: src/components/common/WebhookTable/index.tsx:205
@@ -1023,7 +1023,7 @@ msgstr "您确定要取消发布此主办方资料吗？它将不再对公众可
 
 #: src/components/common/CapacityAssignmentList/index.tsx:160
 msgid "Are you sure you would like to delete this Capacity Assignment?"
-msgstr "您确定要删除此容量分配吗？"
+msgstr "您确定要删除此名额分配吗？"
 
 #: src/components/common/CheckInListList/index.tsx:181
 msgid "Are you sure you would like to delete this Check-In List?"
@@ -1501,27 +1501,27 @@ msgstr "无法删除系统默认配置"
 
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:42
 msgid "Capacity"
-msgstr "容量"
+msgstr "名额"
 
 #: src/components/modals/CreateCapacityAssignmentModal/index.tsx:36
 msgid "Capacity Assignment created successfully"
-msgstr "容量分配创建成功"
+msgstr "名额分配创建成功"
 
 #: src/components/common/CapacityAssignmentList/index.tsx:31
 msgid "Capacity Assignment deleted successfully"
-msgstr "容量分配删除成功"
+msgstr "名额分配删除成功"
 
 #: src/components/modals/DuplicateEventModal/index.tsx:28
 msgid "Capacity Assignments"
-msgstr "容量分配"
+msgstr "名额分配"
 
 #: src/components/layouts/Event/index.tsx:129
 msgid "Capacity Management"
-msgstr "容量管理"
+msgstr "名额管理"
 
 #: src/components/routes/event/schedule.tsx:198
 #~ msgid "Capacity per session"
-#~ msgstr "每场次容量"
+#~ msgstr "每场次名额"
 
 #: src/components/modals/CreateProductCategoryModal/index.tsx:56
 msgid "Categories allow you to group products together. For example, you might have a category for \"Tickets\" and another for \"Merchandise\"."
@@ -2327,7 +2327,7 @@ msgstr "创建与会者"
 #: src/components/modals/CreateCapacityAssignmentModal/index.tsx:79
 #: src/components/routes/event/CapacityAssignments/index.tsx:48
 msgid "Create Capacity Assignment"
-msgstr "创建容量分配"
+msgstr "创建名额分配"
 
 #: src/components/common/ProductsTable/SortableCategory/index.tsx:128
 #: src/components/common/ProductsTable/SortableCategory/index.tsx:129
@@ -2678,7 +2678,7 @@ msgstr "下单日期"
 
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:38
 msgid "Day one capacity"
-msgstr "第一天容量"
+msgstr "第一天名额"
 
 #: src/components/routes/event/schedule.tsx:326
 #~ msgid "Days of the week"
@@ -2735,7 +2735,7 @@ msgstr "全部删除"
 
 #: src/components/common/CapacityAssignmentList/index.tsx:156
 msgid "Delete Capacity"
-msgstr "删除容量"
+msgstr "删除名额"
 
 #: src/components/common/ProductsTable/SortableCategory/index.tsx:146
 #: src/components/common/ProductsTable/SortableCategory/index.tsx:147
@@ -2813,7 +2813,7 @@ msgstr "没有收到验证码？"
 
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:27
 msgid "Disabling this capacity will track sales but not stop them when the limit is reached"
-msgstr "禁用此容量将跟踪销售情况，但不会在达到限制时停止销售"
+msgstr "禁用此名额将跟踪销售情况，但不会在达到限制时停止销售"
 
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:71
 msgid "Discord"
@@ -3021,12 +3021,12 @@ msgstr "编辑参与者详情"
 
 #: src/components/common/CapacityAssignmentList/index.tsx:143
 msgid "Edit Capacity"
-msgstr "编辑容量"
+msgstr "编辑名额"
 
 #: src/components/modals/EditCapacityAssignmentModal/index.tsx:66
 #: src/components/modals/EditCapacityAssignmentModal/index.tsx:74
 msgid "Edit Capacity Assignment"
-msgstr "编辑容量分配"
+msgstr "编辑名额分配"
 
 #: src/components/common/ProductsTable/SortableCategory/index.tsx:137
 #: src/components/common/ProductsTable/SortableCategory/index.tsx:138
@@ -3261,7 +3261,7 @@ msgstr "启用发票功能"
 
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:21
 msgid "Enable this capacity to stop product sales when the limit is reached"
-msgstr "启用此容量以在达到限制时停止产品销售"
+msgstr "启用此名额以在达到限制时停止产品销售"
 
 #: src/components/common/EmailTemplateEditor/EmailTemplateEditor.tsx:191
 msgid "Enable this template for sending emails"
@@ -5468,11 +5468,11 @@ msgstr "未找到归因数据"
 
 #: src/components/modals/OfferWaitlistModal/index.tsx:187
 msgid "No capacity"
-msgstr "无容量"
+msgstr "无名额"
 
 #: src/components/common/CapacityAssignmentList/index.tsx:42
 msgid "No Capacity Assignments"
-msgstr "没有容量分配"
+msgstr "没有名额分配"
 
 #: src/components/common/CheckInListList/index.tsx:44
 msgid "No Check-In Lists"
@@ -7680,7 +7680,7 @@ msgstr "按主题、活动或账户搜索..."
 
 #: src/components/routes/event/CapacityAssignments/index.tsx:39
 msgid "Search capacity assignments..."
-msgstr "搜索容量分配..."
+msgstr "搜索名额分配..."
 
 #: src/components/routes/event/CheckInLists/index.tsx:39
 msgid "Search check-in lists..."
@@ -8084,7 +8084,7 @@ msgstr "分享组织者页面"
 
 #: src/components/routes/event/CapacityAssignments/index.tsx:34
 msgid "Shared Capacity Management"
-msgstr "共享容量管理"
+msgstr "共享名额管理"
 
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:232
 msgid "Show all platforms ({0} more with values)"
@@ -8477,7 +8477,7 @@ msgstr "成功更新与会者"
 
 #: src/components/modals/EditCapacityAssignmentModal/index.tsx:47
 msgid "Successfully updated Capacity Assignment"
-msgstr "容量分配更新成功"
+msgstr "名额分配更新成功"
 
 #: src/components/modals/EditCheckInListModal/index.tsx:49
 msgid "Successfully updated Check-In List"
@@ -10200,7 +10200,7 @@ msgstr "此代码适用于哪些产品？（默认适用于所有产品）"
 
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:48
 msgid "What products should this capacity apply to?"
-msgstr "此容量应适用于哪些产品？"
+msgstr "此名额应适用于哪些产品？"
 
 #: src/components/forms/QuestionForm/index.tsx:179
 msgid "What time will you be arriving?"
@@ -10549,7 +10549,7 @@ msgstr "在创建签到列表之前，您需要先获得票。"
 
 #: src/components/modals/CreateCapacityAssignmentModal/index.tsx:51
 msgid "You'll need at a product before you can create a capacity assignment."
-msgstr "在您创建容量分配之前，您需要一个产品。"
+msgstr "在您创建名额分配之前，您需要一个产品。"
 
 #: src/components/common/ProductsTable/ProductsBlankSlate/index.tsx:43
 msgid "You'll need at least one product to get started. Free, paid or let the user decide what to pay."

@@ -106,8 +106,8 @@ msgstr "{0}/{1} checked in"
 #~ msgstr "{0}/{1} left"
 
 #: src/components/routes/event/schedule.tsx:165
-msgid "{0}/{1} spots left"
-msgstr "{0}/{1} spots left"
+#~ msgid "{0}/{1} spots left"
+#~ msgstr "{0}/{1} spots left"
 
 #: src/components/common/EventCard/index.tsx:123
 msgid "{availableCount} of {totalCount} available"
