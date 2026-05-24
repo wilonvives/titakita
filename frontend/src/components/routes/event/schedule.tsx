@@ -162,7 +162,7 @@ export const Schedule = () => {
         if (session.capacity === null) {
             return t`Unlimited`;
         }
-        return t`${session.capacity_remaining ?? session.capacity}/${session.capacity} spots left`;
+        return `${session.capacity_remaining ?? session.capacity}/${session.capacity}`;
     };
 
     return (
