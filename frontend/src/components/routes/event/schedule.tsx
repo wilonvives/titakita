@@ -162,7 +162,7 @@ export const Schedule = () => {
         if (session.capacity === null) {
             return t`Unlimited`;
         }
-        return t`${session.capacity_remaining ?? session.capacity}/${session.capacity} left`;
+        return t`${session.capacity_remaining ?? session.capacity}/${session.capacity} spots left`;
     };
 
     return (
@@ -195,7 +195,7 @@ export const Schedule = () => {
                                 suffix={` ${t`minutes`}`}
                             />
                             <NumberInput
-                                label={t`Capacity per session`}
+                                label={t`Spots per session`}
                                 description={t`Leave blank for unlimited`}
                                 placeholder={t`Unlimited`}
                                 value={capacity}
@@ -392,7 +392,7 @@ const EditSessionModal = ({session, timezone, fallbackDuration, isSaving, onClos
                     suffix={` ${t`minutes`}`}
                 />
                 <NumberInput
-                    label={t`Capacity`}
+                    label={t`Spots`}
                     placeholder={t`Unlimited`}
                     value={capacity}
                     onChange={setCapacity}

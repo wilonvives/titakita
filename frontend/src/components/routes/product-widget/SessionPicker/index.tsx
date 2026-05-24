@@ -130,9 +130,9 @@ const SessionPicker = (props: SessionPickerProps) => {
             return t`Sold out`;
         }
         if (session.capacity_remaining === null) {
-            return t`Available`;
+            return t`Spots available`;
         }
-        return t`${session.capacity_remaining} left`;
+        return t`${session.capacity_remaining} spots left`;
     };
 
     const noSessions = sessionsQuery.isFetched && dateGroups.length === 0;

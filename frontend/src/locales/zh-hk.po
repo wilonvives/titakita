@@ -65,7 +65,6 @@ msgid "{0} created successfully"
 msgstr "成功創建 {0}"
 
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:399
-#: src/components/routes/product-widget/SessionPicker/index.tsx:135
 msgid "{0} left"
 msgstr "剩餘 {0}"
 
@@ -86,6 +85,10 @@ msgstr "{0} 位主辦單位"
 msgid "{0} session(s) scheduled."
 msgstr "已排 {0} 個場次。"
 
+#: src/components/routes/product-widget/SessionPicker/index.tsx:135
+msgid "{0} spots left"
+msgstr "剩 {0} 個名額"
+
 #: src/components/routes/product-widget/CollectInformation/index.tsx:596
 msgid "{0} tickets"
 msgstr "{0}張門票"
@@ -99,8 +102,12 @@ msgid "{0}/{1} checked in"
 msgstr "{0}/{1} 已簽到"
 
 #: src/components/routes/event/schedule.tsx:165
-msgid "{0}/{1} left"
-msgstr "剩 {0}/{1}"
+#~ msgid "{0}/{1} left"
+#~ msgstr "剩 {0}/{1}"
+
+#: src/components/routes/event/schedule.tsx:165
+msgid "{0}/{1} spots left"
+msgstr "剩 {0}/{1} 個名額"
 
 #: src/components/common/EventCard/index.tsx:123
 msgid "{availableCount} of {totalCount} available"
@@ -1216,7 +1223,6 @@ msgid "Automatically resize the widget height based on the content. When disable
 msgstr "根據內容自動調整小工具高度。停用時，小工具將填滿容器的高度。"
 
 #: src/components/modals/OfferWaitlistModal/index.tsx:163
-#: src/components/routes/product-widget/SessionPicker/index.tsx:133
 msgid "Available"
 msgstr "可用"
 
@@ -1494,7 +1500,6 @@ msgid "Cannot delete the system default configuration"
 msgstr "無法刪除系統預設配置"
 
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:42
-#: src/components/routes/event/schedule.tsx:395
 msgid "Capacity"
 msgstr "容量"
 
@@ -1515,8 +1520,8 @@ msgid "Capacity Management"
 msgstr "容量管理"
 
 #: src/components/routes/event/schedule.tsx:198
-msgid "Capacity per session"
-msgstr "每場容量"
+#~ msgid "Capacity per session"
+#~ msgstr "每場容量"
 
 #: src/components/modals/CreateProductCategoryModal/index.tsx:56
 msgid "Categories allow you to group products together. For example, you might have a category for \"Tickets\" and another for \"Merchandise\"."
@@ -8249,6 +8254,18 @@ msgstr "西班牙語"
 msgid "Sports"
 msgstr "體育"
 
+#: src/components/routes/event/schedule.tsx:395
+msgid "Spots"
+msgstr "名額"
+
+#: src/components/routes/product-widget/SessionPicker/index.tsx:133
+msgid "Spots available"
+msgstr "有名額"
+
+#: src/components/routes/event/schedule.tsx:198
+msgid "Spots per session"
+msgstr "每場名額"
+
 #: src/components/forms/ProductForm/index.tsx:156
 msgid "Standard product with a fixed price"
 msgstr "固定價格的標準產品"
@@ -8766,7 +8783,7 @@ msgstr "事件的默認時區。"
 
 #: src/components/routes/event/schedule.tsx:183
 msgid "The duration and capacity new sessions use. You can override each session later."
-msgstr "新場次使用的時長和容量，之後每一場都可以單獨修改。"
+msgstr "新場次使用的時長和名額，之後每一場都可以單獨修改。"
 
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:78
 msgid "The email address has been changed. The attendee will receive a new ticket at the updated email address."

@@ -65,7 +65,6 @@ msgid "{0} created successfully"
 msgstr "{0} utworzony pomyślnie"
 
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:399
-#: src/components/routes/product-widget/SessionPicker/index.tsx:135
 msgid "{0} left"
 msgstr "{0} pozostało"
 
@@ -86,6 +85,10 @@ msgstr "{0} organizatorów"
 msgid "{0} session(s) scheduled."
 msgstr ""
 
+#: src/components/routes/product-widget/SessionPicker/index.tsx:135
+msgid "{0} spots left"
+msgstr ""
+
 #: src/components/routes/product-widget/CollectInformation/index.tsx:596
 msgid "{0} tickets"
 msgstr "{0} biletów"
@@ -99,7 +102,11 @@ msgid "{0}/{1} checked in"
 msgstr "{0}/{1} zameldowanych"
 
 #: src/components/routes/event/schedule.tsx:165
-msgid "{0}/{1} left"
+#~ msgid "{0}/{1} left"
+#~ msgstr ""
+
+#: src/components/routes/event/schedule.tsx:165
+msgid "{0}/{1} spots left"
 msgstr ""
 
 #: src/components/common/EventCard/index.tsx:123
@@ -1216,7 +1223,6 @@ msgid "Automatically resize the widget height based on the content. When disable
 msgstr "Automatycznie dopasuj wysokość widgetu na podstawie zawartości. Gdy wyłączone, widget wypełni wysokość kontenera."
 
 #: src/components/modals/OfferWaitlistModal/index.tsx:163
-#: src/components/routes/product-widget/SessionPicker/index.tsx:133
 msgid "Available"
 msgstr "Dostępne"
 
@@ -1494,7 +1500,6 @@ msgid "Cannot delete the system default configuration"
 msgstr "Nie można usunąć domyślnej konfiguracji systemu"
 
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:42
-#: src/components/routes/event/schedule.tsx:395
 msgid "Capacity"
 msgstr "Pojemność"
 
@@ -1515,8 +1520,8 @@ msgid "Capacity Management"
 msgstr "Zarządzanie pojemnością"
 
 #: src/components/routes/event/schedule.tsx:198
-msgid "Capacity per session"
-msgstr ""
+#~ msgid "Capacity per session"
+#~ msgstr ""
 
 #: src/components/modals/CreateProductCategoryModal/index.tsx:56
 msgid "Categories allow you to group products together. For example, you might have a category for \"Tickets\" and another for \"Merchandise\"."
@@ -8248,6 +8253,18 @@ msgstr "Hiszpański"
 #: src/constants/eventCategories.ts:8
 msgid "Sports"
 msgstr "Sport"
+
+#: src/components/routes/event/schedule.tsx:395
+msgid "Spots"
+msgstr ""
+
+#: src/components/routes/product-widget/SessionPicker/index.tsx:133
+msgid "Spots available"
+msgstr ""
+
+#: src/components/routes/event/schedule.tsx:198
+msgid "Spots per session"
+msgstr ""
 
 #: src/components/forms/ProductForm/index.tsx:156
 msgid "Standard product with a fixed price"
