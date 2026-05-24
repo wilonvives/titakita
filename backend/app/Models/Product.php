@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace TitaKita\Models;
 
 use TitaKita\DomainObjects\Generated\ProductDomainObjectAbstract;
+use TitaKita\Models\Traits\HasImages;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -13,6 +14,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Product extends BaseModel
 {
     use SoftDeletes;
+    use HasImages;
 
     protected function getCastMap(): array
     {

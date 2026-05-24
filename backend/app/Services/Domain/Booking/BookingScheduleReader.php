@@ -7,6 +7,7 @@ namespace TitaKita\Services\Domain\Booking;
 use Illuminate\Support\Collection;
 use TitaKita\DomainObjects\Generated\ProductDomainObjectAbstract;
 use TitaKita\DomainObjects\Generated\ScheduleDomainObjectAbstract;
+use TitaKita\DomainObjects\ImageDomainObject;
 use TitaKita\DomainObjects\ProductPriceDomainObject;
 use TitaKita\DomainObjects\ScheduleDomainObject;
 use TitaKita\Repository\Eloquent\Value\OrderAndDirection;
@@ -32,6 +33,7 @@ class BookingScheduleReader
             ? new Collection
             : $this->productRepository
                 ->loadRelation(ProductPriceDomainObject::class)
+                ->loadRelation(ImageDomainObject::class)
                 ->findWhere(
                     [ProductDomainObjectAbstract::SCHEDULE_ID => $schedule->getId()],
                     ['*'],

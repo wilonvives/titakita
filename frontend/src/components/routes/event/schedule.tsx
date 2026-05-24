@@ -15,21 +15,24 @@ import {
     Textarea,
     Tooltip,
 } from "@mantine/core";
-import {DatePicker, DatePickerInput, TimeInput} from "@mantine/dates";
+import {DatePicker, DatePickerInput, TimePicker} from "@mantine/dates";
 import {IconCalendarPlus, IconInfoCircle, IconPencil, IconTrash} from "@tabler/icons-react";
 import dayjs from "dayjs";
 import {PageBody} from "../../common/PageBody";
 import {PageTitle} from "../../common/PageTitle";
 import {Card} from "../../common/Card";
 import {HeadingWithDescription} from "../../common/Card/CardHeading";
+import {ImageUploadDropzone} from "../../common/ImageUploadDropzone";
 import {TableSkeleton} from "../../common/TableSkeleton";
 import {useGetEvent, GET_EVENT_QUERY_KEY} from "../../../queries/useGetEvent.ts";
 import {useGetSchedule, GET_SCHEDULE_QUERY_KEY} from "../../../queries/useGetSchedule.ts";
 import {scheduleClient} from "../../../api/schedule.client.ts";
 import {showError, showSuccess} from "../../../utilites/notifications.tsx";
 import {formatDate} from "../../../utilites/dates.ts";
-import {BookingSession, IdParam, Schedule as BookingScheduleData} from "../../../types.ts";
+import {BookingSession, IdParam, ImageType, Schedule as BookingScheduleData} from "../../../types.ts";
 import classes from "./Schedule.module.scss";
+
+const THREE_MONTHS_OUT = () => dayjs().add(3, "month").format("YYYY-MM-DD");
 
 const apiError = (error: any, fallback: string): string =>
     error?.response?.data?.errors?.session?.[0]
@@ -212,12 +215,16 @@ export const Schedule = () => {
                                 value={selectedDate}
                                 onChange={setSelectedDate}
                                 minDate={dayjs().format("YYYY-MM-DD")}
+                                maxDate={THREE_MONTHS_OUT()}
                             />
                             <Stack gap="md" className={classes.addControls}>
-                                <TimeInput
+                                <TimePicker
                                     label={t`Start time`}
                                     value={startTime}
-                                    onChange={(e) => setStartTime(e.currentTarget.value)}
+                                    onChange={setStartTime}
+                                    format="24h"
+                                    withDropdown
+                                    minutesStep={5}
                                 />
                                 <Checkbox
                                     label={t`Repeat weekly (for the next 3 months)`}
@@ -256,6 +263,13 @@ export const Schedule = () => {
                                     <Stack gap="xs">
                                         {group.sessions.map((session) => (
                                             <div key={session.product_id} className={classes.sessionRow}>
+                                                {session.image?.url && (
+                                                    <img
+                                                        src={session.image.url}
+                                                        alt=""
+                                                        className={classes.sessionThumb}
+                                                    />
+                                                )}
                                                 <div className={classes.sessionTime}>
                                                     {formatDate(session.session_start_at, "HH:mm", timezone)}
                                                     {"–"}
@@ -269,6 +283,11 @@ export const Schedule = () => {
                                                 <div className={classes.sessionMeta}>
                                                     {renderCapacity(session)}
                                                 </div>
+                                                {session.description && (
+                                                    <div className={classes.sessionDesc} title={session.description}>
+                                                        {session.description}
+                                                    </div>
+                                                )}
                                                 <Group gap={4} className={classes.sessionActions}>
                                                     <Tooltip label={t`Edit`} withArrow>
                                                         <ActionIcon
@@ -309,6 +328,7 @@ export const Schedule = () => {
                 isSaving={updateMutation.isPending}
                 onClose={() => setEditing(null)}
                 onSave={(payload) => updateMutation.mutate(payload)}
+                onImageChanged={() => queryClient.invalidateQueries({queryKey: [GET_SCHEDULE_QUERY_KEY, eventId]})}
             />
         </PageBody>
     );
@@ -328,9 +348,10 @@ interface EditSessionModalProps {
         capacity: number | null;
         description: string | null;
     }) => void;
+    onImageChanged: () => void;
 }
 
-const EditSessionModal = ({session, timezone, fallbackDuration, isSaving, onClose, onSave}: EditSessionModalProps) => {
+const EditSessionModal = ({session, timezone, fallbackDuration, isSaving, onClose, onSave, onImageChanged}: EditSessionModalProps) => {
     const [date, setDate] = useState<string | null>(null);
     const [time, setTime] = useState<string>("10:00");
     const [duration, setDuration] = useState<number | string>(fallbackDuration);
@@ -355,11 +376,16 @@ const EditSessionModal = ({session, timezone, fallbackDuration, isSaving, onClos
                     value={date}
                     onChange={setDate}
                     valueFormat="YYYY-MM-DD"
+                    minDate={dayjs().format("YYYY-MM-DD")}
+                    maxDate={THREE_MONTHS_OUT()}
                 />
-                <TimeInput
+                <TimePicker
                     label={t`Start time`}
                     value={time}
-                    onChange={(e) => setTime(e.currentTarget.value)}
+                    onChange={setTime}
+                    format="24h"
+                    withDropdown
+                    minutesStep={5}
                 />
                 <NumberInput
                     label={t`Duration`}
@@ -385,6 +411,21 @@ const EditSessionModal = ({session, timezone, fallbackDuration, isSaving, onClos
                     autosize
                     minRows={2}
                 />
+                {session && (
+                    <div>
+                        <Text fw={500} size="sm" mb={4}>{t`Image`}</Text>
+                        <ImageUploadDropzone
+                            imageType={"PRODUCT_IMAGE" as ImageType}
+                            entityId={session.product_id}
+                            existingImageData={session.image?.url
+                                ? {url: session.image.url, id: session.image.id}
+                                : undefined}
+                            onUploadSuccess={onImageChanged}
+                            onDeleteSuccess={onImageChanged}
+                            displayMode="compact"
+                        />
+                    </div>
+                )}
                 <Group justify="flex-end">
                     <Button variant="default" onClick={onClose}>{t`Cancel`}</Button>
                     <Button

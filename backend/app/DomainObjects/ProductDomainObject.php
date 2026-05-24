@@ -16,9 +16,23 @@ class ProductDomainObject extends Generated\ProductDomainObjectAbstract implemen
 
     private ?Collection $prices = null;
 
+    private ?Collection $images = null;
+
     private ?string $offSaleReason = null;
 
     private ?int $quantityAvailable = null;
+
+    public function setImages(?Collection $images): ProductDomainObject
+    {
+        $this->images = $images;
+
+        return $this;
+    }
+
+    public function getImages(): ?Collection
+    {
+        return $this->images;
+    }
 
     public static function getDefaultSort(): string
     {

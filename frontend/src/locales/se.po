@@ -74,7 +74,7 @@ msgstr "{0} kvar"
 msgid "{0} logo"
 msgstr "{0} logotyp"
 
-#: src/components/routes/event/schedule.tsx:266
+#: src/components/routes/event/schedule.tsx:280
 msgid "{0} min"
 msgstr ""
 
@@ -82,7 +82,7 @@ msgstr ""
 msgid "{0} organizers"
 msgstr "{0} arrangörer"
 
-#: src/components/routes/event/schedule.tsx:241
+#: src/components/routes/event/schedule.tsx:248
 msgid "{0} session(s) scheduled."
 msgstr ""
 
@@ -98,7 +98,7 @@ msgstr "{0} uppdaterades"
 msgid "{0}/{1} checked in"
 msgstr "{0}/{1} incheckade"
 
-#: src/components/routes/event/schedule.tsx:161
+#: src/components/routes/event/schedule.tsx:164
 msgid "{0}/{1} left"
 msgstr ""
 
@@ -522,7 +522,7 @@ msgstr "Lägg till produkt i kategori"
 msgid "Add Question"
 msgstr "Lägg till fråga"
 
-#: src/components/routes/event/schedule.tsx:207
+#: src/components/routes/event/schedule.tsx:210
 msgid "Add sessions"
 msgstr ""
 
@@ -552,7 +552,7 @@ msgstr "Lägg till prisnivå"
 msgid "Add to Calendar"
 msgstr "Lägg till i kalendern"
 
-#: src/components/routes/event/schedule.tsx:232
+#: src/components/routes/event/schedule.tsx:239
 msgid "Add to schedule"
 msgstr ""
 
@@ -1332,7 +1332,7 @@ msgstr "Meddelandet är obligatoriskt"
 #~ msgstr ""
 
 #: src/components/layouts/Event/index.tsx:114
-#: src/components/routes/event/schedule.tsx:169
+#: src/components/routes/event/schedule.tsx:172
 msgid "Booking Schedule"
 msgstr ""
 
@@ -1433,7 +1433,7 @@ msgstr "Kampanj"
 #: src/components/common/WaitlistTable/index.tsx:111
 #: src/components/common/WaitlistTable/index.tsx:132
 #: src/components/routes/event/messages.tsx:80
-#: src/components/routes/event/schedule.tsx:389
+#: src/components/routes/event/schedule.tsx:430
 #: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:61
 #: src/components/routes/organizer/Settings/Sections/DangerZoneSettings/index.tsx:67
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:85
@@ -1493,7 +1493,7 @@ msgid "Cannot delete the system default configuration"
 msgstr "Det går inte att ta bort systemets standardkonfiguration"
 
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:42
-#: src/components/routes/event/schedule.tsx:374
+#: src/components/routes/event/schedule.tsx:400
 msgid "Capacity"
 msgstr "Kapacitet"
 
@@ -1513,7 +1513,7 @@ msgstr "Kapacitetstilldelningar"
 msgid "Capacity Management"
 msgstr "Kapacitetshantering"
 
-#: src/components/routes/event/schedule.tsx:194
+#: src/components/routes/event/schedule.tsx:197
 msgid "Capacity per session"
 msgstr ""
 
@@ -1728,7 +1728,7 @@ msgstr "Stad"
 msgid "Clear Search Text"
 msgstr "Rensa söktext"
 
-#: src/components/routes/event/schedule.tsx:208
+#: src/components/routes/event/schedule.tsx:211
 msgid "Click a day, choose a start time, then add."
 msgstr ""
 
@@ -2101,7 +2101,7 @@ msgstr "Kontakt-e-post för support"
 #: src/components/common/WidgetEditor/index.tsx:29
 #: src/components/common/WidgetEditor/index.tsx:222
 #: src/components/routes/product-widget/SelectProducts/index.tsx:551
-#: src/components/routes/product-widget/SessionPicker/index.tsx:284
+#: src/components/routes/product-widget/SessionPicker/index.tsx:312
 msgid "Continue"
 msgstr "Fortsätt"
 
@@ -2224,15 +2224,15 @@ msgstr "Kopiera till urklipp"
 msgid "Copy URL"
 msgstr "Kopiera URL"
 
-#: src/components/routes/event/schedule.tsx:110
+#: src/components/routes/event/schedule.tsx:113
 msgid "Could not add the sessions."
 msgstr ""
 
-#: src/components/routes/event/schedule.tsx:119
+#: src/components/routes/event/schedule.tsx:122
 msgid "Could not remove the session."
 msgstr ""
 
-#: src/components/routes/event/schedule.tsx:142
+#: src/components/routes/event/schedule.tsx:145
 msgid "Could not update the session."
 msgstr ""
 
@@ -2647,7 +2647,7 @@ msgstr "Dataägandeskap"
 #: src/components/common/AdminOrdersTable/index.tsx:94
 #: src/components/common/OrderDetails/index.tsx:39
 #: src/components/forms/QuestionForm/index.tsx:136
-#: src/components/routes/event/schedule.tsx:354
+#: src/components/routes/event/schedule.tsx:375
 #: src/components/routes/organizer/Reports/EventsPerformanceReport/index.tsx:56
 #: src/components/routes/organizer/Reports/RevenueSummaryReport/index.tsx:24
 msgid "Date"
@@ -2698,7 +2698,7 @@ msgstr "Standard avgiftshantering"
 msgid "Default template will be used"
 msgstr "Standardmall kommer att användas"
 
-#: src/components/routes/event/schedule.tsx:178
+#: src/components/routes/event/schedule.tsx:181
 msgid "Defaults"
 msgstr ""
 
@@ -2778,7 +2778,7 @@ msgstr "Ta bort webhook"
 #: src/components/forms/ProductForm/index.tsx:280
 #: src/components/forms/TaxAndFeeForm/index.tsx:81
 #: src/components/modals/DuplicateEventModal/index.tsx:115
-#: src/components/routes/event/schedule.tsx:381
+#: src/components/routes/event/schedule.tsx:407
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:93
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:86
 msgid "Description"
@@ -2939,7 +2939,7 @@ msgstr "Dupliceringsalternativ"
 msgid "Duplicate Product"
 msgstr "Duplicera produkt"
 
-#: src/components/routes/event/schedule.tsx:365
+#: src/components/routes/event/schedule.tsx:391
 msgid "Duration"
 msgstr ""
 
@@ -2976,7 +2976,7 @@ msgstr "Early bird"
 #: src/components/modals/ManageAttendeeModal/index.tsx:221
 #: src/components/modals/ManageOrderModal/index.tsx:203
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:268
-#: src/components/routes/event/schedule.tsx:273
+#: src/components/routes/event/schedule.tsx:292
 #: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:236
 msgid "Edit"
 msgstr "Redigera"
@@ -3068,8 +3068,8 @@ msgstr "Redigera kampanjkod"
 msgid "Edit Question"
 msgstr "Redigera fråga"
 
-#: src/components/routes/event/schedule.tsx:278
-#: src/components/routes/event/schedule.tsx:351
+#: src/components/routes/event/schedule.tsx:297
+#: src/components/routes/event/schedule.tsx:372
 msgid "Edit session"
 msgstr ""
 
@@ -4532,6 +4532,10 @@ msgstr "Om du inte begärde denna ändring, ändra omedelbart ditt lösenord."
 msgid "If you have an account with us, you will receive an email with instructions on how to reset your password."
 msgstr "Om du har ett konto hos oss kommer du att få ett e-postmeddelande med instruktioner för hur du återställer ditt lösenord."
 
+#: src/components/routes/event/schedule.tsx:416
+msgid "Image"
+msgstr ""
+
 #: src/components/common/ImageUploadDropzone/index.tsx:124
 msgid "Image deleted successfully"
 msgstr "Bilden har raderats"
@@ -4919,7 +4923,7 @@ msgstr "Senast utlöst"
 msgid "Last Used"
 msgstr "Senast använd"
 
-#: src/components/routes/event/schedule.tsx:195
+#: src/components/routes/event/schedule.tsx:198
 msgid "Leave blank for unlimited"
 msgstr ""
 
@@ -5244,13 +5248,13 @@ msgstr "Min per order"
 msgid "Minimum Price"
 msgstr "Minimipris"
 
-#: src/components/routes/event/schedule.tsx:191
-#: src/components/routes/event/schedule.tsx:371
+#: src/components/routes/event/schedule.tsx:194
+#: src/components/routes/event/schedule.tsx:397
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:71
 msgid "minutes"
 msgstr "minuter"
 
-#: src/components/routes/event/schedule.tsx:184
+#: src/components/routes/event/schedule.tsx:187
 msgid "Minutes"
 msgstr ""
 
@@ -5642,7 +5646,7 @@ msgstr "Inga sökresultat"
 msgid "No search results."
 msgstr "Inga sökresultat."
 
-#: src/components/routes/event/schedule.tsx:246
+#: src/components/routes/event/schedule.tsx:253
 msgid "No sessions yet. Add your first one above."
 msgstr ""
 
@@ -5896,7 +5900,7 @@ msgstr "Alternativ {i}"
 msgid "Optional additional information to appear on all invoices (e.g., payment terms, late payment fees, return policy)"
 msgstr "Valfri extra information som visas på alla fakturor, till exempel betalningsvillkor, förseningsavgifter eller returpolicy"
 
-#: src/components/routes/event/schedule.tsx:382
+#: src/components/routes/event/schedule.tsx:408
 msgid "Optional notes shown to customers for this session"
 msgstr ""
 
@@ -6333,8 +6337,8 @@ msgstr "Delvis återbetald"
 msgid "Partially refunded: {0}"
 msgstr "Delvis återbetald: {0}"
 
-#: src/components/routes/product-widget/SessionPicker/index.tsx:256
-#: src/components/routes/product-widget/SessionPicker/index.tsx:265
+#: src/components/routes/product-widget/SessionPicker/index.tsx:284
+#: src/components/routes/product-widget/SessionPicker/index.tsx:293
 msgid "Party size"
 msgstr ""
 
@@ -6574,7 +6578,7 @@ msgstr "Telefon"
 #~ msgid "Pick a date"
 #~ msgstr ""
 
-#: src/components/routes/event/schedule.tsx:167
+#: src/components/routes/event/schedule.tsx:170
 msgid "Pick a date, set a start time, and add it. Tick repeat to roll it out weekly. Build your sessions exactly how you want."
 msgstr ""
 
@@ -6679,7 +6683,7 @@ msgstr "Ange ditt momsregistreringsnummer"
 msgid "Please Note"
 msgstr "Observera"
 
-#: src/components/routes/event/schedule.tsx:147
+#: src/components/routes/event/schedule.tsx:150
 msgid "Please pick a date on the calendar."
 msgstr ""
 
@@ -6711,7 +6715,7 @@ msgstr "Välj en bild."
 msgid "Please select at least one product"
 msgstr "Välj minst en produkt"
 
-#: src/components/routes/event/schedule.tsx:151
+#: src/components/routes/event/schedule.tsx:154
 msgid "Please set a start time."
 msgstr ""
 
@@ -7235,12 +7239,12 @@ msgstr "ta bort"
 #: src/components/common/Editor/Controls/InsertImageControl/index.tsx:146
 #: src/components/common/WaitlistTable/index.tsx:78
 #: src/components/common/WaitlistTable/index.tsx:111
-#: src/components/routes/event/schedule.tsx:283
+#: src/components/routes/event/schedule.tsx:302
 #: src/components/routes/product-widget/SelectProducts/index.tsx:570
 msgid "Remove"
 msgstr "Ta bort"
 
-#: src/components/routes/event/schedule.tsx:289
+#: src/components/routes/event/schedule.tsx:308
 msgid "Remove session"
 msgstr ""
 
@@ -7248,7 +7252,7 @@ msgstr ""
 #~ msgid "Remove start time"
 #~ msgstr ""
 
-#: src/components/routes/event/schedule.tsx:223
+#: src/components/routes/event/schedule.tsx:230
 msgid "Repeat weekly (for the next 3 months)"
 msgstr ""
 
@@ -7503,7 +7507,7 @@ msgstr "San Francisco"
 
 #: src/components/common/PlatformFeesSettings/index.tsx:249
 #: src/components/common/QuestionAndAnswerList/index.tsx:142
-#: src/components/routes/event/schedule.tsx:406
+#: src/components/routes/event/schedule.tsx:447
 #: src/components/routes/event/Settings/Sections/EmailSettings/GeneralEmailSettings.tsx:81
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:129
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:132
@@ -7590,7 +7594,7 @@ msgstr "Schemalägg meddelande"
 msgid "Scheduled"
 msgstr "Schemalagd"
 
-#: src/components/routes/event/schedule.tsx:240
+#: src/components/routes/event/schedule.tsx:247
 msgid "Scheduled sessions"
 msgstr ""
 
@@ -7950,7 +7954,7 @@ msgstr "SEO-titel"
 msgid "Service Fee"
 msgstr "Serviceavgift"
 
-#: src/components/routes/event/schedule.tsx:183
+#: src/components/routes/event/schedule.tsx:186
 msgid "Session duration"
 msgstr ""
 
@@ -7958,7 +7962,7 @@ msgstr ""
 #~ msgid "Session duration must be at least 1 minute"
 #~ msgstr ""
 
-#: src/components/routes/event/schedule.tsx:117
+#: src/components/routes/event/schedule.tsx:120
 msgid "Session removed."
 msgstr ""
 
@@ -7966,11 +7970,11 @@ msgstr ""
 #~ msgid "Session settings"
 #~ msgstr ""
 
-#: src/components/routes/event/schedule.tsx:140
+#: src/components/routes/event/schedule.tsx:143
 msgid "Session updated."
 msgstr ""
 
-#: src/components/routes/event/schedule.tsx:108
+#: src/components/routes/event/schedule.tsx:111
 msgid "Sessions added."
 msgstr ""
 
@@ -8253,8 +8257,8 @@ msgstr "Startdatum och tid"
 msgid "Start date is required"
 msgstr "Startdatum är obligatoriskt"
 
-#: src/components/routes/event/schedule.tsx:218
-#: src/components/routes/event/schedule.tsx:360
+#: src/components/routes/event/schedule.tsx:222
+#: src/components/routes/event/schedule.tsx:383
 msgid "Start time"
 msgstr ""
 
@@ -8742,7 +8746,7 @@ msgstr "Standardvaluta för dina evenemang."
 msgid "The default timezone for your events."
 msgstr "Standardtidszon för dina evenemang."
 
-#: src/components/routes/event/schedule.tsx:179
+#: src/components/routes/event/schedule.tsx:182
 msgid "The duration and capacity new sessions use. You can override each session later."
 msgstr ""
 
@@ -9517,9 +9521,9 @@ msgstr "Okänd deltagare"
 #: src/components/modals/OfferWaitlistModal/index.tsx:189
 #: src/components/routes/event/Reports/PromoCodesReport/index.tsx:78
 #: src/components/routes/event/Reports/PromoCodesReport/index.tsx:84
-#: src/components/routes/event/schedule.tsx:159
-#: src/components/routes/event/schedule.tsx:196
-#: src/components/routes/event/schedule.tsx:375
+#: src/components/routes/event/schedule.tsx:162
+#: src/components/routes/event/schedule.tsx:199
+#: src/components/routes/event/schedule.tsx:401
 msgid "Unlimited"
 msgstr "Obegränsat"
 

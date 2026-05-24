@@ -8,6 +8,8 @@ export interface BookingSession {
     session_end_at: string;
     capacity_remaining: number | null;
     is_sold_out: boolean;
+    description?: string | null;
+    image_url?: string | null;
 }
 
 export interface BookingSessionDateGroup {

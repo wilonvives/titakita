@@ -8,8 +8,10 @@ use Carbon\Carbon;
 use Illuminate\Support\Collection;
 use TitaKita\Constants;
 use TitaKita\DomainObjects\Generated\ProductDomainObjectAbstract;
+use TitaKita\DomainObjects\ImageDomainObject;
 use TitaKita\DomainObjects\ProductDomainObject;
 use TitaKita\DomainObjects\ProductPriceDomainObject;
+use TitaKita\Helper\Url;
 use TitaKita\Repository\Eloquent\Value\OrderAndDirection;
 use TitaKita\Repository\Interfaces\EventRepositoryInterface;
 use TitaKita\Repository\Interfaces\ProductRepositoryInterface;
@@ -35,6 +37,7 @@ class GetBookingSessionsHandler
 
         $products = $this->productRepository
             ->loadRelation(ProductPriceDomainObject::class)
+            ->loadRelation(ImageDomainObject::class)
             ->findWhere(
                 [
                     [ProductDomainObjectAbstract::EVENT_ID, '=', $eventId],
@@ -67,6 +70,8 @@ class GetBookingSessionsHandler
             $localStart = Carbon::parse($product->getSessionStartAt(), 'UTC')->setTimezone($timezone);
             $date = $localStart->format('Y-m-d');
 
+            $image = $product->getImages()?->first();
+
             $grouped[$date] ??= [
                 'date' => $date,
                 'sessions' => [],
@@ -79,6 +84,8 @@ class GetBookingSessionsHandler
                 'session_end_at' => $product->getSessionEndAt(),
                 'capacity_remaining' => $unlimited ? null : max(0, $remaining),
                 'is_sold_out' => ! $unlimited && $remaining <= 0,
+                'description' => $product->getDescription(),
+                'image_url' => $image ? Url::getCdnUrl($image->getPath()) : null,
             ];
         }
 

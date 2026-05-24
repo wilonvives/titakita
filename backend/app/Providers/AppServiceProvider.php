@@ -7,8 +7,10 @@ use Doctrine\DBAL\DriverManager;
 use Doctrine\DBAL\Schema\AbstractSchemaManager;
 use TitaKita\DomainObjects\EventDomainObject;
 use TitaKita\DomainObjects\OrganizerDomainObject;
+use TitaKita\DomainObjects\ProductDomainObject;
 use TitaKita\Models\Event;
 use TitaKita\Models\Organizer;
+use TitaKita\Models\Product;
 use TitaKita\Services\Infrastructure\CurrencyConversion\CurrencyConversionClientInterface;
 use TitaKita\Services\Infrastructure\CurrencyConversion\NoOpCurrencyConversionClient;
 use TitaKita\Services\Infrastructure\CurrencyConversion\OpenExchangeRatesCurrencyConversionClient;
@@ -115,6 +117,7 @@ class AppServiceProvider extends ServiceProvider
         Relation::enforceMorphMap([
             EventDomainObject::class => Event::class,
             OrganizerDomainObject::class => Organizer::class,
+            ProductDomainObject::class => Product::class,
         ]);
     }
 

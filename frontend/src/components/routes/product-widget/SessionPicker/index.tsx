@@ -237,10 +237,38 @@ const SessionPicker = (props: SessionPickerProps) => {
                                         })}
                                         onClick={() => handleSessionSelect(session)}
                                     >
-                                        <span className={classes.sessionTime}>
-                                            {formatDate(session.session_start_at, 'HH:mm', timezone)}
-                                            {'–'}
-                                            {formatDate(session.session_end_at, 'HH:mm', timezone)}
+                                        <span style={{display: 'flex', alignItems: 'center', gap: 10, minWidth: 0}}>
+                                            {session.image_url && (
+                                                <img
+                                                    src={session.image_url}
+                                                    alt=""
+                                                    style={{
+                                                        width: 44,
+                                                        height: 44,
+                                                        objectFit: 'cover',
+                                                        borderRadius: 6,
+                                                        flexShrink: 0,
+                                                    }}
+                                                />
+                                            )}
+                                            <span style={{display: 'flex', flexDirection: 'column', minWidth: 0}}>
+                                                <span className={classes.sessionTime}>
+                                                    {formatDate(session.session_start_at, 'HH:mm', timezone)}
+                                                    {'–'}
+                                                    {formatDate(session.session_end_at, 'HH:mm', timezone)}
+                                                </span>
+                                                {session.description && (
+                                                    <span style={{
+                                                        fontSize: '0.78rem',
+                                                        opacity: 0.75,
+                                                        overflow: 'hidden',
+                                                        textOverflow: 'ellipsis',
+                                                        whiteSpace: 'nowrap',
+                                                    }}>
+                                                        {session.description}
+                                                    </span>
+                                                )}
+                                            </span>
                                         </span>
                                         <span className={classes.sessionCapacity}>
                                             {renderCapacity(session)}
