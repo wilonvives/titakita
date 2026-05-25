@@ -6,7 +6,6 @@ import {
     IconPlus,
     IconSettingsCog,
     IconShield,
-    IconUser,
     IconUsers,
 } from "@tabler/icons-react";
 import {useGetMe} from "../../../queries/useGetMe.ts";
@@ -36,11 +35,6 @@ export const GlobalMenu = () => {
 
 
     const links: Link[] = [
-        {
-            label: t`My Profile`,
-            icon: IconUser,
-            link: "/account/profile",
-        },
         {
             label: t`Account Settings`,
             icon: IconSettingsCog,

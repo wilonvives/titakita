@@ -77,17 +77,7 @@ export function EventCard({event}: EventCardProps) {
     }
 
     const handleDelete = () => {
-        const grossRevenue = event?.statistics?.sales_total_gross || 0;
         const attendeeCount = event?.statistics?.attendees_registered || 0;
-
-        if (grossRevenue > 0) {
-            confirmationDialog(
-                t`"${event.title}" has paid attendees. You must refund each attendee from the Orders page before this event can be deleted.`,
-                () => navigate(`/manage/event/${event.id}/orders`),
-                {confirm: t`View orders`, cancel: t`Cancel`},
-            );
-            return;
-        }
 
         const message = attendeeCount > 0
             ? t`Delete "${event.title}"? Registered guests will no longer be able to see this event. This cannot be undone.`
