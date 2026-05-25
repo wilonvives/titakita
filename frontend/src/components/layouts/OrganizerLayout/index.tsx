@@ -175,7 +175,7 @@ const OrganizerLayout = () => {
         },
     ];
 
-    if (account && !account?.stripe_connect_setup_complete) {
+    if (account && account?.is_saas_mode_enabled && !account?.stripe_connect_setup_complete) {
         callouts.unshift({
             icon: <IconBrandStripe size={20} />,
             heading: t`Connect Stripe`,
