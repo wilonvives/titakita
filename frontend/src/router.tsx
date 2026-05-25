@@ -98,10 +98,7 @@ export const router: RouteObject[] = [
             },
             {
                 path: "profile",
-                async lazy() {
-                    const ManageProfile = await import("./components/routes/profile/ManageProfile");
-                    return { Component: ManageProfile.default };
-                }
+                element: <Navigate to="/account/profile" replace/>,
             },
             {
                 path: "profile/confirm-email-change/:token",
@@ -236,6 +233,20 @@ export const router: RouteObject[] = [
                         async lazy() {
                             const AccountSettings = await import("./components/routes/account/ManageAccount/sections/AccountSettings");
                             return { Component: AccountSettings.default };
+                        }
+                    },
+                    {
+                        path: "profile",
+                        async lazy() {
+                            const ProfileSettings = await import("./components/routes/account/ManageAccount/sections/ProfileSettings");
+                            return { Component: ProfileSettings.default };
+                        }
+                    },
+                    {
+                        path: "password",
+                        async lazy() {
+                            const PasswordSettings = await import("./components/routes/account/ManageAccount/sections/PasswordSettings");
+                            return { Component: PasswordSettings.default };
                         }
                     },
                     {

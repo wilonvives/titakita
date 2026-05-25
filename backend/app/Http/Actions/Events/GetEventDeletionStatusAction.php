@@ -26,7 +26,7 @@ class GetEventDeletionStatusAction extends BaseAction
         return $this->jsonResponse([
             'data' => [
                 'can_delete' => $canDelete,
-                'reason' => $canDelete ? null : __('This event has completed orders. Please cancel or refund all orders before deleting.'),
+                'reason' => $canDelete ? null : __('This event has paid attendees with payments that have not been refunded. Please refund each attendee from the Orders page before deleting.'),
             ],
         ]);
     }

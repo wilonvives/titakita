@@ -39,7 +39,7 @@ export const GlobalMenu = () => {
         {
             label: t`My Profile`,
             icon: IconUser,
-            link: "/manage/profile",
+            link: "/account/profile",
         },
         {
             label: t`Account Settings`,

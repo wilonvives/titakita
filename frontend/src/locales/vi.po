@@ -27,6 +27,10 @@ msgstr "- Nhấp để gỡ bỏ"
 msgid "'There\\'s nothing to show yet'"
 msgstr ""
 
+#: src/components/common/EventCard/index.tsx:85
+msgid "\"{0}\" has paid attendees. You must refund each attendee from the Orders page before this event can be deleted."
+msgstr ""
+
 #: src/components/routes/admin/Attribution/index.tsx:146
 msgid "(empty)"
 msgstr "(trống)"
@@ -109,7 +113,7 @@ msgstr "{0}/{1} đã checked in"
 #~ msgid "{0}/{1} spots left"
 #~ msgstr ""
 
-#: src/components/common/EventCard/index.tsx:123
+#: src/components/common/EventCard/index.tsx:151
 msgid "{availableCount} of {totalCount} available"
 msgstr "{availableCount} trong số {totalCount} có sẵn"
 
@@ -134,7 +138,7 @@ msgstr "{phút} phút và {giây} giây"
 msgid "{organizerName}'s first event"
 msgstr "Sự kiện đầu tiên của {organizerName}"
 
-#: src/components/common/EventCard/index.tsx:119
+#: src/components/common/EventCard/index.tsx:147
 msgid "{totalCount} ticket types"
 msgstr "{totalCount} loại vé"
 
@@ -224,7 +228,7 @@ msgstr "1 giờ trước sự kiện"
 msgid "1 ticket"
 msgstr "1 vé"
 
-#: src/components/common/EventCard/index.tsx:119
+#: src/components/common/EventCard/index.tsx:147
 msgid "1 ticket type"
 msgstr "1 loại vé"
 
@@ -621,7 +625,7 @@ msgstr "Dòng địa chỉ 2"
 msgid "Admin"
 msgstr "Quản trị viên"
 
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:70
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:74
 #: src/components/routes/organizer/Settings/Sections/DangerZoneSettings/index.tsx:76
 msgid "Admin Access Required"
 msgstr "Yêu cầu quyền truy cập quản trị viên"
@@ -759,7 +763,7 @@ msgstr "Gần xong rồi! Hoàn thành kết nối tài khoản Stripe để b�
 msgid "Almost there! We're just waiting for your payment to be processed. This should only take a few seconds."
 msgstr "Sắp xong rồi! Chúng tôi đang chờ thanh toán của bạn được xử lý. Quá trình này chỉ mất vài giây."
 
-#: src/components/routes/auth/Register/index.tsx:75
+#: src/components/routes/auth/Register/index.tsx:74
 msgid "Already have an account? <0>{0}</0>"
 msgstr "Đã có tài khoản? <0>{0}</0>"
 
@@ -866,17 +870,17 @@ msgstr "Áp dụng {type} này cho tất cả các sản phẩm mới"
 msgid "Approve Message"
 msgstr "Phê duyệt tin nhắn"
 
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:61
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:65
 #: src/components/routes/organizer/Settings/Sections/DangerZoneSettings/index.tsx:67
 msgid "Archive"
 msgstr "Lưu trữ"
 
-#: src/components/common/EventCard/index.tsx:146
+#: src/components/common/EventCard/index.tsx:174
 msgid "Archive event"
 msgstr "Lưu trữ sự kiện"
 
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:122
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:136
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:114
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:128
 msgid "Archive Event"
 msgstr "Lưu trữ sự kiện"
 
@@ -885,7 +889,7 @@ msgstr "Lưu trữ sự kiện"
 msgid "Archive Organizer"
 msgstr "Lưu trữ ban tổ chức"
 
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:126
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:118
 msgid "Archive this event to hide it from the public. You can restore it later."
 msgstr "Lưu trữ sự kiện này để ẩn khỏi công chúng. Bạn có thể khôi phục nó sau."
 
@@ -893,7 +897,7 @@ msgstr "Lưu trữ sự kiện này để ẩn khỏi công chúng. Bạn có th
 msgid "Archive this organizer. This will also archive all events belonging to this organizer."
 msgstr "Lưu trữ ban tổ chức này. Điều này cũng sẽ lưu trữ tất cả các sự kiện thuộc ban tổ chức này."
 
-#: src/components/common/EventCard/index.tsx:78
+#: src/components/common/EventCard/index.tsx:106
 #: src/components/common/EventsDashboardStatusButtons/index.tsx:32
 msgid "Archived"
 msgstr "Lưu trữ"
@@ -906,11 +910,11 @@ msgstr "Ban tổ chức đã lưu trữ"
 msgid "Are you sure you want to activate this attendee?"
 msgstr "Bạn có chắc mình muốn kích hoạt người tham dự này không?"
 
-#: src/components/common/EventCard/index.tsx:58
+#: src/components/common/EventCard/index.tsx:61
 msgid "Are you sure you want to archive this event?"
 msgstr "Bạn có chắc mình muốn lưu trữ sự kiện này không?"
 
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:47
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:51
 msgid "Are you sure you want to archive this event? It will no longer be visible to the public."
 msgstr "Bạn có chắc chắn muốn lưu trữ sự kiện này không? Nó sẽ không còn hiển thị với công chúng nữa."
 
@@ -1001,11 +1005,11 @@ msgstr "Bạn có chắc chắn muốn gửi lại xác nhận đơn hàng đế
 msgid "Are you sure you want to resend the ticket to {0}?"
 msgstr "Bạn có chắc chắn muốn gửi lại vé đến {0}?"
 
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:46
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:50
 msgid "Are you sure you want to restore this event?"
 msgstr "Bạn có chắc chắn muốn khôi phục sự kiện này không?"
 
-#: src/components/common/EventCard/index.tsx:59
+#: src/components/common/EventCard/index.tsx:62
 msgid "Are you sure you want to restore this event? It will be restored as a draft event."
 msgstr "Bạn có chắc chắn muốn khôi phục sự kiện này không? Sự kiện sẽ được khôi phục dưới dạng bản nháp."
 
@@ -1154,7 +1158,7 @@ msgstr "Người tham dự đã được cập nhật thành công"
 msgid "Attendee's ticket not included in this list"
 msgstr "Vé của người tham dự không có trong danh sách này"
 
-#: src/components/common/EventCard/index.tsx:227
+#: src/components/common/EventCard/index.tsx:261
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:382
 #: src/components/common/StatBoxes/index.tsx:45
 #: src/components/layouts/Event/index.tsx:125
@@ -1170,7 +1174,7 @@ msgstr "Người tham dự"
 msgid "Attendees Exported"
 msgstr "Danh sách người tham dự đã được xuất"
 
-#: src/components/common/EventCard/index.tsx:224
+#: src/components/common/EventCard/index.tsx:258
 msgid "Attendees registered"
 msgstr "Người tham dự đã đăng ký"
 
@@ -1337,6 +1341,10 @@ msgstr "Nội dung là bắt buộc"
 #~ msgid "bookable sessions will be generated."
 #~ msgstr ""
 
+#: src/components/modals/CreateEventModal/index.tsx:196
+msgid "Booking / Workshop"
+msgstr ""
+
 #: src/components/layouts/Event/index.tsx:114
 #: src/components/routes/event/schedule.tsx:185
 msgid "Booking Schedule"
@@ -1396,7 +1404,7 @@ msgstr ""
 msgid "By continuing, you agree to the <0>{0} Terms of Service</0>"
 msgstr "Bằng cách tiếp tục, bạn đồng ý với <0>Điều khoản dịch vụ của {0}</0>"
 
-#: src/components/routes/auth/Register/index.tsx:142
+#: src/components/routes/auth/Register/index.tsx:141
 msgid "By registering you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>."
 msgstr "Bằng cách đăng ký, bạn đồng ý với các <0>Điều khoản dịch vụ của chúng tôi</0> và <1>Chính sách bảo mật</1>."
 
@@ -1434,6 +1442,8 @@ msgstr "Chiến dịch"
 #: src/components/common/CheckIn/ScannerSelectionModal.tsx:57
 #: src/components/common/ContactOrganizerModal/index.tsx:104
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:121
+#: src/components/common/EventCard/index.tsx:87
+#: src/components/common/EventCard/index.tsx:101
 #: src/components/common/PromoCodeTable/index.tsx:40
 #: src/components/common/QuestionAndAnswerList/index.tsx:149
 #: src/components/common/WaitlistTable/index.tsx:111
@@ -1441,7 +1451,8 @@ msgstr "Chiến dịch"
 #: src/components/common/WheelTimePicker/index.tsx:156
 #: src/components/routes/event/messages.tsx:80
 #: src/components/routes/event/schedule.tsx:469
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:61
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:43
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:65
 #: src/components/routes/organizer/Settings/Sections/DangerZoneSettings/index.tsx:67
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:85
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditOrderModal/index.tsx:85
@@ -1453,6 +1464,7 @@ msgstr "Hủy"
 msgid "Cancel all products and release them back to the pool"
 msgstr "Hủy tất cả sản phẩm và trả lại pool có sẵn"
 
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:121
 #: src/components/routes/profile/ManageProfile/index.tsx:136
 msgid "Cancel email change"
 msgstr "Hủy thay đổi email"
@@ -1544,6 +1556,7 @@ msgstr "Danh mục"
 msgid "Category Created Successfully"
 msgstr "Danh mục được tạo thành công"
 
+#: src/components/routes/account/ManageAccount/sections/PasswordSettings/index.tsx:61
 #: src/components/routes/profile/ManageProfile/index.tsx:238
 msgid "Change password"
 msgstr "Thay đổi mật khẩu"
@@ -1551,6 +1564,10 @@ msgstr "Thay đổi mật khẩu"
 #: src/components/modals/OfferWaitlistModal/index.tsx:98
 msgid "Change waitlist settings"
 msgstr "Thay đổi cài đặt danh sách chờ"
+
+#: src/components/routes/account/ManageAccount/sections/PasswordSettings/index.tsx:43
+msgid "Change your account password"
+msgstr ""
 
 #: src/constants/eventCategories.ts:15
 msgid "Charity"
@@ -1686,7 +1703,11 @@ msgid "Chinese (Traditional)"
 msgstr "Tiếng Trung (Phồn thể)"
 
 #: src/components/modals/CreateEventModal/index.tsx:192
-msgid "Choose \"Event\" for a one-off event with tickets, or \"Workshop / Booking\" to let customers book a time slot."
+#~ msgid "Choose \"Event\" for a one-off event with tickets, or \"Workshop / Booking\" to let customers book a time slot."
+#~ msgstr ""
+
+#: src/components/modals/CreateEventModal/index.tsx:192
+msgid "Choose \"Event\" for a one-off ticketed event, or \"Booking / Workshop\" to let customers book a time slot."
 msgstr ""
 
 #: src/components/routes/event/HomepageDesigner/index.tsx:219
@@ -1851,6 +1872,7 @@ msgstr "Sắp ra mắt"
 msgid "Comma seperated keywords that describe the event. These will be used by search engines to help categorize and index the event"
 msgstr "Các từ khóa mô tả sự kiện, được phân tách bằng dấu phẩy. Chúng sẽ được công cụ tìm kiếm sử dụng để phân loại và lập chỉ mục sự kiện."
 
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:172
 #: src/components/routes/profile/ManageProfile/index.tsx:204
 msgid "Communication Preferences"
 msgstr "Tùy chọn liên lạc"
@@ -1980,17 +2002,18 @@ msgstr "Xác nhận thay đổi email"
 msgid "Confirm new password"
 msgstr "Xác nhận mật khẩu mới"
 
+#: src/components/routes/account/ManageAccount/sections/PasswordSettings/index.tsx:59
 #: src/components/routes/profile/ManageProfile/index.tsx:236
 msgid "Confirm New Password"
 msgstr "Xác nhận mật khẩu mới"
 
 #: src/components/routes/auth/AcceptInvitation/index.tsx:134
-#: src/components/routes/auth/Register/index.tsx:119
+#: src/components/routes/auth/Register/index.tsx:118
 msgid "Confirm password"
 msgstr "Xác nhận mật khẩu"
 
 #: src/components/routes/auth/AcceptInvitation/index.tsx:133
-#: src/components/routes/auth/Register/index.tsx:118
+#: src/components/routes/auth/Register/index.tsx:117
 #: src/components/routes/auth/ResetPassword/index.tsx:70
 msgid "Confirm Password"
 msgstr "Xác nhận mật khẩu"
@@ -2479,6 +2502,7 @@ msgstr "Nhãn CTA là bắt buộc"
 msgid "Currency"
 msgstr "Tiền tệ"
 
+#: src/components/routes/account/ManageAccount/sections/PasswordSettings/index.tsx:51
 #: src/components/routes/profile/ManageProfile/index.tsx:228
 msgid "Current Password"
 msgstr "Mật khẩu hiện tại"
@@ -2712,11 +2736,11 @@ msgstr ""
 #~ msgid "Define your session length and times once — we'll generate bookable time slots customers can reserve."
 #~ msgstr ""
 
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:101
 #: src/components/routes/organizer/Settings/Sections/DangerZoneSettings/index.tsx:107
 msgid "delete"
 msgstr "xóa"
 
+#: src/components/common/EventCard/index.tsx:101
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:498
 #: src/components/common/PromoCodeTable/index.tsx:40
 #: src/components/common/QuestionsTable/index.tsx:150
@@ -2724,6 +2748,18 @@ msgstr "xóa"
 #: src/components/routes/admin/FailedJobs/index.tsx:209
 msgid "Delete"
 msgstr "Xóa"
+
+#: src/components/common/EventCard/index.tsx:93
+msgid "Delete \"{0}\"? Registered guests will no longer be able to see this event. This cannot be undone."
+msgstr ""
+
+#: src/components/common/EventCard/index.tsx:94
+msgid "Delete \"{0}\"? This cannot be undone."
+msgstr ""
+
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:41
+msgid "Delete \"{0}\"? This permanently deletes the event and all its data. This cannot be undone."
+msgstr ""
 
 #: src/components/common/AffiliateTable/index.tsx:198
 msgid "Delete Affiliate"
@@ -2750,8 +2786,13 @@ msgstr "Xóa danh sách check-in"
 msgid "Delete code"
 msgstr "Xóa mã"
 
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:82
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:116
+#: src/components/common/EventCard/index.tsx:179
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:43
+msgid "Delete event"
+msgstr ""
+
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:86
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:108
 msgid "Delete Event"
 msgstr "Xóa sự kiện"
 
@@ -2904,7 +2945,7 @@ msgstr "Tải xuống báo cáo bán hàng, người tham dự và tài chính c
 msgid "Downloading Invoice"
 msgstr "Tải xuống hóa đơn"
 
-#: src/components/common/EventCard/index.tsx:84
+#: src/components/common/EventCard/index.tsx:112
 #: src/components/layouts/Event/index.tsx:198
 #: src/components/layouts/OrganizerLayout/index.tsx:212
 msgid "Draft"
@@ -2928,7 +2969,7 @@ msgstr ""
 msgid "Duplicate"
 msgstr "Nhân đôi"
 
-#: src/components/common/EventCard/index.tsx:141
+#: src/components/common/EventCard/index.tsx:169
 msgid "Duplicate event"
 msgstr "Nhân bản sự kiện"
 
@@ -3136,12 +3177,13 @@ msgstr "Danh Sách Đăng Ký Đủ Điều Kiện"
 #: src/components/modals/EditUserModal/index.tsx:80
 #: src/components/modals/InviteUserModal/index.tsx:61
 #: src/components/modals/JoinWaitlistModal/index.tsx:171
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:134
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:128
 #: src/components/routes/admin/Dashboard/index.tsx:401
 #: src/components/routes/auth/AcceptInvitation/index.tsx:112
 #: src/components/routes/auth/ForgotPassword/index.tsx:65
 #: src/components/routes/auth/Login/index.tsx:93
-#: src/components/routes/auth/Register/index.tsx:104
+#: src/components/routes/auth/Register/index.tsx:103
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:78
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:68
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditOrderModal/index.tsx:68
@@ -3185,20 +3227,24 @@ msgstr "Địa chỉ email không khớp"
 msgid "Email Body"
 msgstr "Nội dung email"
 
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:86
 #: src/components/routes/profile/ManageProfile/index.tsx:87
 msgid "Email change cancelled successfully"
 msgstr "Hủy thay đổi email thành công"
 
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:112
 #: src/components/routes/profile/ManageProfile/index.tsx:126
 msgid "Email change pending"
 msgstr "Thay đổi email đang chờ xử lý"
 
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:146
 #: src/components/routes/profile/ManageProfile/index.tsx:169
 msgid "Email confirmation resent"
 msgstr "Xác nhận email đã được gửi lại"
 
 #: src/components/layouts/Event/index.tsx:75
 #: src/components/layouts/OrganizerLayout/index.tsx:102
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:96
 #: src/components/routes/profile/ManageProfile/index.tsx:100
 msgid "Email confirmation resent successfully"
 msgstr "Xác nhận email đã được gửi lại thành công"
@@ -3213,6 +3259,7 @@ msgstr "Thông điệp chân trang email"
 msgid "Email is required"
 msgstr "Email là bắt buộc"
 
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:137
 #: src/components/routes/profile/ManageProfile/index.tsx:159
 msgid "Email not verified"
 msgstr "Email không được xác minh"
@@ -3298,7 +3345,7 @@ msgstr "Ngày kết thúc phải sau ngày bắt đầu"
 msgid "End time (optional)"
 msgstr "Thời gian kết thúc (tùy chọn)"
 
-#: src/components/common/EventCard/index.tsx:81
+#: src/components/common/EventCard/index.tsx:109
 #: src/components/common/EventsDashboardStatusButtons/index.tsx:26
 #: src/components/common/EventStatusBadge/index.tsx:14
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:87
@@ -3434,6 +3481,7 @@ msgstr "EUR"
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:72
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:73
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:74
+#: src/components/modals/CreateEventModal/index.tsx:195
 #: src/components/routes/admin/Dashboard/index.tsx:256
 #: src/components/routes/admin/Dashboard/index.tsx:305
 #: src/components/routes/admin/Messages/index.tsx:163
@@ -3448,14 +3496,14 @@ msgid "Event"
 msgstr "Sự kiện"
 
 #: src/components/modals/CreateEventModal/index.tsx:195
-msgid "Event (sell tickets)"
-msgstr ""
+#~ msgid "Event (sell tickets)"
+#~ msgstr ""
 
 #: src/components/forms/WebhookForm/index.tsx:55
 msgid "Event Archived"
 msgstr ""
 
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:54
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:58
 msgid "Event archived successfully"
 msgstr "Sự kiện đã được lưu trữ thành công"
 
@@ -3489,7 +3537,11 @@ msgstr "Ngày sự kiện"
 msgid "Event Defaults"
 msgstr "Mặc định sự kiện"
 
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:34
+#: src/components/common/EventCard/index.tsx:98
+msgid "Event deleted"
+msgstr ""
+
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:30
 msgid "Event deleted successfully"
 msgstr "Sự kiện đã được xóa thành công"
 
@@ -3564,7 +3616,7 @@ msgstr "Tên ban tổ chức sự kiện"
 msgid "Event Page"
 msgstr "Trang sự kiện"
 
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:54
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:58
 msgid "Event restored successfully"
 msgstr "Sự kiện đã được khôi phục thành công"
 
@@ -3573,7 +3625,7 @@ msgstr "Sự kiện đã được khôi phục thành công"
 msgid "Event Settings"
 msgstr "Cài đặt sự kiện"
 
-#: src/components/common/EventCard/index.tsx:70
+#: src/components/common/EventCard/index.tsx:73
 #: src/components/common/StatusToggle/index.tsx:63
 #: src/components/layouts/Event/index.tsx:177
 #: src/components/routes/event/EventDashboard/index.tsx:96
@@ -3581,7 +3633,7 @@ msgstr "Cài đặt sự kiện"
 msgid "Event status update failed. Please try again later"
 msgstr "Cập nhật trạng thái sự kiện thất bại. Vui lòng thử lại sau"
 
-#: src/components/common/EventCard/index.tsx:67
+#: src/components/common/EventCard/index.tsx:70
 #: src/components/common/StatusToggle/index.tsx:55
 #: src/components/layouts/Event/index.tsx:173
 #: src/components/routes/event/EventDashboard/index.tsx:93
@@ -3780,7 +3832,8 @@ msgstr "Không thể tạo mẫu"
 msgid "Failed to delete configuration"
 msgstr "Không thể xóa cấu hình"
 
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:38
+#: src/components/common/EventCard/index.tsx:99
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:34
 msgid "Failed to delete event"
 msgstr "Không thể xóa sự kiện"
 
@@ -3932,7 +3985,7 @@ msgstr "Không thể cập nhật người tham dự"
 msgid "Failed to update configuration"
 msgstr "Không thể cập nhật cấu hình"
 
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:57
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:61
 msgid "Failed to update event status"
 msgstr "Không thể cập nhật trạng thái sự kiện"
 
@@ -4080,8 +4133,9 @@ msgstr "Tên"
 #: src/components/modals/EditUserModal/index.tsx:71
 #: src/components/modals/InviteUserModal/index.tsx:57
 #: src/components/modals/JoinWaitlistModal/index.tsx:161
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:130
 #: src/components/routes/auth/AcceptInvitation/index.tsx:97
-#: src/components/routes/auth/Register/index.tsx:90
+#: src/components/routes/auth/Register/index.tsx:89
 #: src/components/routes/product-widget/CollectInformation/index.tsx:434
 #: src/components/routes/product-widget/CollectInformation/index.tsx:646
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:53
@@ -4236,7 +4290,7 @@ msgstr "Chỉ đường"
 msgid "Get paid immediately via Stripe Connect"
 msgstr "Nhận thanh toán ngay lập tức qua Stripe Connect"
 
-#: src/components/routes/auth/Register/index.tsx:73
+#: src/components/routes/auth/Register/index.tsx:72
 msgid "Get started"
 msgstr "Bắt đầu"
 
@@ -4277,7 +4331,7 @@ msgstr "Dễ đọc"
 msgid "Google Calendar"
 msgstr "Lịch Google"
 
-#: src/components/common/EventCard/index.tsx:230
+#: src/components/common/EventCard/index.tsx:264
 msgid "Gross revenue"
 msgstr "Doanh thu gộp"
 
@@ -4543,6 +4597,7 @@ msgstr "Nếu được bật, người tổ chức sẽ nhận được thông b
 msgid "If registered, provide your VAT number for validation"
 msgstr "Nếu đã đăng ký, cung cấp mã số VAT của bạn để xác thực"
 
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:118
 #: src/components/routes/profile/ManageProfile/index.tsx:132
 msgid "If you did not request this change, please immediately change your password."
 msgstr "Nếu bạn không yêu cầu thay đổi này, vui lòng thay đổi ngay mật khẩu của bạn."
@@ -4808,7 +4863,7 @@ msgid "Job queued for retry"
 msgstr "Công việc đã được xếp hàng để thử lại"
 
 #: src/components/routes/auth/AcceptInvitation/index.tsx:98
-#: src/components/routes/auth/Register/index.tsx:91
+#: src/components/routes/auth/Register/index.tsx:90
 msgid "John"
 msgstr "John"
 
@@ -4852,6 +4907,7 @@ msgstr "Nhãn"
 
 #: src/components/common/AttendeeDetails/index.tsx:38
 #: src/components/modals/CreateAttendeeModal/index.tsx:155
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:167
 #: src/components/routes/profile/ManageProfile/index.tsx:196
 msgid "Language"
 msgstr "Ngôn ngữ"
@@ -4915,8 +4971,9 @@ msgstr "Họ"
 #: src/components/modals/EditUserModal/index.tsx:72
 #: src/components/modals/InviteUserModal/index.tsx:58
 #: src/components/modals/JoinWaitlistModal/index.tsx:166
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:132
 #: src/components/routes/auth/AcceptInvitation/index.tsx:102
-#: src/components/routes/auth/Register/index.tsx:96
+#: src/components/routes/auth/Register/index.tsx:95
 #: src/components/routes/product-widget/CollectInformation/index.tsx:440
 #: src/components/routes/product-widget/CollectInformation/index.tsx:441
 #: src/components/routes/product-widget/CollectInformation/index.tsx:652
@@ -4990,7 +5047,7 @@ msgstr "LinkedIn"
 msgid "Links Allowed"
 msgstr "Liên kết được phép"
 
-#: src/components/common/EventCard/index.tsx:87
+#: src/components/common/EventCard/index.tsx:115
 #: src/components/layouts/Event/index.tsx:200
 #: src/components/layouts/OrganizerLayout/index.tsx:214
 msgid "Live"
@@ -5025,7 +5082,7 @@ msgstr "Đang tải Webhooks"
 
 #: src/components/common/OrganizerReportTable/index.tsx:265
 #: src/components/common/ReportTable/index.tsx:210
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:86
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:90
 #: src/components/routes/organizer/Settings/Sections/DangerZoneSettings/index.tsx:92
 msgid "Loading..."
 msgstr "Đang tải ..."
@@ -5040,7 +5097,7 @@ msgid "Location"
 msgstr "Vị trí"
 
 #: src/components/routes/auth/Login/index.tsx:104
-#: src/components/routes/auth/Register/index.tsx:78
+#: src/components/routes/auth/Register/index.tsx:77
 msgid "Log in"
 msgstr "Đăng nhập"
 
@@ -5108,7 +5165,7 @@ msgstr "Quản lý"
 msgid "Manage attendee"
 msgstr "Quản lý người tham dự"
 
-#: src/components/common/EventCard/index.tsx:136
+#: src/components/common/EventCard/index.tsx:164
 msgid "Manage event"
 msgstr "Quản lý sự kiện"
 
@@ -5143,6 +5200,10 @@ msgstr ""
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:817
 msgid "Manage your payment processing and view platform fees"
 msgstr "Quản lý xử lý thanh toán và xem phí nền tảng của bạn"
+
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:107
+msgid "Manage your personal information and preferences"
+msgstr ""
 
 #: src/components/routes/account/ManageAccount/sections/Users/index.tsx:143
 msgid "Manage your users and their permissions"
@@ -5411,6 +5472,7 @@ msgstr "Doanh thu ròng"
 msgid "Never"
 msgstr "Không bao giờ"
 
+#: src/components/routes/account/ManageAccount/sections/PasswordSettings/index.tsx:55
 #: src/components/routes/auth/ResetPassword/index.tsx:64
 #: src/components/routes/profile/ManageProfile/index.tsx:232
 msgid "New Password"
@@ -5847,7 +5909,7 @@ msgstr "Thông tin thanh toán offline"
 msgid "Offline Payments Settings"
 msgstr "Cài đặt thanh toán offline"
 
-#: src/components/common/EventCard/index.tsx:89
+#: src/components/common/EventCard/index.tsx:117
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:93
 #: src/components/routes/organizer/Reports/EventsPerformanceReport/index.tsx:32
 msgid "On Sale"
@@ -5878,7 +5940,7 @@ msgstr "Khi bạn đã sẵn sàng, hãy đặt sự kiện của bạn trực t
 msgid "Ongoing"
 msgstr "Đang diễn ra"
 
-#: src/components/common/EventCard/index.tsx:93
+#: src/components/common/EventCard/index.tsx:121
 #: src/components/routes/product-widget/Payment/index.tsx:123
 msgid "Online"
 msgstr "Trực tuyến"
@@ -5892,7 +5954,7 @@ msgstr "Sự kiện trực tuyến"
 msgid "Online Event Details"
 msgstr "Chi tiết sự kiện trực tuyến"
 
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:72
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:76
 msgid "Only account administrators can delete or archive events. Contact your account admin for assistance."
 msgstr "Chỉ quản trị viên tài khoản mới có thể xóa hoặc lưu trữ sự kiện. Liên hệ quản trị viên tài khoản của bạn để được hỗ trợ."
 
@@ -6381,9 +6443,11 @@ msgstr "Chuyển phí cho người mua"
 msgid "Pass to Buyer"
 msgstr "Chuyển cho người mua"
 
+#: src/components/routes/account/ManageAccount/index.tsx:30
+#: src/components/routes/account/ManageAccount/sections/PasswordSettings/index.tsx:42
 #: src/components/routes/auth/AcceptInvitation/index.tsx:127
 #: src/components/routes/auth/Login/index.tsx:98
-#: src/components/routes/auth/Register/index.tsx:112
+#: src/components/routes/auth/Register/index.tsx:111
 #: src/components/routes/profile/ManageProfile/index.tsx:119
 msgid "Password"
 msgstr "Mật khẩu"
@@ -6392,7 +6456,7 @@ msgstr "Mật khẩu"
 msgid "Password must be a minimum  of 8 characters"
 msgstr "Mật khẩu phải tối thiểu 8 ký tự"
 
-#: src/components/routes/auth/Register/index.tsx:36
+#: src/components/routes/auth/Register/index.tsx:35
 msgid "Password must be at least 8 characters"
 msgstr "Mật khẩu phải có ít nhất 8 ký tự"
 
@@ -6400,8 +6464,12 @@ msgstr "Mật khẩu phải có ít nhất 8 ký tự"
 msgid "Password reset successfully. Please login with your new password."
 msgstr "Đặt lại mật khẩu thành công. Vui lòng sử dụng mật khẩu mới để đăng nhập."
 
+#: src/components/routes/account/ManageAccount/sections/PasswordSettings/index.tsx:31
+msgid "Password updated successfully"
+msgstr ""
+
 #: src/components/routes/auth/AcceptInvitation/index.tsx:32
-#: src/components/routes/auth/Register/index.tsx:37
+#: src/components/routes/auth/Register/index.tsx:36
 msgid "Passwords are not the same"
 msgstr "Mật khẩu không giống nhau"
 
@@ -6462,7 +6530,7 @@ msgstr "Thanh toán & Hoá đơn"
 msgid "Payment & Invoicing Settings"
 msgstr "Cài đặt Thanh toán & Hoá đơn"
 
-#: src/components/routes/account/ManageAccount/index.tsx:38
+#: src/components/routes/account/ManageAccount/index.tsx:44
 msgid "Payment & Plan"
 msgstr "Thanh toán & Gói"
 
@@ -6587,7 +6655,7 @@ msgstr "Phần trăm của số tiền giao dịch"
 msgid "Performance"
 msgstr "Hiệu suất"
 
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:85
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:89
 msgid "Permanently delete this event and all its associated data."
 msgstr "Xóa vĩnh viễn sự kiện này và tất cả dữ liệu liên quan."
 
@@ -6595,6 +6663,7 @@ msgstr "Xóa vĩnh viễn sự kiện này và tất cả dữ liệu liên quan
 msgid "Permanently delete this organizer and all its events."
 msgstr "Xóa vĩnh viễn ban tổ chức này và tất cả các sự kiện của họ."
 
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:127
 #: src/components/routes/profile/ManageProfile/index.tsx:147
 msgid "Personal Information"
 msgstr "Thông tin cá nhân"
@@ -6668,10 +6737,11 @@ msgid "Please check your email and password and try again"
 msgstr "Vui lòng kiểm tra email và mật khẩu của bạn và thử lại"
 
 #: src/components/routes/auth/AcceptInvitation/index.tsx:33
-#: src/components/routes/auth/Register/index.tsx:38
+#: src/components/routes/auth/Register/index.tsx:37
 msgid "Please check your email is valid"
 msgstr "Vui lòng kiểm tra email của bạn là hợp lệ"
 
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:147
 #: src/components/routes/profile/ManageProfile/index.tsx:170
 msgid "Please check your email to confirm your email address"
 msgstr "Vui lòng kiểm tra email của bạn để xác nhận địa chỉ email của bạn"
@@ -6756,6 +6826,7 @@ msgstr ""
 msgid "Please try again."
 msgstr "Vui lòng thử lại."
 
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:138
 #: src/components/routes/profile/ManageProfile/index.tsx:160
 msgid "Please verify your email address to access all features"
 msgstr "Vui lòng xác minh địa chỉ email của bạn để truy cập tất cả các tính năng"
@@ -6982,10 +7053,13 @@ msgstr "Sản phẩm đã bán"
 msgid "Products sorted successfully"
 msgstr "Sản phẩm được sắp xếp thành công"
 
+#: src/components/routes/account/ManageAccount/index.tsx:27
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:106
 #: src/components/routes/profile/ManageProfile/index.tsx:116
 msgid "Profile"
 msgstr "Hồ sơ"
 
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:69
 #: src/components/routes/profile/ManageProfile/index.tsx:69
 msgid "Profile updated successfully"
 msgstr "Hồ sơ cập nhật thành công"
@@ -7132,8 +7206,9 @@ msgstr "Sẵn sàng nâng cấp? Điều này chỉ mất vài phút."
 msgid "Real-Time Analytics"
 msgstr "Phân tích thời gian thực"
 
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:175
 #: src/components/routes/auth/AcceptInvitation/index.tsx:157
-#: src/components/routes/auth/Register/index.tsx:133
+#: src/components/routes/auth/Register/index.tsx:132
 #: src/components/routes/profile/ManageProfile/index.tsx:209
 msgid "Receive product updates from {0}."
 msgstr "Nhận cập nhật sản phẩm từ {0}."
@@ -7251,11 +7326,12 @@ msgstr "Đã hoàn tiền: {0}"
 msgid "Refunds"
 msgstr "Hoàn tiền"
 
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:152
 #: src/components/routes/profile/ManageProfile/index.tsx:178
 msgid "Regional Settings"
 msgstr "Cài đặt khu vực"
 
-#: src/components/routes/auth/Register/index.tsx:137
+#: src/components/routes/auth/Register/index.tsx:136
 msgid "Register"
 msgstr "Đăng ký"
 
@@ -7331,6 +7407,7 @@ msgstr "Gửi lại email xác nhận"
 msgid "Resend email"
 msgstr "Gửi lại email"
 
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:140
 #: src/components/routes/profile/ManageProfile/index.tsx:162
 msgid "Resend email confirmation"
 msgstr "Gửi lại xác nhận email"
@@ -7355,6 +7432,7 @@ msgstr "Gửi lại vé"
 msgid "Resend ticket email"
 msgstr "Gửi lại email vé"
 
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:140
 #: src/components/routes/profile/ManageProfile/index.tsx:162
 msgid "Resending..."
 msgstr "Đang gửi lại ..."
@@ -7388,17 +7466,17 @@ msgstr ""
 msgid "Response Details"
 msgstr ""
 
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:61
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:65
 #: src/components/routes/organizer/Settings/Sections/DangerZoneSettings/index.tsx:67
 msgid "Restore"
 msgstr "Khôi phục"
 
-#: src/components/common/EventCard/index.tsx:146
+#: src/components/common/EventCard/index.tsx:174
 msgid "Restore event"
 msgstr "Khôi phục sự kiện"
 
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:122
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:136
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:114
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:128
 msgid "Restore Event"
 msgstr "Khôi phục sự kiện"
 
@@ -7407,7 +7485,7 @@ msgstr "Khôi phục sự kiện"
 msgid "Restore Organizer"
 msgstr "Khôi phục ban tổ chức"
 
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:125
+#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:117
 msgid "Restore this event to make it visible again."
 msgstr "Khôi phục sự kiện này để làm cho nó hiển thị trở lại."
 
@@ -7437,7 +7515,7 @@ msgid "Return to Event Page"
 msgstr "Trở lại trang sự kiện"
 
 #: src/components/common/AffiliateTable/index.tsx:157
-#: src/components/common/EventCard/index.tsx:235
+#: src/components/common/EventCard/index.tsx:269
 #: src/components/routes/admin/Attribution/index.tsx:137
 #: src/components/routes/event/EventDashboard/index.tsx:343
 msgid "Revenue"
@@ -8170,7 +8248,7 @@ msgid "Skip this step"
 msgstr "Bỏ qua bước này"
 
 #: src/components/routes/auth/AcceptInvitation/index.tsx:103
-#: src/components/routes/auth/Register/index.tsx:97
+#: src/components/routes/auth/Register/index.tsx:96
 msgid "Smith"
 msgstr "Smith"
 
@@ -8194,7 +8272,7 @@ msgstr "Liên kết mạng xã hội & Trang web"
 msgid "Sold"
 msgstr "Đã bán"
 
-#: src/components/common/EventCard/index.tsx:115
+#: src/components/common/EventCard/index.tsx:143
 #: src/components/common/ProductPriceAvailability/index.tsx:19
 #: src/components/common/ProductPriceAvailability/index.tsx:50
 #: src/components/routes/product-widget/SessionPicker/index.tsx:132
@@ -8236,6 +8314,8 @@ msgstr "Đã xảy ra lỗi. Vui lòng thử lại sau."
 
 #: src/components/layouts/Event/index.tsx:79
 #: src/components/layouts/OrganizerLayout/index.tsx:106
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:87
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:99
 #: src/components/routes/auth/Login/index.tsx:72
 #: src/components/routes/my-tickets/index.tsx:145
 #: src/components/routes/profile/ManageProfile/index.tsx:90
@@ -8641,7 +8721,7 @@ msgstr "Chỉ mất vài phút"
 msgid "Tax"
 msgstr "Thuế"
 
-#: src/components/routes/account/ManageAccount/index.tsx:27
+#: src/components/routes/account/ManageAccount/index.tsx:33
 #: src/components/routes/account/ManageAccount/sections/TaxSettings/index.tsx:16
 msgid "Tax & Fees"
 msgstr "Thuế & Phí"
@@ -9298,6 +9378,7 @@ msgstr "Thời gian được sử dụng"
 
 #: src/components/forms/OrganizerForm/index.tsx:59
 #: src/components/routes/account/ManageAccount/sections/AccountSettings/index.tsx:82
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:159
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:140
 #: src/components/routes/auth/AcceptInvitation/index.tsx:119
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:124
@@ -9481,7 +9562,6 @@ msgstr "Twitch"
 msgid "Type"
 msgstr "Loại"
 
-#: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:98
 #: src/components/routes/organizer/Settings/Sections/DangerZoneSettings/index.tsx:104
 msgid "Type \"delete\" to confirm"
 msgstr "Nhập \"xóa\" để xác nhận"
@@ -9623,6 +9703,7 @@ msgstr "Cập nhật đối tác"
 msgid "Update event name, description and dates"
 msgstr "Cập nhật tên sự kiện, mô tả và ngày"
 
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:180
 #: src/components/routes/profile/ManageProfile/index.tsx:214
 msgid "Update profile"
 msgstr "Cập nhật hồ sơ"
@@ -9725,7 +9806,7 @@ msgstr "Quản lý người dùng"
 #: src/components/common/AdminAccountsTable/index.tsx:89
 #: src/components/common/AdminAccountsTable/index.tsx:109
 #: src/components/layouts/Admin/index.tsx:15
-#: src/components/routes/account/ManageAccount/index.tsx:32
+#: src/components/routes/account/ManageAccount/index.tsx:38
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:166
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:316
 #: src/components/routes/admin/Dashboard/index.tsx:404
@@ -9738,6 +9819,7 @@ msgid "Users can change their email in <0>Profile Settings</0>"
 msgstr "Người dùng có thể thay đổi email của họ trong <0>Cài đặt hồ sơ</0>"
 
 #: src/components/routes/account/ManageAccount/sections/AccountSettings/index.tsx:83
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:160
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:125
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:126
 #: src/components/routes/profile/ManageProfile/index.tsx:188
@@ -9915,7 +9997,7 @@ msgstr "Xem chi tiết"
 msgid "View Event"
 msgstr "Xem sự kiện"
 
-#: src/components/common/EventCard/index.tsx:131
+#: src/components/common/EventCard/index.tsx:159
 msgid "View event page"
 msgstr "Xem trang sự kiện"
 
@@ -9956,6 +10038,10 @@ msgstr "Xem chi tiết đơn hàng"
 #: src/components/routes/event/orders.tsx:114
 msgid "View order details, issue refunds, and resend confirmations."
 msgstr "Xem chi tiết đơn hàng, hoàn tiền và gửi lại xác nhận."
+
+#: src/components/common/EventCard/index.tsx:87
+msgid "View orders"
+msgstr ""
 
 #: src/components/layouts/OrganizerLayout/index.tsx:249
 #: src/components/layouts/OrganizerLayout/index.tsx:252
@@ -10384,7 +10470,7 @@ msgstr "Làm việc"
 #: src/components/modals/JoinWaitlistModal/index.tsx:188
 #: src/components/modals/ManageAttendeeModal/index.tsx:231
 #: src/components/modals/ManageOrderModal/index.tsx:175
-#: src/components/routes/auth/Register/index.tsx:137
+#: src/components/routes/auth/Register/index.tsx:136
 msgid "Working..."
 msgstr "Làm việc ..."
 
@@ -10393,8 +10479,8 @@ msgid "Workshop"
 msgstr "Hội thảo"
 
 #: src/components/modals/CreateEventModal/index.tsx:196
-msgid "Workshop / Booking (book a time slot)"
-msgstr ""
+#~ msgid "Workshop / Booking (book a time slot)"
+#~ msgstr ""
 
 #: src/components/common/ContactOrganizerModal/index.tsx:89
 msgid "Write your message here..."
@@ -10628,6 +10714,7 @@ msgstr "Thông tin của bạn"
 msgid "Your Email"
 msgstr "Email của bạn"
 
+#: src/components/routes/account/ManageAccount/sections/ProfileSettings/index.tsx:114
 #: src/components/routes/profile/ManageProfile/index.tsx:128
 msgid "Your email request change to <0>{0}</0> is pending. Please check your email to confirm"
 msgstr "Yêu cầu email của bạn thay đổi thành <0>{0}</0> đang chờ xử lý. "
@@ -10697,7 +10784,7 @@ msgid "Your organizer address"
 msgstr "Địa chỉ nhà tổ chức của bạn"
 
 #: src/components/routes/auth/Login/index.tsx:99
-#: src/components/routes/auth/Register/index.tsx:113
+#: src/components/routes/auth/Register/index.tsx:112
 msgid "Your password"
 msgstr "Mật khẩu của bạn"
 

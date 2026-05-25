@@ -8,7 +8,6 @@ import {t, Trans} from "@lingui/macro";
 import classes from "./Register.module.scss";
 import {getClientLocale} from "../../../../locales.ts";
 import {useEffect} from "react";
-import {getUserCurrency} from "../../../../utilites/currency.ts";
 import {getConfig} from "../../../../utilites/config.ts";
 import {captureUtmData, getStoredUtmData, clearStoredUtmData} from "../../../../utilites/utm.ts";
 
@@ -29,7 +28,7 @@ export const Register = () => {
                 : 'UTC',
             locale: getClientLocale(),
             invite_token: '',
-            currency_code: getUserCurrency(),
+            currency_code: 'MYR',
             marketing_opt_in: false,
         },
         validate: {

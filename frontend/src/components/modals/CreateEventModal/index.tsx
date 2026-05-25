@@ -189,11 +189,11 @@ export const CreateEventModal = ({onClose, organizerId}: CreateEventModalProps) 
                                 value={offeringType}
                                 onChange={(value) => setOfferingType((value as 'event' | 'booking') ?? 'event')}
                                 label={t`What are you offering?`}
-                                description={t`Choose "Event" for a one-off event with tickets, or "Workshop / Booking" to let customers book a time slot.`}
+                                description={t`Choose "Event" for a one-off ticketed event, or "Booking / Workshop" to let customers book a time slot.`}
                                 leftSection={<IconCalendarTime size={18}/>}
                                 data={[
-                                    {value: 'event', label: t`Event (sell tickets)`},
-                                    {value: 'booking', label: t`Workshop / Booking (book a time slot)`},
+                                    {value: 'event', label: t`Event`},
+                                    {value: 'booking', label: t`Booking / Workshop`},
                                 ]}
                                 allowDeselect={false}
                                 size="lg"

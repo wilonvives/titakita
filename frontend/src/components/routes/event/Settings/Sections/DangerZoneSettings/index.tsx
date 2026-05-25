@@ -1,7 +1,6 @@
 import {t} from "@lingui/macro";
-import {Button, Alert, TextInput, Stack, Text} from "@mantine/core";
+import {Button, Alert, Text} from "@mantine/core";
 import {useNavigate, useParams} from "react-router";
-import {useState} from "react";
 import {DangerZone, DangerZoneSection} from "../../../../../common/DangerZone";
 import {useGetEventDeletionStatus} from "../../../../../../queries/useGetEventDeletionStatus.ts";
 import {useDeleteEvent} from "../../../../../../mutations/useDeleteEvent.ts";
@@ -22,10 +21,7 @@ export const DangerZoneSettings = () => {
     const {data: event} = useGetEvent(eventId!);
     const deleteMutation = useDeleteEvent();
     const statusMutation = useUpdateEventStatus();
-    const [deleteConfirmation, setDeleteConfirmation] = useState('');
-
     const isArchived = event?.status === EventStatus.ARCHIVED;
-    const isDeleteConfirmed = deleteConfirmation.toLowerCase() === 'delete';
 
     const handleDelete = () => {
         const organizerId = event?.organizer?.id;
@@ -38,6 +34,14 @@ export const DangerZoneSettings = () => {
                 showError(error?.response?.data?.message || t`Failed to delete event`);
             }
         });
+    };
+
+    const confirmDelete = () => {
+        confirmationDialog(
+            t`Delete "${event?.title}"? This permanently deletes the event and all its data. This cannot be undone.`,
+            handleDelete,
+            {confirm: t`Delete event`, cancel: t`Cancel`},
+        );
     };
 
     const handleArchiveToggle = () => {
@@ -92,25 +96,13 @@ export const DangerZoneSettings = () => {
                                 {deletionStatus?.reason}
                             </Alert>
                         )}
-                        {deletionStatus?.can_delete && (
-                            <Stack gap="xs" maw={400}>
-                                <Text size="sm" c="dimmed">
-                                    {t`Type "delete" to confirm`}
-                                </Text>
-                                <TextInput
-                                    placeholder={t`delete`}
-                                    value={deleteConfirmation}
-                                    onChange={(e) => setDeleteConfirmation(e.currentTarget.value)}
-                                />
-                            </Stack>
-                        )}
                         <Button
                             mt="sm"
                             color="red"
                             variant="outline"
-                            onClick={handleDelete}
+                            onClick={confirmDelete}
                             loading={deleteMutation.isPending}
-                            disabled={!deletionStatus?.can_delete || isDeletionStatusLoading || !isDeleteConfirmed}
+                            disabled={!deletionStatus?.can_delete || isDeletionStatusLoading}
                             leftSection={<IconTrash size={16}/>}
                         >
                             {t`Delete Event`}

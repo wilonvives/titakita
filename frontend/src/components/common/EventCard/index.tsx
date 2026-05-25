@@ -8,6 +8,7 @@ import {
     IconDotsVertical,
     IconEye,
     IconSettings,
+    IconTrash,
 } from "@tabler/icons-react";
 import {t} from "@lingui/macro"
 import {eventHomepagePath} from "../../../utilites/urlHelper.ts";
@@ -18,6 +19,7 @@ import {ActionMenu, ActionMenuItemsGroup} from '../ActionMenu';
 import {confirmationDialog} from "../../../utilites/confirmationDialog.tsx";
 import {showError, showSuccess} from "../../../utilites/notifications.tsx";
 import {useUpdateEventStatus} from "../../../mutations/useUpdateEventStatus.ts";
+import {useDeleteEvent} from "../../../mutations/useDeleteEvent.ts";
 import {formatCurrency} from "../../../utilites/currency.ts";
 import {formatNumber} from "../../../utilites/helpers.ts";
 import {formatDateWithLocale, relativeDate} from "../../../utilites/dates.ts";
@@ -43,6 +45,7 @@ export function EventCard({event}: EventCardProps) {
     const [isDuplicateModalOpen, duplicateModal] = useDisclosure(false);
     const [eventId, setEventId] = useState<IdParam>();
     const statusToggleMutation = useUpdateEventStatus();
+    const deleteMutation = useDeleteEvent();
 
     const coverImage = event.images?.find(img => img.type === 'EVENT_COVER');
     const gradientIndex = event.id ? Number(event.id) % placeholderGradients.length : 0;
@@ -71,6 +74,31 @@ export function EventCard({event}: EventCardProps) {
                 }
             });
         })
+    }
+
+    const handleDelete = () => {
+        const grossRevenue = event?.statistics?.sales_total_gross || 0;
+        const attendeeCount = event?.statistics?.attendees_registered || 0;
+
+        if (grossRevenue > 0) {
+            confirmationDialog(
+                t`"${event.title}" has paid attendees. You must refund each attendee from the Orders page before this event can be deleted.`,
+                () => navigate(`/manage/event/${event.id}/orders`),
+                {confirm: t`View orders`, cancel: t`Cancel`},
+            );
+            return;
+        }
+
+        const message = attendeeCount > 0
+            ? t`Delete "${event.title}"? Registered guests will no longer be able to see this event. This cannot be undone.`
+            : t`Delete "${event.title}"? This cannot be undone.`;
+
+        confirmationDialog(message, () => {
+            deleteMutation.mutate({eventId: event.id}, {
+                onSuccess: () => showSuccess(t`Event deleted`),
+                onError: (error: any) => showError(error?.response?.data?.message || t`Failed to delete event`),
+            });
+        }, {confirm: t`Delete`, cancel: t`Cancel`});
     }
 
     const getStatusConfig = () => {
@@ -146,6 +174,12 @@ export function EventCard({event}: EventCardProps) {
                     label: event?.status === 'ARCHIVED' ? t`Restore event` : t`Archive event`,
                     icon: <IconArchive size={14}/>,
                     onClick: handleStatusToggle,
+                },
+                {
+                    label: t`Delete event`,
+                    icon: <IconTrash size={14}/>,
+                    onClick: handleDelete,
+                    color: 'red',
                 },
             ],
         },

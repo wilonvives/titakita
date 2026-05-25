@@ -23,10 +23,18 @@ class EventDeletionService
 
     public function canDeleteEvent(int $eventId): bool
     {
-        return $this->orderRepository->countWhere([
-                'event_id' => $eventId,
-                'status' => OrderStatus::COMPLETED->name,
-            ]) === 0;
+        $completedOrders = $this->orderRepository->findWhere([
+            'event_id' => $eventId,
+            'status' => OrderStatus::COMPLETED->name,
+        ]);
+
+        foreach ($completedOrders as $order) {
+            if ($order->getTotalGross() > $order->getTotalRefunded()) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     /**
@@ -38,7 +46,7 @@ class EventDeletionService
         $this->databaseManager->transaction(function () use ($eventId, $accountId) {
             if (!$this->canDeleteEvent($eventId)) {
                 throw new CannotDeleteEntityException(
-                    __('This event cannot be deleted because it has completed orders. Please cancel or refund all orders first.')
+                    __('This event has paid attendees with payments that have not been refunded. Please refund each attendee from the Orders page before deleting.')
                 );
             }
 

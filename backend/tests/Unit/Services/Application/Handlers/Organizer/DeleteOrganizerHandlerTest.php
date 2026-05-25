@@ -3,6 +3,7 @@
 namespace Tests\Unit\Services\Application\Handlers\Organizer;
 
 use TitaKita\DomainObjects\EventDomainObject;
+use TitaKita\DomainObjects\OrderDomainObject;
 use TitaKita\Exceptions\CannotDeleteEntityException;
 use TitaKita\Repository\Interfaces\EventRepositoryInterface;
 use TitaKita\Repository\Interfaces\OrderRepositoryInterface;
@@ -95,9 +96,13 @@ class DeleteOrganizerHandlerTest extends TestCase
             ->with(['organizer_id' => 1])
             ->andReturn(new Collection([$event]));
 
-        $this->orderRepository->shouldReceive('countWhere')
+        $paidOrder = m::mock(OrderDomainObject::class);
+        $paidOrder->shouldReceive('getTotalGross')->andReturn(50.0);
+        $paidOrder->shouldReceive('getTotalRefunded')->andReturn(0.0);
+
+        $this->orderRepository->shouldReceive('findWhere')
             ->with(['event_id' => 100, 'status' => 'COMPLETED'])
-            ->andReturn(3);
+            ->andReturn(new Collection([$paidOrder]));
 
         $dto = new DeleteOrganizerDTO(organizerId: 1, accountId: 10);
 
