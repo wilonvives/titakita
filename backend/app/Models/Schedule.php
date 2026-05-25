@@ -17,6 +17,7 @@ class Schedule extends BaseModel
             ScheduleDomainObjectAbstract::SPECIFIC_DATES => 'array',
             ScheduleDomainObjectAbstract::RANGE_START_DATE => 'date',
             ScheduleDomainObjectAbstract::RANGE_END_DATE => 'date',
+            ScheduleDomainObjectAbstract::DEFAULT_PRICE => 'float',
         ];
     }
 

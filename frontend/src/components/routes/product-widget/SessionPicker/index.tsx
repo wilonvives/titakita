@@ -10,6 +10,7 @@ import {BookingSession} from "../../../../api/booking.client.ts";
 import {useGetBookingSessions} from "../../../../queries/useGetBookingSessions.ts";
 import {Event} from "../../../../types.ts";
 import {formatDate} from "../../../../utilites/dates.ts";
+import {formatCurrency} from "../../../../utilites/currency.ts";
 import {getSessionIdentifier} from "../../../../utilites/sessionIdentifier.ts";
 import {showInfo} from "../../../../utilites/notifications.tsx";
 import {PoweredByFooter} from "../../../common/PoweredByFooter";
@@ -37,6 +38,7 @@ const SessionPicker = (props: SessionPickerProps) => {
     const queryClient = useQueryClient();
     const navigate = useNavigate();
     const timezone = props.event.timezone;
+    const currency = props.event.currency ?? 'USD';
 
     const sessionsQuery = useGetBookingSessions(eventId);
     const dateGroups = sessionsQuery.data ?? [];
@@ -270,8 +272,18 @@ const SessionPicker = (props: SessionPickerProps) => {
                                                 )}
                                             </span>
                                         </span>
-                                        <span className={classes.sessionCapacity}>
-                                            {renderCapacity(session)}
+                                        <span
+                                            className={classes.sessionCapacity}
+                                            style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 2}}
+                                        >
+                                            <span style={{fontWeight: 700}}>
+                                                {session.price && Number(session.price) > 0
+                                                    ? formatCurrency(Number(session.price), currency)
+                                                    : t`Free`}
+                                            </span>
+                                            <span style={{fontSize: '0.78rem', opacity: 0.75}}>
+                                                {renderCapacity(session)}
+                                            </span>
                                         </span>
                                     </button>
                                 );

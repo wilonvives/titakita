@@ -48,7 +48,7 @@ class BookingSessionService
      * Find-or-create the event's single schedule row that holds the booking defaults.
      * Also marks the event as a booking event.
      */
-    public function ensureSchedule(int $eventId, int $defaultDurationMinutes, ?int $defaultCapacity): ScheduleDomainObject
+    public function ensureSchedule(int $eventId, int $defaultDurationMinutes, ?int $defaultCapacity, float $defaultPrice = 0): ScheduleDomainObject
     {
         $existing = $this->scheduleRepository->findFirstWhere([
             ScheduleDomainObjectAbstract::EVENT_ID => $eventId,
@@ -58,6 +58,7 @@ class BookingSessionService
             $this->scheduleRepository->updateFromArray($existing->getId(), [
                 ScheduleDomainObjectAbstract::SESSION_DURATION_MINUTES => $defaultDurationMinutes,
                 ScheduleDomainObjectAbstract::CAPACITY_PER_SESSION => $defaultCapacity,
+                ScheduleDomainObjectAbstract::DEFAULT_PRICE => $defaultPrice,
             ]);
             $scheduleId = $existing->getId();
         } else {
@@ -65,6 +66,7 @@ class BookingSessionService
                 ScheduleDomainObjectAbstract::EVENT_ID => $eventId,
                 ScheduleDomainObjectAbstract::SESSION_DURATION_MINUTES => $defaultDurationMinutes,
                 ScheduleDomainObjectAbstract::CAPACITY_PER_SESSION => $defaultCapacity,
+                ScheduleDomainObjectAbstract::DEFAULT_PRICE => $defaultPrice,
                 ScheduleDomainObjectAbstract::SCOPE_TYPE => ScheduleScopeType::SPECIFIC_DATES->value,
                 ScheduleDomainObjectAbstract::START_TIMES => [],
                 ScheduleDomainObjectAbstract::WEEKDAYS => null,
@@ -97,6 +99,7 @@ class BookingSessionService
         ?int $capacity,
         ?string $description,
         bool $repeatWeekly,
+        float $price = 0,
     ): void {
         $this->databaseManager->transaction(function () use (
             $eventId,
@@ -106,8 +109,9 @@ class BookingSessionService
             $capacity,
             $description,
             $repeatWeekly,
+            $price,
         ): void {
-            $schedule = $this->ensureSchedule($eventId, $durationMinutes, $capacity);
+            $schedule = $this->ensureSchedule($eventId, $durationMinutes, $capacity, $price);
 
             $event = $this->eventRepository->findById($eventId);
             $timezone = $event->getTimezone() ?? config('app.default_timezone');
@@ -141,6 +145,7 @@ class BookingSessionService
                     capacity: $capacity,
                     description: $description,
                     order: $order++,
+                    price: $price,
                 );
 
                 $existingByStart[$utcStart] = true;
@@ -159,6 +164,7 @@ class BookingSessionService
         int $durationMinutes,
         ?int $capacity,
         ?string $description,
+        float $price = 0,
     ): void {
         $product = $this->findSessionForEvent($eventId, $productId);
 
@@ -171,6 +177,7 @@ class BookingSessionService
         $this->productRepository->updateFromArray($product->getId(), [
             ProductDomainObjectAbstract::TITLE => $this->buildTitle($localStart, $localEnd),
             ProductDomainObjectAbstract::DESCRIPTION => $description,
+            ProductDomainObjectAbstract::TYPE => $price > 0 ? ProductPriceType::PAID->name : ProductPriceType::FREE->name,
             ProductDomainObjectAbstract::SESSION_START_AT => DateHelper::convertToUTC($date.' '.$startTime, $timezone),
             ProductDomainObjectAbstract::SESSION_END_AT => DateHelper::convertToUTC($localEnd->format('Y-m-d H:i:s'), $timezone),
         ]);
@@ -179,6 +186,7 @@ class BookingSessionService
             [
                 ProductPriceDomainObjectAbstract::LABEL => $this->buildTitle($localStart, $localEnd),
                 ProductPriceDomainObjectAbstract::INITIAL_QUANTITY_AVAILABLE => $capacity,
+                ProductPriceDomainObjectAbstract::PRICE => $price,
             ],
             [ProductPriceDomainObjectAbstract::PRODUCT_ID => $product->getId()],
         );
@@ -254,6 +262,7 @@ class BookingSessionService
         ?int $capacity,
         ?string $description,
         int $order,
+        float $price,
     ): void {
         $localStart = Carbon::parse($date.' '.$startTime, $timezone);
         $localEnd = $localStart->copy()->addMinutes($durationMinutes);
@@ -261,7 +270,7 @@ class BookingSessionService
         $product = $this->productRepository->create([
             'title' => $this->buildTitle($localStart, $localEnd),
             'description' => $description,
-            'type' => ProductPriceType::FREE->name,
+            'type' => $price > 0 ? ProductPriceType::PAID->name : ProductPriceType::FREE->name,
             'product_type' => ProductType::TICKET->name,
             'product_category_id' => $categoryId,
             'order' => $order,
@@ -273,7 +282,7 @@ class BookingSessionService
 
         $this->productPriceRepository->create([
             'product_id' => $product->getId(),
-            'price' => 0,
+            'price' => $price,
             'label' => $this->buildTitle($localStart, $localEnd),
             'initial_quantity_available' => $capacity,
             'is_hidden' => false,

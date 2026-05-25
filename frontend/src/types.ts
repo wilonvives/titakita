@@ -322,6 +322,7 @@ export interface BookingSession {
     capacity: number | null;
     capacity_remaining: number | null;
     sold_out: boolean;
+    price?: number | null;
     description?: string | null;
     image?: Image | null;
 }
@@ -331,6 +332,7 @@ export interface Schedule {
     event_id?: IdParam;
     session_duration_minutes: number | null;
     capacity_per_session?: number | null;
+    default_price?: number | null;
     sessions: BookingSession[];
 }
 

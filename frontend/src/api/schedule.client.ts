@@ -4,6 +4,7 @@ import {GenericDataResponse, IdParam, Schedule} from "../types";
 export interface SaveBookingSettingsRequest {
     session_duration_minutes: number;
     capacity_per_session?: number | null;
+    default_price?: number;
 }
 
 export interface CreateBookingSessionsRequest {
@@ -13,6 +14,7 @@ export interface CreateBookingSessionsRequest {
     capacity?: number | null;
     description?: string | null;
     repeat_weekly?: boolean;
+    price?: number;
 }
 
 export interface UpdateBookingSessionRequest {
@@ -21,6 +23,7 @@ export interface UpdateBookingSessionRequest {
     duration_minutes: number;
     capacity?: number | null;
     description?: string | null;
+    price?: number;
 }
 
 export const scheduleClient = {

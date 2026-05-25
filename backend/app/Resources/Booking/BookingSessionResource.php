@@ -31,6 +31,7 @@ class BookingSessionResource extends BaseResource
             'session_start_at' => $product->getSessionStartAt(),
             'session_end_at' => $product->getSessionEndAt(),
             'duration_minutes' => $this->durationMinutes($product),
+            'price' => $price?->getPrice(),
             'capacity' => $capacity,
             'capacity_remaining' => $capacityRemaining,
             'sold_out' => $capacityRemaining !== null && $capacityRemaining <= 0,

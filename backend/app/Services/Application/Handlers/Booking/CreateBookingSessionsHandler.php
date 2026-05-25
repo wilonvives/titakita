@@ -30,6 +30,7 @@ class CreateBookingSessionsHandler
             capacity: $dto->capacity,
             description: $dto->description,
             repeatWeekly: $dto->repeat_weekly,
+            price: $dto->price,
         );
 
         return $this->reader->read($dto->event_id);

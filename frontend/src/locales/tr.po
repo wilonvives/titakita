@@ -73,7 +73,7 @@ msgstr "{0} kaldı"
 msgid "{0} logo"
 msgstr "{0} logosu"
 
-#: src/components/routes/event/schedule.tsx:278
+#: src/components/routes/event/schedule.tsx:302
 msgid "{0} min"
 msgstr ""
 
@@ -81,11 +81,11 @@ msgstr ""
 msgid "{0} organizers"
 msgstr "{0} organizatör"
 
-#: src/components/routes/event/schedule.tsx:246
+#: src/components/routes/event/schedule.tsx:270
 msgid "{0} session(s) scheduled."
 msgstr ""
 
-#: src/components/routes/product-widget/SessionPicker/index.tsx:135
+#: src/components/routes/product-widget/SessionPicker/index.tsx:137
 msgid "{0} spots left"
 msgstr ""
 
@@ -529,7 +529,7 @@ msgstr "Kategoriye Ürün Ekle"
 msgid "Add Question"
 msgstr "Soru Ekle"
 
-#: src/components/routes/event/schedule.tsx:211
+#: src/components/routes/event/schedule.tsx:235
 msgid "Add sessions"
 msgstr ""
 
@@ -559,7 +559,7 @@ msgstr "Kademe ekle"
 msgid "Add to Calendar"
 msgstr "Takvime Ekle"
 
-#: src/components/routes/event/schedule.tsx:237
+#: src/components/routes/event/schedule.tsx:261
 msgid "Add to schedule"
 msgstr ""
 
@@ -1338,7 +1338,7 @@ msgstr "Gövde gerekli"
 #~ msgstr ""
 
 #: src/components/layouts/Event/index.tsx:114
-#: src/components/routes/event/schedule.tsx:173
+#: src/components/routes/event/schedule.tsx:185
 msgid "Booking Schedule"
 msgstr ""
 
@@ -1440,7 +1440,7 @@ msgstr "Kampanya"
 #: src/components/common/WaitlistTable/index.tsx:132
 #: src/components/common/WheelTimePicker/index.tsx:156
 #: src/components/routes/event/messages.tsx:80
-#: src/components/routes/event/schedule.tsx:425
+#: src/components/routes/event/schedule.tsx:469
 #: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:61
 #: src/components/routes/organizer/Settings/Sections/DangerZoneSettings/index.tsx:67
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:85
@@ -1734,7 +1734,7 @@ msgstr "Şehir"
 msgid "Clear Search Text"
 msgstr "Arama Metnini Temizle"
 
-#: src/components/routes/event/schedule.tsx:212
+#: src/components/routes/event/schedule.tsx:236
 msgid "Click a day, choose a start time, then add."
 msgstr ""
 
@@ -2107,7 +2107,7 @@ msgstr "Destek için iletişim e-postası"
 #: src/components/common/WidgetEditor/index.tsx:29
 #: src/components/common/WidgetEditor/index.tsx:222
 #: src/components/routes/product-widget/SelectProducts/index.tsx:551
-#: src/components/routes/product-widget/SessionPicker/index.tsx:312
+#: src/components/routes/product-widget/SessionPicker/index.tsx:324
 msgid "Continue"
 msgstr "Devam Et"
 
@@ -2127,7 +2127,7 @@ msgid "Continue Setup"
 msgstr "Kuruluma Devam Et"
 
 #: src/components/routes/product-widget/SelectProducts/index.tsx:387
-#: src/components/routes/product-widget/SessionPicker/index.tsx:174
+#: src/components/routes/product-widget/SessionPicker/index.tsx:176
 msgid "Continue to Checkout"
 msgstr "Ödemeye Devam Et"
 
@@ -2230,15 +2230,15 @@ msgstr "Panoya kopyala"
 msgid "Copy URL"
 msgstr "URL'yi Kopyala"
 
-#: src/components/routes/event/schedule.tsx:114
+#: src/components/routes/event/schedule.tsx:124
 msgid "Could not add the sessions."
 msgstr ""
 
-#: src/components/routes/event/schedule.tsx:123
+#: src/components/routes/event/schedule.tsx:133
 msgid "Could not remove the session."
 msgstr ""
 
-#: src/components/routes/event/schedule.tsx:146
+#: src/components/routes/event/schedule.tsx:158
 msgid "Could not update the session."
 msgstr ""
 
@@ -2653,7 +2653,7 @@ msgstr "Veri Sahipliği"
 #: src/components/common/AdminOrdersTable/index.tsx:94
 #: src/components/common/OrderDetails/index.tsx:39
 #: src/components/forms/QuestionForm/index.tsx:136
-#: src/components/routes/event/schedule.tsx:373
+#: src/components/routes/event/schedule.tsx:407
 #: src/components/routes/organizer/Reports/EventsPerformanceReport/index.tsx:56
 #: src/components/routes/organizer/Reports/RevenueSummaryReport/index.tsx:24
 msgid "Date"
@@ -2704,7 +2704,7 @@ msgstr "Varsayılan ücret işleme"
 msgid "Default template will be used"
 msgstr "Varsayılan şablon kullanılacak"
 
-#: src/components/routes/event/schedule.tsx:182
+#: src/components/routes/event/schedule.tsx:194
 msgid "Defaults"
 msgstr ""
 
@@ -2784,7 +2784,7 @@ msgstr "Webhook'u sil"
 #: src/components/forms/ProductForm/index.tsx:280
 #: src/components/forms/TaxAndFeeForm/index.tsx:81
 #: src/components/modals/DuplicateEventModal/index.tsx:115
-#: src/components/routes/event/schedule.tsx:402
+#: src/components/routes/event/schedule.tsx:446
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:93
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:86
 msgid "Description"
@@ -2946,7 +2946,7 @@ msgstr "Çoğaltma Seçenekleri"
 msgid "Duplicate Product"
 msgstr "Ürünü Çoğalt"
 
-#: src/components/routes/event/schedule.tsx:386
+#: src/components/routes/event/schedule.tsx:420
 msgid "Duration"
 msgstr ""
 
@@ -2983,7 +2983,7 @@ msgstr "Erken kuş"
 #: src/components/modals/ManageAttendeeModal/index.tsx:221
 #: src/components/modals/ManageOrderModal/index.tsx:203
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:268
-#: src/components/routes/event/schedule.tsx:290
+#: src/components/routes/event/schedule.tsx:319
 #: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:236
 msgid "Edit"
 msgstr "Düzenle"
@@ -3075,8 +3075,8 @@ msgstr "Promosyon Kodunu Düzenle"
 msgid "Edit Question"
 msgstr "Soruyu Düzenle"
 
-#: src/components/routes/event/schedule.tsx:295
-#: src/components/routes/event/schedule.tsx:370
+#: src/components/routes/event/schedule.tsx:324
+#: src/components/routes/event/schedule.tsx:404
 msgid "Edit session"
 msgstr ""
 
@@ -4167,7 +4167,11 @@ msgstr "Şifrenizi mi unuttunuz?"
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:113
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:123
 #: src/components/layouts/OrganizerHomepage/EventCard/index.tsx:180
+#: src/components/routes/event/schedule.tsx:221
+#: src/components/routes/event/schedule.tsx:311
+#: src/components/routes/event/schedule.tsx:437
 #: src/components/routes/product-widget/SelectProducts/Prices/Tiered/index.tsx:53
+#: src/components/routes/product-widget/SessionPicker/index.tsx:282
 msgid "Free"
 msgstr "Ücretsiz"
 
@@ -4519,7 +4523,7 @@ msgid "I confirm this is a transactional message related to this event"
 msgstr "Bunun bu etkinlikle ilgili işlemsel bir mesaj olduğunu onaylıyorum"
 
 #: src/components/routes/product-widget/SelectProducts/index.tsx:364
-#: src/components/routes/product-widget/SessionPicker/index.tsx:164
+#: src/components/routes/product-widget/SessionPicker/index.tsx:166
 msgid "If a new tab did not open automatically, please click the button below to continue to checkout."
 msgstr "Yeni bir sekme otomatik olarak açılmadıysa, ödemeye devam etmek için lütfen aşağıdaki düğmeyi tıklayın."
 
@@ -4547,7 +4551,7 @@ msgstr "Bu değişikliği talep etmediyseniz, lütfen hemen şifrenizi değişti
 msgid "If you have an account with us, you will receive an email with instructions on how to reset your password."
 msgstr "Bizimle bir hesabınız varsa, şifrenizi nasıl sıfırlayacağınıza dair talimatlar içeren bir e-posta alacaksınız."
 
-#: src/components/routes/event/schedule.tsx:411
+#: src/components/routes/event/schedule.tsx:455
 msgid "Image"
 msgstr ""
 
@@ -4942,8 +4946,12 @@ msgstr "Son Tetiklenme"
 msgid "Last Used"
 msgstr "Son Kullanım"
 
-#: src/components/routes/event/schedule.tsx:199
+#: src/components/routes/event/schedule.tsx:211
 msgid "Leave blank for unlimited"
+msgstr ""
+
+#: src/components/routes/event/schedule.tsx:220
+msgid "Leave blank or 0 for free"
 msgstr ""
 
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:191
@@ -5271,13 +5279,13 @@ msgstr "Minimum Fiyat"
 msgid "Minute"
 msgstr ""
 
-#: src/components/routes/event/schedule.tsx:195
-#: src/components/routes/event/schedule.tsx:392
+#: src/components/routes/event/schedule.tsx:207
+#: src/components/routes/event/schedule.tsx:426
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:71
 msgid "minutes"
 msgstr "dakika"
 
-#: src/components/routes/event/schedule.tsx:188
+#: src/components/routes/event/schedule.tsx:200
 msgid "Minutes"
 msgstr ""
 
@@ -5669,7 +5677,7 @@ msgstr "Arama Sonucu Yok"
 msgid "No search results."
 msgstr "Arama sonucu yok."
 
-#: src/components/routes/event/schedule.tsx:251
+#: src/components/routes/event/schedule.tsx:275
 msgid "No sessions yet. Add your first one above."
 msgstr ""
 
@@ -5923,7 +5931,7 @@ msgstr "Seçenek {i}"
 msgid "Optional additional information to appear on all invoices (e.g., payment terms, late payment fees, return policy)"
 msgstr "Tüm faturalarda görünecek isteğe bağlı ek bilgiler (örn., ödeme koşulları, gecikme ücreti, iade politikası)"
 
-#: src/components/routes/event/schedule.tsx:403
+#: src/components/routes/event/schedule.tsx:447
 msgid "Optional notes shown to customers for this session"
 msgstr ""
 
@@ -6360,8 +6368,8 @@ msgstr "Kısmen İade Edildi"
 msgid "Partially refunded: {0}"
 msgstr "Kısmen iade edildi: {0}"
 
-#: src/components/routes/product-widget/SessionPicker/index.tsx:284
-#: src/components/routes/product-widget/SessionPicker/index.tsx:293
+#: src/components/routes/product-widget/SessionPicker/index.tsx:296
+#: src/components/routes/product-widget/SessionPicker/index.tsx:305
 msgid "Party size"
 msgstr ""
 
@@ -6601,7 +6609,7 @@ msgstr "Telefon"
 #~ msgid "Pick a date"
 #~ msgstr ""
 
-#: src/components/routes/event/schedule.tsx:171
+#: src/components/routes/event/schedule.tsx:183
 msgid "Pick a date, set a start time, and add it. Tick repeat to roll it out weekly. Build your sessions exactly how you want."
 msgstr ""
 
@@ -6669,7 +6677,7 @@ msgid "Please check your email to confirm your email address"
 msgstr "E-posta adresinizi onaylamak için lütfen e-postanızı kontrol edin"
 
 #: src/components/routes/product-widget/SelectProducts/index.tsx:355
-#: src/components/routes/product-widget/SessionPicker/index.tsx:162
+#: src/components/routes/product-widget/SessionPicker/index.tsx:164
 msgid "Please continue in the new tab"
 msgstr "Lütfen yeni sekmede devam edin"
 
@@ -6706,7 +6714,7 @@ msgstr "Lütfen KDV numaranızı girin"
 msgid "Please Note"
 msgstr "Lütfen Dikkat"
 
-#: src/components/routes/event/schedule.tsx:151
+#: src/components/routes/event/schedule.tsx:163
 msgid "Please pick a date on the calendar."
 msgstr ""
 
@@ -6726,7 +6734,7 @@ msgstr "Baştan başlamak için lütfen etkinlik sayfasına dönün."
 msgid "Please select a date range"
 msgstr "Lütfen bir tarih aralığı seçin"
 
-#: src/components/routes/product-widget/SessionPicker/index.tsx:101
+#: src/components/routes/product-widget/SessionPicker/index.tsx:103
 msgid "Please select a session"
 msgstr ""
 
@@ -6738,7 +6746,7 @@ msgstr "Lütfen bir görsel seçin."
 msgid "Please select at least one product"
 msgstr "Lütfen en az bir ürün seçin"
 
-#: src/components/routes/event/schedule.tsx:155
+#: src/components/routes/event/schedule.tsx:167
 msgid "Please set a start time."
 msgstr ""
 
@@ -6837,6 +6845,11 @@ msgstr "Fiyat belirlenmedi"
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:59
 msgid "Price of the ticket"
 msgstr "Bilet fiyatı"
+
+#: src/components/routes/event/schedule.tsx:219
+#: src/components/routes/event/schedule.tsx:436
+msgid "Price per spot"
+msgstr ""
 
 #: src/components/forms/ProductForm/index.tsx:343
 msgid "Price Tiers"
@@ -7262,12 +7275,12 @@ msgstr "kaldır"
 #: src/components/common/Editor/Controls/InsertImageControl/index.tsx:146
 #: src/components/common/WaitlistTable/index.tsx:78
 #: src/components/common/WaitlistTable/index.tsx:111
-#: src/components/routes/event/schedule.tsx:300
+#: src/components/routes/event/schedule.tsx:329
 #: src/components/routes/product-widget/SelectProducts/index.tsx:570
 msgid "Remove"
 msgstr "Kaldır"
 
-#: src/components/routes/event/schedule.tsx:306
+#: src/components/routes/event/schedule.tsx:335
 msgid "Remove session"
 msgstr ""
 
@@ -7275,7 +7288,7 @@ msgstr ""
 #~ msgid "Remove start time"
 #~ msgstr ""
 
-#: src/components/routes/event/schedule.tsx:228
+#: src/components/routes/event/schedule.tsx:252
 msgid "Repeat weekly (for the next 3 months)"
 msgstr ""
 
@@ -7530,7 +7543,7 @@ msgstr "San Francisco"
 
 #: src/components/common/PlatformFeesSettings/index.tsx:249
 #: src/components/common/QuestionAndAnswerList/index.tsx:142
-#: src/components/routes/event/schedule.tsx:442
+#: src/components/routes/event/schedule.tsx:487
 #: src/components/routes/event/Settings/Sections/EmailSettings/GeneralEmailSettings.tsx:81
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:129
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:132
@@ -7617,7 +7630,7 @@ msgstr "Mesajı zamanla"
 msgid "Scheduled"
 msgstr "Planlandı"
 
-#: src/components/routes/event/schedule.tsx:245
+#: src/components/routes/event/schedule.tsx:269
 msgid "Scheduled sessions"
 msgstr ""
 
@@ -7724,7 +7737,7 @@ msgstr "Bir kategori seçin"
 msgid "Select a configuration"
 msgstr "Bir yapılandırma seçin"
 
-#: src/components/routes/product-widget/SessionPicker/index.tsx:197
+#: src/components/routes/product-widget/SessionPicker/index.tsx:199
 msgid "Select a date"
 msgstr ""
 
@@ -7732,7 +7745,7 @@ msgstr ""
 msgid "Select a message to view its contents"
 msgstr "İçeriğini görüntülemek için bir mesaj seçin"
 
-#: src/components/routes/product-widget/SessionPicker/index.tsx:226
+#: src/components/routes/product-widget/SessionPicker/index.tsx:228
 msgid "Select a session"
 msgstr ""
 
@@ -7977,7 +7990,7 @@ msgstr "SEO Başlığı"
 msgid "Service Fee"
 msgstr "Hizmet Ücreti"
 
-#: src/components/routes/event/schedule.tsx:187
+#: src/components/routes/event/schedule.tsx:199
 msgid "Session duration"
 msgstr ""
 
@@ -7985,7 +7998,7 @@ msgstr ""
 #~ msgid "Session duration must be at least 1 minute"
 #~ msgstr ""
 
-#: src/components/routes/event/schedule.tsx:121
+#: src/components/routes/event/schedule.tsx:131
 msgid "Session removed."
 msgstr ""
 
@@ -7993,11 +8006,11 @@ msgstr ""
 #~ msgid "Session settings"
 #~ msgstr ""
 
-#: src/components/routes/event/schedule.tsx:144
+#: src/components/routes/event/schedule.tsx:156
 msgid "Session updated."
 msgstr ""
 
-#: src/components/routes/event/schedule.tsx:112
+#: src/components/routes/event/schedule.tsx:122
 msgid "Sessions added."
 msgstr ""
 
@@ -8184,7 +8197,7 @@ msgstr "Satıldı"
 #: src/components/common/EventCard/index.tsx:115
 #: src/components/common/ProductPriceAvailability/index.tsx:19
 #: src/components/common/ProductPriceAvailability/index.tsx:50
-#: src/components/routes/product-widget/SessionPicker/index.tsx:130
+#: src/components/routes/product-widget/SessionPicker/index.tsx:132
 msgid "Sold out"
 msgstr "Tükendi"
 
@@ -8254,15 +8267,15 @@ msgstr "İspanyolca"
 msgid "Sports"
 msgstr "Spor"
 
-#: src/components/routes/event/schedule.tsx:395
+#: src/components/routes/event/schedule.tsx:429
 msgid "Spots"
 msgstr ""
 
-#: src/components/routes/product-widget/SessionPicker/index.tsx:133
+#: src/components/routes/product-widget/SessionPicker/index.tsx:135
 msgid "Spots available"
 msgstr ""
 
-#: src/components/routes/event/schedule.tsx:198
+#: src/components/routes/event/schedule.tsx:210
 msgid "Spots per session"
 msgstr ""
 
@@ -8292,8 +8305,8 @@ msgstr "Başlangıç Tarihi ve Saati"
 msgid "Start date is required"
 msgstr "Başlangıç tarihi gerekli"
 
-#: src/components/routes/event/schedule.tsx:223
-#: src/components/routes/event/schedule.tsx:381
+#: src/components/routes/event/schedule.tsx:247
+#: src/components/routes/event/schedule.tsx:415
 msgid "Start time"
 msgstr ""
 
@@ -8782,7 +8795,11 @@ msgid "The default timezone for your events."
 msgstr "Etkinlikleriniz için varsayılan saat dilimi."
 
 #: src/components/routes/event/schedule.tsx:183
-msgid "The duration and capacity new sessions use. You can override each session later."
+#~ msgid "The duration and capacity new sessions use. You can override each session later."
+#~ msgstr ""
+
+#: src/components/routes/event/schedule.tsx:195
+msgid "The duration, capacity and price new sessions use. You can override each session later."
 msgstr ""
 
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:78
@@ -8900,7 +8917,7 @@ msgstr "Bu etkinlik için mevcut ürün yok"
 msgid "There are no products available in this category"
 msgstr "Bu kategoride mevcut ürün yok"
 
-#: src/components/routes/product-widget/SessionPicker/index.tsx:189
+#: src/components/routes/product-widget/SessionPicker/index.tsx:191
 msgid "There are no sessions available for booking"
 msgstr ""
 
@@ -9487,7 +9504,7 @@ msgstr "Katılımcı girişi yapılamadı"
 msgid "Unable to check out attendee"
 msgstr "Katılımcı check-out'u yapılamadı"
 
-#: src/components/routes/product-widget/SessionPicker/index.tsx:79
+#: src/components/routes/product-widget/SessionPicker/index.tsx:81
 msgid "Unable to create booking. Please try again."
 msgstr ""
 
@@ -9556,9 +9573,9 @@ msgstr "Bilinmeyen Katılımcı"
 #: src/components/modals/OfferWaitlistModal/index.tsx:189
 #: src/components/routes/event/Reports/PromoCodesReport/index.tsx:78
 #: src/components/routes/event/Reports/PromoCodesReport/index.tsx:84
-#: src/components/routes/event/schedule.tsx:163
-#: src/components/routes/event/schedule.tsx:200
-#: src/components/routes/event/schedule.tsx:396
+#: src/components/routes/event/schedule.tsx:175
+#: src/components/routes/event/schedule.tsx:212
+#: src/components/routes/event/schedule.tsx:430
 msgid "Unlimited"
 msgstr "Sınırsız"
 

@@ -23,6 +23,7 @@ class BookingScheduleResource extends BaseResource
             'event_id' => $result->eventId,
             'session_duration_minutes' => $schedule?->getSessionDurationMinutes(),
             'capacity_per_session' => $schedule?->getCapacityPerSession(),
+            'default_price' => $schedule?->getDefaultPrice(),
             'sessions' => BookingSessionResource::collection($result->sessions),
         ];
     }

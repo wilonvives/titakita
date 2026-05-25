@@ -30,6 +30,7 @@ import {useGetSchedule, GET_SCHEDULE_QUERY_KEY} from "../../../queries/useGetSch
 import {scheduleClient} from "../../../api/schedule.client.ts";
 import {showError, showSuccess} from "../../../utilites/notifications.tsx";
 import {formatDate} from "../../../utilites/dates.ts";
+import {formatCurrency, getCurrencySymbol} from "../../../utilites/currency.ts";
 import {BookingSession, IdParam, ImageType, Schedule as BookingScheduleData} from "../../../types.ts";
 import classes from "./Schedule.module.scss";
 
@@ -49,6 +50,7 @@ export const Schedule = () => {
 
     const [durationMinutes, setDurationMinutes] = useState<number | string>(60);
     const [capacity, setCapacity] = useState<number | string>("");
+    const [price, setPrice] = useState<number | string>("");
     const [selectedDate, setSelectedDate] = useState<string | null>(
         dayjs().add(1, "day").format("YYYY-MM-DD"),
     );
@@ -56,10 +58,13 @@ export const Schedule = () => {
     const [repeatWeekly, setRepeatWeekly] = useState<boolean>(false);
     const [editing, setEditing] = useState<BookingSession | null>(null);
 
+    const currency = event?.currency ?? "USD";
+
     useEffect(() => {
         if (scheduleQuery.isFetched && scheduleQuery.data) {
             setDurationMinutes(scheduleQuery.data.session_duration_minutes ?? 60);
             setCapacity(scheduleQuery.data.capacity_per_session ?? "");
+            setPrice(scheduleQuery.data.default_price ? Number(scheduleQuery.data.default_price) : "");
         }
     }, [scheduleQuery.isFetched]);
 
@@ -86,6 +91,9 @@ export const Schedule = () => {
     const capacityValue = (): number | null =>
         capacity === "" || capacity === null ? null : Number(capacity);
 
+    const priceValue = (): number =>
+        price === "" || price === null ? 0 : Math.max(0, Number(price));
+
     const onMutationSuccess = (data: BookingScheduleData) => {
         queryClient.setQueryData([GET_SCHEDULE_QUERY_KEY, eventId], data);
         queryClient.invalidateQueries({queryKey: [GET_EVENT_QUERY_KEY, eventId]});
@@ -95,6 +103,7 @@ export const Schedule = () => {
         mutationFn: () => scheduleClient.saveSettings(eventId, {
             session_duration_minutes: Number(durationMinutes) || 60,
             capacity_per_session: capacityValue(),
+            default_price: priceValue(),
         }),
         onSuccess: (response) => onMutationSuccess(response.data),
     });
@@ -106,6 +115,7 @@ export const Schedule = () => {
             duration_minutes: Number(durationMinutes) || 60,
             capacity: capacityValue(),
             repeat_weekly: repeatWeekly,
+            price: priceValue(),
         }),
         onSuccess: (response) => {
             onMutationSuccess(response.data);
@@ -131,12 +141,14 @@ export const Schedule = () => {
             duration_minutes: number;
             capacity: number | null;
             description: string | null;
+            price: number;
         }) => scheduleClient.updateSession(eventId, payload.productId, {
             session_date: payload.session_date,
             start_time: payload.start_time,
             duration_minutes: payload.duration_minutes,
             capacity: payload.capacity,
             description: payload.description,
+            price: payload.price,
         }),
         onSuccess: (response) => {
             onMutationSuccess(response.data);
@@ -180,7 +192,7 @@ export const Schedule = () => {
                     <Card>
                         <HeadingWithDescription
                             heading={t`Defaults`}
-                            description={t`The duration and capacity new sessions use. You can override each session later.`}
+                            description={t`The duration, capacity and price new sessions use. You can override each session later.`}
                         />
                         <div className={classes.defaultsRow}>
                             <NumberInput
@@ -202,6 +214,18 @@ export const Schedule = () => {
                                 onChange={setCapacity}
                                 onBlur={() => saveSettingsMutation.mutate()}
                                 min={1}
+                            />
+                            <NumberInput
+                                label={t`Price per spot`}
+                                description={t`Leave blank or 0 for free`}
+                                placeholder={t`Free`}
+                                value={price}
+                                onChange={setPrice}
+                                onBlur={() => saveSettingsMutation.mutate()}
+                                min={0}
+                                decimalScale={2}
+                                prefix={getCurrencySymbol(currency) ? `${getCurrencySymbol(currency)} ` : undefined}
+                                thousandSeparator
                             />
                         </div>
                     </Card>
@@ -281,6 +305,11 @@ export const Schedule = () => {
                                                 <div className={classes.sessionMeta}>
                                                     {renderCapacity(session)}
                                                 </div>
+                                                <div className={classes.sessionMeta}>
+                                                    {session.price && Number(session.price) > 0
+                                                        ? formatCurrency(Number(session.price), currency)
+                                                        : t`Free`}
+                                                </div>
                                                 {session.description && (
                                                     <div className={classes.sessionDesc} title={session.description}>
                                                         {session.description}
@@ -322,6 +351,7 @@ export const Schedule = () => {
             <EditSessionModal
                 session={editing}
                 timezone={timezone}
+                currency={currency}
                 fallbackDuration={Number(durationMinutes) || 60}
                 isSaving={updateMutation.isPending}
                 onClose={() => setEditing(null)}
@@ -335,6 +365,7 @@ export const Schedule = () => {
 interface EditSessionModalProps {
     session: BookingSession | null;
     timezone: string;
+    currency: string;
     fallbackDuration: number;
     isSaving: boolean;
     onClose: () => void;
@@ -345,15 +376,17 @@ interface EditSessionModalProps {
         duration_minutes: number;
         capacity: number | null;
         description: string | null;
+        price: number;
     }) => void;
     onImageChanged: () => void;
 }
 
-const EditSessionModal = ({session, timezone, fallbackDuration, isSaving, onClose, onSave, onImageChanged}: EditSessionModalProps) => {
+const EditSessionModal = ({session, timezone, currency, fallbackDuration, isSaving, onClose, onSave, onImageChanged}: EditSessionModalProps) => {
     const [date, setDate] = useState<string | null>(null);
     const [time, setTime] = useState<string>("10:00");
     const [duration, setDuration] = useState<number | string>(fallbackDuration);
     const [capacity, setCapacity] = useState<number | string>("");
+    const [price, setPrice] = useState<number | string>("");
     const [description, setDescription] = useState<string>("");
 
     useEffect(() => {
@@ -362,6 +395,7 @@ const EditSessionModal = ({session, timezone, fallbackDuration, isSaving, onClos
             setTime(formatDate(session.session_start_at, "HH:mm", timezone));
             setDuration(session.duration_minutes ?? fallbackDuration);
             setCapacity(session.capacity ?? "");
+            setPrice(session.price ? Number(session.price) : "");
             setDescription(session.description ?? "");
         }
     }, [session]);
@@ -397,6 +431,16 @@ const EditSessionModal = ({session, timezone, fallbackDuration, isSaving, onClos
                     value={capacity}
                     onChange={setCapacity}
                     min={1}
+                />
+                <NumberInput
+                    label={t`Price per spot`}
+                    placeholder={t`Free`}
+                    value={price}
+                    onChange={setPrice}
+                    min={0}
+                    decimalScale={2}
+                    prefix={getCurrencySymbol(currency) ? `${getCurrencySymbol(currency)} ` : undefined}
+                    thousandSeparator
                 />
                 <Textarea
                     label={t`Description`}
@@ -436,6 +480,7 @@ const EditSessionModal = ({session, timezone, fallbackDuration, isSaving, onClos
                                 duration_minutes: Number(duration) || fallbackDuration,
                                 capacity: capacity === "" || capacity === null ? null : Number(capacity),
                                 description: description.trim() === "" ? null : description,
+                                price: price === "" || price === null ? 0 : Math.max(0, Number(price)),
                             });
                         }}
                     >

@@ -16,5 +16,6 @@ class UpdateBookingSessionDTO extends BaseDataObject
         public int $duration_minutes,
         public ?int $capacity = null,
         public ?string $description = null,
+        public readonly float $price = 0,
     ) {}
 }

@@ -22,6 +22,7 @@ class SaveBookingSettingsHandler
             eventId: $dto->event_id,
             defaultDurationMinutes: $dto->session_duration_minutes,
             defaultCapacity: $dto->capacity_per_session,
+            defaultPrice: $dto->default_price,
         );
 
         return $this->reader->read($dto->event_id);

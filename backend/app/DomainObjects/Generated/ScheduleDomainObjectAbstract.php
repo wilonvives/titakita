@@ -22,6 +22,7 @@ abstract class ScheduleDomainObjectAbstract extends \TitaKita\DomainObjects\Abst
     final public const SPECIFIC_DATES = 'specific_dates';
     final public const CREATED_AT = 'created_at';
     final public const UPDATED_AT = 'updated_at';
+    final public const DEFAULT_PRICE = 'default_price';
 
     protected int $id;
     protected int $event_id;
@@ -35,6 +36,7 @@ abstract class ScheduleDomainObjectAbstract extends \TitaKita\DomainObjects\Abst
     protected array|string|null $specific_dates = null;
     protected ?string $created_at = null;
     protected ?string $updated_at = null;
+    protected float $default_price = 0.0;
 
     public function toArray(): array
     {
@@ -51,6 +53,7 @@ abstract class ScheduleDomainObjectAbstract extends \TitaKita\DomainObjects\Abst
                     'specific_dates' => $this->specific_dates ?? null,
                     'created_at' => $this->created_at ?? null,
                     'updated_at' => $this->updated_at ?? null,
+                    'default_price' => $this->default_price ?? null,
                 ];
     }
 
@@ -184,5 +187,16 @@ abstract class ScheduleDomainObjectAbstract extends \TitaKita\DomainObjects\Abst
     public function getUpdatedAt(): ?string
     {
         return $this->updated_at;
+    }
+
+    public function setDefaultPrice(float $default_price): self
+    {
+        $this->default_price = $default_price;
+        return $this;
+    }
+
+    public function getDefaultPrice(): float
+    {
+        return $this->default_price;
     }
 }

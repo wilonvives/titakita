@@ -112,6 +112,74 @@ class BookingSessionServiceTest extends TestCase
         $this->assertSame(8, $prices->first()->getInitialQuantityAvailable());
     }
 
+    public function test_creates_paid_session_when_price_given(): void
+    {
+        $eventId = $this->eventId();
+
+        $this->service()->createSessions(
+            eventId: $eventId,
+            date: '2026-06-06',
+            startTime: '10:00',
+            durationMinutes: 90,
+            capacity: 8,
+            description: 'Paid perfume workshop',
+            repeatWeekly: false,
+            price: 50.0,
+        );
+
+        $product = $this->sessionProducts($this->scheduleId($eventId))->first();
+
+        $this->assertSame('PAID', $product->getType());
+        $this->assertSame(50.0, $product->getProductPrices()->first()->getPrice());
+    }
+
+    public function test_update_session_changes_price(): void
+    {
+        $eventId = $this->eventId();
+
+        $this->service()->createSessions(
+            eventId: $eventId,
+            date: '2026-06-06',
+            startTime: '10:00',
+            durationMinutes: 90,
+            capacity: 8,
+            description: 'Original',
+            repeatWeekly: false,
+        );
+
+        $product = $this->sessionProducts($this->scheduleId($eventId))->first();
+
+        $this->service()->updateSession(
+            eventId: $eventId,
+            productId: $product->getId(),
+            date: '2026-06-06',
+            startTime: '10:00',
+            durationMinutes: 90,
+            capacity: 8,
+            description: 'Now paid',
+            price: 30.0,
+        );
+
+        $paid = $this->sessionProducts($this->scheduleId($eventId))->first();
+        $this->assertSame('PAID', $paid->getType());
+        $this->assertSame(30.0, $paid->getProductPrices()->first()->getPrice());
+
+        $this->service()->updateSession(
+            eventId: $eventId,
+            productId: $product->getId(),
+            date: '2026-06-06',
+            startTime: '10:00',
+            durationMinutes: 90,
+            capacity: 8,
+            description: 'Back to free',
+            price: 0,
+        );
+
+        $free = $this->sessionProducts($this->scheduleId($eventId))->first();
+        $this->assertSame('FREE', $free->getType());
+        $this->assertSame(0.0, $free->getProductPrices()->first()->getPrice());
+    }
+
     public function test_create_sessions_repeat_weekly_generates_weekly_until_three_months(): void
     {
         $eventId = $this->eventId();
@@ -293,5 +361,37 @@ class BookingSessionServiceTest extends TestCase
         $this->assertSame($schedule->getId(), $again->getId());
         $this->assertSame(30, $again->getSessionDurationMinutes());
         $this->assertNull($again->getCapacityPerSession());
+    }
+
+    public function test_ensure_schedule_stores_default_price(): void
+    {
+        $eventId = $this->eventId();
+
+        $schedule = $this->service()->ensureSchedule($eventId, 60, 10, 45.0);
+        $this->assertSame(45.0, $schedule->getDefaultPrice());
+
+        $updated = $this->service()->ensureSchedule($eventId, 60, 10, 0);
+        $this->assertSame(0.0, $updated->getDefaultPrice());
+    }
+
+    public function test_create_sessions_with_price_persists_schedule_default_price(): void
+    {
+        $eventId = $this->eventId();
+
+        $this->service()->createSessions(
+            eventId: $eventId,
+            date: '2026-06-06',
+            startTime: '10:00',
+            durationMinutes: 90,
+            capacity: 8,
+            description: null,
+            repeatWeekly: false,
+            price: 25.0,
+        );
+
+        $schedule = app(ScheduleRepositoryInterface::class)
+            ->findFirstWhere([ScheduleDomainObjectAbstract::EVENT_ID => $eventId]);
+
+        $this->assertSame(25.0, $schedule->getDefaultPrice());
     }
 }

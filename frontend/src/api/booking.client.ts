@@ -6,6 +6,7 @@ export interface BookingSession {
     product_price_id: number;
     session_start_at: string;
     session_end_at: string;
+    price?: number | null;
     capacity_remaining: number | null;
     is_sold_out: boolean;
     description?: string | null;

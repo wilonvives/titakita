@@ -16,5 +16,6 @@ class CreateBookingSessionsDTO extends BaseDataObject
         public ?int $capacity = null,
         public ?string $description = null,
         public bool $repeat_weekly = false,
+        public readonly float $price = 0,
     ) {}
 }

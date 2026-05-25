@@ -82,6 +82,7 @@ class GetBookingSessionsHandler
                 'product_price_id' => $price->getId(),
                 'session_start_at' => $product->getSessionStartAt(),
                 'session_end_at' => $product->getSessionEndAt(),
+                'price' => $price->getPrice(),
                 'capacity_remaining' => $unlimited ? null : max(0, $remaining),
                 'is_sold_out' => ! $unlimited && $remaining <= 0,
                 'description' => $product->getDescription(),

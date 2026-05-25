@@ -30,6 +30,7 @@ class UpdateBookingSessionHandler
             durationMinutes: $dto->duration_minutes,
             capacity: $dto->capacity,
             description: $dto->description,
+            price: $dto->price,
         );
 
         return $this->reader->read($dto->event_id);
